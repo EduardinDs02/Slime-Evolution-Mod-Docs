@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>SolarPunk, materiais elementais e forma seráfica — 0.4.0 · Slime Evolution</title><meta name="description" content="Guia do Slime Evolution: espécies, genética, criação, metamorfoses, trabalho e aventura."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/updates/0.4.0.html"><link rel="stylesheet" href="../site.css"></head>
+<body data-root="../"><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir navegação">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>GUIA DE CAMPO</small></span></a><div class="search"><label class="sr-only" for="search">Buscar na documentação</label><input id="search" type="search" placeholder="Buscar espécies, receitas, funções…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Resultados da busca" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSÃO 0.14.2</span><section><h2>Começar</h2><a href="../index.html">Guia do mod</a><a href="../INSTALLATION.html">Instalação</a><a href="../guides/GETTING_STARTED.html">Primeiros passos</a></section><section><h2>Slimes e evolução</h2><a href="../guides/SLIMES.html">Galeria das 47 espécies</a><a href="../reference/GENETICS.html">Genética</a><a href="../guides/BREEDING.html">Reprodução</a><a href="../guides/EVOLUTION.html">Evolução</a><a href="../guides/ADVANCED_LINEAGES.html">Linhagens avançadas</a><a href="../guides/ASCENSION.html">Conquistas e rituais</a></section><section><h2>Cuidado e trabalho</h2><a href="../guides/CARE.html">Cuidado e captura</a><a href="../guides/COMPANIONS.html">Vínculo e simbiose</a><a href="../guides/SPECIALIZATIONS.html">Funções individuais</a><a href="../guides/WORK_JOBS.html">Novos trabalhos</a><a href="../guides/SIGNAL_JOBS.html">Circuitos, sonar e vitrine</a></section><section><h2>Pesquisa e aventura</h2><a href="../guides/PROGRESSION.html">Slimepedia e progressão</a><a href="../guides/GENETIC_RESEARCH.html">Pesquisa genética</a><a href="../guides/GENETIC_STATION.html">Estação genética</a><a href="../guides/INCUBATOR.html">Incubadora</a><a href="../guides/MATERIALS.html">Materiais e receitas</a><a href="../guides/COMBAT.html">Combate</a><a href="../guides/SPECIAL_STRUCTURES.html">Estruturas e altares</a><a href="../guides/BOSSES.html">Bosses e lacaios</a><a href="../guides/ECOSYSTEM.html">Ecossistema</a></section><section><h2>Aparência</h2><a href="../guides/SLIME_IDENTITIES.html">Materiais das espécies</a><a href="../guides/ELEMENTAL_DETAILS.html">Detalhes elementais</a><a href="../guides/CELESTIAL_VISUALS.html">Fases lunares e astros</a><a href="../PRESENTATION.html">Capas e divulgação</a></section><section><h2>Referências</h2><a href="../CONFIGURATION.html">Configuração</a><a href="../BALANCE.html">Balanceamento</a><a href="../reference/SPECIES_DATA.html">Espécies e datapacks</a></section><section><h2>Atualizações</h2><a href="../updates/index.html">Histórico de versões</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><blockquote>
+<p>Registro desta versão. As regras atuais estão no <a href="../index.html">guia do mod</a>.</p>
+</blockquote>
+<h1 id="solarpunk-materiais-elementais-e-forma-seráfica--040">SolarPunk, materiais elementais e forma seráfica — 0.4.0</h1>
+<p>Esta revisão mantém os 39 corpos-base da 0.3.0 e melhora a leitura dos materiais.
+As referências enviadas orientam brilho, contraste e identidade elemental;
+as texturas, penas e ornamentos da interface são originais.</p>
+<h2 id="geckolib-493">GeckoLib 4.9.3</h2>
+<p>Os modelos passam a usar animações GeckoLib para movimento, alimentação, dano,
+transformação e ações dos chefes. GeckoLib 4.9.3 é obrigatório no cliente e no
+servidor, instalado como um mod separado.</p>
+<h2 id="corpo-e-materiais">Corpo e materiais</h2>
+<p>A apresentação fica 12% mais alta. Largura, perfis, anéis e vértices do gel
+permanecem iguais; continuam a base espalhada no chão e a gota alongada no ar.
+O aumento é visual: hitboxes, atributos e colisão de movimento não mudaram.
+A coroa do Rei mantém suas proporções rígidas.</p>
+<p>Todas as 39 texturas foram repintadas. O gel continua neutro no atlas para
+receber a pigmentação genética uma única vez. Olhos escuros com reflexo próprio,
+brilho arredondado e sombras suaves dão uma leitura mais gelatinosa.</p>
+<ul>
+<li>Pedra: placas azul-acinzentadas, faces minerais e fissuras no corpo.</li>
+<li>Musgo: cobertura de musgo no topo, além das folhas, com manchas e pequenos tufos.</li>
+<li>Fogo/Chama Volátil: aura geométrica ao redor da base, além das chamas do topo.</li>
+<li>Magma/Magmático: crosta basáltica e veios de lava com movimento de UV; Coração mantém seus rios e gotas de lava.</li>
+<li>Gelo/cristais: facetas claras, bordas e reflexos; Ferro: metal frio; Obsidiana: fraturas escuras.</li>
+<li>Água/Vento/Vapor: ondas, bolhas e faixas suaves; areia e lama têm grãos, camadas e sulcos.</li>
+<li>Venenoso/Fúngico/Pantanoso/Floral: bolhas, manchas, esporos e vegetação de acordo com a espécie.</li>
+<li>Formas espectrais/celestes: marcas luminosas, estrelas ou anéis; lacaios conservam a leitura de seus três papéis.</li>
+</ul>
+<p>A aura e a lava são desenhadas pelo modelo e continuam com partículas mínimas.
+Movimento reduzido congela a animação decorativa; a mudança entre chão e ar
+continua acompanhando a física.</p>
+<h2 id="ancestral-e-primordial">Ancestral e Primordial</h2>
+<p>O antigo halo quadrado e o adorno cúbico sob a auréola foram retirados.
+Ancestral (espécie) e Primordial (boss) possuem seis asas em três pares,
+com penas claras e nervuras douradas, movimento suave e auréola circular.
+O corpo de slime, o rosto, a identidade e as marcas luminosas permanecem.
+A espécie Ancestral continua sendo uma espécie, sem novo registro de boss.</p>
+<h2 id="efeitos-nos-golpes-dos-chefes">Efeitos nos golpes dos chefes</h2>
+<table>
+<thead>
+<tr>
+<th>Chefe</th>
+<th>Efeito após dano aceito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rei Gelatinoso</td>
+<td>Lentidão I por 40 ticks (2 s)</td>
+</tr>
+<tr>
+<td>Coração Magmático</td>
+<td>Fogo por 3 s, preservando o comportamento anterior</td>
+</tr>
+<tr>
+<td>Colosso Cristalino</td>
+<td>Lentidão II por 50 ticks (2,5 s)</td>
+</tr>
+<tr>
+<td>Primordial</td>
+<td>Fraqueza I por 80 ticks (4 s) e Wither I por 40 ticks (2 s)</td>
+</tr>
+</tbody>
+</table>
+<p>Os efeitos acompanham golpes em área e os fragmentos dos chefes avançados.
+O anel ígneo do Primordial também conserva a ignição de 2 s. Não há efeito novo
+quando o dano do encontro é zero, cancelado, bloqueado ou não atinge o alvo.
+Imunidades e os eventos normais de efeitos do Minecraft continuam aplicáveis.
+As durações são curtas e não aumentam com a fase; os efeitos seguem as regras
+normais de substituição do Minecraft. Vida e famílias de ataque da 0.3.0
+foram mantidas. As áreas de impacto no chão foram triplicadas: raios e larguras
+usam √3, incluindo os centros seguros dos anéis e as posições orbitais. A altura
+de alcance não mudou. Cada círculo de erupção dupla cresce com o mesmo fator;
+os centros permanecem travados. Os contornos do chão usam a geometria do dano.
+As barras mostram apenas nome e fase nos avançados, sem texto de ataque ou
+recuperação. Os projéteis individuais conservam seus parâmetros. <a href="0.3.0.html">Parâmetros dos encontros</a>.</p>
+<h2 id="interfaces-solarpunk">Interfaces SolarPunk</h2>
+<p>Inspeção genética, Slimepedia, estação genética, incubadora e alimentador usam
+papel claro, cobre/dourado, vidro verde, folhas e ornamento solar. Os botões
+conservam foco de teclado, narração, tooltips e texto rolável do Minecraft.
+Busca, abas, inspeção, custos, progresso e permissões continuam nas posições
+anteriores. Inventários e telas de outros mods não recebem esse tema.</p>
+<p>O alimentador agora usa o menu registrado <code>slimeevolution:slime_feeder</code> e uma
+tela própria, incluindo quando renomeado. O menu herda o comportamento de baú
+de nove espaços: armazenamento, funis e transferência rápida foram preservados.
+O inventário salvo do bloco conserva seu formato. Use 0.4.0 em cliente e servidor.</p></article><aside class="outline" aria-label="Nesta página"><span>NESTA PÁGINA</span><div class="toc">
+<ul>
+<li><a href="#geckolib-493">GeckoLib 4.9.3</a></li>
+<li><a href="#corpo-e-materiais">Corpo e materiais</a></li>
+<li><a href="#ancestral-e-primordial">Ancestral e Primordial</a></li>
+<li><a href="#efeitos-nos-golpes-dos-chefes">Efeitos nos golpes dos chefes</a></li>
+<li><a href="#interfaces-solarpunk">Interfaces SolarPunk</a></li>
+</ul>
+</div>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/updates/0.4.0.md">Ver esta página no GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/sitemap.xml

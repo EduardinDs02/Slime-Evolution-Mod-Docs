@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Espécies e datapacks · Slime Evolution</title><meta name="description" content="Guia do Slime Evolution: espécies, genética, criação, metamorfoses, trabalho e aventura."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/reference/SPECIES_DATA.html"><link rel="stylesheet" href="../site.css"></head>
+<body data-root="../"><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir navegação">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>GUIA DE CAMPO</small></span></a><div class="search"><label class="sr-only" for="search">Buscar na documentação</label><input id="search" type="search" placeholder="Buscar espécies, receitas, funções…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Resultados da busca" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSÃO 0.14.2</span><section><h2>Começar</h2><a href="../index.html">Guia do mod</a><a href="../INSTALLATION.html">Instalação</a><a href="../guides/GETTING_STARTED.html">Primeiros passos</a></section><section><h2>Slimes e evolução</h2><a href="../guides/SLIMES.html">Galeria das 47 espécies</a><a href="../reference/GENETICS.html">Genética</a><a href="../guides/BREEDING.html">Reprodução</a><a href="../guides/EVOLUTION.html">Evolução</a><a href="../guides/ADVANCED_LINEAGES.html">Linhagens avançadas</a><a href="../guides/ASCENSION.html">Conquistas e rituais</a></section><section><h2>Cuidado e trabalho</h2><a href="../guides/CARE.html">Cuidado e captura</a><a href="../guides/COMPANIONS.html">Vínculo e simbiose</a><a href="../guides/SPECIALIZATIONS.html">Funções individuais</a><a href="../guides/WORK_JOBS.html">Novos trabalhos</a><a href="../guides/SIGNAL_JOBS.html">Circuitos, sonar e vitrine</a></section><section><h2>Pesquisa e aventura</h2><a href="../guides/PROGRESSION.html">Slimepedia e progressão</a><a href="../guides/GENETIC_RESEARCH.html">Pesquisa genética</a><a href="../guides/GENETIC_STATION.html">Estação genética</a><a href="../guides/INCUBATOR.html">Incubadora</a><a href="../guides/MATERIALS.html">Materiais e receitas</a><a href="../guides/COMBAT.html">Combate</a><a href="../guides/SPECIAL_STRUCTURES.html">Estruturas e altares</a><a href="../guides/BOSSES.html">Bosses e lacaios</a><a href="../guides/ECOSYSTEM.html">Ecossistema</a></section><section><h2>Aparência</h2><a href="../guides/SLIME_IDENTITIES.html">Materiais das espécies</a><a href="../guides/ELEMENTAL_DETAILS.html">Detalhes elementais</a><a href="../guides/CELESTIAL_VISUALS.html">Fases lunares e astros</a><a href="../PRESENTATION.html">Capas e divulgação</a></section><section><h2>Referências</h2><a href="../CONFIGURATION.html">Configuração</a><a href="../BALANCE.html">Balanceamento</a><a href="../reference/SPECIES_DATA.html" aria-current="page">Espécies e datapacks</a></section><section><h2>Atualizações</h2><a href="../updates/index.html">Histórico de versões</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="espécies-e-datapacks">Espécies e datapacks</h1>
+<p><a href="../index.html">Documentação</a> · <a href="../guides/SLIMES.html">Galeria e dietas</a> · <a href="GENETICS.html">Genética</a></p>
+<h2 id="definições-de-espécie">Definições de espécie</h2>
+<p>Cada arquivo <code>data/&lt;namespace&gt;/slime_species/&lt;nome&gt;.json</code> descreve uma espécie.
+O campo <code>id</code> deve coincidir com <code>&lt;namespace&gt;:&lt;nome&gt;</code>. As 47 definições incluídas
+estão em <code>src/main/resources/data/slimeevolution/slime_species/</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Formato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id</code>, <code>family</code></td>
+<td>IDs com namespace</td>
+</tr>
+<tr>
+<td><code>color</code></td>
+<td>RGB inteiro de 0 a 16.777.215</td>
+</tr>
+<tr>
+<td><code>min_size</code>, <code>max_size</code></td>
+<td>Inteiros entre 1 e 4; mínimo ≤ máximo</td>
+</tr>
+<tr>
+<td><code>stats</code></td>
+<td>Vida 1–200, velocidade 0,01–0,6, dano 0–30, armadura 0–20 e elasticidade 0,5–1,5</td>
+</tr>
+<tr>
+<td><code>temperament</code></td>
+<td><code>docile</code>, <code>neutral</code> ou <code>hostile</code></td>
+</tr>
+<tr>
+<td><code>ecology</code></td>
+<td><code>solitary</code>, <code>social</code> ou <code>territorial</code>; padrão <code>solitary</code></td>
+</tr>
+<tr>
+<td><code>diet</code></td>
+<td>IDs de itens existentes</td>
+</tr>
+<tr>
+<td><code>biomes</code></td>
+<td>IDs explícitos de biomas existentes</td>
+</tr>
+<tr>
+<td><code>natural_spawn</code></td>
+<td>Booleano; padrão <code>true</code></td>
+</tr>
+<tr>
+<td><code>ability</code></td>
+<td>ID de uma habilidade registrada no mod</td>
+</tr>
+<tr>
+<td><code>ability_cooldown_ticks</code></td>
+<td>20–12.000 ticks</td>
+</tr>
+<tr>
+<td><code>ability_energy_cost</code></td>
+<td>0–100</td>
+</tr>
+</tbody>
+</table>
+<p>Os atributos-base de espécie correspondem ao tamanho 2, antes da expressão
+genética. As 26 espécies derivadas incluídas usam <code>natural_spawn: false</code>.
+Para permitir spawn em biomas adicionais, inclua-os também na tag
+<code>slimeevolution:spawns_evolution_slimes</code>, com <code>replace: false</code>.</p>
+<p>Novas espécies podem reutilizar a entidade e as habilidades existentes.
+Habilidades novas exigem implementação e registro em Java. A cápsula básica
+aceita as 47 espécies incluídas; novos IDs não recebem permissão de captura
+implicitamente.</p>
+<h2 id="reprodução">Reprodução</h2>
+<p><code>data/&lt;namespace&gt;/slime_breeding/&lt;nome&gt;.json</code> define o resultado de um par:</p>
+<pre><code class="language-json">{
+  &quot;first&quot;: &quot;slimeevolution:common&quot;,
+  &quot;second&quot;: &quot;slimeevolution:common&quot;,
+  &quot;offspring&quot;: &quot;slimeevolution:common&quot;
+}
+</code></pre>
+<p>A ordem dos pais não altera o par. Duplicatas, inclusive em ordem inversa,
+são recusadas. Ausência de receita bloqueia a combinação. Cuidador,
+necessidades, parentesco e espaço continuam sendo verificados pelo servidor.</p>
+<h2 id="metamorfoses">Metamorfoses</h2>
+<p>Arquivos em <code>data/&lt;namespace&gt;/slime_metamorphosis/</code> definem origem, destino,
+catalisador, condições de ambiente/gene/idade/exposição e custos.
+As 14 receitas incluídas oferecem exemplos completos. O uso em jogo está
+no <a href="../guides/EVOLUTION.html">guia de evolução</a>.</p>
+<h2 id="habitats-e-recarregamento">Habitats e recarregamento</h2>
+<p>Pisos preferidos usam tags em
+<code>data/&lt;namespace&gt;/tags/block/habitat/&lt;espécie&gt;.json</code>. Adicione a tag correspondente
+a uma nova espécie para que o recinto seja avaliado corretamente.</p>
+<p>Após alterar o datapack, execute <code>/reload</code> e confira o log. O catálogo de
+espécies, reprodução e metamorfoses é validado antes de ser publicado em conjunto;
+um pacote inválido conserva o estado anterior. Alterar uma rota pode invalidar
+exposição incompatível já acumulada.</p>
+<p>Com comandos habilitados, uma definição pode ser conferida com:</p>
+<pre><code class="language-mcfunction">/summon slimeevolution:evolution_slime ~ ~ ~ {Species:&quot;seunamespace:sua_especie&quot;}
+</code></pre>
+<p>Revise aparência, atributos, salvamento e reprodução em um mundo de teste.</p>
+<h2 id="condições-ambientais-opcionais-de-metamorfose">Condições ambientais opcionais de metamorfose</h2>
+<p>Receitas antigas continuam válidas sem os campos abaixo, que ficam dentro de
+<code>conditions</code>. O analisador mostra essas condições no tooltip da linha de biomas.</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Valores / padrão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cycle</code></td>
+<td><code>any</code>, <code>day</code>, <code>night</code>; padrão <code>any</code></td>
+</tr>
+<tr>
+<td><code>weather</code></td>
+<td><code>any</code>, <code>clear</code>, <code>rain</code>, <code>thunder</code>; padrão <code>any</code></td>
+</tr>
+<tr>
+<td><code>sky_visible</code></td>
+<td>Booleano; padrão <code>false</code></td>
+</tr>
+<tr>
+<td><code>min_y</code>, <code>max_y</code></td>
+<td>Inteiros de −2048 a 2048, limites inclusivos; padrão −2048/2048</td>
+</tr>
+<tr>
+<td><code>moon_phase</code></td>
+<td>−1 para qualquer fase, 0 para lua cheia, até 7; padrão −1</td>
+</tr>
+<tr>
+<td><code>submerged</code></td>
+<td>Booleano; exige olhos sob água quando <code>true</code>; padrão <code>false</code></td>
+</tr>
+</tbody>
+</table>
+<p>Dia, noite, lua e céu aberto exigem dimensão com iluminação celeste. A receita
+<code>glacial_aquatic_to_abyssal</code> demonstra profundidade/submersão; <code>fire_to_solar</code>,
+<code>luminous_to_lunar</code> e <code>storm_to_supercell</code> demonstram horário, lua e clima.</p>
+<h2 id="marcos-de-metamorfose">Marcos de metamorfose</h2>
+<p>Receitas de <code>slime_metamorphosis</code> podem declarar o campo opcional <code>milestone</code>:
+<code>storm_charges</code>, <code>biome_journey</code> ou <code>celestial_observations</code>. O padrão vazio
+mantém receitas antigas. Valores desconhecidos são rejeitados no carregamento.
+O marco complementa as condições de cuidado, genes, exposição e catalisador;
+não substitui essas verificações. Consulte <a href="../guides/ASCENSION.html">os requisitos</a>.</p></article><aside class="outline" aria-label="Nesta página"><span>NESTA PÁGINA</span><div class="toc">
+<ul>
+<li><a href="#definições-de-espécie">Definições de espécie</a></li>
+<li><a href="#reprodução">Reprodução</a></li>
+<li><a href="#metamorfoses">Metamorfoses</a></li>
+<li><a href="#habitats-e-recarregamento">Habitats e recarregamento</a></li>
+<li><a href="#condições-ambientais-opcionais-de-metamorfose">Condições ambientais opcionais de metamorfose</a></li>
+<li><a href="#marcos-de-metamorfose">Marcos de metamorfose</a></li>
+</ul>
+</div>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/reference/SPECIES_DATA.md">Ver esta página no GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>

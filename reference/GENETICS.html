@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Genética e herança · Slime Evolution</title><meta name="description" content="Guia do Slime Evolution: espécies, genética, criação, metamorfoses, trabalho e aventura."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/reference/GENETICS.html"><link rel="stylesheet" href="../site.css"></head>
+<body data-root="../"><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir navegação">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>GUIA DE CAMPO</small></span></a><div class="search"><label class="sr-only" for="search">Buscar na documentação</label><input id="search" type="search" placeholder="Buscar espécies, receitas, funções…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Resultados da busca" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSÃO 0.14.2</span><section><h2>Começar</h2><a href="../index.html">Guia do mod</a><a href="../INSTALLATION.html">Instalação</a><a href="../guides/GETTING_STARTED.html">Primeiros passos</a></section><section><h2>Slimes e evolução</h2><a href="../guides/SLIMES.html">Galeria das 47 espécies</a><a href="../reference/GENETICS.html" aria-current="page">Genética</a><a href="../guides/BREEDING.html">Reprodução</a><a href="../guides/EVOLUTION.html">Evolução</a><a href="../guides/ADVANCED_LINEAGES.html">Linhagens avançadas</a><a href="../guides/ASCENSION.html">Conquistas e rituais</a></section><section><h2>Cuidado e trabalho</h2><a href="../guides/CARE.html">Cuidado e captura</a><a href="../guides/COMPANIONS.html">Vínculo e simbiose</a><a href="../guides/SPECIALIZATIONS.html">Funções individuais</a><a href="../guides/WORK_JOBS.html">Novos trabalhos</a><a href="../guides/SIGNAL_JOBS.html">Circuitos, sonar e vitrine</a></section><section><h2>Pesquisa e aventura</h2><a href="../guides/PROGRESSION.html">Slimepedia e progressão</a><a href="../guides/GENETIC_RESEARCH.html">Pesquisa genética</a><a href="../guides/GENETIC_STATION.html">Estação genética</a><a href="../guides/INCUBATOR.html">Incubadora</a><a href="../guides/MATERIALS.html">Materiais e receitas</a><a href="../guides/COMBAT.html">Combate</a><a href="../guides/SPECIAL_STRUCTURES.html">Estruturas e altares</a><a href="../guides/BOSSES.html">Bosses e lacaios</a><a href="../guides/ECOSYSTEM.html">Ecossistema</a></section><section><h2>Aparência</h2><a href="../guides/SLIME_IDENTITIES.html">Materiais das espécies</a><a href="../guides/ELEMENTAL_DETAILS.html">Detalhes elementais</a><a href="../guides/CELESTIAL_VISUALS.html">Fases lunares e astros</a><a href="../PRESENTATION.html">Capas e divulgação</a></section><section><h2>Referências</h2><a href="../CONFIGURATION.html">Configuração</a><a href="../BALANCE.html">Balanceamento</a><a href="../reference/SPECIES_DATA.html">Espécies e datapacks</a></section><section><h2>Atualizações</h2><a href="../updates/index.html">Histórico de versões</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="genética-e-herança">Genética e herança</h1>
+<p>O genoma imutável contém os 15 genes da especificação, cada um com dois alelos
+finitos no intervalo <code>[0, 1]</code>. <code>GenePair</code> calcula a expressão por média nos
+genes aditivos, máximo nos dominantes e mínimo nos recessivos. Essa é uma
+regra fictícia de gameplay; a expressão não substitui os alelos armazenados.</p>
+<h2 id="fundadores-e-descendentes">Fundadores e descendentes</h2>
+<p>Slimes que passam pela finalização de spawn natural ou de ovos recebem
+30 alelos aleatórios em <code>[0.25, 0.75)</code>, usando o RNG do servidor. Instâncias
+criadas diretamente, sem finalizar o spawn, mantêm o genoma basal de
+<code>0.5/0.5</code> até receber outro genoma. Carregar um save ou liberar uma cápsula
+preserva o genoma existente, sem sortear novamente.</p>
+<p>Na reprodução, <code>GeneticsService.inherit</code> seleciona com igual probabilidade
+um dos dois alelos de cada progenitor para cada gene. Cada alelo herdado
+pode sofrer uma mutação independente. A probabilidade efetiva é
+<code>min(0.25, mutationChance × (1.5 - estabilidade média dos pais) × (1 + 0.5 × pais instáveis))</code>.
+O valor padrão de <code>mutationChance</code> é 0.02; portanto, a estabilidade ajusta
+a chance por alelo entre 1% e 3% sem pais instáveis. Um pai com habilidade
+<code>unstable_touch</code> multiplica por 1,5; dois multiplicam por 2 (2%–6% no padrão).
+Isso altera somente a probabilidade no nascimento: a amplitude continua
+limitada por <code>mutationStep</code>, os alelos ficam em 0–1, e os pais não mudam.
+<code>mutationChance=0</code> desativa mutações também para Corrompidos. Não há
+mutação espontânea durante a vida nem contágio genético por ataques.</p>
+<p>Uma mutação soma uma mudança aleatória entre <code>-mutationStep</code> e
+<code>+mutationStep</code>, com resultado limitado a <code>[0, 1]</code>. A amplitude padrão é 0.1;
+chance e amplitude configuráveis aceitam no máximo 0.25. Não há categorias
+de mutações raras ou eventos narrativos nesta versão. O serviço recebe uma
+fonte aleatória: sementes fixas nos testes e RNG do servidor nos nascimentos.</p>
+<h2 id="genes-com-efeito-nesta-versão">Genes com efeito nesta versão</h2>
+<p><code>e</code> representa a expressão do gene, sempre entre 0 e 1. Valores-base vêm da
+espécie. O fator de tamanho usado em vida e dano é <code>tamanho atual / 2</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Gene</th>
+<th>Expressão</th>
+<th>Efeito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tamanho</td>
+<td>Aditiva</td>
+<td>Tamanho adulto: <code>min(máximo, mínimo + floor(e × (máximo - mínimo + 1)))</code></td>
+</tr>
+<tr>
+<td>Elasticidade</td>
+<td>Aditiva</td>
+<td>Multiplica o salto pela elasticidade da espécie e por <code>0.75 + 0.5e</code>; empurrão ofensivo do comum usa <code>0.35 × (0.5 + e)</code></td>
+</tr>
+<tr>
+<td>Vitalidade</td>
+<td>Aditiva</td>
+<td>Multiplica a vida-base por tamanho e por <code>0.75 + 0.5e</code></td>
+</tr>
+<tr>
+<td>Velocidade</td>
+<td>Aditiva</td>
+<td>Multiplica a velocidade-base por <code>0.8 + 0.4e</code></td>
+</tr>
+<tr>
+<td>Metabolismo</td>
+<td>Aditiva</td>
+<td>Aumenta fome em <code>0.1 × (0.5 + e)</code> por segundo carregado</td>
+</tr>
+<tr>
+<td>Resistência</td>
+<td>Dominante</td>
+<td>Armadura: <code>base + (e - 0.5) × 4</code>, limitada a 0–20; proteção mineral contra impactos: <code>min(0.75, configuração × (0.5 + e))</code></td>
+</tr>
+<tr>
+<td>Fertilidade</td>
+<td>Aditiva</td>
+<td>Multiplica a recuperação reprodutiva por <code>1.25 - 0.5e</code></td>
+</tr>
+<tr>
+<td>Estabilidade</td>
+<td>Aditiva</td>
+<td>Ajusta a chance de mutação conforme a média parental</td>
+</tr>
+<tr>
+<td>Regeneração</td>
+<td>Recessiva</td>
+<td>Cura do musgo: <code>(0.5 + e) × configuração</code>, de 0 a 6 pontos por ativação</td>
+</tr>
+<tr>
+<td>Potência elemental</td>
+<td>Aditiva</td>
+<td>Duração de fogo/lama/frio multiplicada por <code>0.5 + e</code> e pela configuração, limitada a 200 ticks</td>
+</tr>
+<tr>
+<td>Agressividade</td>
+<td>Dominante</td>
+<td>Retaliação <code>100 + 200e</code> ticks (100–300); dóceis fogem abaixo de <code>0.4 - 0.2e</code> da vida (40–20%)</td>
+</tr>
+<tr>
+<td>Sociabilidade</td>
+<td>Aditiva</td>
+<td>Nas espécies sociais: raio de busca <code>4 + 8e</code> (4–12 blocos), distância de parada <code>4 - 2e</code> (4–2 blocos)</td>
+</tr>
+<tr>
+<td>Transparência</td>
+<td>Aditiva</td>
+<td>Alfa-base do gel <code>round(255 - 102e)</code> (255–153), combinado com o material visual da espécie</td>
+</tr>
+<tr>
+<td>Luminosidade</td>
+<td>Recessiva</td>
+<td>No Luminoso, luz visual do corpo <code>round(8 + 7e)</code> (8–15); demais espécies ficam sem emissão própria</td>
+</tr>
+<tr>
+<td>Pigmentação</td>
+<td>Dominante</td>
+<td>Multiplica canais RGB da espécie por <code>0.85 + 0.3e</code>, limitando cada canal a 255</td>
+</tr>
+</tbody>
+</table>
+<p>Todos os 15 genes têm expressão implementada. Transparência, luminosidade e
+pigmentação têm efeitos de apresentação; a aparência é sincronizada com os clientes
+sob Xvfb/Mesa; shaders e outros equipamentos ainda exigem validação. Transparência não concede invisibilidade e luminosidade
+não ilumina blocos nem muda spawn. O basal dá ao gel alfa-base 204, antes do
+material da espécie. No Luminoso, a emissão basal é 12, com máximo 15.
+Potência elemental continua ajustando a duração da Visão Noturna; luminosidade
+altera somente o brilho do corpo. Detalhes em <a href="../guides/ECOSYSTEM.html">ECOSYSTEM.md</a>.
+O temperamento e a escolha da habilidade continuam definidos pela espécie;
+o genoma ajusta os efeitos descritos. Regras detalhadas: <a href="../guides/COMBAT.html">COMBAT.md</a>.</p>
+<h2 id="linhagem-crescimento-e-consulta">Linhagem, crescimento e consulta</h2>
+<p><code>Lineage</code> guarda geração e UUIDs dos dois pais. Fundadores são geração zero;
+filhotes recebem a maior geração parental mais um, limitada a um milhão.
+O sistema rejeita cruzamento consigo mesmo, entre pai e filho e entre irmãos
+ou meios-irmãos. Não mantém uma árvore ancestral ilimitada nem detecta todos
+os graus de parentesco.</p>
+<p><code>GrowthState</code> guarda duração, tempo restante e tamanho adulto. Filhotes
+começam no tamanho 1 e crescem em degraus dentro do tamanho determinado
+pelo genoma. Alimentação, conforto, energia e espaço condicionam o progresso.
+As regras de nascimento e recuperação estão em <a href="../guides/BREEDING.html">BREEDING.md</a>.</p>
+<p>NBT atual versão 7 preserva genoma, linhagem, crescimento, contadores reprodutivos,
+histórico/exposição de metamorfose e lar ecológico, acrescentando os genes com
+alteração verificada no nascimento. Histórico ausente em saves antigos permanece
+indisponível. Regras: <a href="../guides/GENETIC_RESEARCH.html">GENETIC_RESEARCH.md</a>.
+Saves anteriores sem lar continuam válidos. Grupos exigem ecologia social da
+espécie; sociabilidade ajusta busca e espaçamento, com comportamento basal preservado.
+Indivíduos antigos sem os campos adicionais carregam como adultos fundadores, sem
+perder UUID, alelos, cuidador ou necessidades. A cápsula também preserva
+esses dados e confere seu snapshot com o registro persistente do mundo.</p>
+<p>O analisador recebe um snapshot de identificação, pais e alelos, além de
+dados de necessidades e contadores sincronizados pelo menu. Ele é somente
+leitura, mostra os 15 genes ativos e detalha o histórico de nascimento nos
+tooltips. A aba Evolução mostra
+origem e condições de metamorfose.</p>
+<h2 id="genética-na-evolução">Genética na evolução</h2>
+<p>Os híbridos iniciais recebem a espécie definida pela receita e os alelos dos
+dois pais pelo mesmo serviço de herança. Metamorfoses mantêm todos os alelos e
+a linhagem; o ambiente habilita uma troca de espécie sem reescrever o genoma.
+As receitas consultam a expressão atual: Resistência ≥ 0,60 para Cristal,
+Regeneração ≥ 0,50 para Floral, Potência elemental ≥ 0,60 para Magmático e
+Estabilidade ≥ 0,80 para Ancestral.
+A regeneração é recessiva, portanto os dois alelos precisam atingir o limiar.
+Detalhes de ambiente, custos e identidade: <a href="../guides/EVOLUTION.html">EVOLUTION.md</a>.</p>
+<p><strong>Planejado:</strong> epistasia, expressão genética condicionada ao ambiente
+e categorias raras de mutação. Os dois
+cruzamentos e as quatro metamorfoses atuais são o primeiro incremento desses
+sistemas; não completam toda a diversidade prevista na especificação.</p>
+<h2 id="estabilizador-de-mutação">Estabilizador de mutação</h2>
+<p>Uma aplicação em um pai apto, antes da geleia, zera novas mutações do próximo
+nascimento do par. A escolha de alelos e a expressão continuam as mesmas; valores
+incomuns herdados não são apagados. O histórico do filhote é conhecido sem nova
+alteração. A proteção só é removida após inserção aceita do filhote, não em
+cancelamento, falta de espaço ou fim de prontidão. NBT atual 7 mantém a evidência
+de mutações introduzida na versão 6. Regras: <a href="../guides/MATERIALS.html">MATERIALS.md</a>.</p></article><aside class="outline" aria-label="Nesta página"><span>NESTA PÁGINA</span><div class="toc">
+<ul>
+<li><a href="#fundadores-e-descendentes">Fundadores e descendentes</a></li>
+<li><a href="#genes-com-efeito-nesta-versão">Genes com efeito nesta versão</a></li>
+<li><a href="#linhagem-crescimento-e-consulta">Linhagem, crescimento e consulta</a></li>
+<li><a href="#genética-na-evolução">Genética na evolução</a></li>
+<li><a href="#estabilizador-de-mutação">Estabilizador de mutação</a></li>
+</ul>
+</div>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/reference/GENETICS.md">Ver esta página no GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Instalar e atualizar · Slime Evolution</title><meta name="description" content="Guia do Slime Evolution: espécies, genética, criação, metamorfoses, trabalho e aventura."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/INSTALLATION.html"><link rel="stylesheet" href="site.css"></head>
+<body data-root=""><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir navegação">☰</button><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>GUIA DE CAMPO</small></span></a><div class="search"><label class="sr-only" for="search">Buscar na documentação</label><input id="search" type="search" placeholder="Buscar espécies, receitas, funções…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Resultados da busca" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSÃO 0.14.2</span><section><h2>Começar</h2><a href="index.html">Guia do mod</a><a href="INSTALLATION.html" aria-current="page">Instalação</a><a href="guides/GETTING_STARTED.html">Primeiros passos</a></section><section><h2>Slimes e evolução</h2><a href="guides/SLIMES.html">Galeria das 47 espécies</a><a href="reference/GENETICS.html">Genética</a><a href="guides/BREEDING.html">Reprodução</a><a href="guides/EVOLUTION.html">Evolução</a><a href="guides/ADVANCED_LINEAGES.html">Linhagens avançadas</a><a href="guides/ASCENSION.html">Conquistas e rituais</a></section><section><h2>Cuidado e trabalho</h2><a href="guides/CARE.html">Cuidado e captura</a><a href="guides/COMPANIONS.html">Vínculo e simbiose</a><a href="guides/SPECIALIZATIONS.html">Funções individuais</a><a href="guides/WORK_JOBS.html">Novos trabalhos</a><a href="guides/SIGNAL_JOBS.html">Circuitos, sonar e vitrine</a></section><section><h2>Pesquisa e aventura</h2><a href="guides/PROGRESSION.html">Slimepedia e progressão</a><a href="guides/GENETIC_RESEARCH.html">Pesquisa genética</a><a href="guides/GENETIC_STATION.html">Estação genética</a><a href="guides/INCUBATOR.html">Incubadora</a><a href="guides/MATERIALS.html">Materiais e receitas</a><a href="guides/COMBAT.html">Combate</a><a href="guides/SPECIAL_STRUCTURES.html">Estruturas e altares</a><a href="guides/BOSSES.html">Bosses e lacaios</a><a href="guides/ECOSYSTEM.html">Ecossistema</a></section><section><h2>Aparência</h2><a href="guides/SLIME_IDENTITIES.html">Materiais das espécies</a><a href="guides/ELEMENTAL_DETAILS.html">Detalhes elementais</a><a href="guides/CELESTIAL_VISUALS.html">Fases lunares e astros</a><a href="PRESENTATION.html">Capas e divulgação</a></section><section><h2>Referências</h2><a href="CONFIGURATION.html">Configuração</a><a href="BALANCE.html">Balanceamento</a><a href="reference/SPECIES_DATA.html">Espécies e datapacks</a></section><section><h2>Atualizações</h2><a href="updates/index.html">Histórico de versões</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="instalar-e-atualizar">Instalar e atualizar</h1>
+<p>Requisitos testados: Minecraft Java <strong>1.21.1</strong>, NeoForge <strong>21.1.264</strong>, Java <strong>21</strong>.
+Slime Evolution 0.14.2 requer <strong>GeckoLib 4.9.3 para NeoForge/Minecraft 1.21.1</strong>.
+Instale os dois mods no cliente e no servidor, com as mesmas versões em todos
+os participantes. O ZIP de entrega contém o JAR oficial do GeckoLib em <code>dependencies/</code>.</p>
+<ol>
+<li>Instale Minecraft/NeoForge compatíveis em um perfil separado.</li>
+<li>Com o jogo/servidor desligado, coloque os JARs de Slime Evolution e GeckoLib na pasta <code>mods/</code>.</li>
+<li>Crie um mundo de teste. No primeiro início, confira itens, espécies e receitas.</li>
+<li>Consulte <a href="CONFIGURATION.html">configurações</a> e <a href="BALANCE.html">balanceamento</a>.</li>
+</ol>
+<p>NeoForge, Minecraft, Java, caches, scripts de teste e mundos de validação não
+fazem parte do pacote. Não coloque o ZIP de documentação em <code>mods/</code>.
+O pacote contém SHA256SUMS; compare o SHA-256 antes de usar um arquivo transferido.
+GeckoLib conserva sua licença MIT, incluída em <code>licenses/GECKOLIB_LICENSE</code> no ZIP.</p>
+<h2 id="atualização-e-backup">Atualização e backup</h2>
+<p>Pare o servidor e faça uma cópia <strong>completa e consistente do mundo</strong>, incluindo
+playerdata, data, dimensões e serverconfig. Guarde também a versão anterior do
+JAR e a lista de mods. Só depois substitua o JAR e teste a cópia do mundo.
+Não faça downgrade de um save já usado pela versão nova.</p>
+<p>As cápsulas dependem de <code>data/slimeevolution_captures.dat</code>, do inventário e das
+entidades do mundo. A Slimepedia usa <code>data/slimeevolution_research.dat</code> no
+Overworld. Restaurar apenas o inventário ou apenas o ledger pode invalidar
+cápsulas ou reintroduzir um token antigo contra um estado de mundo incompatível.
+Não há transação única entre todos os arquivos de um mundo.</p>
+<p>Cada dimensão também salva as regiões protegidas em <code>slimeevolution_arenas.dat</code>
+e os encontros reservados em <code>slimeevolution_rituals.dat</code>, na sua pasta <code>data/</code>.
+Inclua esses arquivos no backup completo; remover apenas uma reserva pode
+desalinhar o altar e o boss ainda existente.</p>
+<p>O ensaio automatizado verifica gravação comprimida, leitura por um armazenamento
+novo, invalidação persistida de token e restauração do par de SavedData. Isso
+não equivale a recuperação após queda abrupta ou backup parcial. Ledger ausente
+não autoriza liberar cápsulas; recuperar o conjunto completo é a opção suportada.
+Nunca apague o ledger para tentar corrigir uma cápsula.</p>
+<p>Indivíduos mantêm NBT 7 e diário schema 3. Genomas, identidades e registros de
+versões anteriores são preservados pelos leitores existentes; dados antigos
+sem prova de mutação continuam como histórico indisponível. Conteúdo novo de
+geração aparece em chunks novos, sem reconstruir terreno explorado.</p>
+<h2 id="compatibilidade-e-diagnóstico">Compatibilidade e diagnóstico</h2>
+<p>Dois clientes reais foram testados por TCP local, com desconexão/reconexão,
+inventário salvo, configurações do servidor, pesquisa privada e replay de cápsula.
+Os ensaios gráficos usam Xvfb/Mesa por software na nuvem. Login online, rede
+pública, GPU física, shaders e modpacks específicos não foram certificados.
+Testar uma combinação nova em cópia do mundo continua sendo necessário.</p>
+<p>Ao relatar um problema, envie versões de Minecraft/NeoForge/Java/mod, lista de
+mods, passos para reproduzir e o trecho relevante do log, removendo dados pessoais.
+Para erro de datapack, confira o ID/arquivo apontado no log: o mod rejeita
+definições inválidas em vez de publicar um catálogo parcialmente carregado.</p>
+<h2 id="licença">Licença</h2>
+<p>O proprietário escolheu <strong>All Rights Reserved</strong>. A presença do JAR neste pacote
+não concede permissão geral de redistribuição, modpack ou cópia de código/assets.
+Copiar ou redistribuir conteúdo deste mod por addons/modpacks exige autorização.
+A licença não define uma política separada para addons independentes interoperáveis.
+Consulte LICENSE e THIRD_PARTY_NOTICES.md no pacote. Esta entrega não publica
+automaticamente uma release binária em serviços externos.</p></article><aside class="outline" aria-label="Nesta página"><span>NESTA PÁGINA</span><div class="toc">
+<ul>
+<li><a href="#atualização-e-backup">Atualização e backup</a></li>
+<li><a href="#compatibilidade-e-diagnóstico">Compatibilidade e diagnóstico</a></li>
+<li><a href="#licença">Licença</a></li>
+</ul>
+</div>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/INSTALLATION.md">Ver esta página no GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="search-index.js" defer></script><script src="site.js" defer></script></body></html>

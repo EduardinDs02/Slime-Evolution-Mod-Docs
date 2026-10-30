@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Vínculo, treinamento e simbiose · Slime Evolution</title><meta name="description" content="Guia do Slime Evolution: espécies, genética, criação, metamorfoses, trabalho e aventura."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/guides/COMPANIONS.html"><link rel="stylesheet" href="../site.css"></head>
+<body data-root="../"><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir navegação">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>GUIA DE CAMPO</small></span></a><div class="search"><label class="sr-only" for="search">Buscar na documentação</label><input id="search" type="search" placeholder="Buscar espécies, receitas, funções…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Resultados da busca" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSÃO 0.14.2</span><section><h2>Começar</h2><a href="../index.html">Guia do mod</a><a href="../INSTALLATION.html">Instalação</a><a href="../guides/GETTING_STARTED.html">Primeiros passos</a></section><section><h2>Slimes e evolução</h2><a href="../guides/SLIMES.html">Galeria das 47 espécies</a><a href="../reference/GENETICS.html">Genética</a><a href="../guides/BREEDING.html">Reprodução</a><a href="../guides/EVOLUTION.html">Evolução</a><a href="../guides/ADVANCED_LINEAGES.html">Linhagens avançadas</a><a href="../guides/ASCENSION.html">Conquistas e rituais</a></section><section><h2>Cuidado e trabalho</h2><a href="../guides/CARE.html">Cuidado e captura</a><a href="../guides/COMPANIONS.html" aria-current="page">Vínculo e simbiose</a><a href="../guides/SPECIALIZATIONS.html">Funções individuais</a><a href="../guides/WORK_JOBS.html">Novos trabalhos</a><a href="../guides/SIGNAL_JOBS.html">Circuitos, sonar e vitrine</a></section><section><h2>Pesquisa e aventura</h2><a href="../guides/PROGRESSION.html">Slimepedia e progressão</a><a href="../guides/GENETIC_RESEARCH.html">Pesquisa genética</a><a href="../guides/GENETIC_STATION.html">Estação genética</a><a href="../guides/INCUBATOR.html">Incubadora</a><a href="../guides/MATERIALS.html">Materiais e receitas</a><a href="../guides/COMBAT.html">Combate</a><a href="../guides/SPECIAL_STRUCTURES.html">Estruturas e altares</a><a href="../guides/BOSSES.html">Bosses e lacaios</a><a href="../guides/ECOSYSTEM.html">Ecossistema</a></section><section><h2>Aparência</h2><a href="../guides/SLIME_IDENTITIES.html">Materiais das espécies</a><a href="../guides/ELEMENTAL_DETAILS.html">Detalhes elementais</a><a href="../guides/CELESTIAL_VISUALS.html">Fases lunares e astros</a><a href="../PRESENTATION.html">Capas e divulgação</a></section><section><h2>Referências</h2><a href="../CONFIGURATION.html">Configuração</a><a href="../BALANCE.html">Balanceamento</a><a href="../reference/SPECIES_DATA.html">Espécies e datapacks</a></section><section><h2>Atualizações</h2><a href="../updates/index.html">Histórico de versões</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="vínculo-treinamento-e-simbiose">Vínculo, treinamento e simbiose</h1>
+<p><a href="../index.html">Guia do mod</a> · <a href="CARE.html">Cuidado e captura</a> · <a href="../reference/GENETICS.html">Genética</a></p>
+<p><img alt="Painel de vínculo e parcerias no jogo" src="../assets/companions/overview.png" loading="lazy" decoding="async"></p>
+<h2 id="abrir-o-painel">Abrir o painel</h2>
+<p>Alimente manualmente um slime para se tornar seu cuidador. Depois, <strong>agache e
+use o analisador genético no seu slime</strong> para abrir o painel de vínculo. O uso
+normal do analisador continua abrindo a inspeção genética.</p>
+<p>Somente o cuidador próximo, com visão livre e permissão de construção, pode
+controlá-lo. O painel fecha ao perder o alcance ou acesso ao indivíduo.</p>
+<h2 id="ensinar-comandos">Ensinar comandos</h2>
+<p>Com <strong>40 de confiança</strong>, energia de pelo menos <strong>40</strong>, fome de no máximo <strong>60</strong>
+e conforto de pelo menos <strong>40</strong>, pressione <strong>Treinar</strong>. O slime precisa estar
+calmo, com pelo menos metade da vida e fora de reprodução, montarias ou laços.
+Dano recente também interrompe a disponibilidade de lições.</p>
+<p>Cada lição:</p>
+<ul>
+<li>Gasta <strong>5 de energia</strong> e acrescenta <strong>3 de fome</strong>.</li>
+<li>Acrescenta até <strong>1 de confiança</strong>, respeitando o limite 100.</li>
+<li>Concede <strong>4 a 10 pontos de treino</strong>, conforme sociabilidade e estabilidade.</li>
+<li>Exige <strong>200 ticks carregados</strong> de recuperação: dez segundos a 20 ticks/s.</li>
+</ul>
+<p>Com os dois genes em 0,50, uma lição concede sete pontos. Os pontos chegam até
+100; uma lição no limite concede apenas o que falta, e não é possível cobrar
+outra lição depois de completar o treino. A aprendizagem não modifica alelos.</p>
+<table>
+<thead>
+<tr>
+<th>Ordem</th>
+<th style="text-align: right;">Pontos necessários</th>
+<th>Comportamento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Livre</td>
+<td style="text-align: right;">0</td>
+<td>Retoma alimentação, agrupamento e movimentação naturais</td>
+</tr>
+<tr>
+<td>Esperar</td>
+<td style="text-align: right;">20</td>
+<td>Guarda o ponto onde a ordem foi dada e volta a ele se for afastado</td>
+</tr>
+<tr>
+<td>Seguir</td>
+<td style="text-align: right;">40</td>
+<td>Acompanha o cuidador disponível na mesma dimensão, a até 32 blocos</td>
+</tr>
+<tr>
+<td>Voltar ao lar</td>
+<td style="text-align: right;">60</td>
+<td>Procura o lar marcado e passa a esperar ao chegar</td>
+</tr>
+</tbody>
+</table>
+<p>Todas as ordens aprendidas exigem 40 de confiança. <strong>Livre</strong> continua disponível
+para o cuidador abaixo desse valor. A autodefesa tem prioridade; o slime retoma
+a ordem depois do combate. Ordens suspendem a busca de comida solta: mantenha
+a alimentação manual ou um alimentador próximo.</p>
+<p>O deslocamento usa navegação e saltos normais. Não há teleporte, travessia de
+paredes nem carregamento de chunks para procurar o cuidador. Seguir fica à
+espera se o cuidador estiver indisponível, longe demais ou em outra dimensão.
+Com energia abaixo de 20, o deslocamento da ordem pausa para permitir descanso.</p>
+<h2 id="marcar-um-lar">Marcar um lar</h2>
+<p>No painel, <strong>Marcar lar aqui</strong> usa a posição atual do cuidador. Escolha piso
+sólido, seco, dentro da borda do mundo e com espaço para o corpo inteiro do slime.
+É possível marcar o local antes de aprender Voltar ao lar.</p>
+<p>O retorno só funciona na dimensão do lar e com a região carregada. Um local
+bloqueado ou inundado não é usado. Ao chegar, o slime muda para Esperar; a
+margem de chegada acompanha o tamanho do corpo e a navegação do Minecraft.</p>
+<h2 id="ativar-uma-simbiose">Ativar uma simbiose</h2>
+<p>Abra o painel de <strong>cada parceiro</strong> e ligue <strong>Cooperar</strong>. Ambos precisam ter o
+<strong>mesmo cuidador</strong>, ser adultos e estar calmos, com:</p>
+<ul>
+<li>Confiança de pelo menos 40.</li>
+<li>Energia de pelo menos 30.</li>
+<li>Fome de no máximo 60 e conforto de pelo menos 40.</li>
+<li>Ausência de dano recente, reprodução, laço, montaria ou passageiros.</li>
+</ul>
+<p>Os parceiros precisam estar a até <strong>seis blocos</strong>, com visão livre entre si.
+Cooperam quando estão Livres ou Esperando; Seguir e Voltar ao lar suspendem o
+trabalho. Ensinar Esperar ajuda a organizar uma equipe junto ao local de serviço.
+A preferência começa desligada nos indivíduos novos e nos saves antigos.</p>
+<table>
+<thead>
+<tr>
+<th>Parceiros</th>
+<th>Trabalho</th>
+<th>Custo por participante</th>
+<th>Recuperação compartilhada</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Água + Musgo</td>
+<td>Avança uma planta em um estágio de crescimento</td>
+<td>6 de energia e +3 de fome</td>
+<td>400 ticks: 20 s</td>
+</tr>
+<tr>
+<td>Elétrico + Ferro</td>
+<td>Acrescenta até quatro ticks ao processamento da estação ou incubadora</td>
+<td>2 de energia e +1 de fome</td>
+<td>20 ticks: 1 s</td>
+</tr>
+</tbody>
+</table>
+<p>Não há cobrança quando não existe trabalho válido. Os dois participantes
+recebem a recuperação; o mesmo ajudante não pode ser reutilizado imediatamente
+em outra dupla ou máquina. Alimentar os slimes repõe as condições de trabalho.
+As demais espécies ainda não têm uma combinação de simbiose nesta versão.</p>
+<h3 id="água--musgo-na-horta">Água + Musgo na horta</h3>
+<p>Coloque os parceiros a até quatro blocos das plantas, com visão livre até elas.
+A dupla atende trigo, cenoura, batata e beterraba; outras plantas que usam o
+comportamento <code>CropBlock</code> também podem ser atendidas. Cada ação avança apenas
+um estágio de uma planta que ainda possa crescer. Não planta nem colhe itens.</p>
+<p>O cuidador precisa estar online na mesma dimensão e ter permissão para alterar
+o local. A dupla respeita <code>mobGriefing</code> e os eventos de proteção do NeoForge.
+Paredes, falta de parceiro, plantas maduras e ações recusadas não gastam recursos.</p>
+<h3 id="elétrico--ferro-nas-máquinas">Elétrico + Ferro nas máquinas</h3>
+<p>Mantenha ambos a até quatro blocos da máquina, com visão livre até ela. A cápsula
+processada precisa pertencer ao cuidador da dupla, e ambos devem estar ativados
+para cooperar.</p>
+<p>O apoio só ocorre depois que a máquina valida e aceita um tick de processamento.
+Sem cápsula, trabalho iniciado ou materiais corretos, não há cobrança aos ajudantes.
+A pausa continua funcionando normalmente.</p>
+<p>O bônus reduz o tempo de processamento. A análise ainda consome um papel e uma
+redstone; a incubação ainda consome um alimento e um suplemento. Resultados,
+crescimento concedido, identidade, genes e regras dos tokens permanecem iguais.</p>
+<h2 id="persistência-e-configuração">Persistência e configuração</h2>
+<p>Experiência, ordem, lar, preferência de cooperação e recuperações são salvos com
+o indivíduo e preservados pela cápsula. As recuperações não avançam enquanto
+ele está capturado ou descarregado. Metamorfoses conservam o aprendizado;
+filhotes começam sem treino e sem herdar as ordens ou o lar dos pais.</p>
+<p>O servidor pode desligar <code>companions.training</code> e <code>companions.symbiosis</code> nas
+<a href="../CONFIGURATION.html">configurações</a>. Isso não apaga o progresso. O cuidador
+continua podendo cancelar a ordem com Livre e desligar uma cooperação armazenada.</p>
+<h2 id="funções-individuais">Funções individuais</h2>
+<p>Fogo, Fúngico, Abyssal e Âmbar também têm um botão <strong>Função</strong> no painel.
+Consulte <a href="SPECIALIZATIONS.html">funções individuais</a> para aquecimento, compostagem,
+auxílio subaquático e armazenamento. A simbiose mantém seus controles próprios.</p></article><aside class="outline" aria-label="Nesta página"><span>NESTA PÁGINA</span><div class="toc">
+<ul>
+<li><a href="#abrir-o-painel">Abrir o painel</a></li>
+<li><a href="#ensinar-comandos">Ensinar comandos</a></li>
+<li><a href="#marcar-um-lar">Marcar um lar</a></li>
+<li><a href="#ativar-uma-simbiose">Ativar uma simbiose</a><ul>
+<li><a href="#água--musgo-na-horta">Água + Musgo na horta</a></li>
+<li><a href="#elétrico--ferro-nas-máquinas">Elétrico + Ferro nas máquinas</a></li>
+</ul>
+</li>
+<li><a href="#persistência-e-configuração">Persistência e configuração</a></li>
+<li><a href="#funções-individuais">Funções individuais</a></li>
+</ul>
+</div>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/guides/COMPANIONS.md">Ver esta página no GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>

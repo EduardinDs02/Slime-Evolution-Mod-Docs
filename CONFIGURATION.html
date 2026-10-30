@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Configuração · Slime Evolution</title><meta name="description" content="Guia do Slime Evolution: espécies, genética, criação, metamorfoses, trabalho e aventura."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/CONFIGURATION.html"><link rel="stylesheet" href="site.css"></head>
+<body data-root=""><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir navegação">☰</button><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>GUIA DE CAMPO</small></span></a><div class="search"><label class="sr-only" for="search">Buscar na documentação</label><input id="search" type="search" placeholder="Buscar espécies, receitas, funções…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Resultados da busca" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSÃO 0.14.2</span><section><h2>Começar</h2><a href="index.html">Guia do mod</a><a href="INSTALLATION.html">Instalação</a><a href="guides/GETTING_STARTED.html">Primeiros passos</a></section><section><h2>Slimes e evolução</h2><a href="guides/SLIMES.html">Galeria das 47 espécies</a><a href="reference/GENETICS.html">Genética</a><a href="guides/BREEDING.html">Reprodução</a><a href="guides/EVOLUTION.html">Evolução</a><a href="guides/ADVANCED_LINEAGES.html">Linhagens avançadas</a><a href="guides/ASCENSION.html">Conquistas e rituais</a></section><section><h2>Cuidado e trabalho</h2><a href="guides/CARE.html">Cuidado e captura</a><a href="guides/COMPANIONS.html">Vínculo e simbiose</a><a href="guides/SPECIALIZATIONS.html">Funções individuais</a><a href="guides/WORK_JOBS.html">Novos trabalhos</a><a href="guides/SIGNAL_JOBS.html">Circuitos, sonar e vitrine</a></section><section><h2>Pesquisa e aventura</h2><a href="guides/PROGRESSION.html">Slimepedia e progressão</a><a href="guides/GENETIC_RESEARCH.html">Pesquisa genética</a><a href="guides/GENETIC_STATION.html">Estação genética</a><a href="guides/INCUBATOR.html">Incubadora</a><a href="guides/MATERIALS.html">Materiais e receitas</a><a href="guides/COMBAT.html">Combate</a><a href="guides/SPECIAL_STRUCTURES.html">Estruturas e altares</a><a href="guides/BOSSES.html">Bosses e lacaios</a><a href="guides/ECOSYSTEM.html">Ecossistema</a></section><section><h2>Aparência</h2><a href="guides/SLIME_IDENTITIES.html">Materiais das espécies</a><a href="guides/ELEMENTAL_DETAILS.html">Detalhes elementais</a><a href="guides/CELESTIAL_VISUALS.html">Fases lunares e astros</a><a href="PRESENTATION.html">Capas e divulgação</a></section><section><h2>Referências</h2><a href="CONFIGURATION.html" aria-current="page">Configuração</a><a href="BALANCE.html">Balanceamento</a><a href="reference/SPECIES_DATA.html">Espécies e datapacks</a></section><section><h2>Atualizações</h2><a href="updates/index.html">Histórico de versões</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="configuração">Configuração</h1>
+<p>As opções são SERVER do NeoForge, autoritativas e sincronizadas ao entrar. Edite
+o arquivo do mundo <mundo>/serverconfig/slimeevolution-server.toml com o servidor
+desligado; use defaultconfigs/ para padrões de mundos novos. Faça backup antes de
+mudar versões. O botão Configuração no menu de mods usa a tela do NeoForge;
+valores do servidor remoto são apenas leitura para o cliente.</p>
+<p>20 ticks equivalem a um segundo carregado. Chunks descarregados não avançam
+crescimento/recargas. Valores fora dos limites são corrigidos pelo NeoForge.
+Na tabela, números aparecem como padrão, mínimo e máximo. O arquivo gerado
+contém comentários e limites; não copie valores de outra versão
+sem revisão. Alterações de geração só afetam terreno novo.</p>
+<table>
+<thead>
+<tr>
+<th>Chave TOML</th>
+<th>Padrão e limites</th>
+<th>Efeito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>naturalSpawning</code></td>
+<td><code>true</code></td>
+<td>Ativa a geração natural. Comandos e ovos continuam funcionando.</td>
+</tr>
+<tr>
+<td><code>localPopulationLimit</code></td>
+<td><code>8, 1, 64</code></td>
+<td>Máximo de indivíduos em 32 blocos para aceitar geração natural; não remove os existentes.</td>
+</tr>
+<tr>
+<td><code>spawnChance</code></td>
+<td><code>0.25, 0.0, 1.0</code></td>
+<td>Probabilidade adicional após as verificações normais de geração.</td>
+</tr>
+<tr>
+<td><code>damageMultiplier</code></td>
+<td><code>1.0, 0.0, 4.0</code></td>
+<td>Afeta contato e projéteis de Cristal. Zero desativa esse dano; não controla chefes.</td>
+</tr>
+<tr>
+<td><code>abilityParticles</code></td>
+<td><code>true</code></td>
+<td>Ativa partículas de habilidades no servidor. Avisos de chão dos chefes continuam disponíveis.</td>
+</tr>
+<tr>
+<td><code>combat.activeAbilities</code></td>
+<td><code>true</code></td>
+<td>Ativa habilidades de contato e regeneração ambiental. Atributos e defesas passivas permanecem.</td>
+</tr>
+<tr>
+<td><code>combat.abilitySounds</code></td>
+<td><code>true</code></td>
+<td>Som de ativação das habilidades; não controla os sons comuns das criaturas.</td>
+</tr>
+<tr>
+<td><code>combat.thermalReactions</code></td>
+<td><code>true</code></td>
+<td>Fogo remove o frio do mod; contato gelado apaga um alvo em chamas em vez de resfriá-lo.</td>
+</tr>
+<tr>
+<td><code>combat.effectDurationMultiplier</code></td>
+<td><code>1.0, 0.0, 4.0</code></td>
+<td>Afeta ignição, lama e frio. Zero desativa esses efeitos; limite de 200 ticks por aplicação.</td>
+</tr>
+<tr>
+<td><code>combat.healingMultiplier</code></td>
+<td><code>1.0, 0.0, 4.0</code></td>
+<td>Cura combinada com o gene de regeneração; máximo de seis pontos por ativação.</td>
+</tr>
+<tr>
+<td><code>combat.mineralImpactReduction</code></td>
+<td><code>0.25, 0.0, 0.5</code></td>
+<td>Proteção contra projéteis e explosões antes da armadura, ajustada pelo gene; máximo de 75%.</td>
+</tr>
+<tr>
+<td><code>combat.metalMeleeReduction</code></td>
+<td><code>0.2, 0.0, 0.5</code></td>
+<td>Proteção do Ferro antes do ajuste genético; não afeta projéteis, explosões ou dano que ignora defesa.</td>
+</tr>
+<tr>
+<td><code>combat.obsidianBlastReduction</code></td>
+<td><code>0.5, 0.0, 0.5</code></td>
+<td>Proteção contra explosões ajustada pelo gene; máximo de 75%.</td>
+</tr>
+<tr>
+<td><code>combat.iceFireMultiplier</code></td>
+<td><code>1.5, 1.0, 4.0</code></td>
+<td>Multiplicador do dano de fogo recebido por slimes de Gelo.</td>
+</tr>
+<tr>
+<td><code>combat.wetFireDamage</code></td>
+<td><code>1.0, 0.0, 4.0</code></td>
+<td>Dano por segundo carregado em água, chuva ou bolhas; zero desativa essa vulnerabilidade.</td>
+</tr>
+<tr>
+<td><code>combat.dischargeDamage</code></td>
+<td><code>2.0, 0.0, 4.0</code></td>
+<td>Dano elétrico antes do ajuste genético. Alvos molhados recebem o dobro; máximo de seis pontos.</td>
+</tr>
+<tr>
+<td><code>combat.waterConduction</code></td>
+<td><code>true</code></td>
+<td>Descargas em alvos molhados podem atingir até dois alvos molhados próximos com visão livre.</td>
+</tr>
+<tr>
+<td><code>breeding.enabled</code></td>
+<td><code>true</code></td>
+<td>Ativa reprodução iniciada pelo cuidador.</td>
+</tr>
+<tr>
+<td><code>breeding.localPopulationLimit</code></td>
+<td><code>12, 2, 64</code></td>
+<td>Máximo de indivíduos vivos e carregados em 32 blocos de um nascimento.</td>
+</tr>
+<tr>
+<td><code>breeding.recoveryTicks</code></td>
+<td><code>6000, 200, 240000</code></td>
+<td>Recuperação dos pais em ticks, ajustada de 0,75 a 1,25 pela fertilidade. 20 ticks = um segundo.</td>
+</tr>
+<tr>
+<td><code>breeding.growthTicks</code></td>
+<td><code>12000, 200, 240000</code></td>
+<td>Ticks carregados e em boas condições até a fase adulta. Filhotes existentes mantêm sua duração.</td>
+</tr>
+<tr>
+<td><code>breeding.mutationChance</code></td>
+<td><code>0.02, 0.0, 0.25</code></td>
+<td>Chance por alelo, ajustada pela estabilidade e instabilidade dos pais; máximo de 25%.</td>
+</tr>
+<tr>
+<td><code>breeding.mutationStep</code></td>
+<td><code>0.1, 0.0, 0.25</code></td>
+<td>Máxima alteração absoluta de um alelo por mutação; o resultado fica entre zero e um.</td>
+</tr>
+<tr>
+<td><code>evolution.metamorphosis</code></td>
+<td><code>true</code></td>
+<td>Ativa exposição ambiental e metamorfose com catalisador; receitas definem condições e custos.</td>
+</tr>
+<tr>
+<td><code>ecology.foraging</code></td>
+<td><code>true</code></td>
+<td>Permite procurar e comer itens da dieta; não aumenta confiança e respeita mobGriefing.</td>
+</tr>
+<tr>
+<td><code>ecology.grouping</code></td>
+<td><code>true</code></td>
+<td>Permite agrupamento compatível por espécie e cuidador, respeitando sociabilidade genética.</td>
+</tr>
+<tr>
+<td><code>ecology.territories</code></td>
+<td><code>true</code></td>
+<td>Permite defesa territorial das espécies configuradas; respeita limites e cuidador.</td>
+</tr>
+<tr>
+<td><code>ecology.surfaceNests</code></td>
+<td><code>true</code></td>
+<td>Gera ninhos em terreno novo e ativa seus habitantes finitos.</td>
+</tr>
+<tr>
+<td><code>ecology.caveColonies</code></td>
+<td><code>true</code></td>
+<td>Gera colônias no ar de cavernas de terreno novo e ativa seus habitantes finitos.</td>
+</tr>
+<tr>
+<td><code>ecology.nestRarity</code></td>
+<td><code>24, 1, 1000</code></td>
+<td>Chance adicional de uma em N por tentativa de ninho; valores maiores reduzem a frequência.</td>
+</tr>
+<tr>
+<td><code>ecology.colonyRarity</code></td>
+<td><code>12, 1, 1000</code></td>
+<td>Chance adicional de uma em N por tentativa de colônia; valores maiores reduzem a frequência.</td>
+</tr>
+<tr>
+<td><code>structures.enabled</code></td>
+<td><code>true</code></td>
+<td>Gera os seis locais especiais em chunks novos. Locais e baús existentes permanecem.</td>
+</tr>
+<tr>
+<td><code>structures.crystalCaverns</code></td>
+<td><code>true</code></td>
+<td>Ativa a geração de Cavernas Cristalinas em chunks novos.</td>
+</tr>
+<tr>
+<td><code>structures.gelatinousLakes</code></td>
+<td><code>true</code></td>
+<td>Ativa a geração de Lagos Gelatinosos em chunks novos.</td>
+</tr>
+<tr>
+<td><code>structures.elementalSanctuaries</code></td>
+<td><code>true</code></td>
+<td>Ativa a geração de Santuários Elementais em chunks novos.</td>
+</tr>
+<tr>
+<td><code>structures.researcherRuins</code></td>
+<td><code>true</code></td>
+<td>Ativa a geração de Ruínas de Pesquisadores em chunks novos.</td>
+</tr>
+<tr>
+<td><code>structures.ancestralChambers</code></td>
+<td><code>true</code></td>
+<td>Ativa a geração de Câmaras Ancestrais em chunks novos.</td>
+</tr>
+<tr>
+<td><code>structures.royalCourts</code></td>
+<td><code>true</code></td>
+<td>Ativa Cortes Reais em chunks novos.</td>
+</tr>
+<tr>
+<td><code>structures.rarity</code></td>
+<td><code>1,1,1000</code></td>
+<td>Filtro adicional determinístico de uma em N. Datapacks controlam espaçamento e biomas.</td>
+</tr>
+<tr>
+<td><code>bosses.enabled</code></td>
+<td><code>true</code></td>
+<td>Permite iniciar os quatro rituais; encontros existentes continuam ativos.</td>
+</tr>
+<tr>
+<td><code>bosses.damageMultiplier</code></td>
+<td><code>1.0,0.0,2.0</code></td>
+<td>Escala o dano de chefes e lacaios. Zero desativa esse dano; consulte os <a href="BALANCE.html">valores atuais</a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Desativar habilidades não desativa as defesas passivas; desativar rituais não
+apaga chefes presentes. O dano de chefes usa bosses.damageMultiplier; o dano
+de contato dos indivíduos usa damageMultiplier. Desativar estruturas não remove
+blocos nem repõe baús. Raridades adicionais não são o espaçamento dos locais.</p>
+<h2 id="visual-do-cliente">Visual do cliente</h2>
+<p>O arquivo <code>config/slimeevolution-client.toml</code> é local e não muda regras do servidor.
+A tela de configuração do NeoForge oferece rótulos e ajuda em português e inglês.</p>
+<table>
+<thead>
+<tr>
+<th>Chave TOML</th>
+<th>Padrão e limites</th>
+<th>Efeito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>reducedMotion</code></td>
+<td><code>false</code></td>
+<td>Reduz respiração, oscilação e pulsos; congela as deformações de chamas, raios e vapor. Saltos físicos continuam visíveis.</td>
+</tr>
+<tr>
+<td><code>visualParticleIntensity</code></td>
+<td><code>0.75, 0.0, 1.0</code></td>
+<td>Intensidade das partículas extras de ação e dos acentos elementais em repouso; zero desativa essas partículas.</td>
+</tr>
+</tbody>
+</table>
+<p>Os efeitos extras respeitam a opção de partículas mínimas do Minecraft e
+<code>abilityParticles</code> do servidor. Partes decorativas reduzem animação após 24 blocos
+e param após 48. Isso não altera genética, dano, colisão ou iluminação do mundo.
+Chamas, arcos elétricos e vapor geométricos continuam visíveis com partículas
+mínimas ou intensidade zero; seu movimento usa <code>reducedMotion</code>. O orçamento
+global das partículas extras é de quatro por cinco ticks, ou duas com partículas
+reduzidas. Ações têm prioridade sobre acentos em repouso; movimento reduzido
+também desativa esses acentos em repouso.</p>
+<h2 id="vínculo-e-simbiose">Vínculo e simbiose</h2>
+<table>
+<thead>
+<tr>
+<th>Chave</th>
+<th>Padrão</th>
+<th>Efeito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>companions.training</code></td>
+<td><code>true</code></td>
+<td>Permite lições e execução das ordens aprendidas</td>
+</tr>
+<tr>
+<td><code>companions.symbiosis</code></td>
+<td><code>true</code></td>
+<td>Permite as duplas Água + Musgo e Elétrico + Ferro</td>
+</tr>
+</tbody>
+</table>
+<p>Desativar não apaga aprendizado, lar ou preferências. O cuidador ainda pode
+selecionar Livre e desligar a cooperação. O cultivo também respeita <code>mobGriefing</code>
+e a permissão de construção do cuidador. <a href="guides/COMPANIONS.html">Regras e custos</a>.</p>
+<p><code>companions.specializations</code> (padrão <code>true</code>) ativa as 19 funções individuais.
+Ao desligar, processamento, auxílio e novos depósitos param; o cuidador
+continua podendo retirar itens e cancelar uma função armazenada.</p>
+<p>As quatro arenas de bosses têm proteção persistente contra alterações de blocos.
+Desativar a geração não remove essa proteção nem libera um encontro ocupado.</p></article><aside class="outline" aria-label="Nesta página"><span>NESTA PÁGINA</span><div class="toc">
+<ul>
+<li><a href="#visual-do-cliente">Visual do cliente</a></li>
+<li><a href="#vínculo-e-simbiose">Vínculo e simbiose</a></li>
+</ul>
+</div>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/CONFIGURATION.md">Ver esta página no GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="search-index.js" defer></script><script src="site.js" defer></script></body></html>

@@ -1,0 +1,55 @@
+{
+  "title": "Slime Evolution",
+  "url": "https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/",
+  "repository": "https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs",
+  "source_repository": "https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs",
+  "navigation": {
+    "Começar": {
+      "Guia do mod": "README.md",
+      "Instalação": "INSTALLATION.md",
+      "Primeiros passos": "guides/GETTING_STARTED.md"
+    },
+    "Slimes e evolução": {
+      "Galeria das 47 espécies": "guides/SLIMES.md",
+      "Genética": "reference/GENETICS.md",
+      "Reprodução": "guides/BREEDING.md",
+      "Evolução": "guides/EVOLUTION.md",
+      "Linhagens avançadas": "guides/ADVANCED_LINEAGES.md",
+      "Conquistas e rituais": "guides/ASCENSION.md"
+    },
+    "Cuidado e trabalho": {
+      "Cuidado e captura": "guides/CARE.md",
+      "Vínculo e simbiose": "guides/COMPANIONS.md",
+      "Funções individuais": "guides/SPECIALIZATIONS.md",
+      "Novos trabalhos": "guides/WORK_JOBS.md",
+      "Circuitos, sonar e vitrine": "guides/SIGNAL_JOBS.md"
+    },
+    "Pesquisa e aventura": {
+      "Slimepedia e progressão": "guides/PROGRESSION.md",
+      "Pesquisa genética": "guides/GENETIC_RESEARCH.md",
+      "Estação genética": "guides/GENETIC_STATION.md",
+      "Incubadora": "guides/INCUBATOR.md",
+      "Materiais e receitas": "guides/MATERIALS.md",
+      "Combate": "guides/COMBAT.md",
+      "Estruturas e altares": "guides/SPECIAL_STRUCTURES.md",
+      "Bosses e lacaios": "guides/BOSSES.md",
+      "Ecossistema": "guides/ECOSYSTEM.md"
+    },
+    "Aparência": {
+      "Materiais das espécies": "guides/SLIME_IDENTITIES.md",
+      "Detalhes elementais": "guides/ELEMENTAL_DETAILS.md",
+      "Fases lunares e astros": "guides/CELESTIAL_VISUALS.md",
+      "Capas e divulgação": "PRESENTATION.md"
+    },
+    "Referências": {
+      "Configuração": "CONFIGURATION.md",
+      "Balanceamento": "BALANCE.md",
+      "Espécies e datapacks": "reference/SPECIES_DATA.md"
+    },
+    "Atualizações": {
+      "Histórico de versões": "updates/README.md"
+    }
+  },
+  "content_root": ".",
+  "mod_version": "0.14.2"
+}

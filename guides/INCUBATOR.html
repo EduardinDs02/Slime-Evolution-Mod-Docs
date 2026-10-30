@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Incubadora · Slime Evolution</title><meta name="description" content="Guia do Slime Evolution: espécies, genética, criação, metamorfoses, trabalho e aventura."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/guides/INCUBATOR.html"><link rel="stylesheet" href="../site.css"></head>
+<body data-root="../"><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir navegação">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>GUIA DE CAMPO</small></span></a><div class="search"><label class="sr-only" for="search">Buscar na documentação</label><input id="search" type="search" placeholder="Buscar espécies, receitas, funções…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Resultados da busca" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSÃO 0.14.2</span><section><h2>Começar</h2><a href="../index.html">Guia do mod</a><a href="../INSTALLATION.html">Instalação</a><a href="../guides/GETTING_STARTED.html">Primeiros passos</a></section><section><h2>Slimes e evolução</h2><a href="../guides/SLIMES.html">Galeria das 47 espécies</a><a href="../reference/GENETICS.html">Genética</a><a href="../guides/BREEDING.html">Reprodução</a><a href="../guides/EVOLUTION.html">Evolução</a><a href="../guides/ADVANCED_LINEAGES.html">Linhagens avançadas</a><a href="../guides/ASCENSION.html">Conquistas e rituais</a></section><section><h2>Cuidado e trabalho</h2><a href="../guides/CARE.html">Cuidado e captura</a><a href="../guides/COMPANIONS.html">Vínculo e simbiose</a><a href="../guides/SPECIALIZATIONS.html">Funções individuais</a><a href="../guides/WORK_JOBS.html">Novos trabalhos</a><a href="../guides/SIGNAL_JOBS.html">Circuitos, sonar e vitrine</a></section><section><h2>Pesquisa e aventura</h2><a href="../guides/PROGRESSION.html">Slimepedia e progressão</a><a href="../guides/GENETIC_RESEARCH.html">Pesquisa genética</a><a href="../guides/GENETIC_STATION.html">Estação genética</a><a href="../guides/INCUBATOR.html" aria-current="page">Incubadora</a><a href="../guides/MATERIALS.html">Materiais e receitas</a><a href="../guides/COMBAT.html">Combate</a><a href="../guides/SPECIAL_STRUCTURES.html">Estruturas e altares</a><a href="../guides/BOSSES.html">Bosses e lacaios</a><a href="../guides/ECOSYSTEM.html">Ecossistema</a></section><section><h2>Aparência</h2><a href="../guides/SLIME_IDENTITIES.html">Materiais das espécies</a><a href="../guides/ELEMENTAL_DETAILS.html">Detalhes elementais</a><a href="../guides/CELESTIAL_VISUALS.html">Fases lunares e astros</a><a href="../PRESENTATION.html">Capas e divulgação</a></section><section><h2>Referências</h2><a href="../CONFIGURATION.html">Configuração</a><a href="../BALANCE.html">Balanceamento</a><a href="../reference/SPECIES_DATA.html">Espécies e datapacks</a></section><section><h2>Atualizações</h2><a href="../updates/index.html">Histórico de versões</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="incubadora">Incubadora</h1>
+<p>Promova o crescimento de um filhote capturado, preservando sua identidade,
+genes e linhagem. Cada ciclo é iniciado pelo cuidador.</p>
+<p><img alt="Incubadora SolarPunk no jogo" src="../assets/blocks/incubator.png" loading="lazy" decoding="async"></p>
+<p>A câmara fica voltada para você na colocação. O console anima enquanto o ciclo
+avança e fica parado ao pausar ou concluir. O berço é parte do equipamento;
+o indivíduo permanece guardado na cápsula.</p>
+<h2 id="receita-e-operação">Receita e operação</h2>
+<pre><code class="language-text">F V F
+V G V
+F R F
+</code></pre>
+<p>F = ferro; V = vidro; G = geleia reprodutiva; R = redstone.
+ID: <code>slimeevolution:incubator</code>, também na aba Ferramentas e Utilidades.
+Texturas originais da carcaça e superfície acompanham o bloco.</p>
+<ol>
+<li>Capture um filhote seguindo as regras normais de confiança, vida e energia.</li>
+<li>Abra a incubadora, insira a cápsula, um alimento da dieta e geleia reprodutiva, catalisador genético ou geleia real.</li>
+<li>Como cuidador, pressione <strong>Incubar</strong>. O indivíduo precisa ter fome abaixo
+   de 80, conforto de pelo menos 40 e energia de pelo menos 20.</li>
+<li>Após 200 ticks carregados (dez segundos a 20 ticks/s), o ciclo conclui.</li>
+<li>Use <strong>Ver indivíduo</strong>, retire a cápsula ou inicie outro ciclo se ainda houver
+   crescimento pendente e materiais suficientes.</li>
+</ol>
+<p><img alt="Interface do equipamento no jogo" src="../assets/interfaces/incubator.png" loading="lazy" decoding="async"></p>
+<p>Cada ciclo consome <strong>um alimento compatível e um suplemento</strong>, somente na
+conclusão. A geleia reduz o crescimento restante em até <strong>1.200 ticks</strong>; o
+catalisador, em até <strong>2.400 ticks</strong>; a Geleia Real, em até <strong>3.600 ticks</strong>,
+equivalentes a um/dois/três minutos normais.
+Os três suplementos acrescentam <strong>200 ticks de idade cronológica</strong>. Crescimento assistido e idade são contabilizados separadamente.
+O tamanho final continua sendo o tamanho adulto determinado anteriormente.</p>
+<p>O alimento reduz a fome em até 20 e recupera até dez de energia, com limites
+0/100. Conforto e confiança permanecem iguais. A recarga alimentar passa a
+100 ticks após concluir. Genoma, linhagem, metamorfose e demais recargas são
+preservados; a proporção de vida acompanha a mudança de tamanho. A incubadora
+não concede metamorfoses, mutações, reprodução ou confiança.</p>
+<p>Sem alimento correto ou suplemento válido, o trabalho pausa. Trocar/remover o espécime
+cancela sem cobrar. A conclusão não inicia outro ciclo automaticamente.
+Adultos são recusados. O indicador de conclusão permite ler o resultado mesmo
+quando o filhote amadureceu; o servidor revalida toda nova solicitação.</p>
+<h2 id="retirar-o-indivíduo">Retirar o indivíduo</h2>
+<p>Ao concluir, retire a cápsula atualizada. Ela conserva o indivíduo e pode ser
+liberada normalmente; cópias anteriores deixam de representar a captura válida.</p>
+<p><a href="CARE.html">Cuidado e captura</a> · <a href="MATERIALS.html">Suplementos</a></p></article><aside class="outline" aria-label="Nesta página"><span>NESTA PÁGINA</span><div class="toc">
+<ul>
+<li><a href="#receita-e-operação">Receita e operação</a></li>
+<li><a href="#retirar-o-indivíduo">Retirar o indivíduo</a></li>
+</ul>
+</div>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/guides/INCUBATOR.md">Ver esta página no GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>
