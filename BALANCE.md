@@ -1,104 +1,58 @@
-# Valores de balanceamento
+# Balance Reference
 
-Esta referência reúne os custos de crescimento e os parâmetros de chefes da
-versão 0.5.0. Dificuldade percebida e economia de uma campanha survival
-continuam sujeitas a feedback de jogo; não são garantidas por uma simulação.
+<a id="chefes"></a>
+<a id="circuitos-sonar-e-vitrine"></a>
+<a id="crescimento-e-custos"></a>
+<a id="funções-individuais"></a>
+<a id="referências"></a>
+<a id="treinamento-e-simbiose"></a>
+<a id="valores-de-balanceamento"></a>
 
-## Crescimento e custos
+Values describe loaded gameplay ticks, normally 20 per second. Actual survival difficulty and economy depend on play conditions.
 
-O crescimento natural padrão exige 12.000 ticks carregados e em boas condições
-(dez minutos). O tempo para obter e cuidar dos pais é adicional.
-Cada ciclo manual da incubadora leva 200 ticks e cobra um alimento e um suplemento
-apenas na conclusão. Não há ciclo automático, e o token da cápsula é renovado.
+## Growth and incubation
 
-| Suplemento | Crescimento por ciclo | Ciclos para um recém-nascido padrão | Tempo carregado | Alimentos/suplementos |
+Default natural growth needs **12,000 loaded ticks** under valid care conditions. Each manual incubator cycle takes **200 ticks**, charging one food and one supplement only at completion.
+
+| Supplement | Growth per cycle | Cycles for a default newborn | Processing time | Foods / supplements |
 |---|---:|---:|---:|---:|
-| Geleia | 1.200 | 10 | 100 s | 10 / 10 |
-| Catalisador | 2.400 | 5 | 50 s | 5 / 5 |
-| Geleia Real | 3.600 | 4 | 40 s | 4 / 4 |
+| Breeding Gel | 1,200 | 10 | 100 seconds | 10 / 10 |
+| Genetic Catalyst | 2,400 | 5 | 50 seconds | 5 / 5 |
+| Royal Gel | 3,600 | 4 | 40 seconds | 4 / 4 |
 
-Esses resultados vêm da aplicação repetida das regras de produção, com
-necessidades válidas. Não incluem coleta, fabricação, abertura de menus ou
-intervalos entre cliques. Crescimento adicional não envelhece o indivíduo na
-mesma proporção: os três casos acrescentam 2.000/1.000/800 ticks de idade.
-Mudar growthTicks afeta os próximos nascimentos; filhotes existentes conservam
-sua duração. O suplemento real recompensa o Rei e é opcional.
+These totals exclude gathering, crafting, menu use, and intervals between clicks. Chronological age increases by only 2,000 / 1,000 / 800 ticks respectively. New `growthTicks` settings affect future births; existing juveniles retain their duration.
 
-## Chefes
+## Bosses
 
-Valores em pontos de vida, antes de armadura/efeitos: dois pontos são um coração.
-Os quatro encontros anunciam ataques e verificam distância, altura e cobertura.
-Os interiores dos anéis, cruzes e orbitais foram preenchidos na 0.5.0.
-O ritual consome o item após inserir o chefe e impede sobreposição em 96 blocos.
+Health is measured in points; two points equal one heart. All encounters announce attacks and check distance, height, and cover. Rituals prevent overlapping bosses within 96 blocks.
 
-| Chefe | Vida em 0.5.0 | Armadura | Famílias de ataque | Dano bruto por fase |
+| Boss | Health | Armor | Attack families | Raw damage by phase |
 |---|---:|---:|---:|---|
-| Rei Gelatinoso | 290 | 7 | 4 | 9 / 12,6 |
-| Coração Magmático | 320 | 6 | 4 | 9 / 12,6; erupções 7,5 / 10,5 |
-| Colosso Cristalino | 400 | 10 | 4 | 7,5 / 10,5 |
-| Primordial | 540 | 8 | 5 | 7,5 / 10,5 / 14,7 |
+| Gelatinous King | 290 | 7 | 4 | 9 / 12.6 |
+| Magmatic Heart | 320 | 6 | 4 | 9 / 12.6; eruptions 7.5 / 10.5 |
+| Crystalline Colossus | 400 | 10 | 4 | 7.5 / 10.5 |
+| Primordial Slime | 540 | 8 | 5 | 7.5 / 10.5 / 14.7 |
 
-O cálculo é `base × 1,5 × 1,4^fase × configuração`. Não há o antigo teto de
-12 pontos: com configuração dois, o maior golpe é 29,4. Água reduz o dano do
-Coração pela metade depois desse cálculo. Preparações conservam a fase inicial.
-Os corpos físicos e visuais dos quatro chefes são 1,5 vez maiores.
+Damage uses `base × 1.5 × 1.4^phase × setting`. At multiplier 2, the largest hit reaches 29.4 before defenses. Water halves Magmatic Heart damage after this calculation. Prepared attacks keep their starting phase parameters.
 
-O Rei conserva seis lacaios: guardas (24 de vida, dano quatro/Fraqueza II),
-curandeiros (18, cura nove a cada 80 ticks) e cuspidores (20, dano três,
-Lentidão I/Veneno I). Os avanços têm no máximo sete fragmentos. O Primordial
-chama até três ecos voadores e o Coração até quatro lacaios de fogo/magma;
-reservas e expiração impedem duplicação por descarregamento. Invocações novas
-usam o multiplicador geral e a fase do dono em seu dano de base três/quatro.
-[Efeitos e comportamento dos bosses](guides/BOSSES.md).
+The King maintains up to six minions: guards have 24 health and four base damage with Weakness II; healers have 18 health and restore nine health per 80 ticks; spitters have 20 health and three base damage with Slowness I and Poison I. The Heart supports up to four fire/magma servants; Primordial supports up to three flying echoes.
 
-As recompensas de vitória creditada a jogador são duas unidades por chefe.
-Rei: Geleia Real; Coração: Fragmento Ígneo; Colosso: Estilhaço Prismático;
-Primordial: Essência Primordial. Lacaios não geram loot/XP nem se dividem.
-Os amuletos têm usos finitos cobrados em dano aceito. A progressão do selo final
-exige recompensas dos chefes anteriores, Essência Ancestral e Tabuleta Antiga;
-as formas raras preservam a identidade em metamorfose, sem gerar um clone.
+A player-credited victory yields two boss materials: Royal Gel, Igneous Fragment, Prismatic Shard, or Primordial Essence. Minions do not drop loot or XP or split. See [boss encounters](guides/BOSSES.md).
 
-## Referências
+## Training and symbiosis
 
-[Bosses](guides/BOSSES.md) · [Reprodução](guides/BREEDING.md) ·
-[Incubadora](guides/INCUBATOR.md) · [Configurações](CONFIGURATION.md)
-
-## Treinamento e simbiose
-
-| Ação | Custo | Condições e recuperação |
+| Action | Cost | Recovery |
 |---|---|---|
-| Lição | 5 energia, +3 fome, até +1 confiança | Confiança 40, energia 40, fome até 60, conforto 40; 200 ticks |
-| Horta de Água + Musgo | 6 energia e +3 fome de cada parceiro | Um estágio de uma planta por ação; recuperação compartilhada de 400 ticks |
-| Pesquisa de Elétrico + Ferro | 2 energia e +1 fome de cada parceiro | Até quatro ticks de progresso extra; recuperação compartilhada de 20 ticks |
+| Lesson | 5 energy, +3 hunger, up to +1 trust | 200 ticks |
+| Water + Moss crop growth | 6 energy, +3 hunger per partner | Shared 400 ticks |
+| Electric + Iron processing | 2 energy, +1 hunger per partner | Shared 20 ticks |
 
-Lições concedem `4 + piso(sociabilidade × 4) + piso(estabilidade × 2)` pontos,
-com limite 100. Esperar exige 20, Seguir 40 e Voltar ao lar 60. A simbiose exige
-adultos calmos, confiança 40, energia 30, fome até 60 e conforto 40, com consentimento
-e cuidador comum. Custos de receitas e resultados das máquinas permanecem iguais.
+Lessons grant `4 + floor(sociability × 4) + floor(stability × 2)` points, capped at 100. Wait needs 20, Follow 40, Return home 60. Symbiosis adds up to four machine ticks or one crop stage without bypassing materials or permissions. See [companions](guides/COMPANIONS.md).
 
-[Uso e limites](guides/COMPANIONS.md).
+## Jobs and circuits
 
-## Funções individuais
+Fire adds up to 20 furnace ticks per 20-tick helper cooldown for 2 energy and +1 hunger. Fungal converts eight compostables to one bone meal in 200 work ticks for 6 energy and +3 hunger. Abyssal restores up to 60 air and 300 ticks of Night Vision within six blocks for 2 energy and +1 hunger, recovering for 40 ticks. Amber holds three compartments of up to 16 items with no storage cost.
 
-| Função | Recurso/resultado | Custo | Intervalo |
-|---|---|---|---|
-| Fogo | Até +20 ticks em uma fornalha que esteja processando, a até 4 blocos | 2 energia, +1 fome | 20 ticks por ajudante |
-| Fúngico | 8 compostáveis → 1 farinha de osso | 6 energia, +3 fome | 200 ticks de trabalho |
-| Abyssal | Até +60 de ar e 300 ticks de visão noturna ao cuidador submerso a até 6 blocos | 2 energia, +1 fome | 40 ticks |
-| Âmbar | 3 compartimentos de até 16 itens cada | Sem custo de armazenamento | Respeita o limite natural de cada item |
+Electric pulses need training 20 and cost 2 energy and +1 hunger, with strength 15, intervals 20/40/80/160 ticks, and durations 2/4/8/10. Crystal sonar needs training 20, reaches 12 blocks, and costs 4 energy and +2 hunger only on an echo, with 200-tick recovery even without one. Energized Crystal needs training 40 and one energy initially and per active second, relaying analog 0–15 across 4–32 blocks. Glass displays one item with free 1.5× visual enlargement.
 
-As funções ativas exigem adulto calmo, confiança 40, energia 30, fome até 60 e
-conforto 40. Depósitos exigem confiança 40; a retirada dos pertences não exige
-essa confiança. [Condições e limites](guides/SPECIALIZATIONS.md).
-
-## Circuitos, sonar e vitrine
-
-| Função | Custo e alcance | Parâmetros |
-|---|---|---|
-| Elétrico | 2 energia e +1 fome por pulso; saída a até 6 blocos | Treino 20; força 15; intervalo 20/40/80/160 ticks e duração 2/4/8/10 ticks |
-| Cristal | 4 energia e +2 fome ao encontrar eco; raio 12 | Treino 20; concentração de pelo menos 4 minerais por setor; recuperação de 200 ticks mesmo sem eco |
-| Cristal Energizado | 1 energia no início e por 20 ticks de sinal ativo | Treino 40; entrada/saída separadas por 4–32 blocos; intensidade analógica 0–15 |
-| Vidro | Um objeto; exposição e ampliação sem custo | Depósito exige confiança 40; zoom visual de 1,5× |
-
-[Uso e limites](guides/SIGNAL_JOBS.md). Os onze trabalhos anteriores estão
-em [produção, transporte e auras](guides/WORK_JOBS.md).
+[Job details](guides/SPECIALIZATIONS.md) · [Additional jobs](guides/WORK_JOBS.md) · [Signal jobs](guides/SIGNAL_JOBS.md) · [Configuration](CONFIGURATION.md)

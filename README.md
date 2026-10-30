@@ -1,46 +1,38 @@
-# Documentação do Slime Evolution
+# Slime Evolution Guide
 
-Guia da **versão 0.14.2**, para Minecraft Java 1.21.1, NeoForge 21.1.264 e Java 21.
-Instale também GeckoLib 4.9.3 nos clientes e servidor.
+<a id="atualizações"></a>
+<a id="começar"></a>
+<a id="criação-e-exploração"></a>
+<a id="documentação-do-slime-evolution"></a>
+<a id="referências"></a>
 
-[Abrir o guia online](https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/). Na Slimepedia, use **Guia online**.
+Discover, care for, breed, and evolve **47 slime species**. Build genetic lineages, train companions, organize helpful workers, and face four bosses in a SolarPunk-inspired world.
 
-## Começar
+For **Minecraft Java 1.21.1**, **NeoForge 21.1.264**, and **Java 21**. **GeckoLib 4.9.3 for NeoForge/Minecraft 1.21.1** is required on both the client and server.
 
-1. Confira a [instalação e o backup](INSTALLATION.md).
-2. Siga os [primeiros passos](guides/GETTING_STARTED.md).
-3. Consulte a [galeria de slimes](guides/SLIMES.md) para escolher uma espécie e conhecer sua dieta.
+## Getting started
 
-## Criação e exploração
+1. Read [installation and backups](INSTALLATION.md).
+2. Follow [your first steps](guides/GETTING_STARTED.md).
+3. Browse the [47-species gallery](guides/SLIMES.md) for appearances, diets, and acquisition routes.
 
-| Assunto | Guia |
+## Care, research, and exploration
+
+| What would you like to do? | Guide |
 |---|---|
-| Reconhecer os materiais e detalhes de oito espécies | [Identidade visual dos slimes](guides/SLIME_IDENTITIES.md) |
-| Corrupção animada, crateras e o sol em movimento | [Materiais e detalhes](guides/ELEMENTAL_DETAILS.md) |
-| Fases lunares, astros e detalhes dos quatro slimes | [Aparências e fases lunares](guides/CELESTIAL_VISUALS.md) |
-| Necessidades, confiança, recintos e transporte | [Cuidado e captura](guides/CARE.md) |
-| Circuitos, detecção de minerais e exposição de itens | [Quatro novas funções](guides/SIGNAL_JOBS.md) |
-| Produção, transporte, iluminação, passagens e auras | [19 funções individuais](guides/SPECIALIZATIONS.md) · [Novos trabalhos](guides/WORK_JOBS.md) |
-| Treino, ordens, lar e trabalho em dupla | [Vínculo e simbiose](guides/COMPANIONS.md) |
-| Pais, filhotes, crescimento e analisador | [Reprodução](guides/BREEDING.md) |
-| Genes e herança | [Genética](reference/GENETICS.md) |
-| Cinco formas com preparação própria | [Conquistas e rituais](guides/ASCENSION.md) |
-| Cruzamentos e metamorfoses | [Evolução](guides/EVOLUTION.md) · [Linhagens avançadas](guides/ADVANCED_LINEAGES.md) |
-| Slimepedia e sequência de pesquisa | [Pesquisa e progressão](guides/PROGRESSION.md) |
-| Analisar uma cápsula | [Estação genética](guides/GENETIC_STATION.md) |
-| Acelerar o crescimento de filhotes | [Incubadora](guides/INCUBATOR.md) |
-| Materiais, essências e suplementos | [Materiais e receitas](guides/MATERIALS.md) |
-| Habilidades e reações elementais | [Combate](guides/COMBAT.md) |
-| Grupos, território, ninhos e ambientes | [Ecossistema](guides/ECOSYSTEM.md) |
-| Explorar locais especiais | [Estruturas](guides/SPECIAL_STRUCTURES.md) |
-| Preparar os quatro encontros | [Bosses e lacaios](guides/BOSSES.md) |
+| Feed, house, capture, and transport slimes | [Care and capture](guides/CARE.md) |
+| Breed new generations and inspect traits | [Breeding](guides/BREEDING.md) · [Genetics](reference/GENETICS.md) |
+| Discover hybrids and transformations | [Evolution](guides/EVOLUTION.md) · [Advanced lineages](guides/ADVANCED_LINEAGES.md) |
+| Prepare five special lineages | [Ascension rituals](guides/ASCENSION.md) |
+| Teach commands and organize cooperating pairs | [Companions and symbiosis](guides/COMPANIONS.md) |
+| Put your slimes to work | [Individual jobs](guides/SPECIALIZATIONS.md) · [More jobs](guides/WORK_JOBS.md) · [Signals and sonar](guides/SIGNAL_JOBS.md) |
+| Record discoveries and build a laboratory | [Research and progression](guides/PROGRESSION.md) · [Genetic research](guides/GENETIC_RESEARCH.md) |
+| Analyze captured slimes and raise juveniles | [Genetic Station](guides/GENETIC_STATION.md) · [Incubator](guides/INCUBATOR.md) |
+| Craft materials and equipment | [Materials and recipes](guides/MATERIALS.md) |
+| Explore habitats and structures | [Ecosystem](guides/ECOSYSTEM.md) · [Structures and altars](guides/SPECIAL_STRUCTURES.md) |
+| Learn abilities and challenge bosses | [Combat](guides/COMBAT.md) · [Bosses and minions](guides/BOSSES.md) |
+| Explore visual details | [Slime identities](guides/SLIME_IDENTITIES.md) · [Elemental details](guides/ELEMENTAL_DETAILS.md) · [Celestial appearances](guides/CELESTIAL_VISUALS.md) |
 
-## Referências
+## Reference
 
-[Capa e descrição do mod](PRESENTATION.md) ·
-[Configuração do servidor](CONFIGURATION.md) · [Valores de balanceamento](BALANCE.md) ·
-[Espécies e datapacks](reference/SPECIES_DATA.md) · [Pesquisa genética](guides/GENETIC_RESEARCH.md)
-
-## Atualizações
-
-As mudanças de cada lançamento ficam em [atualizações por versão](updates/README.md).
+[Configuration](CONFIGURATION.md) · [Balance values](BALANCE.md) · [Species and datapacks](reference/SPECIES_DATA.md) · [Images and description](PRESENTATION.md) · [Version history](updates/README.md)

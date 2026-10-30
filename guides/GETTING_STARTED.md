@@ -1,52 +1,41 @@
-# Primeiros passos
+# Getting Started
 
-[Guia do mod](../README.md) · [Galeria de slimes](SLIMES.md)
+<a id="1-escolha-uma-espécie"></a>
+<a id="2-alimente-e-ganhe-confiança"></a>
+<a id="3-prepare-o-recinto"></a>
+<a id="4-capture-e-transporte"></a>
+<a id="5-registre-suas-descobertas"></a>
+<a id="6-desenvolva-a-criação"></a>
+<a id="primeiros-passos"></a>
 
-## 1. Escolha uma espécie
+## 1. Find your first slime
 
-Explore os ambientes das [espécies naturais](SLIMES.md#espécies-naturais).
-O spawn natural ocorre no escuro, em biomas compatíveis e fora da dificuldade
-Pacífica. Musgo, Água, Fúngico e Luminoso são dóceis; outras espécies podem
-reagir a ataques ou defender território.
+Explore the habitats in the [species gallery](SLIMES.md). Natural slimes spawn in darkness, in suitable biomes, and outside Peaceful difficulty. Moss, Water, Fungal, and Luminous are docile; other species may retaliate or defend their territory.
 
-Confira a dieta antes de preparar um recinto. Por exemplo, Comum aceita maçã,
-trigo e bola de slime; Musgo aceita bloco de musgo e bagas brilhantes.
+Check the diet before preparing an enclosure. Common accepts apples, wheat, and slimeballs; Moss accepts moss blocks and glow berries.
 
-## 2. Alimente e ganhe confiança
+## 2. Feed and earn trust
 
-Use um alimento da dieta diretamente no slime. A primeira refeição manual
-vincula o indivíduo ao cuidador. Continue alimentando quando ele tiver fome;
-refeições recusadas não consomem itens.
+Use a compatible food directly on a hungry slime. Its first manual feeding establishes its caretaker. Keep feeding it when hungry; rejected meals do not consume food.
 
-Agache e interaja com a mão vazia para ver suas necessidades. Fome baixa,
-energia e conforto altos ajudam no cuidado. [Regras e limites](CARE.md).
+Crouch and interact with an empty hand to inspect its needs. Low hunger and high energy, comfort, and trust support a healthy slime. See [care and capture](CARE.md).
 
-## 3. Prepare o recinto
+## 3. Build an enclosure
 
-Use piso adequado à espécie e barreiras que contenham os saltos. Evite
-superlotação e mantenha Fogo longe da água. Um alimentador guarda nove itens
-e atende slimes próximos com visão livre; ele mantém a alimentação, mas a
-confiança é conquistada manualmente.
+Choose suitable flooring and barriers that contain jumps. Avoid overcrowding and keep Fire away from water. A Feeder holds nine stacks and feeds nearby compatible slimes, but trust must be earned through manual feeding.
 
-## 4. Capture e transporte
+## 4. Capture and transport
 
-Quando houver confiança suficiente, use uma cápsula vazia em um slime de
-tamanho 1 ou 2, calmo, com pelo menos metade da vida e dez de energia.
-Só o cuidador pode capturar e liberar. Solte-o sobre piso sólido, com espaço
-livre e seco. As regras completas estão em [cuidado e captura](CARE.md#cápsula).
+Once trust is sufficient, use an empty capsule on a calm size-1 or size-2 slime with at least half health and 10 energy. Only its caretaker may capture and release it. Release it onto solid, dry ground with room for its full body.
 
-## 5. Registre suas descobertas
+## 5. Record discoveries
 
-Fabrique a **Slimepedia** com um livro e uma bola de slime. Use-a em um slime
-para registrar a espécie e no ar para consultar o diário. Alimentação, análise,
-nascimentos e metamorfoses liberam informações conforme são realizados.
-[Pesquisa e equipamentos](PROGRESSION.md).
+Use the **Slimepedia** on a nearby slime to record its species; use it in the air to open your journal. Feeding, analysis, births, and transformations unlock additional research independently.
 
-## 6. Desenvolva a criação
+In version 0.15.0, each player receives one Slimepedia on their first login to a world. Delivery does not repeat after death or reconnection. With a full inventory, the book drops at your feet. Existing worlds receive this delivery on the first login after updating, unless the player already carries a book. Craft a replacement with **one book and one slimeball**.
 
-Com adultos bem cuidados, use geleia reprodutiva para formar pares
-[compatíveis](BREEDING.md). O analisador mostra genes e parentesco; estação
-genética e incubadora ajudam na pesquisa e no crescimento.
+## 6. Develop your collection
 
-Explore [híbridos e metamorfoses](EVOLUTION.md) e prepare-se para os
-[bosses](BOSSES.md), cujos materiais abrem rotas avançadas.
+Craft a [Genetic Analyzer](BREEDING.md), research individuals, [breed compatible adults](BREEDING.md), and discover [metamorphoses](EVOLUTION.md). Train [companions](COMPANIONS.md), set up [jobs](SPECIALIZATIONS.md), and prepare for [boss encounters](BOSSES.md).
+
+Version 0.15.0 adds 16 Minecraft advancements. Open the **Advancements** screen with **L** by default and select Slime Evolution.

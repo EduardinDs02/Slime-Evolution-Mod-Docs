@@ -1,99 +1,75 @@
-# Configuração
+# Configuration
 
-As opções são SERVER do NeoForge, autoritativas e sincronizadas ao entrar. Edite
-o arquivo do mundo <mundo>/serverconfig/slimeevolution-server.toml com o servidor
-desligado; use defaultconfigs/ para padrões de mundos novos. Faça backup antes de
-mudar versões. O botão Configuração no menu de mods usa a tela do NeoForge;
-valores do servidor remoto são apenas leitura para o cliente.
+<a id="configuração"></a>
+<a id="visual-do-cliente"></a>
+<a id="vínculo-e-simbiose"></a>
 
-20 ticks equivalem a um segundo carregado. Chunks descarregados não avançam
-crescimento/recargas. Valores fora dos limites são corrigidos pelo NeoForge.
-Na tabela, números aparecem como padrão, mínimo e máximo. O arquivo gerado
-contém comentários e limites; não copie valores de outra versão
-sem revisão. Alterações de geração só afetam terreno novo.
+Server rules are authoritative NeoForge SERVER options synchronized on login. Stop the server before editing `<world>/serverconfig/slimeevolution-server.toml`. Use `defaultconfigs/` for new-world defaults and back up before changing versions. The Mods configuration screen uses NeoForge's editor; remote-server values are read-only for clients.
 
-| Chave TOML | Padrão e limites | Efeito |
+Twenty ticks normally equal one loaded second. Unloaded chunks do not advance growth or cooldowns. NeoForge corrects out-of-range values. Generated files include comments and limits; review them when upgrading. World-generation changes affect new terrain only.
+
+## Server settings
+
+| TOML key | Default; minimum; maximum | Purpose |
 |---|---|---|
-| `naturalSpawning` | `true` | Ativa a geração natural. Comandos e ovos continuam funcionando. |
-| `localPopulationLimit` | `8, 1, 64` | Máximo de indivíduos em 32 blocos para aceitar geração natural; não remove os existentes. |
-| `spawnChance` | `0.25, 0.0, 1.0` | Probabilidade adicional após as verificações normais de geração. |
-| `damageMultiplier` | `1.0, 0.0, 4.0` | Afeta contato e projéteis de Cristal. Zero desativa esse dano; não controla chefes. |
-| `abilityParticles` | `true` | Ativa partículas de habilidades no servidor. Avisos de chão dos chefes continuam disponíveis. |
-| `combat.activeAbilities` | `true` | Ativa habilidades de contato e regeneração ambiental. Atributos e defesas passivas permanecem. |
-| `combat.abilitySounds` | `true` | Som de ativação das habilidades; não controla os sons comuns das criaturas. |
-| `combat.thermalReactions` | `true` | Fogo remove o frio do mod; contato gelado apaga um alvo em chamas em vez de resfriá-lo. |
-| `combat.effectDurationMultiplier` | `1.0, 0.0, 4.0` | Afeta ignição, lama e frio. Zero desativa esses efeitos; limite de 200 ticks por aplicação. |
-| `combat.healingMultiplier` | `1.0, 0.0, 4.0` | Cura combinada com o gene de regeneração; máximo de seis pontos por ativação. |
-| `combat.mineralImpactReduction` | `0.25, 0.0, 0.5` | Proteção contra projéteis e explosões antes da armadura, ajustada pelo gene; máximo de 75%. |
-| `combat.metalMeleeReduction` | `0.2, 0.0, 0.5` | Proteção do Ferro antes do ajuste genético; não afeta projéteis, explosões ou dano que ignora defesa. |
-| `combat.obsidianBlastReduction` | `0.5, 0.0, 0.5` | Proteção contra explosões ajustada pelo gene; máximo de 75%. |
-| `combat.iceFireMultiplier` | `1.5, 1.0, 4.0` | Multiplicador do dano de fogo recebido por slimes de Gelo. |
-| `combat.wetFireDamage` | `1.0, 0.0, 4.0` | Dano por segundo carregado em água, chuva ou bolhas; zero desativa essa vulnerabilidade. |
-| `combat.dischargeDamage` | `2.0, 0.0, 4.0` | Dano elétrico antes do ajuste genético. Alvos molhados recebem o dobro; máximo de seis pontos. |
-| `combat.waterConduction` | `true` | Descargas em alvos molhados podem atingir até dois alvos molhados próximos com visão livre. |
-| `breeding.enabled` | `true` | Ativa reprodução iniciada pelo cuidador. |
-| `breeding.localPopulationLimit` | `12, 2, 64` | Máximo de indivíduos vivos e carregados em 32 blocos de um nascimento. |
-| `breeding.recoveryTicks` | `6000, 200, 240000` | Recuperação dos pais em ticks, ajustada de 0,75 a 1,25 pela fertilidade. 20 ticks = um segundo. |
-| `breeding.growthTicks` | `12000, 200, 240000` | Ticks carregados e em boas condições até a fase adulta. Filhotes existentes mantêm sua duração. |
-| `breeding.mutationChance` | `0.02, 0.0, 0.25` | Chance por alelo, ajustada pela estabilidade e instabilidade dos pais; máximo de 25%. |
-| `breeding.mutationStep` | `0.1, 0.0, 0.25` | Máxima alteração absoluta de um alelo por mutação; o resultado fica entre zero e um. |
-| `evolution.metamorphosis` | `true` | Ativa exposição ambiental e metamorfose com catalisador; receitas definem condições e custos. |
-| `ecology.foraging` | `true` | Permite procurar e comer itens da dieta; não aumenta confiança e respeita mobGriefing. |
-| `ecology.grouping` | `true` | Permite agrupamento compatível por espécie e cuidador, respeitando sociabilidade genética. |
-| `ecology.territories` | `true` | Permite defesa territorial das espécies configuradas; respeita limites e cuidador. |
-| `ecology.surfaceNests` | `true` | Gera ninhos em terreno novo e ativa seus habitantes finitos. |
-| `ecology.caveColonies` | `true` | Gera colônias no ar de cavernas de terreno novo e ativa seus habitantes finitos. |
-| `ecology.nestRarity` | `24, 1, 1000` | Chance adicional de uma em N por tentativa de ninho; valores maiores reduzem a frequência. |
-| `ecology.colonyRarity` | `12, 1, 1000` | Chance adicional de uma em N por tentativa de colônia; valores maiores reduzem a frequência. |
-| `structures.enabled` | `true` | Gera os seis locais especiais em chunks novos. Locais e baús existentes permanecem. |
-| `structures.crystalCaverns` | `true` | Ativa a geração de Cavernas Cristalinas em chunks novos. |
-| `structures.gelatinousLakes` | `true` | Ativa a geração de Lagos Gelatinosos em chunks novos. |
-| `structures.elementalSanctuaries` | `true` | Ativa a geração de Santuários Elementais em chunks novos. |
-| `structures.researcherRuins` | `true` | Ativa a geração de Ruínas de Pesquisadores em chunks novos. |
-| `structures.ancestralChambers` | `true` | Ativa a geração de Câmaras Ancestrais em chunks novos. |
-| `structures.royalCourts` | `true` | Ativa Cortes Reais em chunks novos. |
-| `structures.rarity` | `1,1,1000` | Filtro adicional determinístico de uma em N. Datapacks controlam espaçamento e biomas. |
-| `bosses.enabled` | `true` | Permite iniciar os quatro rituais; encontros existentes continuam ativos. |
-| `bosses.damageMultiplier` | `1.0,0.0,2.0` | Escala o dano de chefes e lacaios. Zero desativa esse dano; consulte os [valores atuais](BALANCE.md). |
+| `naturalSpawning` | `true` | Natural spawning; commands and eggs remain usable when disabled |
+| `localPopulationLimit` | `8; 1; 64` | Natural-spawn population limit within 32 blocks; does not remove existing slimes |
+| `spawnChance` | `0.25; 0; 1` | Additional spawn probability after normal checks |
+| `damageMultiplier` | `1; 0; 4` | Ordinary slime contact and Crystal projectile damage; excludes bosses |
+| `abilityParticles` | `true` | Server ability particles; boss ground warnings remain available |
+| `combat.activeAbilities` | `true` | Active contact abilities and environmental regeneration; passive defenses remain |
+| `combat.abilitySounds` | `true` | Ability activation sounds |
+| `combat.thermalReactions` | `true` | Fire removes mod chill; icy contact extinguishes burning targets instead of chilling |
+| `combat.effectDurationMultiplier` | `1; 0; 4` | Ignition, mud, and chill duration; capped at 200 ticks per application |
+| `combat.healingMultiplier` | `1; 0; 4` | Healing combined with regeneration genetics; capped at six health |
+| `combat.mineralImpactReduction` | `0.25; 0; 0.5` | Pre-armor projectile/explosion reduction, genetically adjusted; capped at 75% |
+| `combat.metalMeleeReduction` | `0.2; 0; 0.5` | Iron melee reduction before genetics; excludes projectiles, explosions, and bypass damage |
+| `combat.obsidianBlastReduction` | `0.5; 0; 0.5` | Genetically adjusted explosion reduction; capped at 75% |
+| `combat.iceFireMultiplier` | `1.5; 1; 4` | Fire damage received by Ice slimes |
+| `combat.wetFireDamage` | `1; 0; 4` | Fire slime damage per loaded second while wet |
+| `combat.dischargeDamage` | `2; 0; 4` | Electrical base damage; doubled against wet targets, capped at six health |
+| `combat.waterConduction` | `true` | Wet-target discharges may chain to two nearby visible wet targets |
+| `breeding.enabled` | `true` | Caretaker-initiated breeding |
+| `breeding.localPopulationLimit` | `12; 2; 64` | Loaded living slimes within 32 blocks of a birth |
+| `breeding.recoveryTicks` | `6000; 200; 240000` | Parent recovery, adjusted by fertility |
+| `breeding.growthTicks` | `12000; 200; 240000` | Growth duration for new juveniles; existing ones retain their duration |
+| `breeding.mutationChance` | `0.02; 0; 0.25` | Per-allele chance adjusted by stability and unstable parents |
+| `breeding.mutationStep` | `0.1; 0; 0.25` | Maximum absolute allele mutation; results clamped to 0–1 |
+| `evolution.metamorphosis` | `true` | Environmental exposure and catalyst transformations |
+| `ecology.foraging` | `true` | Seek loose diet items without gaining trust; respects `mobGriefing` |
+| `ecology.grouping` | `true` | Compatible grouping by species and caretaker, adjusted by sociability |
+| `ecology.territories` | `true` | Territorial defense with caretaker and boundary rules |
+| `ecology.surfaceNests` | `true` | New-terrain surface nests and finite founders |
+| `ecology.caveColonies` | `true` | New-terrain underground colonies and finite founders |
+| `ecology.nestRarity` | `24; 1; 1000` | Additional one-in-N chance per nest attempt |
+| `ecology.colonyRarity` | `12; 1; 1000` | Additional one-in-N chance per colony attempt |
+| `structures.enabled` | `true` | Generate the six special sites in new chunks |
+| `structures.crystalCaverns` | `true` | New Crystal Caverns |
+| `structures.gelatinousLakes` | `true` | New Gelatinous Lakes |
+| `structures.elementalSanctuaries` | `true` | New Elemental Sanctuaries |
+| `structures.researcherRuins` | `true` | New Researcher Ruins |
+| `structures.ancestralChambers` | `true` | New Ancestral Chambers |
+| `structures.royalCourts` | `true` | New Royal Courts |
+| `structures.rarity` | `1; 1; 1000` | Additional deterministic one-in-N generation filter |
+| `bosses.enabled` | `true` | Start rituals; disabling does not remove existing encounters |
+| `bosses.damageMultiplier` | `1; 0; 2` | Boss and servant damage; zero disables their damage |
+| `companions.training` | `true` | Lessons and learned commands |
+| `companions.symbiosis` | `true` | Water + Moss and Electric + Iron cooperation |
+| `companions.specializations` | `true` | The 19 individual jobs and new storage deposits |
 
-Desativar habilidades não desativa as defesas passivas; desativar rituais não
-apaga chefes presentes. O dano de chefes usa bosses.damageMultiplier; o dano
-de contato dos indivíduos usa damageMultiplier. Desativar estruturas não remove
-blocos nem repõe baús. Raridades adicionais não são o espaçamento dos locais.
+Disabling companion features preserves training, home, preferences, and belongings. Free, disabling cooperation, and item withdrawal remain accessible. Terrain work respects caretaker permissions and `mobGriefing`. Arena protection persists even when generation is disabled. Rarity filters do not replace datapack spacing and biome rules.
 
-## Visual do cliente
+## Client visuals
 
-O arquivo `config/slimeevolution-client.toml` é local e não muda regras do servidor.
-A tela de configuração do NeoForge oferece rótulos e ajuda em português e inglês.
+Local `config/slimeevolution-client.toml` settings do not change server gameplay. NeoForge's screen provides English and Portuguese labels and help.
 
-| Chave TOML | Padrão e limites | Efeito |
+| Key | Default / range | Effect |
 |---|---|---|
-| `reducedMotion` | `false` | Reduz respiração, oscilação e pulsos; congela as deformações de chamas, raios e vapor. Saltos físicos continuam visíveis. |
-| `visualParticleIntensity` | `0.75, 0.0, 1.0` | Intensidade das partículas extras de ação e dos acentos elementais em repouso; zero desativa essas partículas. |
+| `reducedMotion` | `false` | Reduces breathing, sway, pulses, and decorative flame, lightning, and steam motion; physical jumps remain visible |
+| `visualParticleIntensity` | `0.75`, range 0–1 | Extra action and idle elemental particles; zero disables them |
 
-Os efeitos extras respeitam a opção de partículas mínimas do Minecraft e
-`abilityParticles` do servidor. Partes decorativas reduzem animação após 24 blocos
-e param após 48. Isso não altera genética, dano, colisão ou iluminação do mundo.
-Chamas, arcos elétricos e vapor geométricos continuam visíveis com partículas
-mínimas ou intensidade zero; seu movimento usa `reducedMotion`. O orçamento
-global das partículas extras é de quatro por cinco ticks, ou duas com partículas
-reduzidas. Ações têm prioridade sobre acentos em repouso; movimento reduzido
-também desativa esses acentos em repouso.
+Extra particles respect Minecraft's particle setting and server `abilityParticles`. Decorative animation is reduced after 24 blocks and stops after 48, without changing genetics, damage, collision, or world lighting.
 
-## Vínculo e simbiose
+Geometric flames, electrical arcs, and steam remain visible with minimal particles; their motion follows `reducedMotion`. The global extra-particle budget is four per five ticks, or two with reduced particles. Actions take priority over idle accents; reduced motion also disables idle accents.
 
-| Chave | Padrão | Efeito |
-|---|---|---|
-| `companions.training` | `true` | Permite lições e execução das ordens aprendidas |
-| `companions.symbiosis` | `true` | Permite as duplas Água + Musgo e Elétrico + Ferro |
-
-Desativar não apaga aprendizado, lar ou preferências. O cuidador ainda pode
-selecionar Livre e desligar a cooperação. O cultivo também respeita `mobGriefing`
-e a permissão de construção do cuidador. [Regras e custos](guides/COMPANIONS.md).
-
-`companions.specializations` (padrão `true`) ativa as 19 funções individuais.
-Ao desligar, processamento, auxílio e novos depósitos param; o cuidador
-continua podendo retirar itens e cancelar uma função armazenada.
-
-As quatro arenas de bosses têm proteção persistente contra alterações de blocos.
-Desativar a geração não remove essa proteção nem libera um encontro ocupado.
+[Companion rules](guides/COMPANIONS.md) · [Balance](BALANCE.md)

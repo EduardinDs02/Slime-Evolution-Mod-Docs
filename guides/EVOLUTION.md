@@ -1,85 +1,64 @@
-# Híbridos e metamorfoses
+# Hybrids and Metamorphoses
 
-[Guia do mod](../README.md) · [Reprodução](BREEDING.md) · [Linhagens avançadas](ADVANCED_LINEAGES.md)
+<a id="concluir-a-transformação"></a>
+<a id="cruzamentos"></a>
+<a id="híbridos-e-metamorfoses"></a>
+<a id="metamorfoses"></a>
 
-Há duas formas de obter espécies derivadas: cruzar adultos compatíveis para
-nascer um filhote ou transformar um indivíduo existente por metamorfose.
+Acquire derived species by breeding compatible adults or transforming an existing individual through metamorphosis.
 
-## Cruzamentos
+## Breeding combinations
 
-| Pais, em qualquer ordem | Filhote |
+| Parents, in either order | Offspring |
 |---|---|
-| Cristal + Elétrico | Cristal Energizado |
-| Elétrico + Vento | Tempestade |
-| Fogo + Água | Vapor |
-| Fúngico + Musgo | Micélio |
-| Ferro + Água | Ferrofluido |
-| Musgo + Lama | Pantanoso |
-| Musgo + Água | Pantanoso |
-| Areia + Fogo | Vidro |
+| Crystal + Electric | Energized Crystal |
+| Electric + Wind | Storm |
+| Fire + Water | Steam |
+| Fungal + Moss | Mycelium |
+| Iron + Water | Ferrofluid |
+| Moss + Mud | Bog |
+| Moss + Water | Bog |
+| Sand + Fire | Glass |
 | Solar + Lunar | Eclipse |
-| Pedra + Fogo | Magmático |
-| Venenoso + Magma | Cáustico |
-| Água + Floral | Coral |
-| Água + Gelo | Aquático Glacial |
-| Vento + Fogo | Chama Volátil |
+| Stone + Fire | Magmatic |
+| Venom + Magma | Caustic |
+| Water + Floral | Coral |
+| Water + Ice | Glacial Aquatic |
+| Wind + Fire | Volatile Flame |
 
-As 47 espécies também podem reproduzir com outra da mesma espécie.
-São **61 pares** ao todo. Os pais precisam cumprir as condições de
-[cuidado, parentesco, energia e espaço](BREEDING.md).
+All 47 species can also breed with their own species, for **61 total pairs**. Parents must satisfy [care, relatedness, energy, and space requirements](BREEDING.md). Offspring inherit alleles; their species follows the defined recipe rather than arbitrary ability mixing.
 
-O filhote é um novo indivíduo e herda alelos dos pais. A espécie de nascimento
-vem da combinação definida; cruzamentos não somam habilidades arbitrariamente.
+## Metamorphoses
 
-## Metamorfoses
-
-| Origem → destino | Catalisador | Piso | Gene mínimo |
+| Source → result | Catalyst | Substrate | Minimum expressed gene |
 |---|---|---|---|
-| Âmbar → Colmeia | Favo de mel | Bloco de favo de mel | Regeneração ≥ 0,85 |
-| Ancestral → Celestial | Essência Primordial | Bloco de púrpura | Estabilidade ≥ 0,9 |
-| Corrompido → Sculk | Fragmento de eco | Sculk | Potência elemental ≥ 0,7 |
-| Cristal → Prismático | Estilhaço Prismático | Bloco de ametista | Luminosidade ≥ 0,85 |
-| Fogo → Magmático | Creme de magma | Bloco de magma | Potência elemental ≥ 0,6 |
-| Fogo → Solar | Catalisador Solar | Bloco de ouro | Potência elemental ≥ 0,65 |
-| Aquático Glacial → Abissal | Bolsa de tinta brilhante | Prismarinho | Luminosidade ≥ 0,65 |
-| Luminoso → Lunar | Fragmento de ametista | Calcita | Luminosidade ≥ 0,65 |
-| Musgo → Âmbar | Favo de mel | Bloco de musgo | Regeneração ≥ 0,65 |
-| Musgo → Floral | Girassol | Bloco de musgo | Regeneração ≥ 0,5 |
-| Prismático → Aurora | Estilhaço Prismático | Gelo azul | Estabilidade ≥ 0,9 |
-| Pedra → Cristal | Fragmento de ametista | Bloco de ametista | Resistência ≥ 0,6 |
-| Tempestade → Supercélula | Carga de vento | Para-raios | Potência elemental ≥ 0,9 |
-| Vazio → Ancestral | Selo Primordial | Bloco de púrpura | Estabilidade ≥ 0,8 |
+| Amber → Hive | Honeycomb | Honeycomb block | Regeneration ≥ 0.85 |
+| Ancestral → Celestial | Primordial Essence | Purpur block | Stability ≥ 0.90 |
+| Corrupted → Sculk | Echo shard | Sculk | Elemental potency ≥ 0.70 |
+| Crystal → Prismatic | Prismatic Shard | Amethyst block | Luminosity ≥ 0.85 |
+| Fire → Magmatic | Magma cream | Magma block | Elemental potency ≥ 0.60 |
+| Fire → Solar | Solar Catalyst | Gold block | Elemental potency ≥ 0.65 |
+| Glacial Aquatic → Abyssal | Glow ink sac | Prismarine | Luminosity ≥ 0.65 |
+| Luminous → Lunar | Amethyst shard | Calcite | Luminosity ≥ 0.65 |
+| Moss → Amber | Honeycomb | Moss block | Regeneration ≥ 0.65 |
+| Moss → Floral | Sunflower | Moss block | Regeneration ≥ 0.50 |
+| Prismatic → Aurora | Prismatic Shard | Blue ice | Stability ≥ 0.90 |
+| Stone → Crystal | Amethyst shard | Amethyst block | Resistance ≥ 0.60 |
+| Storm → Supercell | Wind charge | Lightning rod | Elemental potency ≥ 0.90 |
+| Void → Ancestral | Primordial Seal | Purpur block | Stability ≥ 0.80 |
 
-Abra a aba **Evolução** do analisador para ver biomas, temperatura, horário, clima, profundidade, idade,
-exposição acumulada e demais requisitos da rota. As três primeiras exigem
-12.000 ticks de idade e 6.000 de exposição; as rotas avançadas exigem tempos
-maiores. Veja os [requisitos de Prismático e Celestial](ADVANCED_LINEAGES.md).
+Open **Evolution** in the analyzer for biome, temperature, time, weather, depth, age, accumulated exposure, and other route requirements. Early routes require 12,000 age ticks and 6,000 exposure ticks; advanced routes require longer preparation. See [advanced lineages](ADVANCED_LINEAGES.md) for the full route details.
 
-Durante a preparação, mantenha o adulto vinculado ao cuidador, com confiança
-suficiente, fome até 40, conforto e energia de pelo menos 60, metade da vida
-ou mais e sem combate ou prontidão reprodutiva. Ele precisa atender ao gene,
-piso, bioma, temperatura e requisitos ambientais da receita.
+The adult must be bound to its caretaker, sufficiently trusting, calm, at hunger ≤40, comfort and energy ≥60, and at least half health, without combat or breeding readiness. It must meet the recipe's gene, substrate, biome, temperature, and environmental requirements.
 
-Solar exige dia de céu aberto e tempo limpo. Lunar exige noite de lua cheia
-e céu aberto. Abissal exige submersão completa em Y ≤ 40. Supercélula exige
-tempestade com trovões e céu aberto; Aurora exige noite de céu aberto. Os
-[detalhes das novas linhagens](ADVANCED_LINEAGES.md#novas-linhagens-adquiridas)
-incluem biomas e tempos.
+Solar requires clear daytime with open sky. Lunar requires a full-moon night with open sky. Abyssal requires full submersion at Y ≤40. Supercell requires thunder and open sky; Aurora requires a clear night with open sky.
 
-A exposição conta somente enquanto o indivíduo recebe ticks nas condições
-certas. Fora delas, em cápsulas ou em chunks descarregados, o progresso pausa.
+Exposure advances only while loaded under valid conditions. It pauses outside those conditions, in capsules, or in unloaded chunks.
 
-## Concluir a transformação
+## Complete a transformation
 
-Depois de cumprir os requisitos, **agache e use o catalisador** como cuidador.
-A conclusão consome o item e os custos de energia/fome da receita.
+As the caretaker, **crouch and use the catalyst** after meeting every requirement. Completion consumes the item and applies the recipe's energy and hunger costs.
 
-O slime conserva sua identidade, alelos, cuidador, parentesco, idade e histórico.
-A metamorfose transforma esse indivíduo; a reprodução gera um filhote novo.
-A Slimepedia registra as ações concluídas pelo cuidador.
+The slime preserves identity, alleles, caretaker, ancestry, age, and history. A metamorphosis changes that individual; breeding creates a new child. Completed caretaker actions are recorded in the Slimepedia.
 
-Definições e exemplos de receitas estão na [referência de datapacks](../reference/SPECIES_DATA.md).
-
-Eclipse, Supercélula, Aurora, Ancestral e Celestial também exigem os
-[marcos de conquista específicos](ASCENSION.md), incluindo carga solar,
-raios conduzidos, exploração, selo e observações astronômicas.
+Eclipse, Supercell, Aurora, Ancestral, and Celestial also require [ascension milestones](ASCENSION.md). Recipes and validation are documented under [datapacks](../reference/SPECIES_DATA.md).

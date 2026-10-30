@@ -1,62 +1,48 @@
-# Slime Evolution — apresentação
+# Slime Evolution — Images and Description
 
-[Guia do mod](README.md) · [Galeria das espécies](guides/SLIMES.md)
+<a id="banner-horizontal"></a>
+<a id="capa"></a>
+<a id="compatibilidade"></a>
+<a id="descrição-completa"></a>
+<a id="descrição-curta"></a>
+<a id="slime-evolution--apresentação"></a>
 
-## Capa
+## Cover
 
-![Prismático, Coral e Solar empilhados diante de um pôr do sol](assets/cover/slime-evolution-cover-landscape.png)
+![Prismatic, Coral, and Solar slimes at sunset](assets/cover/slime-evolution-cover-landscape.png)
 
-[Horizontal — 1920×1080](assets/cover/slime-evolution-cover-landscape.png) ·
-[Quadrada — 1080×1080](assets/cover/slime-evolution-cover-square.png)
+[Landscape — 1920×1080](assets/cover/slime-evolution-cover-landscape.png) · [Square — 1080×1080](assets/cover/slime-evolution-cover-square.png)
 
-Captura real do Minecraft com os modelos do mod. A composição usa o Prismático
-na base, o Coral no meio e o Solar no topo. O shader de pós-processamento da
-captura acrescenta brilho suave, névoa de profundidade e tons quentes. A versão
-quadrada é um recorte da imagem original.
+Real Minecraft capture with the mod's models: Prismatic at the bottom, Coral in the middle, and Solar on top. Capture post-processing adds soft glow, depth haze, and warm color. The square version is cropped from the original.
 
-## Banner horizontal
+## Banner
 
-![Oito slimes, itens e equipamentos do mod ao pôr do sol](assets/cover/slime-evolution-banner.png)
+![Eight slimes, items, and equipment at sunset](assets/cover/slime-evolution-banner.png)
 
-[Original — 2560×960](assets/cover/slime-evolution-banner.png) · [Versão web — 1920×720](assets/cover/slime-evolution-banner-web.png)
+[Original — 2560×960](assets/cover/slime-evolution-banner.png) · [Web — 1920×720](assets/cover/slime-evolution-banner-web.png)
 
-O banner reúne Coral, Prismático, Solar, Abyssal, Gelo, Ferrofluid, Hive e Aurora; Slimepedia, analisador, cápsula, fragmento prismático, essência ancestral e coroa real; estação genética, incubadora e alimentador. Todos são elementos reais do jogo.
+The banner features Coral, Prismatic, Solar, Abyssal, Ice, Ferrofluid, Hive, and Aurora, plus the Slimepedia, analyzer, capsule, Prismatic Shard, Ancestral Essence, crown, Genetic Station, Incubator, and Feeder. All are real in-game elements.
 
-## Descrição curta
+## Short description
 
-Descubra 47 espécies de slimes, combine sua genética, desbloqueie evoluções e
-transforme pequenas criaturas em companheiros de aventura. Criação, treinamento,
-simbiose, funções úteis e bosses em um mundo com a identidade visual SolarPunk.
+Discover 47 slime species, breed unique genetic lineages, unlock evolutions, train helpful companions, and challenge four bosses in a SolarPunk-inspired world.
 
-## Descrição completa
+## Full description
 
-**Um mundo de slimes para descobrir, cuidar e evoluir.**
+**A world of slimes to discover, care for, and evolve.**
 
-Slime Evolution traz 47 espécies com visuais, habitats, comportamentos e
-habilidades próprias. Encontre criaturas elementais pelo mundo e descubra
-linhagens raras por meio de reprodução e metamorfoses.
+Slime Evolution brings 47 species with distinct appearances, habitats, behaviors, and abilities. Find elemental creatures and discover rare lineages through breeding and metamorphosis.
 
-Cada slime tem uma genética própria. Combine indivíduos, acompanhe a herança
-de características e descubra novas possibilidades a cada geração. Cuide da
-alimentação, respeite suas preferências e construa um vínculo que cresce com
-o treinamento.
+Every slime has its own genetics. Combine individuals, follow inherited traits, and explore new possibilities each generation. Learn diets, meet their needs, and develop a bond through care and training.
 
-Seus slimes também participam da rotina: são 19 funções individuais, incluindo
-transporte de itens, irrigação, iluminação, reparos, circuitos de redstone e
-detecção de minerais. Algumas espécies trabalham em simbiose, criando novas
-formas de organizar sua criação.
+Your slimes can also help with everyday tasks. Nineteen individual jobs cover item transport, irrigation, lighting, repairs, redstone circuits, mineral detection, and more. Certain species cooperate through symbiosis.
 
-Explore estruturas naturais, prepare rituais e enfrente quatro bosses em
-arenas próprias. Use a Slimepedia e os equipamentos de pesquisa para registrar
-descobertas e avançar pelas linhagens mais exigentes.
+Explore natural structures, prepare rituals, and challenge four bosses in dedicated arenas. Use the Slimepedia and research equipment to record discoveries and reach advanced lineages.
 
-Tudo isso com modelos e animações GeckoLib e equipamentos e interfaces no tema
-SolarPunk, combinando natureza, pesquisa e tecnologia.
+Custom GeckoLib models and animations meet SolarPunk-inspired equipment and interfaces, combining nature, research, and technology.
 
-**Escolha seus companheiros e descubra até onde sua próxima geração pode chegar.**
+**Choose your companions and discover how far the next generation can go.**
 
-## Compatibilidade
+## Compatibility
 
-Minecraft Java **1.21.1**, **NeoForge 21.1.264** e **Java 21**.
-Requer **GeckoLib 4.9.3** no cliente e no servidor.
-O shader da capa é uma ferramenta de captura e não é necessário para jogar.
+Minecraft Java **1.21.1**, NeoForge **21.1.264**, and Java **21**. Requires **GeckoLib 4.9.3** on both client and server. The cover's capture shader is not needed to play.

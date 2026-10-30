@@ -1,74 +1,54 @@
-# Pesquisa e progressão
+# Research and Progression
 
-[Guia do mod](../README.md) · [Materiais](MATERIALS.md) · [Evolução](EVOLUTION.md)
+<a id="analisador-e-estação-genética"></a>
+<a id="guia-online"></a>
+<a id="herança-e-pesquisa"></a>
+<a id="incubadora"></a>
+<a id="pesquisa-e-progressão"></a>
+<a id="rotas-avançadas"></a>
+<a id="vínculo-e-equipes"></a>
 
 ## Slimepedia
 
-Combine **um livro e uma bola de slime** para criar a Slimepedia. Use-a em um
-slime vivo e próximo para registrar a espécie; use-a no ar para consultar seu
-diário. Um clique ergue e abre o livro com as duas mãos antes de mostrar a
-consulta; funciona também segurando a Slimepedia na mão secundária. Feche com
-Esc ou o botão ×. A opção de movimento reduzido pula a transição de abertura.
-Busca, filtros e quatro abas organizam as descobertas. A página mostra uma
-prévia 3D da espécie observada; as abas e os ícones indicam o avanço da pesquisa.
+Craft a Slimepedia from **one book and one slimeball**. Version 0.15.0 also gives each player a book on their first login to a world, once per player. Use it on a live nearby slime to record a species; use it in the air to browse your journal.
 
-![Páginas da Slimepedia no jogo](../assets/interfaces/slimepedia.png)
+The book opens in both hands before showing the interface and also works from the offhand. Escape or the close button ends reading. Reduced motion skips the opening transition. Search, filters, four tabs, and a 3D species preview organize discoveries.
 
-![Slimepedia aberta e apoiada nas duas mãos do personagem](../assets/items/slimepedia-reading.png)
-
-| Aba | O que revela | Como avançar |
+| Tab | Knowledge | How to unlock it |
 |---|---|---|
-| Campo | Espécie, temperamento e locais observados | Observar com o livro |
-| Dieta | Alimentos compatíveis | Alimentar manualmente com sucesso |
-| Genes | Habilidade e pesquisa genética | Analisar um indivíduo ou sua cápsula |
-| Rotas | Cruzamentos e metamorfoses realizados | Presenciar o nascimento como cuidador ou concluir a transformação |
+| Field | Species, temperament, observed habitats | Observe with the book |
+| Diet | Compatible foods | Successfully feed manually |
+| Genes | Ability and genetic research | Analyze an individual or capsule |
+| Paths | Completed crosses and metamorphoses | Witness a birth as caretaker or complete a transformation |
 
-O diário é pessoal e compartilhado entre seus livros. Observar, alimentar e
-analisar são descobertas independentes. O catálogo ainda não observado fica
-oculto; trocar livros não transfere pesquisa.
+The journal belongs to the player and is shared by all their books. Observation, feeding, and analysis are independent discoveries. Unobserved catalog entries remain hidden; trading books does not transfer research.
 
-## Analisador e estação genética
+![Slimepedia in English](../assets/english-gallery/03-slimepedia.png)
 
-Use o **analisador genético** em um slime para consultar suas necessidades,
-idade, parentesco, alelos e rotas de evolução. Vida e necessidades aparecem em
-barras; a tabela compara os alelos e a expressão. Passe o mouse sobre os genes,
-as informações de tempo e o rodapé para consultar os detalhes.
+## Analyzer and Genetic Station
 
-![Inspeção genética com prévia 3D e indicadores](../assets/interfaces/inspection.png)
+Use the **Genetic Analyzer** on a slime to inspect needs, age, ancestry, alleles, and evolution routes. Hover over genes, time information, and the footer for details.
 
-A [estação genética](GENETIC_STATION.md) analisa um indivíduo dentro da cápsula.
-Insira cápsula ocupada, papel e redstone, pressione **Analisar** e depois
-**Ver genes**. A análise leva 100 ticks carregados e cobra os materiais ao concluir.
+The [Genetic Station](GENETIC_STATION.md) analyzes an occupied capsule. Insert capsule, paper, and redstone, press Analyze, then View genes. A cycle takes 100 loaded ticks and charges on completion.
 
-## Vínculo e equipes
+![Genetic inspection in English](../assets/english-gallery/04-genetic-analysis.png)
 
-Agache e use o analisador em seu próprio slime para abrir o painel de
-[vínculo e treinamento](COMPANIONS.md). Ensine Esperar, Seguir e Voltar ao lar,
-marque um local seguro e ative a cooperação dos parceiros. Água + Musgo ajudam
-plantas; Elétrico + Ferro apoiam a estação e a incubadora.
+## Bond and teams
 
-## Incubadora
+Crouch and use the analyzer on your slime to open [training](COMPANIONS.md). Teach Wait, Follow, and Return home, mark a safe home, and enable cooperation. Water + Moss help crops; Electric + Iron assist machines.
 
-A [incubadora](INCUBATOR.md) acelera o crescimento de um filhote capturado.
-Cada ciclo manual exige alimento da dieta e um suplemento, e leva 200 ticks
-carregados. O filhote conserva seus genes e sua linhagem.
+## Incubation and inheritance
 
-## Herança e pesquisa
+The [Incubator](INCUBATOR.md) accelerates captured juvenile growth. Each manual cycle needs compatible food and a supplement and takes 200 loaded ticks. Genes and lineage remain intact.
 
-Reproduza adultos [compatíveis e bem cuidados](BREEDING.md). O filhote herda
-alelos dos pais e pode apresentar mutações. A pesquisa diferencia alterações
-registradas no nascimento de herança comum e de histórico indisponível.
-[Como interpretar a pesquisa](GENETIC_RESEARCH.md).
+[Breed compatible, well-cared-for adults](BREEDING.md). Offspring inherit parental alleles and may mutate. [Genetic research](GENETIC_RESEARCH.md) distinguishes recorded birth mutations from ordinary inheritance and unavailable history.
 
-## Rotas avançadas
+## Advanced routes
 
-Colete [materiais e essências](MATERIALS.md), descubra cruzamentos e prepare as
-condições das [metamorfoses](EVOLUTION.md). Os [bosses](BOSSES.md) entregam
-materiais usados em equipamentos, incubação e formas raras, como Prismático
-e Celestial.
+Gather [materials](MATERIALS.md), discover [crosses and metamorphoses](EVOLUTION.md), and challenge [bosses](BOSSES.md) for materials used in equipment, incubation, and rare lineages such as Prismatic and Celestial.
 
-## Guia online
+## Online guide and advancements
 
-Na parte superior da Slimepedia, **Guia online** abre a documentação completa no navegador. Confira o endereço na confirmação; ao cancelar ou retornar, você continua no livro.
+The **Online guide** button opens the full guide in a browser. Review the address in Minecraft's confirmation dialog; canceling or returning preserves your book view.
 
-[Consultar o guia](https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/).
+Version 0.15.0 includes 16 Minecraft advancements for obtaining the book and equipment, research, breeding, metamorphosis, species collections, and boss victories. Open Advancements with **L** by default.

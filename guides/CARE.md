@@ -1,82 +1,49 @@
-# Cuidado e captura
+# Care and Capture
 
-[Guia do mod](../README.md) · [Dietas das espécies](SLIMES.md) · [Reprodução](BREEDING.md)
+<a id="alimentador"></a>
+<a id="alimentação-e-necessidades"></a>
+<a id="cuidado-e-captura"></a>
+<a id="cuidador-e-confiança"></a>
+<a id="cápsula"></a>
+<a id="receitas"></a>
+<a id="recinto"></a>
 
-## Alimentação e necessidades
+[Species and diets](SLIMES.md) · [Breeding](BREEDING.md) · [Companions](COMPANIONS.md)
 
-Use diretamente no slime um alimento de sua [dieta](SLIMES.md). Uma refeição
-aceita consome um item em sobrevivência, reduz 20 de fome e recupera dez de
-energia. Ele precisa ter pelo menos 20 de fome e aguardar cinco segundos
-entre refeições.
+## Feeding and needs
 
-Agache e interaja com a mão vazia para consultar as necessidades. Os valores
-vão de zero a 100: fome baixa é boa; energia, conforto e confiança altos são bons.
-Fome e recuperação de energia dependem do metabolismo e das condições do recinto.
+Use a food from the species' diet directly on a slime. An accepted meal consumes one item in Survival, reduces hunger by 20, and restores 10 energy. The slime must have at least 20 hunger and wait five seconds between meals.
 
-## Cuidador e confiança
+Crouch and interact with an empty hand to inspect needs. Values range from 0 to 100: low hunger is good; high energy, comfort, and trust are good. Metabolism and habitat affect hunger and energy recovery.
 
-O primeiro jogador que alimenta manualmente o slime se torna seu cuidador.
-Outros jogadores podem alimentá-lo, mas o vínculo e a confiança continuam
-pertencendo ao cuidador.
+## Caretaker and trust
 
-| Temperamento | Confiança por refeição do cuidador | Mínimo para capturar |
+The first player to feed a slime manually becomes its caretaker. Other players may feed it, but do not take over the bond.
+
+| Temperament | Trust per meal from caretaker | Trust required for capture |
 |---|---:|---:|
-| Dócil | 20 | 20 |
-| Neutro | 15 | 40 |
-| Hostil | 10 | 70 |
+| Docile | 20 | 20 |
+| Neutral | 15 | 40 |
+| Hostile | 10 | 70 |
 
-Hostis deixam de selecionar o cuidador como alvo a partir de 20 de confiança.
-Ferir o próprio slime reduz 20 de confiança e pode provocar retaliação.
-O vínculo permite cuidado e captura. Com treinamento, o cuidador também pode
-ensinar ordens e organizar parceiros de trabalho. Veja [vínculo e simbiose](COMPANIONS.md).
+Hostile slimes stop selecting their caretaker as a target at 20 trust. Hurting your own slime removes 20 trust and can provoke retaliation. A bond supports care and capture; [training](COMPANIONS.md) unlocks commands and cooperation.
 
-## Recinto
+## Enclosures
 
-Escolha piso e ambiente adequados à espécie. Bioma preferido, piso adequado,
-umidade e quantidade de vizinhos influenciam o conforto. Evite superlotação;
-Fogo sofre na água e Gelo é vulnerável ao fogo.
+Preferred biomes, suitable flooring, moisture, and nearby population influence comfort. Avoid overcrowding. Fire suffers in water; Ice is vulnerable to fire. Build barriers and roofs appropriate to the species. Habitat tags can be changed with [datapacks](../reference/SPECIES_DATA.md).
 
-Use barreiras que contenham os saltos e feche o teto quando necessário.
-As tags de habitat podem ser ajustadas por [datapacks](../reference/SPECIES_DATA.md).
+## Feeder
 
-## Alimentador
+![SolarPunk Feeder](../assets/blocks/feeder.png)
 
-![Alimentador SolarPunk no jogo](../assets/blocks/feeder.png)
+The Feeder has **nine slots** and supports hoppers. Every two seconds it tries to feed a hungry slime within four blocks and clear line of sight, using compatible food and respecting the individual's meal cooldown. It neither assigns a caretaker nor increases trust. Its reservoir and tray face you when placed.
 
-O reservatório e a bandeja frontal ficam voltados para você ao colocar o bloco.
+## Capsules
 
-O alimentador tem **nove espaços** e aceita funis. A cada dois segundos,
-tenta alimentar um slime faminto com visão livre dentro de quatro blocos.
-Consome apenas alimentos compatíveis e respeita a recarga individual de refeição.
+Use an empty capsule on a **size-1 or size-2** slime with sufficient caretaker trust, at least half health and 10 energy, no combat or damage in the last five seconds, and no leash, mount, or passengers.
 
-Ele mantém a alimentação, mas não cria cuidador nem aumenta confiança.
-Conquiste o vínculo manualmente antes de automatizar o recinto.
+Only the caretaker can capture and release it. Use an occupied capsule on solid, dry ground with free space. A rejected release keeps the slime in its capsule. Bosses and minions cannot be captured.
 
-![Reserva de alimentos e inventário na interface do alimentador](../assets/interfaces/feeder.png)
+Capsules preserve identity, genes, health, age, trust, and cooldowns. The individual is suspended while captured. Losing its occupied capsule makes it inaccessible through normal gameplay. Captures belong to their original world: [back up the entire world](../INSTALLATION.md).
 
-## Cápsula
-
-Use uma cápsula vazia em um slime de **tamanho 1 ou 2**, com:
-
-- Confiança suficiente no cuidador.
-- Pelo menos metade da vida e dez de energia.
-- Ausência de combate ou dano recente por cinco segundos.
-- Espaço livre de montarias, passageiros ou laços.
-
-Somente o cuidador pode capturar e liberar. Use a cápsula ocupada sobre um
-piso sólido, com espaço livre e seco. Uma liberação recusada mantém o slime
-na cápsula. Chefes e lacaios não podem ser capturados.
-
-A cápsula preserva identidade, genes, vida, idade, confiança e recargas.
-O indivíduo fica suspenso enquanto está dentro dela. Guarde os itens ocupados
-com cuidado: perdê-los torna o indivíduo inacessível pelo fluxo normal.
-
-Capturas pertencem ao mundo em que foram feitas. Ao fazer backup, preserve o
-mundo inteiro, incluindo inventários e registros de captura. Veja
-[instalação e backup](../INSTALLATION.md).
-
-## Receitas
-
-As receitas ficam no livro após obter uma bola de slime. Há uma rota de
-cápsula com **um Núcleo de Slime e um vidro**, além da receita inicial.
-[Materiais e receitas](MATERIALS.md).
+Recipes unlock after obtaining a slimeball. A second capsule recipe uses **one Slime Core and one glass block**. See [materials](MATERIALS.md).

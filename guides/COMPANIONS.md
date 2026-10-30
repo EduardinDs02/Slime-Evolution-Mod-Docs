@@ -1,126 +1,63 @@
-# Vínculo, treinamento e simbiose
+# Companions, Training, and Symbiosis
 
-[Guia do mod](../README.md) · [Cuidado e captura](CARE.md) · [Genética](../reference/GENETICS.md)
+<a id="abrir-o-painel"></a>
+<a id="ativar-uma-simbiose"></a>
+<a id="elétrico--ferro-nas-máquinas"></a>
+<a id="ensinar-comandos"></a>
+<a id="funções-individuais"></a>
+<a id="marcar-um-lar"></a>
+<a id="persistência-e-configuração"></a>
+<a id="vínculo-treinamento-e-simbiose"></a>
+<a id="água--musgo-na-horta"></a>
 
-![Painel de vínculo e parcerias no jogo](../assets/companions/overview.png)
+## Open the companion panel
 
-## Abrir o painel
+Manually feed a slime to become its caretaker. Then **crouch and use the Genetic Analyzer on your slime**. Normal analyzer use still opens genetic inspection. Control requires a nearby caretaker, clear line of sight, and building permission.
 
-Alimente manualmente um slime para se tornar seu cuidador. Depois, **agache e
-use o analisador genético no seu slime** para abrir o painel de vínculo. O uso
-normal do analisador continua abrindo a inspeção genética.
+## Teach commands
 
-Somente o cuidador próximo, com visão livre e permissão de construção, pode
-controlá-lo. O painel fecha ao perder o alcance ou acesso ao indivíduo.
+Training requires trust ≥40, energy ≥40, hunger ≤60, comfort ≥40, a calm slime with at least half health, and no recent damage, breeding, leash, mount, or passengers.
 
-## Ensinar comandos
+Each lesson costs **5 energy and +3 hunger**, adds up to one trust, and grants **4–10 training points**, depending on sociability and stability. Both genes at 0.50 grant seven points. Lessons require **200 loaded ticks** of recovery. Training caps at 100 and does not change alleles.
 
-Com **40 de confiança**, energia de pelo menos **40**, fome de no máximo **60**
-e conforto de pelo menos **40**, pressione **Treinar**. O slime precisa estar
-calmo, com pelo menos metade da vida e fora de reprodução, montarias ou laços.
-Dano recente também interrompe a disponibilidade de lições.
-
-Cada lição:
-
-- Gasta **5 de energia** e acrescenta **3 de fome**.
-- Acrescenta até **1 de confiança**, respeitando o limite 100.
-- Concede **4 a 10 pontos de treino**, conforme sociabilidade e estabilidade.
-- Exige **200 ticks carregados** de recuperação: dez segundos a 20 ticks/s.
-
-Com os dois genes em 0,50, uma lição concede sete pontos. Os pontos chegam até
-100; uma lição no limite concede apenas o que falta, e não é possível cobrar
-outra lição depois de completar o treino. A aprendizagem não modifica alelos.
-
-| Ordem | Pontos necessários | Comportamento |
+| Command | Training points | Behavior |
 |---|---:|---|
-| Livre | 0 | Retoma alimentação, agrupamento e movimentação naturais |
-| Esperar | 20 | Guarda o ponto onde a ordem foi dada e volta a ele se for afastado |
-| Seguir | 40 | Acompanha o cuidador disponível na mesma dimensão, a até 32 blocos |
-| Voltar ao lar | 60 | Procura o lar marcado e passa a esperar ao chegar |
+| Free | 0 | Resume natural movement and feeding |
+| Wait | 20 | Guard the chosen point and return if displaced |
+| Follow | 40 | Follow the available caretaker in the same dimension, within 32 blocks |
+| Return home | 60 | Navigate to the marked home, then wait |
 
-Todas as ordens aprendidas exigem 40 de confiança. **Livre** continua disponível
-para o cuidador abaixo desse valor. A autodefesa tem prioridade; o slime retoma
-a ordem depois do combate. Ordens suspendem a busca de comida solta: mantenha
-a alimentação manual ou um alimentador próximo.
+Learned commands require 40 trust; Free remains available below that threshold. Self-defense takes priority. Commands suspend loose-food seeking, so maintain manual feeding or a nearby Feeder.
 
-O deslocamento usa navegação e saltos normais. Não há teleporte, travessia de
-paredes nem carregamento de chunks para procurar o cuidador. Seguir fica à
-espera se o cuidador estiver indisponível, longe demais ou em outra dimensão.
-Com energia abaixo de 20, o deslocamento da ordem pausa para permitir descanso.
+Movement uses normal navigation and jumping: it does not teleport, pass through walls, or load chunks. Follow waits when its caretaker is unavailable, too far away, or in another dimension. Movement pauses below 20 energy for rest.
 
-## Marcar um lar
+## Mark a home
 
-No painel, **Marcar lar aqui** usa a posição atual do cuidador. Escolha piso
-sólido, seco, dentro da borda do mundo e com espaço para o corpo inteiro do slime.
-É possível marcar o local antes de aprender Voltar ao lar.
+**Mark home here** uses the caretaker's current position. Choose solid, dry ground inside the world border with room for the entire slime. A home can be marked before learning Return home. Return requires the same dimension and a loaded, unblocked location.
 
-O retorno só funciona na dimensão do lar e com a região carregada. Um local
-bloqueado ou inundado não é usado. Ao chegar, o slime muda para Esperar; a
-margem de chegada acompanha o tamanho do corpo e a navegação do Minecraft.
+## Enable symbiosis
 
-## Ativar uma simbiose
+Open each partner's panel and enable cooperation. Both must be adults with the **same caretaker**, within six blocks and mutual line of sight, calm, with trust ≥40, energy ≥30, hunger ≤60, and comfort ≥40. Recent damage, breeding, leashes, mounts, or passengers prevent cooperation.
 
-Abra o painel de **cada parceiro** e ligue **Cooperar**. Ambos precisam ter o
-**mesmo cuidador**, ser adultos e estar calmos, com:
+Partners cooperate while Free or Waiting. Follow and Return home suspend work. Cooperation starts disabled for new and existing individuals.
 
-- Confiança de pelo menos 40.
-- Energia de pelo menos 30.
-- Fome de no máximo 60 e conforto de pelo menos 40.
-- Ausência de dano recente, reprodução, laço, montaria ou passageiros.
-
-Os parceiros precisam estar a até **seis blocos**, com visão livre entre si.
-Cooperam quando estão Livres ou Esperando; Seguir e Voltar ao lar suspendem o
-trabalho. Ensinar Esperar ajuda a organizar uma equipe junto ao local de serviço.
-A preferência começa desligada nos indivíduos novos e nos saves antigos.
-
-| Parceiros | Trabalho | Custo por participante | Recuperação compartilhada |
+| Partners | Work | Cost per participant | Shared recovery |
 |---|---|---|---|
-| Água + Musgo | Avança uma planta em um estágio de crescimento | 6 de energia e +3 de fome | 400 ticks: 20 s |
-| Elétrico + Ferro | Acrescenta até quatro ticks ao processamento da estação ou incubadora | 2 de energia e +1 de fome | 20 ticks: 1 s |
+| Water + Moss | Advance one compatible crop by one growth stage | 6 energy, +3 hunger | 400 ticks / 20 seconds |
+| Electric + Iron | Add up to four processing ticks to a station or incubator | 2 energy, +1 hunger | 20 ticks / 1 second |
 
-Não há cobrança quando não existe trabalho válido. Os dois participantes
-recebem a recuperação; o mesmo ajudante não pode ser reutilizado imediatamente
-em outra dupla ou máquina. Alimentar os slimes repõe as condições de trabalho.
-As demais espécies ainda não têm uma combinação de simbiose nesta versão.
+No valid work means no charge. Both participants receive recovery, preventing immediate reuse in another pair.
 
-### Água + Musgo na horta
+### Water + Moss
 
-Coloque os parceiros a até quatro blocos das plantas, com visão livre até elas.
-A dupla atende trigo, cenoura, batata e beterraba; outras plantas que usam o
-comportamento `CropBlock` também podem ser atendidas. Cada ação avança apenas
-um estágio de uma planta que ainda possa crescer. Não planta nem colhe itens.
+Keep partners within four blocks of crops and clear line of sight. Wheat, carrots, potatoes, beetroot, and other compatible `CropBlock` plants are supported. Cooperation does not plant or harvest. The caretaker must be online in the same dimension with permission to alter the location. Work respects `mobGriefing` and NeoForge protection events.
 
-O cuidador precisa estar online na mesma dimensão e ter permissão para alterar
-o local. A dupla respeita `mobGriefing` e os eventos de proteção do NeoForge.
-Paredes, falta de parceiro, plantas maduras e ações recusadas não gastam recursos.
+### Electric + Iron
 
-### Elétrico + Ferro nas máquinas
+Keep partners within four blocks of the machine, with clear line of sight. The capsule must belong to their caretaker. Assistance occurs only after the machine accepts a valid processing tick; it reduces processing time without bypassing ingredients or changing results, genes, growth rewards, identities, or token rules.
 
-Mantenha ambos a até quatro blocos da máquina, com visão livre até ela. A cápsula
-processada precisa pertencer ao cuidador da dupla, e ambos devem estar ativados
-para cooperar.
+## Persistence and settings
 
-O apoio só ocorre depois que a máquina valida e aceita um tick de processamento.
-Sem cápsula, trabalho iniciado ou materiais corretos, não há cobrança aos ajudantes.
-A pausa continua funcionando normalmente.
+Training, commands, home, cooperation preferences, and recovery persist through saves, capsules, and metamorphoses. Recovery pauses while captured or unloaded. Offspring start untrained and do not inherit commands or homes.
 
-O bônus reduz o tempo de processamento. A análise ainda consome um papel e uma
-redstone; a incubação ainda consome um alimento e um suplemento. Resultados,
-crescimento concedido, identidade, genes e regras dos tokens permanecem iguais.
-
-## Persistência e configuração
-
-Experiência, ordem, lar, preferência de cooperação e recuperações são salvos com
-o indivíduo e preservados pela cápsula. As recuperações não avançam enquanto
-ele está capturado ou descarregado. Metamorfoses conservam o aprendizado;
-filhotes começam sem treino e sem herdar as ordens ou o lar dos pais.
-
-O servidor pode desligar `companions.training` e `companions.symbiosis` nas
-[configurações](../CONFIGURATION.md). Isso não apaga o progresso. O cuidador
-continua podendo cancelar a ordem com Livre e desligar uma cooperação armazenada.
-
-## Funções individuais
-
-Fogo, Fúngico, Abyssal e Âmbar também têm um botão **Função** no painel.
-Consulte [funções individuais](SPECIALIZATIONS.md) para aquecimento, compostagem,
-auxílio subaquático e armazenamento. A simbiose mantém seus controles próprios.
+Server options `companions.training` and `companions.symbiosis` can pause these features without deleting progress. Canceling commands and disabling cooperation remain available. See [individual jobs](SPECIALIZATIONS.md).

@@ -1,167 +1,106 @@
-# Produção, transporte e auras
+# Production, Transport, and Auras
 
-[Guia do mod](../README.md) · [Funções individuais](SPECIALIZATIONS.md) · [Treinamento](COMPANIONS.md)
+<a id="almas-localizar-a-última-morte"></a>
+<a id="aurora-acalmar-o-curral"></a>
+<a id="colmeia-mel-favos-e-polinização"></a>
+<a id="comum-transportar-entre-estações"></a>
+<a id="cáustico-reciclar-metal"></a>
+<a id="end-viajar-entre-âncoras"></a>
+<a id="ferro-reparar-equipamento"></a>
+<a id="luminoso-iluminar-o-caminho"></a>
+<a id="lunar-benefício-da-fase"></a>
+<a id="produção-transporte-e-auras"></a>
+<a id="transporte-e-controle"></a>
+<a id="void-recolher-itens"></a>
+<a id="água-irrigar-e-encher-frascos"></a>
 
-Agache e use o analisador no seu slime; abra **Função**. Todos os trabalhos
-começam pausados. Os requisitos de cuidado são os mesmos das funções iniciais:
-adulto calmo, confiança 40, energia 30, fome até 60 e conforto 40.
-As funções abaixo acrescentam um requisito de treino quando indicado.
-Os números da coluna Treino são pontos de experiência obtidos nas lições.
+Crouch and use the analyzer on your slime, then open **Job**. Work starts paused. Workers need calm adulthood, trust 40, energy 30, hunger at most 60, and comfort 40. Training requirements below refer to lesson experience points.
 
-| Slime | Função | Treino | Recursos e custo por ação |
+| Species | Job | Training | Cost per useful action |
 |---|---|---:|---|
-| Ferro | Ferreiro | 0 | Material de reparo; 6 de energia, +3 de fome |
-| Comum | Mensageiro | 20 | Baús vinculados; 2 de energia, +1 de fome por retirada ou entrega |
-| Água | Irrigador | 0 | Água armazenada; 2 de energia, +1 de fome |
-| Luminoso | Guia luminoso | 0 | Pó de glowstone; 1 de energia por pulso |
-| Almas | Guardião de lembranças | 20 | Última morte registrada; 1 de energia a cada 2 s |
-| End | Guardião de passagem | 60 | Uma pérola; 12 de energia, +4 de fome por viagem |
-| Void | Coletor espacial | 40 | Baú ou Âmbar vinculado; 2 de energia, +1 de fome |
-| Cáustico | Reciclador | 20 | Equipamento e bola de slime; 6 de energia, +3 de fome |
-| Lunar | Marés lunares | 20 | Efeito necessário no cuidador; 3 de energia, +1 de fome |
-| Colmeia | Apicultor | 0 | Flor e, opcionalmente, frasco; 6 de energia, +3 de fome |
-| Aurora | Pacificador | 20 | Companheiros próximos; 3 de energia, +1 de fome |
+| Iron | Smith | 0 | Repair material; 6 energy, +3 hunger |
+| Common | Courier | 20 | Linked containers; 2 energy, +1 hunger per pickup or delivery |
+| Water | Irrigator | 0 | Stored water; 2 energy, +1 hunger |
+| Luminous | Light guide | 0 | Glowstone dust; 1 energy per pulse |
+| Soul | Memory keeper | 20 | Recorded last death; 1 energy every two seconds |
+| End | Passage keeper | 60 | One pearl; 12 energy, +4 hunger per trip |
+| Void | Spatial collector | 40 | Linked container or Amber; 2 energy, +1 hunger |
+| Caustic | Recycler | 20 | Equipment and slimeball; 6 energy, +3 hunger |
+| Lunar | Lunar tides | 20 | A useful phase effect; 3 energy, +1 hunger |
+| Hive | Beekeeper | 0 | Flower and optional bottle; 6 energy, +3 hunger |
+| Aurora | Peacekeeper | 20 | Nearby companions; 3 energy, +1 hunger |
 
-![Algumas funções no jogo](../assets/work-jobs/overview.png)
+## Iron: repair equipment
 
-## Ferro: reparar equipamento
+Place a tool or armor piece in the first slot and a compatible repair material in the second. After **ten seconds**, one material restores **25% of maximum durability**, preserving name and enchantments. The equipment stays in its slot for withdrawal or another cycle. Wrong materials and fully repaired equipment do not charge.
 
-Coloque a ferramenta ou armadura no primeiro espaço e um material compatível
-no segundo. Após **10 segundos de trabalho**, consome um material e recupera
-**25% da durabilidade máxima**. Nome e encantamentos são preservados.
-O equipamento permanece no primeiro espaço para retirada ou outro ciclo.
-Materiais incorretos e itens já reparados não geram cobrança.
+Supported materials follow the equipment's normal repair rules, including iron, gold, diamond, netherite, cobblestone, planks, leather, turtle scutes, and phantom membrane.
 
-São aceitos os materiais normais de reparo disponíveis no painel, incluindo
-ferro, ouro, diamante, netherita, pedregulho, tábuas, couro, escama de tartaruga
-e membrana de phantom, conforme o equipamento.
+## Common: deliver between stations
 
-## Comum: transportar entre estações
+Select **Source** in the panel, then crouch and use the analyzer on a nearby chest or barrel. Repeat for **Destination**, enable the job, and choose Free.
 
-1. No painel, pressione **Origem**.
-2. Agache e use o analisador no baú ou barril escolhido, mantendo o slime próximo.
-3. Abra novamente o painel e repita com **Destino**.
-4. Ative a função e escolha a ordem **Livre**.
+Containers must share a dimension and be within **32 blocks** of each other. The slime navigates normally, picks up up to **16 items** per operation, and delivers within three blocks. Full output preserves its cargo. Withdraw cargo through the panel. Follow, Wait, and Return home pause the route; the clear button removes links without deleting cargo.
 
-As estações devem ficar na mesma dimensão e a até **32 blocos entre si**.
-O slime usa caminhos e saltos normais. Retira até 16 itens por operação,
-carrega-os nos próprios compartimentos e entrega quando está a até três
-blocos do destino. Cada retirada ou entrega custa energia e aumenta a fome.
+## Water: irrigation and bottles
 
-Saída cheia conserva a carga no slime. Você pode retirar os pertences pelo
-painel. **Seguir, Esperar ou Voltar ao lar** pausam a rota de trabalho.
-O botão **×** limpa os vínculos e pausa sem apagar a carga.
+A water bucket in the first slot fills the reservoir with **1,000 units** and returns an empty bucket. Once per second it can hydrate visible farmland within four blocks, spending **25 units**.
 
-## Água: irrigar e encher frascos
+Bottles in slot two and space in slot three allow one water bottle per **100 units**. Bottling takes priority over irrigation. Stored water persists through saves and capsules.
 
-Um balde de água no primeiro espaço enche o reservatório com **1000 unidades**
-e devolve o balde vazio. A cada segundo, pode hidratar um bloco de plantação
-visível a até quatro blocos, gastando **25 unidades**.
+## Luminous: light the way
 
-Com frascos no segundo espaço e saída livre no terceiro, enche um frasco de
-água por **100 unidades**. Frascos têm prioridade sobre irrigação.
-O reservatório acompanha o indivíduo ao salvar ou usar uma cápsula.
+Glowstone dust supplies **20 pulses per item**, one per second, lighting the slime's path and its caretaker's path within six blocks. A pulse costs one energy. Temporary lights do not replace existing blocks and expire within three loaded seconds without renewal. Capturing or losing the slime does not create permanent lighting.
 
-## Luminoso: iluminar o caminho
+## Soul: find the last death
 
-Coloque pó de glowstone no primeiro espaço e ative. Cada unidade fornece
-**20 pulsos**, um por segundo. O slime ilumina seu caminho e o de seu cuidador
-quando próximo, a até seis blocos. Cada pulso custa uma energia.
+Enable the job near the caretaker. It shows the dimension and coordinates of the player's last death, points with particles in the same dimension, and highlights up to three nearby stacks identified as that player's lost belongings. **Track** checks the same point with a two-second cooldown. It locates surviving items; it does not recreate missing ones.
 
-As luzes são temporárias e não substituem blocos existentes. Sem renovação,
-somem em até três segundos carregados; a remoção agendada continua depois
-que a região é carregada novamente. Pausar, capturar ou perder o slime não
-transforma o caminho em iluminação permanente.
+## End: travel between anchors
 
-## Almas: localizar a última morte
+Link source and destination floors through the analyzer, in the same dimension and within **32 blocks**. Supply ender pearls, enable the job, stand within four blocks of an anchor, and press **Travel**.
 
-Ative perto do cuidador. O slime mostra a dimensão e as coordenadas da última
-morte, aponta a direção com partículas e destaca até três pilhas próximas
-marcadas como pertences perdidos desse jogador. O botão **Rastrear** consulta
-o mesmo ponto pelo painel, respeitando a recuperação de dois segundos.
+The caretaker and slime travel together. Each accepted trip consumes one pearl, 12 energy, and +4 hunger, with ten seconds of recovery. Both need safe, clear landing space. Blocked, hazardous, or unloaded destinations do not consume a pearl.
 
-A direção aparece apenas na mesma dimensão. A função localiza os objetos
-que ainda existem no mundo; não recria itens perdidos ou desaparecidos.
+## Void: collect loose items
 
-## End: viajar entre âncoras
+Link a nearby chest, barrel, or Amber belonging to the same caretaker. Once per second, transfer up to **16 items** from a visible loose stack within six blocks to the visible destination. Excess remains on the ground.
 
-Vincule **Origem** e **Destino** pelo analisador, selecionando o piso de cada
-âncora. As duas precisam estar na mesma dimensão e a até **32 blocos**.
-Coloque pérolas no primeiro espaço, ative e fique a até quatro blocos de uma
-âncora. Pressione **Viajar**: cuidador e slime vão para a outra.
+Capsules, embedded inventories, stacks with pickup delay, and other players' identified belongings are excluded. No capacity means no charge.
 
-Cada viagem consome uma pérola, 12 de energia e acrescenta quatro de fome,
-com recuperação de dez segundos. É preciso espaço livre e piso seguro para
-ambos. Destino bloqueado, perigoso ou descarregado não consome a pérola.
-O botão **×** permite apagar os vínculos para configurar outra passagem.
+## Caustic: recycle metal
 
-## Void: recolher itens
+Insert iron, gold, or chainmail equipment, a slimeball, and leave output space. After ten seconds, consume both inputs and return up to **25% of the metal as nuggets**, proportional to remaining durability and capped at 16 nuggets. Enchantments are not transferred. Insufficient yield or output room consumes nothing.
 
-Pressione **Vincular destino**, depois agache e use o analisador num baú,
-barril ou Âmbar do mesmo cuidador. Ative com o destino próximo.
-A cada segundo, transfere até 16 itens de uma pilha no chão, a até seis blocos,
-com visão livre até a pilha e o destino.
+## Lunar: phase benefits
 
-Se só houver espaço para parte da pilha, o restante fica no chão. Não recolhe
-cápsulas, itens com inventários incorporados, pilhas em espera para coleta
-nem pertences identificados de outros jogadores. Sem espaço, não cobra.
+An enabled Lunar supports its caretaker within six blocks and clear line of sight according to its individual phase.
 
-## Cáustico: reciclar metal
-
-Primeiro espaço: equipamento de ferro, ouro ou cota de malha.
-Segundo: bola de slime. Terceiro: saída.
-Após dez segundos, consome o equipamento e uma bola de slime, devolvendo
-até **25% do metal em pepitas**, proporcional à durabilidade restante e
-limitado a 16 pepitas por ciclo. Encantamentos não são transferidos.
-Sem rendimento mínimo ou espaço na saída, nada é consumido.
-
-## Lunar: benefício da fase
-
-A fase individual agora também determina um benefício para o cuidador a até
-seis blocos, com visão livre. Ative para permitir as renovações.
-
-| Fase | Benefício |
+| Phase | Benefit |
 |---|---|
-| Cheia | Regeneração I quando ferido |
-| Gibosa minguante | Resistência I |
-| Quarto minguante | Pressa I |
-| Minguante | Remove veneno e fome |
-| Nova | Invisibilidade |
-| Crescente | Salto I |
-| Quarto crescente | Velocidade I |
-| Gibosa crescente | Visão noturna |
+| Full | Regeneration I when injured |
+| Waning gibbous | Resistance I |
+| Last quarter | Haste I |
+| Waning crescent | Removes Poison and Hunger |
+| New | Invisibility |
+| Waxing crescent | Jump Boost I |
+| First quarter | Speed I |
+| Waxing gibbous | Night Vision |
 
-Os efeitos duram 15 segundos; a recuperação entre ações é de cinco segundos.
-Uma renovação custa três de energia e acrescenta um de fome, sendo cobrada
-apenas quando traz benefício. Um efeito mais forte já existente é preservado.
-As [fases e os comandos](CELESTIAL_VISUALS.md) continuam disponíveis.
+Effects last 15 seconds, with five seconds between actions. Useful refreshes cost three energy and +1 hunger. Stronger existing effects are preserved. See [individual phases](CELESTIAL_VISUALS.md).
 
-## Colmeia: mel, favos e polinização
+## Hive: honey and pollination
 
-Mantenha uma flor plantada visível a até quatro blocos. Na ordem Livre, o slime
-pode procurar flores próximas. Coloque uma flor no primeiro espaço:
-após dez segundos, ela vira um favo. Com frasco no segundo espaço, o resultado
-é mel engarrafado. A saída fica no terceiro espaço.
+Maintain a visible planted flower within four blocks. Under Free, the slime can seek nearby flowers. A flower in the first slot becomes honeycomb after ten seconds; a bottle in the second produces bottled honey instead. Output uses slot three.
 
-Cada ciclo também pode avançar uma etapa de uma plantação próxima, quando
-permitido. Saída cheia ou falta de flor interrompem o processamento sem cobrar.
+A cycle can also advance a nearby crop one stage when permitted. Full output or missing flowers stops processing without charging.
 
-## Aurora: acalmar o curral
+## Aurora: calm the enclosure
 
-A cada cinco segundos, ajuda até **três slimes do mesmo cuidador**, a até seis
-blocos e com visão livre. Cada ajudado recebe quatro de conforto e sete
-segundos de calma, reduzindo agressão espontânea e retaliação entre companheiros.
-A autodefesa contra inimigos continua disponível.
+Every five seconds, help up to **three slimes of the same caretaker** within six blocks and clear line of sight. Each receives four comfort and seven seconds of calm, reducing spontaneous aggression and retaliation between companions without disabling self-defense. Useful actions cost three energy and +1 hunger.
 
-Cada ação útil custa três de energia e acrescenta um de fome. Companheiros
-com conforto máximo e calma recente não geram uma nova cobrança.
+## Persistence and permissions
 
-## Transporte e controle
+Materials, cargo, water, cooldowns, and links persist through saves and capsules. Metamorphosis pauses the previous job; withdraw belongings and configure the new species. Death drops stored items.
 
-Materiais, cargas, reservatórios, recuperação e vínculos acompanham o indivíduo
-no save e na cápsula. Uma metamorfose pausa a função anterior; retire pertences
-e configure o trabalho da nova espécie. Morte derruba os objetos guardados.
-
-As funções respeitam a configuração do servidor e os controles de acesso.
-Interações com terreno e estações usam as permissões do cuidador e a regra
-`mobGriefing`. O trabalho usa apenas entidades e regiões carregadas.
+Work follows server settings, caretaker permissions, protection events, and `mobGriefing` where applicable. Only loaded entities and regions are used.

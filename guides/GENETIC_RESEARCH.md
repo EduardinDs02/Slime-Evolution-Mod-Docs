@@ -1,85 +1,44 @@
-# Pesquisa genética
+# Genetic Research
 
-A Slimepedia registra faixas de expressão observadas e genes
-com alteração verificada no nascimento. A análise usa o genoma do indivíduo e
-seu histórico; uma característica incomum, por si só, não comprova mutação.
+<a id="descobrir-variantes"></a>
+<a id="mutações-verificadas-no-nascimento"></a>
+<a id="persistência-e-compatibilidade"></a>
+<a id="pesquisa-genética"></a>
 
-## Descobrir variantes
+The Slimepedia records observed expression bands and genes with verified changes at birth. An unusual trait alone does not prove a mutation.
 
-Use o analisador em um slime ao alcance e com visão livre, ou conclua a análise
-de uma cápsula válida na estação genética. Abra a aba **Genes** da Slimepedia:
-ela acumula as faixas encontradas entre os indivíduos analisados da espécie.
+## Discover variants
 
-| Faixa | Expressão calculada do gene |
+Analyze a reachable, visible live slime or complete a valid capsule analysis at a Genetic Station. The Slimepedia's **Genes** tab accumulates expression bands observed in analyzed members of that species.
+
+| Band | Calculated gene expression |
 |---|---|
-| Baixa | 0 até 0,25, inclusive |
-| Intermediária | acima de 0,25 e abaixo de 0,75 |
-| Alta | 0,75 até 1, inclusive |
+| Low | 0 through 0.25, inclusive |
+| Intermediate | Above 0.25 and below 0.75 |
+| High | 0.75 through 1, inclusive |
 
-O cálculo respeita a expressão aditiva, dominante ou recessiva. As faixas
-referem-se ao valor genético calculado; seus efeitos continuam sujeitos às
-regras de cada espécie. Por exemplo, a luminosidade genética tem emissão
-visual própria no Luminoso, conforme [GENETICS.md](../reference/GENETICS.md).
+Expression respects additive, dominant, or recessive rules. Gameplay effects still follow species rules. The bands apply to all 15 existing genes and accumulate per species and player. Repeating the same analysis does not inflate counts. Storage holds up to three bands per gene rather than an expanding list of genomes or UUIDs.
 
-As variantes desta etapa são essas faixas, aplicadas aos 15 genes existentes.
-O registro é cumulativo por espécie/jogador: encontrar outra faixa acrescenta
-conhecimento sem substituir a anterior. Repetir a mesma análise não aumenta
-uma contagem artificial. O livro guarda até três faixas por gene, sem uma
-lista crescente de UUIDs ou genomas completos.
+Observation, feeding, and witnessing births unlock their own facts; genetic findings require analysis. Books show their current reader's progress. Spectators do not advance research.
 
-Observar com o livro, alimentar ou presenciar um nascimento continua liberando
-seus próprios fatos. Os dados genéticos entram somente após análise. O livro
-de outro jogador consulta o progresso desse jogador. Espectadores não avançam
-pesquisa.
+## Verified birth mutations
 
-## Mutações verificadas no nascimento
+Inheritance records genes where at least one allele actually changed after mutation and clamping. Zero-step, zero-delta, or clamped unchanged results do not register false mutations. A real allele change can occur even if the average additive expression stays the same.
 
-A herança agora devolve o genoma e o conjunto de genes em que pelo menos um
-alelo mudou **de fato** após aplicar a mutação e seus limites. Chance,
-amplitude, seleção de alelos e consumo do RNG continuam iguais. Tentativas
-com passo zero, delta zero ou resultado igual após o limite 0/1 não registram
-uma alteração inexistente.
+After analyzing a descendant, the journal distinguishes:
 
-Novos descendentes produzidos pelo serviço de reprodução guardam esse
-histórico. Após analisar um deles, o livro acrescenta os genes alterados à
-pesquisa da espécie. Uma mudança pode existir mesmo quando a média dos dois
-alelos, e portanto uma expressão aditiva, permanece igual.
+- **Verified mutations:** genes changed in analyzed births with recorded provenance.
+- **Birth without new changes:** a known birth record with no new allele changes.
+- **Unavailable history:** a descendant without verifiable birth provenance.
 
-O livro distingue:
+Founder variation and inherited parental alleles are not evidence of a new mutation in that child. Findings concern the individual's direct birth, not a reconstruction of every ancestor. Hover over genes in the analyzer for provenance, expression, and gameplay effect details.
 
-- **Mutações verificadas:** genes alterados em nascimentos analisados com registro.
-- **Nascimento sem novas alterações:** houve análise de um descendente com histórico conhecido e nenhum alelo novo nesse nascimento.
-- **Histórico indisponível:** houve análise de descendente sem registro de origem verificável.
+## Persistence and compatibility
 
-Fundadores têm variação genética e não fornecem, sozinhos, prova de mutação
-num nascimento. Herdar um alelo já presente nos pais também não é uma nova
-mutação nesse descendente. A observação é sobre o nascimento direto do
-indivíduo; o livro não reconstrói todos os eventos dos seus ancestrais.
+`BirthMutationsKnown` and `BirthMutationGenes` store bounded birth evidence using stable gene enum names. Missing or invalid history loads as unavailable; old saves are not retroactively assigned mutations based on rare values.
 
-No analisador, passe o mouse sobre um gene para consultar o estado de seu
-registro de nascimento, além do tipo de expressão e efeito existente.
+Evidence persists through capsules, station readings, incubation, and metamorphosis. Incubation cannot modify genome, lineage, or birth evidence. A changed birth record invalidates an open inspection.
 
-## Persistência e compatibilidade
+Older journals retain species, stages, and routes; new analysis fills missing findings. Invalid optional genetic data is discarded without erasing other valid facts. Journals are shared across dimensions by player UUID. The current journal schema is 4 as of version 0.15.0, which also stores first-login book delivery.
 
-O NBT do indivíduo passa à **versão 6**, com `BirthMutationsKnown` e
-`BirthMutationGenes`. Os genes usam nomes estáveis do enum; a lista é limitada
-aos 15 genes. Campos ausentes ou histórico inválido carregam como indisponível.
-Saves anteriores não recebem uma inferência retroativa baseada em valores raros.
-Nascimentos conhecidos sem alteração são diferentes de histórico ausente.
-
-O histórico acompanha cápsulas, leitura na estação e crescimento na incubadora.
-Ele permanece fora do conjunto de campos que a incubadora pode modificar;
-a troca condicional do registro rejeita mudanças no histórico/genoma/linhagem.
-A inspeção fecha se seu histórico de nascimento mudar durante a leitura.
-
-O diário pessoal passa ao **schema 2**. Diários da versão 1 preservam espécies,
-estágios e rotas; uma nova análise preenche as faixas/histórico que faltavam.
-Um trecho genético inválido é descartado durante a leitura sem apagar os
-demais fatos válidos desse registro. O armazenamento continua compartilhado
-entre dimensões pelo UUID do jogador.
-
-O servidor transmite somente as descobertas do jogador e os detalhes da
-espécie selecionada. Os novos dados usam 15 máscaras de faixas, uma máscara
-de genes alterados e dois indicadores históricos. O pior caso do livro
-continua abaixo dos 32.600 bytes do menu. Use a mesma versão do mod em cliente
-e servidor, pois os snapshots de inspeção/livro receberam esses dados.
+The server sends only the player's discoveries and selected species details. Client and server must use matching mod versions.

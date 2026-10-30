@@ -4,52 +4,53 @@
   "repository": "https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs",
   "source_repository": "https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs",
   "navigation": {
-    "Começar": {
-      "Guia do mod": "README.md",
-      "Instalação": "INSTALLATION.md",
-      "Primeiros passos": "guides/GETTING_STARTED.md"
+    "Get started": {
+      "Player guide": "README.md",
+      "Installation": "INSTALLATION.md",
+      "First steps": "guides/GETTING_STARTED.md"
     },
-    "Slimes e evolução": {
-      "Galeria das 47 espécies": "guides/SLIMES.md",
-      "Genética": "reference/GENETICS.md",
-      "Reprodução": "guides/BREEDING.md",
-      "Evolução": "guides/EVOLUTION.md",
-      "Linhagens avançadas": "guides/ADVANCED_LINEAGES.md",
-      "Conquistas e rituais": "guides/ASCENSION.md"
+    "Slimes and evolution": {
+      "47-species gallery": "guides/SLIMES.md",
+      "Genetics": "reference/GENETICS.md",
+      "Breeding": "guides/BREEDING.md",
+      "Evolution": "guides/EVOLUTION.md",
+      "Advanced lineages": "guides/ADVANCED_LINEAGES.md",
+      "Ascension rituals": "guides/ASCENSION.md"
     },
-    "Cuidado e trabalho": {
-      "Cuidado e captura": "guides/CARE.md",
-      "Vínculo e simbiose": "guides/COMPANIONS.md",
-      "Funções individuais": "guides/SPECIALIZATIONS.md",
-      "Novos trabalhos": "guides/WORK_JOBS.md",
-      "Circuitos, sonar e vitrine": "guides/SIGNAL_JOBS.md"
+    "Care and work": {
+      "Care and capture": "guides/CARE.md",
+      "Companions and symbiosis": "guides/COMPANIONS.md",
+      "Individual jobs": "guides/SPECIALIZATIONS.md",
+      "Production and transport": "guides/WORK_JOBS.md",
+      "Circuits, sonar, and displays": "guides/SIGNAL_JOBS.md"
     },
-    "Pesquisa e aventura": {
-      "Slimepedia e progressão": "guides/PROGRESSION.md",
-      "Pesquisa genética": "guides/GENETIC_RESEARCH.md",
-      "Estação genética": "guides/GENETIC_STATION.md",
-      "Incubadora": "guides/INCUBATOR.md",
-      "Materiais e receitas": "guides/MATERIALS.md",
-      "Combate": "guides/COMBAT.md",
-      "Estruturas e altares": "guides/SPECIAL_STRUCTURES.md",
-      "Bosses e lacaios": "guides/BOSSES.md",
-      "Ecossistema": "guides/ECOSYSTEM.md"
+    "Research and adventure": {
+      "Slimepedia and progression": "guides/PROGRESSION.md",
+      "Genetic research": "guides/GENETIC_RESEARCH.md",
+      "Genetic Station": "guides/GENETIC_STATION.md",
+      "Incubator": "guides/INCUBATOR.md",
+      "Materials and recipes": "guides/MATERIALS.md",
+      "Combat": "guides/COMBAT.md",
+      "Structures and altars": "guides/SPECIAL_STRUCTURES.md",
+      "Bosses and minions": "guides/BOSSES.md",
+      "Ecosystem": "guides/ECOSYSTEM.md"
     },
-    "Aparência": {
-      "Materiais das espécies": "guides/SLIME_IDENTITIES.md",
-      "Detalhes elementais": "guides/ELEMENTAL_DETAILS.md",
-      "Fases lunares e astros": "guides/CELESTIAL_VISUALS.md",
-      "Capas e divulgação": "PRESENTATION.md"
+    "Appearance": {
+      "Slime materials and identity": "guides/SLIME_IDENTITIES.md",
+      "Elemental details": "guides/ELEMENTAL_DETAILS.md",
+      "Celestial and lunar visuals": "guides/CELESTIAL_VISUALS.md",
+      "Images and description": "PRESENTATION.md"
     },
-    "Referências": {
-      "Configuração": "CONFIGURATION.md",
-      "Balanceamento": "BALANCE.md",
-      "Espécies e datapacks": "reference/SPECIES_DATA.md"
+    "Reference": {
+      "Configuration": "CONFIGURATION.md",
+      "Balance": "BALANCE.md",
+      "Species and datapacks": "reference/SPECIES_DATA.md"
     },
-    "Atualizações": {
-      "Histórico de versões": "updates/README.md"
+    "Updates": {
+      "Version history": "updates/README.md"
     }
   },
   "content_root": ".",
-  "mod_version": "0.14.2"
+  "mod_version": "0.15.0",
+  "language": "en"
 }

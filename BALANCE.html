@@ -1,234 +1,135 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Valores de balanceamento · Slime Evolution</title><meta name="description" content="Guia do Slime Evolution: espécies, genética, criação, metamorfoses, trabalho e aventura."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/BALANCE.html"><link rel="stylesheet" href="site.css"></head>
-<body data-root=""><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir navegação">☰</button><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>GUIA DE CAMPO</small></span></a><div class="search"><label class="sr-only" for="search">Buscar na documentação</label><input id="search" type="search" placeholder="Buscar espécies, receitas, funções…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Resultados da busca" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
-<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSÃO 0.14.2</span><section><h2>Começar</h2><a href="index.html">Guia do mod</a><a href="INSTALLATION.html">Instalação</a><a href="guides/GETTING_STARTED.html">Primeiros passos</a></section><section><h2>Slimes e evolução</h2><a href="guides/SLIMES.html">Galeria das 47 espécies</a><a href="reference/GENETICS.html">Genética</a><a href="guides/BREEDING.html">Reprodução</a><a href="guides/EVOLUTION.html">Evolução</a><a href="guides/ADVANCED_LINEAGES.html">Linhagens avançadas</a><a href="guides/ASCENSION.html">Conquistas e rituais</a></section><section><h2>Cuidado e trabalho</h2><a href="guides/CARE.html">Cuidado e captura</a><a href="guides/COMPANIONS.html">Vínculo e simbiose</a><a href="guides/SPECIALIZATIONS.html">Funções individuais</a><a href="guides/WORK_JOBS.html">Novos trabalhos</a><a href="guides/SIGNAL_JOBS.html">Circuitos, sonar e vitrine</a></section><section><h2>Pesquisa e aventura</h2><a href="guides/PROGRESSION.html">Slimepedia e progressão</a><a href="guides/GENETIC_RESEARCH.html">Pesquisa genética</a><a href="guides/GENETIC_STATION.html">Estação genética</a><a href="guides/INCUBATOR.html">Incubadora</a><a href="guides/MATERIALS.html">Materiais e receitas</a><a href="guides/COMBAT.html">Combate</a><a href="guides/SPECIAL_STRUCTURES.html">Estruturas e altares</a><a href="guides/BOSSES.html">Bosses e lacaios</a><a href="guides/ECOSYSTEM.html">Ecossistema</a></section><section><h2>Aparência</h2><a href="guides/SLIME_IDENTITIES.html">Materiais das espécies</a><a href="guides/ELEMENTAL_DETAILS.html">Detalhes elementais</a><a href="guides/CELESTIAL_VISUALS.html">Fases lunares e astros</a><a href="PRESENTATION.html">Capas e divulgação</a></section><section><h2>Referências</h2><a href="CONFIGURATION.html">Configuração</a><a href="BALANCE.html" aria-current="page">Balanceamento</a><a href="reference/SPECIES_DATA.html">Espécies e datapacks</a></section><section><h2>Atualizações</h2><a href="updates/index.html">Histórico de versões</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="valores-de-balanceamento">Valores de balanceamento</h1>
-<p>Esta referência reúne os custos de crescimento e os parâmetros de chefes da
-versão 0.5.0. Dificuldade percebida e economia de uma campanha survival
-continuam sujeitas a feedback de jogo; não são garantidas por uma simulação.</p>
-<h2 id="crescimento-e-custos">Crescimento e custos</h2>
-<p>O crescimento natural padrão exige 12.000 ticks carregados e em boas condições
-(dez minutos). O tempo para obter e cuidar dos pais é adicional.
-Cada ciclo manual da incubadora leva 200 ticks e cobra um alimento e um suplemento
-apenas na conclusão. Não há ciclo automático, e o token da cápsula é renovado.</p>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Balance Reference · Slime Evolution</title><meta name="description" content="The Slime Evolution guide: species, genetics, breeding, metamorphoses, jobs, and adventure."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/BALANCE.html"><link rel="stylesheet" href="site.css"></head>
+<body data-root=""><a class="skip" href="#conteudo">Skip to content</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation">☰</button><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>FIELD GUIDE</small></span></a><div class="search"><label class="sr-only" for="search">Search the guide</label><input id="search" type="search" placeholder="Search species, recipes, jobs…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Search results" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSION 0.15.0</span><section><h2>Get started</h2><a href="index.html">Player guide</a><a href="INSTALLATION.html">Installation</a><a href="guides/GETTING_STARTED.html">First steps</a></section><section><h2>Slimes and evolution</h2><a href="guides/SLIMES.html">47-species gallery</a><a href="reference/GENETICS.html">Genetics</a><a href="guides/BREEDING.html">Breeding</a><a href="guides/EVOLUTION.html">Evolution</a><a href="guides/ADVANCED_LINEAGES.html">Advanced lineages</a><a href="guides/ASCENSION.html">Ascension rituals</a></section><section><h2>Care and work</h2><a href="guides/CARE.html">Care and capture</a><a href="guides/COMPANIONS.html">Companions and symbiosis</a><a href="guides/SPECIALIZATIONS.html">Individual jobs</a><a href="guides/WORK_JOBS.html">Production and transport</a><a href="guides/SIGNAL_JOBS.html">Circuits, sonar, and displays</a></section><section><h2>Research and adventure</h2><a href="guides/PROGRESSION.html">Slimepedia and progression</a><a href="guides/GENETIC_RESEARCH.html">Genetic research</a><a href="guides/GENETIC_STATION.html">Genetic Station</a><a href="guides/INCUBATOR.html">Incubator</a><a href="guides/MATERIALS.html">Materials and recipes</a><a href="guides/COMBAT.html">Combat</a><a href="guides/SPECIAL_STRUCTURES.html">Structures and altars</a><a href="guides/BOSSES.html">Bosses and minions</a><a href="guides/ECOSYSTEM.html">Ecosystem</a></section><section><h2>Appearance</h2><a href="guides/SLIME_IDENTITIES.html">Slime materials and identity</a><a href="guides/ELEMENTAL_DETAILS.html">Elemental details</a><a href="guides/CELESTIAL_VISUALS.html">Celestial and lunar visuals</a><a href="PRESENTATION.html">Images and description</a></section><section><h2>Reference</h2><a href="CONFIGURATION.html">Configuration</a><a href="BALANCE.html" aria-current="page">Balance</a><a href="reference/SPECIES_DATA.html">Species and datapacks</a></section><section><h2>Updates</h2><a href="updates/index.html">Version history</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="balance-reference">Balance Reference</h1>
+<p><a id="chefes"></a>
+<a id="circuitos-sonar-e-vitrine"></a>
+<a id="crescimento-e-custos"></a>
+<a id="funções-individuais"></a>
+<a id="referências"></a>
+<a id="treinamento-e-simbiose"></a>
+<a id="valores-de-balanceamento"></a></p>
+<p>Values describe loaded gameplay ticks, normally 20 per second. Actual survival difficulty and economy depend on play conditions.</p>
+<h2 id="growth-and-incubation">Growth and incubation</h2>
+<p>Default natural growth needs <strong>12,000 loaded ticks</strong> under valid care conditions. Each manual incubator cycle takes <strong>200 ticks</strong>, charging one food and one supplement only at completion.</p>
 <table>
 <thead>
 <tr>
-<th>Suplemento</th>
-<th style="text-align: right;">Crescimento por ciclo</th>
-<th style="text-align: right;">Ciclos para um recém-nascido padrão</th>
-<th style="text-align: right;">Tempo carregado</th>
-<th style="text-align: right;">Alimentos/suplementos</th>
+<th>Supplement</th>
+<th style="text-align: right;">Growth per cycle</th>
+<th style="text-align: right;">Cycles for a default newborn</th>
+<th style="text-align: right;">Processing time</th>
+<th style="text-align: right;">Foods / supplements</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Geleia</td>
-<td style="text-align: right;">1.200</td>
+<td>Breeding Gel</td>
+<td style="text-align: right;">1,200</td>
 <td style="text-align: right;">10</td>
-<td style="text-align: right;">100 s</td>
+<td style="text-align: right;">100 seconds</td>
 <td style="text-align: right;">10 / 10</td>
 </tr>
 <tr>
-<td>Catalisador</td>
-<td style="text-align: right;">2.400</td>
+<td>Genetic Catalyst</td>
+<td style="text-align: right;">2,400</td>
 <td style="text-align: right;">5</td>
-<td style="text-align: right;">50 s</td>
+<td style="text-align: right;">50 seconds</td>
 <td style="text-align: right;">5 / 5</td>
 </tr>
 <tr>
-<td>Geleia Real</td>
-<td style="text-align: right;">3.600</td>
+<td>Royal Gel</td>
+<td style="text-align: right;">3,600</td>
 <td style="text-align: right;">4</td>
-<td style="text-align: right;">40 s</td>
+<td style="text-align: right;">40 seconds</td>
 <td style="text-align: right;">4 / 4</td>
 </tr>
 </tbody>
 </table>
-<p>Esses resultados vêm da aplicação repetida das regras de produção, com
-necessidades válidas. Não incluem coleta, fabricação, abertura de menus ou
-intervalos entre cliques. Crescimento adicional não envelhece o indivíduo na
-mesma proporção: os três casos acrescentam 2.000/1.000/800 ticks de idade.
-Mudar growthTicks afeta os próximos nascimentos; filhotes existentes conservam
-sua duração. O suplemento real recompensa o Rei e é opcional.</p>
-<h2 id="chefes">Chefes</h2>
-<p>Valores em pontos de vida, antes de armadura/efeitos: dois pontos são um coração.
-Os quatro encontros anunciam ataques e verificam distância, altura e cobertura.
-Os interiores dos anéis, cruzes e orbitais foram preenchidos na 0.5.0.
-O ritual consome o item após inserir o chefe e impede sobreposição em 96 blocos.</p>
+<p>These totals exclude gathering, crafting, menu use, and intervals between clicks. Chronological age increases by only 2,000 / 1,000 / 800 ticks respectively. New <code>growthTicks</code> settings affect future births; existing juveniles retain their duration.</p>
+<h2 id="bosses">Bosses</h2>
+<p>Health is measured in points; two points equal one heart. All encounters announce attacks and check distance, height, and cover. Rituals prevent overlapping bosses within 96 blocks.</p>
 <table>
 <thead>
 <tr>
-<th>Chefe</th>
-<th style="text-align: right;">Vida em 0.5.0</th>
-<th style="text-align: right;">Armadura</th>
-<th style="text-align: right;">Famílias de ataque</th>
-<th>Dano bruto por fase</th>
+<th>Boss</th>
+<th style="text-align: right;">Health</th>
+<th style="text-align: right;">Armor</th>
+<th style="text-align: right;">Attack families</th>
+<th>Raw damage by phase</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Rei Gelatinoso</td>
+<td>Gelatinous King</td>
 <td style="text-align: right;">290</td>
 <td style="text-align: right;">7</td>
 <td style="text-align: right;">4</td>
-<td>9 / 12,6</td>
+<td>9 / 12.6</td>
 </tr>
 <tr>
-<td>Coração Magmático</td>
+<td>Magmatic Heart</td>
 <td style="text-align: right;">320</td>
 <td style="text-align: right;">6</td>
 <td style="text-align: right;">4</td>
-<td>9 / 12,6; erupções 7,5 / 10,5</td>
+<td>9 / 12.6; eruptions 7.5 / 10.5</td>
 </tr>
 <tr>
-<td>Colosso Cristalino</td>
+<td>Crystalline Colossus</td>
 <td style="text-align: right;">400</td>
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">4</td>
-<td>7,5 / 10,5</td>
+<td>7.5 / 10.5</td>
 </tr>
 <tr>
-<td>Primordial</td>
+<td>Primordial Slime</td>
 <td style="text-align: right;">540</td>
 <td style="text-align: right;">8</td>
 <td style="text-align: right;">5</td>
-<td>7,5 / 10,5 / 14,7</td>
+<td>7.5 / 10.5 / 14.7</td>
 </tr>
 </tbody>
 </table>
-<p>O cálculo é <code>base × 1,5 × 1,4^fase × configuração</code>. Não há o antigo teto de
-12 pontos: com configuração dois, o maior golpe é 29,4. Água reduz o dano do
-Coração pela metade depois desse cálculo. Preparações conservam a fase inicial.
-Os corpos físicos e visuais dos quatro chefes são 1,5 vez maiores.</p>
-<p>O Rei conserva seis lacaios: guardas (24 de vida, dano quatro/Fraqueza II),
-curandeiros (18, cura nove a cada 80 ticks) e cuspidores (20, dano três,
-Lentidão I/Veneno I). Os avanços têm no máximo sete fragmentos. O Primordial
-chama até três ecos voadores e o Coração até quatro lacaios de fogo/magma;
-reservas e expiração impedem duplicação por descarregamento. Invocações novas
-usam o multiplicador geral e a fase do dono em seu dano de base três/quatro.
-<a href="guides/BOSSES.html">Efeitos e comportamento dos bosses</a>.</p>
-<p>As recompensas de vitória creditada a jogador são duas unidades por chefe.
-Rei: Geleia Real; Coração: Fragmento Ígneo; Colosso: Estilhaço Prismático;
-Primordial: Essência Primordial. Lacaios não geram loot/XP nem se dividem.
-Os amuletos têm usos finitos cobrados em dano aceito. A progressão do selo final
-exige recompensas dos chefes anteriores, Essência Ancestral e Tabuleta Antiga;
-as formas raras preservam a identidade em metamorfose, sem gerar um clone.</p>
-<h2 id="referências">Referências</h2>
-<p><a href="guides/BOSSES.html">Bosses</a> · <a href="guides/BREEDING.html">Reprodução</a> ·
-<a href="guides/INCUBATOR.html">Incubadora</a> · <a href="CONFIGURATION.html">Configurações</a></p>
-<h2 id="treinamento-e-simbiose">Treinamento e simbiose</h2>
+<p>Damage uses <code>base × 1.5 × 1.4^phase × setting</code>. At multiplier 2, the largest hit reaches 29.4 before defenses. Water halves Magmatic Heart damage after this calculation. Prepared attacks keep their starting phase parameters.</p>
+<p>The King maintains up to six minions: guards have 24 health and four base damage with Weakness II; healers have 18 health and restore nine health per 80 ticks; spitters have 20 health and three base damage with Slowness I and Poison I. The Heart supports up to four fire/magma servants; Primordial supports up to three flying echoes.</p>
+<p>A player-credited victory yields two boss materials: Royal Gel, Igneous Fragment, Prismatic Shard, or Primordial Essence. Minions do not drop loot or XP or split. See <a href="guides/BOSSES.html">boss encounters</a>.</p>
+<h2 id="training-and-symbiosis">Training and symbiosis</h2>
 <table>
 <thead>
 <tr>
-<th>Ação</th>
-<th>Custo</th>
-<th>Condições e recuperação</th>
+<th>Action</th>
+<th>Cost</th>
+<th>Recovery</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Lição</td>
-<td>5 energia, +3 fome, até +1 confiança</td>
-<td>Confiança 40, energia 40, fome até 60, conforto 40; 200 ticks</td>
+<td>Lesson</td>
+<td>5 energy, +3 hunger, up to +1 trust</td>
+<td>200 ticks</td>
 </tr>
 <tr>
-<td>Horta de Água + Musgo</td>
-<td>6 energia e +3 fome de cada parceiro</td>
-<td>Um estágio de uma planta por ação; recuperação compartilhada de 400 ticks</td>
+<td>Water + Moss crop growth</td>
+<td>6 energy, +3 hunger per partner</td>
+<td>Shared 400 ticks</td>
 </tr>
 <tr>
-<td>Pesquisa de Elétrico + Ferro</td>
-<td>2 energia e +1 fome de cada parceiro</td>
-<td>Até quatro ticks de progresso extra; recuperação compartilhada de 20 ticks</td>
+<td>Electric + Iron processing</td>
+<td>2 energy, +1 hunger per partner</td>
+<td>Shared 20 ticks</td>
 </tr>
 </tbody>
 </table>
-<p>Lições concedem <code>4 + piso(sociabilidade × 4) + piso(estabilidade × 2)</code> pontos,
-com limite 100. Esperar exige 20, Seguir 40 e Voltar ao lar 60. A simbiose exige
-adultos calmos, confiança 40, energia 30, fome até 60 e conforto 40, com consentimento
-e cuidador comum. Custos de receitas e resultados das máquinas permanecem iguais.</p>
-<p><a href="guides/COMPANIONS.html">Uso e limites</a>.</p>
-<h2 id="funções-individuais">Funções individuais</h2>
-<table>
-<thead>
-<tr>
-<th>Função</th>
-<th>Recurso/resultado</th>
-<th>Custo</th>
-<th>Intervalo</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Fogo</td>
-<td>Até +20 ticks em uma fornalha que esteja processando, a até 4 blocos</td>
-<td>2 energia, +1 fome</td>
-<td>20 ticks por ajudante</td>
-</tr>
-<tr>
-<td>Fúngico</td>
-<td>8 compostáveis → 1 farinha de osso</td>
-<td>6 energia, +3 fome</td>
-<td>200 ticks de trabalho</td>
-</tr>
-<tr>
-<td>Abyssal</td>
-<td>Até +60 de ar e 300 ticks de visão noturna ao cuidador submerso a até 6 blocos</td>
-<td>2 energia, +1 fome</td>
-<td>40 ticks</td>
-</tr>
-<tr>
-<td>Âmbar</td>
-<td>3 compartimentos de até 16 itens cada</td>
-<td>Sem custo de armazenamento</td>
-<td>Respeita o limite natural de cada item</td>
-</tr>
-</tbody>
-</table>
-<p>As funções ativas exigem adulto calmo, confiança 40, energia 30, fome até 60 e
-conforto 40. Depósitos exigem confiança 40; a retirada dos pertences não exige
-essa confiança. <a href="guides/SPECIALIZATIONS.html">Condições e limites</a>.</p>
-<h2 id="circuitos-sonar-e-vitrine">Circuitos, sonar e vitrine</h2>
-<table>
-<thead>
-<tr>
-<th>Função</th>
-<th>Custo e alcance</th>
-<th>Parâmetros</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Elétrico</td>
-<td>2 energia e +1 fome por pulso; saída a até 6 blocos</td>
-<td>Treino 20; força 15; intervalo 20/40/80/160 ticks e duração 2/4/8/10 ticks</td>
-</tr>
-<tr>
-<td>Cristal</td>
-<td>4 energia e +2 fome ao encontrar eco; raio 12</td>
-<td>Treino 20; concentração de pelo menos 4 minerais por setor; recuperação de 200 ticks mesmo sem eco</td>
-</tr>
-<tr>
-<td>Cristal Energizado</td>
-<td>1 energia no início e por 20 ticks de sinal ativo</td>
-<td>Treino 40; entrada/saída separadas por 4–32 blocos; intensidade analógica 0–15</td>
-</tr>
-<tr>
-<td>Vidro</td>
-<td>Um objeto; exposição e ampliação sem custo</td>
-<td>Depósito exige confiança 40; zoom visual de 1,5×</td>
-</tr>
-</tbody>
-</table>
-<p><a href="guides/SIGNAL_JOBS.html">Uso e limites</a>. Os onze trabalhos anteriores estão
-em <a href="guides/WORK_JOBS.html">produção, transporte e auras</a>.</p></article><aside class="outline" aria-label="Nesta página"><span>NESTA PÁGINA</span><div class="toc">
+<p>Lessons grant <code>4 + floor(sociability × 4) + floor(stability × 2)</code> points, capped at 100. Wait needs 20, Follow 40, Return home 60. Symbiosis adds up to four machine ticks or one crop stage without bypassing materials or permissions. See <a href="guides/COMPANIONS.html">companions</a>.</p>
+<h2 id="jobs-and-circuits">Jobs and circuits</h2>
+<p>Fire adds up to 20 furnace ticks per 20-tick helper cooldown for 2 energy and +1 hunger. Fungal converts eight compostables to one bone meal in 200 work ticks for 6 energy and +3 hunger. Abyssal restores up to 60 air and 300 ticks of Night Vision within six blocks for 2 energy and +1 hunger, recovering for 40 ticks. Amber holds three compartments of up to 16 items with no storage cost.</p>
+<p>Electric pulses need training 20 and cost 2 energy and +1 hunger, with strength 15, intervals 20/40/80/160 ticks, and durations 2/4/8/10. Crystal sonar needs training 20, reaches 12 blocks, and costs 4 energy and +2 hunger only on an echo, with 200-tick recovery even without one. Energized Crystal needs training 40 and one energy initially and per active second, relaying analog 0–15 across 4–32 blocks. Glass displays one item with free 1.5× visual enlargement.</p>
+<p><a href="guides/SPECIALIZATIONS.html">Job details</a> · <a href="guides/WORK_JOBS.html">Additional jobs</a> · <a href="guides/SIGNAL_JOBS.html">Signal jobs</a> · <a href="CONFIGURATION.html">Configuration</a></p></article><aside class="outline" aria-label="On this page"><span>ON THIS PAGE</span><div class="toc">
 <ul>
-<li><a href="#crescimento-e-custos">Crescimento e custos</a></li>
-<li><a href="#chefes">Chefes</a></li>
-<li><a href="#referências">Referências</a></li>
-<li><a href="#treinamento-e-simbiose">Treinamento e simbiose</a></li>
-<li><a href="#funções-individuais">Funções individuais</a></li>
-<li><a href="#circuitos-sonar-e-vitrine">Circuitos, sonar e vitrine</a></li>
+<li><a href="#growth-and-incubation">Growth and incubation</a></li>
+<li><a href="#bosses">Bosses</a></li>
+<li><a href="#training-and-symbiosis">Training and symbiosis</a></li>
+<li><a href="#jobs-and-circuits">Jobs and circuits</a></li>
 </ul>
 </div>
-</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/BALANCE.md">Ver esta página no GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="search-index.js" defer></script><script src="site.js" defer></script></body></html>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/BALANCE.md">View this page on GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="search-index.js" defer></script><script src="site.js" defer></script></body></html>

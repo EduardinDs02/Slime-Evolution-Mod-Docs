@@ -1,50 +1,34 @@
-# Estação genética
+# Genetic Station
 
-Analise um indivíduo capturado e consulte seus genes sem liberá-lo no recinto.
-O analisador portátil continua disponível para slimes no mundo.
+<a id="estação-genética"></a>
+<a id="receita-e-uso"></a>
 
-![Estação genética SolarPunk no jogo](../assets/blocks/station.png)
+Analyze a captured individual without releasing it. The handheld analyzer remains available for live slimes.
 
-A bancada fica voltada para você na colocação. Seu monitor anima durante a
-análise e fica parado quando o trabalho pausa ou termina.
+![SolarPunk Genetic Station](../assets/blocks/station.png)
 
-## Receita e uso
-
-Receita de `slimeevolution:genetic_station`:
+## Recipe
 
 ```text
-F V F
+I G I
 R A R
-F F F
+I I I
 ```
 
-F = lingote de ferro; V = vidro; R = redstone; A = analisador genético.
-O bloco também aparece em Ferramentas e Utilidades no criativo. As texturas
-de sua carcaça e superfície são originais.
+I = iron ingot; G = glass; R = redstone; A = Genetic Analyzer. Item ID: `slimeevolution:genetic_station`.
 
-1. Abra a estação e insira uma cápsula ocupada no primeiro espaço.
-2. Insira papel e redstone nos dois espaços seguintes.
-3. Como cuidador do indivíduo, pressione **Analisar**.
-4. Após 100 ticks carregados, pressione **Ver genes** para abrir a inspeção.
-5. Retire a cápsula para levá-la ou liberar o indivíduo normalmente.
+## Operation
 
-![Interface do equipamento no jogo](../assets/interfaces/station.png)
+1. Insert an occupied capsule in the first slot.
+2. Insert paper and redstone in the following slots.
+3. As the individual's caretaker, press **Analyze**.
+4. After **100 loaded ticks**, press **View genes**.
+5. Remove the capsule to transport or release the slime.
 
-Uma análise consome **um papel e uma redstone**, somente ao concluir. São
-cinco segundos a 20 ticks/s; o processamento usa ticks do servidor e não um
-relógio de parede. A barra acompanha o progresso. Remover insumos pausa o
-trabalho; recolocá-los retoma o progresso. Remover/trocar o indivíduo cancela
-o trabalho sem cobrança. Nenhum trabalho começa apenas por inserir itens.
+Analysis consumes **one paper and one redstone only on completion**. At 20 ticks per second, a cycle takes five seconds. Removing ingredients pauses progress; replacing them resumes it. Changing or removing the individual cancels without charging. Inserting items alone does not start work.
 
-A análise concluída permanece disponível nessa estação enquanto a mesma
-cápsula válida continuar nela. Reabrir a leitura não cobra novamente. Após
-remover a cápsula e a estação processar a remoção, uma nova sessão de análise
-exige insumos. A pesquisa na Slimepedia continua registrada no jogador.
+The completed reading remains available while the same valid capsule stays in the station; reopening it does not charge again. A new analysis session requires ingredients after the capsule is removed and that removal is processed. Research remains in the player's Slimepedia.
 
-O resultado abre a inspeção existente com o cabeçalho **Cápsula: …**. Vida,
-necessidades, idade, alelos, linhagem e progresso evolutivo são os valores
-preservados na captura. O indivíduo não envelhece, se alimenta, se reproduz ou
-sofre mutação na estação. Retirar a cápsula, perder acesso ao bloco ou sair do
-alcance encerra essa inspeção. A estação realiza leitura e pesquisa genética.
+The inspection shows captured health, needs, age, alleles, lineage, and evolution progress. The slime does not age, eat, breed, or mutate in the station. Removing the capsule, losing block access, or leaving range closes the inspection. The monitor animates during processing and stops when paused or complete.
 
-[Pesquisa e progressão](PROGRESSION.md) · [Cuidado e captura](CARE.md)
+[Research and progression](PROGRESSION.md) · [Capsules](CARE.md)

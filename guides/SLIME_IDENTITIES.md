@@ -1,34 +1,28 @@
-# Materiais e identidade dos slimes
+# Slime Materials and Identity
 
-[Guia do mod](../README.md) · [Galeria das espécies](SLIMES.md) · [Outros materiais animados](ELEMENTAL_DETAILS.md)
+<a id="materiais-e-identidade-dos-slimes"></a>
 
-![Os oito slimes com seus materiais e detalhes no jogo](../assets/identities/overview.png)
+Each species keeps its body shape, core, and expressions. Materials, accessories, and movement communicate its element, even while idle. Gel color still follows genetics.
 
-O corpo de cada espécie mantém seu formato, núcleo e expressões. Os materiais,
-acessórios e movimentos ajudam a reconhecer o elemento, inclusive quando o
-slime está parado. A cor do gel continua acompanhando a genética.
+![Eight distinctive slime materials](../assets/english-gallery/02-advanced-species.png)
 
-| Slime | Aparência e movimento |
+| Slime | Appearance and movement |
 |---|---|
-| Celestial | Gel translúcido com três constelações internas, dois anéis inclinados que orbitam acima da cabeça e dois pares de asas luminosas com estrelas nas pontas. |
-| Cristal Energizado | Doze cristais de tamanhos diferentes, arcos conectando os cristais e veios de energia que pulsam e percorrem a superfície. |
-| Almas | Chamas espirituais azuladas, três pequenas almas com olhos dentro do corpo e névoa suave ao redor das laterais. |
-| Pântano | Raízes ramificadas, taboas de alturas diferentes, vegetação flutuante e bolhas lentas. |
-| Micélio | Filamentos brancos e lilases que se ramificam pelo gel, cogumelos em diferentes estágios de crescimento e esporos discretos. |
-| Lama | Reflexos úmidos, gotas escorrendo devagar, pequenos volumes de barro e respingos ligados à aterrissagem. A animação do gel é mais lenta. |
-| Obsidiana | Placas de vidro vulcânico escuro, fraturas irregulares e reflexos roxos e claros nas bordas. |
-| Supercélula | Três camadas de nuvens em espiral, relâmpagos entre as nuvens e o corpo e um tornado mais estreito junto ao chão. |
+| Celestial | Translucent gel, three internal constellations, two tilted orbiting rings, and two pairs of luminous wings with star tips |
+| Energized Crystal | Twelve differently sized crystals, connecting arcs, and pulsing energy veins |
+| Soul | Blue spirit flames, three small eyed souls inside the body, and soft side mist |
+| Bog | Branching roots, varied cattails, floating vegetation, and slow bubbles |
+| Mycelium | Branching white and lilac filaments, mushrooms at different growth stages, and subtle spores |
+| Mud | Wet reflections, slow drips, clay volumes, landing splashes, and slower gel animation |
+| Obsidian | Dark volcanic glass plates, irregular fractures, and purple edge highlights |
+| Supercell | Three spiraling cloud layers, lightning between body and clouds, and a narrow ground-level tornado |
 
-Constelações e anéis do Celestial em movimento
+![Celestial motion](../assets/identities/celestial.gif)
 
-Energia percorrendo o Cristal Energizado
+![Energized Crystal motion](../assets/identities/energized_crystal.gif)
 
-Nuvens e relâmpagos da Supercélula
+![Supercell motion](../assets/identities/supercell.gif)
 
-As imagens são capturas reais do jogo, apenas recortadas, redimensionadas e
-legendadas. Cada GIF usa quatro quadros do mesmo indivíduo, separados por dez
-ticks. A sequência curta serve para mostrar o movimento.
+Images are real gameplay captures, cropped, resized, and captioned. Each GIF uses four frames of the same individual separated by ten ticks.
 
-A opção `reducedMotion` em `config/slimeevolution-client.toml` interrompe as
-novas animações decorativas. A quantidade de partículas continua limitada
-pelas [configurações visuais](../CONFIGURATION.md#visual-do-cliente) do jogador e do servidor.
+`reducedMotion` in `config/slimeevolution-client.toml` stops decorative animations. Particles remain bounded by [client and server settings](../CONFIGURATION.md).

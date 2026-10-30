@@ -1,67 +1,33 @@
-# Instalar e atualizar
+# Installation and Updates
 
-Requisitos testados: Minecraft Java **1.21.1**, NeoForge **21.1.264**, Java **21**.
-Slime Evolution 0.14.2 requer **GeckoLib 4.9.3 para NeoForge/Minecraft 1.21.1**.
-Instale os dois mods no cliente e no servidor, com as mesmas versões em todos
-os participantes. O ZIP de entrega contém o JAR oficial do GeckoLib em `dependencies/`.
+<a id="atualização-e-backup"></a>
+<a id="compatibilidade-e-diagnóstico"></a>
+<a id="instalar-e-atualizar"></a>
+<a id="licença"></a>
 
-1. Instale Minecraft/NeoForge compatíveis em um perfil separado.
-2. Com o jogo/servidor desligado, coloque os JARs de Slime Evolution e GeckoLib na pasta `mods/`.
-3. Crie um mundo de teste. No primeiro início, confira itens, espécies e receitas.
-4. Consulte [configurações](CONFIGURATION.md) e [balanceamento](BALANCE.md).
+## Requirements
 
-NeoForge, Minecraft, Java, caches, scripts de teste e mundos de validação não
-fazem parte do pacote. Não coloque o ZIP de documentação em `mods/`.
-O pacote contém SHA256SUMS; compare o SHA-256 antes de usar um arquivo transferido.
-GeckoLib conserva sua licença MIT, incluída em `licenses/GECKOLIB_LICENSE` no ZIP.
+| Component | Required version |
+|---|---|
+| Minecraft Java Edition | 1.21.1 |
+| NeoForge | 21.1.264 |
+| Java | 21 |
+| GeckoLib | 4.9.3 for NeoForge / Minecraft 1.21.1 |
 
-## Atualização e backup
+Install **Slime Evolution and GeckoLib on both the client and server**, using matching versions for every participant. GeckoLib is a required external dependency; the game cannot load the mod without it.
 
-Pare o servidor e faça uma cópia **completa e consistente do mundo**, incluindo
-playerdata, data, dimensões e serverconfig. Guarde também a versão anterior do
-JAR e a lista de mods. Só depois substitua o JAR e teste a cópia do mundo.
-Não faça downgrade de um save já usado pela versão nova.
+## Install
 
-As cápsulas dependem de `data/slimeevolution_captures.dat`, do inventário e das
-entidades do mundo. A Slimepedia usa `data/slimeevolution_research.dat` no
-Overworld. Restaurar apenas o inventário ou apenas o ledger pode invalidar
-cápsulas ou reintroduzir um token antigo contra um estado de mundo incompatível.
-Não há transação única entre todos os arquivos de um mundo.
+1. Install compatible Minecraft and NeoForge in a separate profile.
+2. Close the game or stop the server.
+3. Place the Slime Evolution and GeckoLib `.jar` files in `mods/`.
+4. Start a test world and check the items, species, and recipes.
+5. Read [getting started](guides/GETTING_STARTED.md) and [configuration](CONFIGURATION.md).
 
-Cada dimensão também salva as regiões protegidas em `slimeevolution_arenas.dat`
-e os encontros reservados em `slimeevolution_rituals.dat`, na sua pasta `data/`.
-Inclua esses arquivos no backup completo; remover apenas uma reserva pode
-desalinhar o altar e o boss ainda existente.
+The release ZIP includes the official GeckoLib JAR under `dependencies/`. Put the JARs in `mods/`, not the documentation ZIP. Compare transferred files against the release's `SHA256SUMS`. GeckoLib keeps its MIT license, supplied under `licenses/GECKOLIB_LICENSE` in the bundle.
 
-O ensaio automatizado verifica gravação comprimida, leitura por um armazenamento
-novo, invalidação persistida de token e restauração do par de SavedData. Isso
-não equivale a recuperação após queda abrupta ou backup parcial. Ledger ausente
-não autoriza liberar cápsulas; recuperar o conjunto completo é a opção suportada.
-Nunca apague o ledger para tentar corrigir uma cápsula.
+## Update and back up
 
-Indivíduos mantêm NBT 7 e diário schema 3. Genomas, identidades e registros de
-versões anteriores são preservados pelos leitores existentes; dados antigos
-sem prova de mutação continuam como histórico indisponível. Conteúdo novo de
-geração aparece em chunks novos, sem reconstruir terreno explorado.
+Stop the server and make a complete, consistent backup of the world, including player data, saved data, dimensions, and server configuration. Keep the previous mod JAR and your mod list. Replace the JAR and test a copy of your world before continuing. Do not downgrade a world after opening it with a newer version.
 
-## Compatibilidade e diagnóstico
-
-Dois clientes reais foram testados por TCP local, com desconexão/reconexão,
-inventário salvo, configurações do servidor, pesquisa privada e replay de cápsula.
-Os ensaios gráficos usam Xvfb/Mesa por software na nuvem. Login online, rede
-pública, GPU física, shaders e modpacks específicos não foram certificados.
-Testar uma combinação nova em cópia do mundo continua sendo necessário.
-
-Ao relatar um problema, envie versões de Minecraft/NeoForge/Java/mod, lista de
-mods, passos para reproduzir e o trecho relevante do log, removendo dados pessoais.
-Para erro de datapack, confira o ID/arquivo apontado no log: o mod rejeita
-definições inválidas em vez de publicar um catálogo parcialmente carregado.
-
-## Licença
-
-O proprietário escolheu **All Rights Reserved**. A presença do JAR neste pacote
-não concede permissão geral de redistribuição, modpack ou cópia de código/assets.
-Copiar ou redistribuir conteúdo deste mod por addons/modpacks exige autorização.
-A licença não define uma política separada para addons independentes interoperáveis.
-Consulte LICENSE e THIRD_PARTY_NOTICES.md no pacote. Esta entrega não publica
-automaticamente uma release binária em serviços externos.
+Capsules depend on `data/slimeevolution_captures.dat`, inventories, and world entities. The Slimepedia uses `data/slimeevolution_research.dat` in the Overworld. Restoring only an inventory or only a ledger can invalidate capsules or reintroduce old tokens. Minecraft world files do not form a single atomic transaction.

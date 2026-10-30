@@ -1,16 +1,13 @@
-# Atualizar o guia
+# Maintain the English Guide
 
-Os arquivos Markdown, as imagens em `assets/` e o gerador do site estão neste
-repositório. As páginas HTML são publicadas pelo GitHub Pages a partir da raiz
-do branch `main`, usando o arquivo `.nojekyll`.
+The public site is written in English. Edit the Markdown guides, assets, and tools in this repository, then rebuild before publishing:
 
-Depois de editar os guias, regenere as páginas na raiz antes de enviar o commit:
-
-```bash
+```sh
 python -m pip install -r tools/docs/requirements.txt
 python tools/docs/build-site.py --output .
+node tools/docs/check-site-browser.mjs
 ```
 
-O gerador confere os links, as imagens e as âncoras. A versão e o endereço do site
-ficam em `tools/docs/site.json`. As atualizações por versão ficam em `updates/`;
-os guias de uso ficam em `guides/` e `reference/`.
+Commit the Markdown, tools, and generated HTML, CSS, search index, sitemap, and assets together. GitHub Pages serves the root of the main branch, with `.nojekyll` disabling Jekyll processing. The mod source repository retains Portuguese documentation; this public guide uses English player-facing content.
+
+Keep species IDs, recipe IDs, commands, numeric requirements, and existing page paths stable. Older Portuguese section fragments are retained as invisible aliases for existing links. Use real English gameplay captures for interface images.

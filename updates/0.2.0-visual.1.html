@@ -1,142 +1,17 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Reformulação visual — 0.2.0-visual.1 · Slime Evolution</title><meta name="description" content="Guia do Slime Evolution: espécies, genética, criação, metamorfoses, trabalho e aventura."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/updates/0.2.0-visual.1.html"><link rel="stylesheet" href="../site.css"></head>
-<body data-root="../"><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir navegação">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>GUIA DE CAMPO</small></span></a><div class="search"><label class="sr-only" for="search">Buscar na documentação</label><input id="search" type="search" placeholder="Buscar espécies, receitas, funções…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Resultados da busca" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
-<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSÃO 0.14.2</span><section><h2>Começar</h2><a href="../index.html">Guia do mod</a><a href="../INSTALLATION.html">Instalação</a><a href="../guides/GETTING_STARTED.html">Primeiros passos</a></section><section><h2>Slimes e evolução</h2><a href="../guides/SLIMES.html">Galeria das 47 espécies</a><a href="../reference/GENETICS.html">Genética</a><a href="../guides/BREEDING.html">Reprodução</a><a href="../guides/EVOLUTION.html">Evolução</a><a href="../guides/ADVANCED_LINEAGES.html">Linhagens avançadas</a><a href="../guides/ASCENSION.html">Conquistas e rituais</a></section><section><h2>Cuidado e trabalho</h2><a href="../guides/CARE.html">Cuidado e captura</a><a href="../guides/COMPANIONS.html">Vínculo e simbiose</a><a href="../guides/SPECIALIZATIONS.html">Funções individuais</a><a href="../guides/WORK_JOBS.html">Novos trabalhos</a><a href="../guides/SIGNAL_JOBS.html">Circuitos, sonar e vitrine</a></section><section><h2>Pesquisa e aventura</h2><a href="../guides/PROGRESSION.html">Slimepedia e progressão</a><a href="../guides/GENETIC_RESEARCH.html">Pesquisa genética</a><a href="../guides/GENETIC_STATION.html">Estação genética</a><a href="../guides/INCUBATOR.html">Incubadora</a><a href="../guides/MATERIALS.html">Materiais e receitas</a><a href="../guides/COMBAT.html">Combate</a><a href="../guides/SPECIAL_STRUCTURES.html">Estruturas e altares</a><a href="../guides/BOSSES.html">Bosses e lacaios</a><a href="../guides/ECOSYSTEM.html">Ecossistema</a></section><section><h2>Aparência</h2><a href="../guides/SLIME_IDENTITIES.html">Materiais das espécies</a><a href="../guides/ELEMENTAL_DETAILS.html">Detalhes elementais</a><a href="../guides/CELESTIAL_VISUALS.html">Fases lunares e astros</a><a href="../PRESENTATION.html">Capas e divulgação</a></section><section><h2>Referências</h2><a href="../CONFIGURATION.html">Configuração</a><a href="../BALANCE.html">Balanceamento</a><a href="../reference/SPECIES_DATA.html">Espécies e datapacks</a></section><section><h2>Atualizações</h2><a href="../updates/index.html">Histórico de versões</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><blockquote>
-<p>Registro desta versão. As regras atuais estão no <a href="../index.html">guia do mod</a>.</p>
-</blockquote>
-<h1 id="reformulação-visual--020-visual1">Reformulação visual — 0.2.0-visual.1</h1>
-<p>Primeiro conjunto da reformulação, sobre o baseline funcional 0.1.0-rc.1.
-A solicitação completa está em VISUAL_REWORK_SPEC.md.
-<strong>A reformulação completa ainda está em andamento.</strong> Nenhuma interface ou
-espécie é marcada como reformulada apenas por reutilizar uma cor diferente.</p>
-<table>
-<thead>
-<tr>
-<th>Fase visual</th>
-<th>Estado desta entrega</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1 Auditoria/direção</td>
-<td>Concluída; inventário antes das alterações e direção Jardim dos Núcleos</td>
-</tr>
-<tr>
-<td>2 Seis principais</td>
-<td>Seis hierarquias/atlas integrados e observados em dois clientes; idle, salto físico, dano, alimentação e cena com 36 indivíduos</td>
-</tr>
-<tr>
-<td>3 Itens</td>
-<td>Seis artefatos prioritários em 3D e variante de cápsula ocupada validados; revisão dos demais sprites 2D pendente</td>
-</tr>
-<tr>
-<td>4 Interfaces</td>
-<td>Pendente; design system especificado, ainda não integrado às telas</td>
-</tr>
-<tr>
-<td>5 Blocos</td>
-<td>Pendente</td>
-</tr>
-<tr>
-<td>6 Outras espécies/chefes</td>
-<td>Pendente; outras 26 espécies mantêm geometria legada, não contam como modelos próprios</td>
-</tr>
-<tr>
-<td>7 Polimento global</td>
-<td>Pendente; revisão ampla de expressões/ações/hardware e efeitos ainda necessária</td>
-</tr>
-</tbody>
-</table>
-<h2 id="modelos-entregues">Modelos entregues</h2>
-<table>
-<thead>
-<tr>
-<th>Espécie</th>
-<th>Identidade</th>
-<th style="text-align: right;">Caixas assadas / quads</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Comum</td>
-<td>Gel em degraus, núcleo, olhos grandes e gota superior</td>
-<td style="text-align: right;">34 / 94</td>
-</tr>
-<tr>
-<td>Musgo</td>
-<td>Brotos/folhas móveis, musgo lateral e sobrancelha tranquila</td>
-<td style="text-align: right;">43 / 148</td>
-</tr>
-<tr>
-<td>Lama</td>
-<td>Corpo baixo, escorrimentos assimétricos, seixos e pálpebras de lama</td>
-<td style="text-align: right;">38 / 128</td>
-</tr>
-<tr>
-<td>Fogo</td>
-<td>Volume afilado, três línguas escalonadas e núcleo/olhos emissivos</td>
-<td style="text-align: right;">50 / 150</td>
-</tr>
-<tr>
-<td>Gelo</td>
-<td>Corpo facetado, agulhas escalonadas e cristal lateral</td>
-<td style="text-align: right;">43 / 148</td>
-</tr>
-<tr>
-<td>Pedra</td>
-<td>Placas, sobrancelhas rochosas e deformação pesada</td>
-<td style="text-align: right;">39 / 124</td>
-</tr>
-</tbody>
-</table>
-<p>A malha de pele é a superfície externa da união dos volumes. Faces compartilhadas
-internas são removidas; uma caixa de face única não corresponde a seis quads.
-Núcleo/olhos/ornamentos usam o passe opaco; pele usa uma camada material, sem
-adicionar novamente a casca vanilla. Os seis atlas originais são 64×64. A auditoria
-exige seis máscaras geométricas distintas sem depender da textura/tintura.
-Fontes editáveis em visual_models/*.json; geração original em
-<code>tools/visual/generate-primary-slimes.py</code>. Nenhum GeckoLib/dependência foi adicionado.</p>
-<p>Tamanho continua na escala física existente; pigmentação/opacidade usam os dados
-já sincronizados. Elasticidade e luminosidade públicas são quantizadas e derivadas
-do genoma salvo. O marcador decorativo de mutação só aparece com evidência real
-registrada; não infere mutações de extremos antigos e não envia a lista de genes.
-NBT 7/diário 3, IDs, hitboxes, receitas, custos e probabilidades foram preservados.</p>
-<h2 id="animações-e-limites">Animações e limites</h2>
-<p>Respiração/piscar são decorativos; blink interpolado e sway por material. Squash
-usa o Slime real interpolado e elasticidade. Dano vem de hurtTime; alimentação e
-ataque usam eventos após aceitação. Repouso/fuga/reprodução vêm das condições
-reais de energia/alvo/vida/prontidão da IA. Contadores de crescimento/metamorfose
-são transitórios e não entram no save; o renderer legado recebe o pulso de troca.</p>
-<p>Os ensaios de cliente desta entrega observam idle, salto, dano e refeição nos
-seis modelos. Repouso/fuga/prontidão, metadados, preservação de identidade/genoma
-no save e ausência de animação persistida são cobertos por três GameTests novos.
-<strong>Ainda falta revisão visual dedicada de ataque, repouso, medo, reprodução,
-crescimento, metamorfose, variações/mutações e invisibilidade em todas as espécies.</strong>
-Isso fica explícito como polimento pendente, sem inventar evidência por compilação.</p>
-<p>Configuração cliente: reduzir movimento decorativo e intensidade extra de
-partículas 0..1. Efeitos de ação são limitados a quatro partículas por cinco ticks,
-reduzidos com distância e partículas mínimas, respeitando a opção do servidor.
-O sinal estático de estado não depende apenas de cor. Nenhum efeito altera luz
-física, IA ou colisão. Animação secundária reduz após 24 blocos e cessa após 48.</p>
-<h2 id="itens-e-aba-criativa">Itens e aba criativa</h2>
-<p>Cápsula vazia/ocupada, Núcleo, Essência Elemental, Essência Ancestral, Catalisador
-e Estabilizador têm geometria própria, materiais originais e transforms GUI,
-primeira/terceira pessoa de ambas as mãos, chão e moldura. A cápsula ocupa outro
-modelo a partir do data component existente. Não há token novo ou autoridade de
-liberação derivada do visual. Materiais simples continuam como sprites 2D.</p>
-<p>As essências existentes são genéricas, sem subtipo elemental persistido; não se
-inventa proveniência/elemento por cor. O item não é uma máquina de estabilização.
-Modelos têm 42–78 quads, de 7–13 volumes. A cápsula tem 60 quads vazia e 78 ocupada.
-PNG 16×16 por material, compostos por script sem ruído aleatório. A primeira pessoa
-foi ajustada após observar que a peça estava grande demais na captura inicial.</p>
-<p>A aba <strong>Slime Evolution</strong>, ícone de cápsula, reúne os <strong>46 itens registrados</strong>
-do mod, inclusive blocos com item e os 21 ovos existentes. Não cria ovos de formas
-raras que não os possuíam. Conteúdo exclusivo do namespace foi conferido em ambos
-os clientes, e a aba é selecionável na segunda página do criativo deste ambiente.</p></article><aside class="outline" aria-label="Nesta página"><span>NESTA PÁGINA</span><div class="toc">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Slime Evolution 0.2.0-visual.1 · Slime Evolution</title><meta name="description" content="The Slime Evolution guide: species, genetics, breeding, metamorphoses, jobs, and adventure."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/updates/0.2.0-visual.1.html"><link rel="stylesheet" href="../site.css"></head>
+<body data-root="../"><a class="skip" href="#conteudo">Skip to content</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>FIELD GUIDE</small></span></a><div class="search"><label class="sr-only" for="search">Search the guide</label><input id="search" type="search" placeholder="Search species, recipes, jobs…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Search results" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSION 0.15.0</span><section><h2>Get started</h2><a href="../index.html">Player guide</a><a href="../INSTALLATION.html">Installation</a><a href="../guides/GETTING_STARTED.html">First steps</a></section><section><h2>Slimes and evolution</h2><a href="../guides/SLIMES.html">47-species gallery</a><a href="../reference/GENETICS.html">Genetics</a><a href="../guides/BREEDING.html">Breeding</a><a href="../guides/EVOLUTION.html">Evolution</a><a href="../guides/ADVANCED_LINEAGES.html">Advanced lineages</a><a href="../guides/ASCENSION.html">Ascension rituals</a></section><section><h2>Care and work</h2><a href="../guides/CARE.html">Care and capture</a><a href="../guides/COMPANIONS.html">Companions and symbiosis</a><a href="../guides/SPECIALIZATIONS.html">Individual jobs</a><a href="../guides/WORK_JOBS.html">Production and transport</a><a href="../guides/SIGNAL_JOBS.html">Circuits, sonar, and displays</a></section><section><h2>Research and adventure</h2><a href="../guides/PROGRESSION.html">Slimepedia and progression</a><a href="../guides/GENETIC_RESEARCH.html">Genetic research</a><a href="../guides/GENETIC_STATION.html">Genetic Station</a><a href="../guides/INCUBATOR.html">Incubator</a><a href="../guides/MATERIALS.html">Materials and recipes</a><a href="../guides/COMBAT.html">Combat</a><a href="../guides/SPECIAL_STRUCTURES.html">Structures and altars</a><a href="../guides/BOSSES.html">Bosses and minions</a><a href="../guides/ECOSYSTEM.html">Ecosystem</a></section><section><h2>Appearance</h2><a href="../guides/SLIME_IDENTITIES.html">Slime materials and identity</a><a href="../guides/ELEMENTAL_DETAILS.html">Elemental details</a><a href="../guides/CELESTIAL_VISUALS.html">Celestial and lunar visuals</a><a href="../PRESENTATION.html">Images and description</a></section><section><h2>Reference</h2><a href="../CONFIGURATION.html">Configuration</a><a href="../BALANCE.html">Balance</a><a href="../reference/SPECIES_DATA.html">Species and datapacks</a></section><section><h2>Updates</h2><a href="../updates/index.html">Version history</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="slime-evolution-020-visual1">Slime Evolution 0.2.0-visual.1</h1>
+<p><a id="animações-e-limites"></a>
+<a id="itens-e-aba-criativa"></a>
+<a id="modelos-entregues"></a>
+<a id="reformulação-visual--020-visual1"></a></p>
+<p><a href="index.html">Version history</a> · <a href="../index.html">Player guide</a></p>
+<h2 id="the-first-visual-rework">The first visual rework</h2>
+<p>The first visual pass builds on the functional release candidate. Six primary slimes receive integrated hierarchies and atlases with observed idle, jump, damage, and feeding actions. Six priority artifacts gain dimensional models. Interfaces, blocks, other species, and broader polish remain work in progress at this historical stage.</p>
+<p><a href="../guides/SLIMES.html">Current species gallery</a> · <a href="../index.html">Current gameplay guides</a></p></article><aside class="outline" aria-label="On this page"><span>ON THIS PAGE</span><div class="toc">
 <ul>
-<li><a href="#modelos-entregues">Modelos entregues</a></li>
-<li><a href="#animações-e-limites">Animações e limites</a></li>
-<li><a href="#itens-e-aba-criativa">Itens e aba criativa</a></li>
+<li><a href="#the-first-visual-rework">The first visual rework</a></li>
 </ul>
 </div>
-</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/updates/0.2.0-visual.1.md">Ver esta página no GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/updates/0.2.0-visual.1.md">View this page on GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>

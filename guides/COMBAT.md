@@ -1,51 +1,39 @@
-# Combate e habilidades
+# Combat and Abilities
 
-[Guia do mod](../README.md) · [Espécies](SLIMES.md) · [Bosses](BOSSES.md)
+<a id="combate-e-habilidades"></a>
+<a id="energia-recarga-e-configurações"></a>
+<a id="principais-efeitos"></a>
+<a id="quando-uma-habilidade-funciona"></a>
+<a id="reações-elementais"></a>
 
-## Quando uma habilidade funciona
+## Activation requirements
 
-Habilidades ofensivas dos slimes exigem um adulto, alvo válido, energia e
-recarga disponíveis. O contato físico precisa ser aceito antes de aplicar
-seus efeitos. Filhotes não causam dano de contato.
+Offensive slime abilities require an adult, a valid target, sufficient energy, and an available cooldown. Physical contact must be accepted before contact effects apply. Juveniles do not deal contact damage.
 
-Os genes influenciam força, duração, regeneração e defesa. Os valores mostrados
-na espécie são a base: dois indivíduos podem se comportar de maneira diferente.
-A inspeção genética permite consultar o indivíduo que você está criando.
+Genes affect strength, duration, regeneration, and defense. Species values are baselines; individuals may perform differently. Inspect the slime you are raising with the analyzer.
 
-## Principais efeitos
+## Main effects
 
-| Grupo | Exemplos |
+| Group | Examples |
 |---|---|
-| Empurrão e mobilidade | Comum usa o salto ofensivo; Água empurra e apaga fogo; Vento produz rajadas e amortece quedas. |
-| Fogo e frio | Fogo incendeia; Gelo resfria e apaga alvos em chamas; Magma se recupera na lava. |
-| Recuperação | Musgo e Floral regeneram em condições favoráveis; Fúngico se beneficia de cogumelos próximos. |
-| Controle | Lama desacelera; Areia aplica cegueira; Fúngico enfraquece; Venenoso deixa uma nuvem tóxica. |
-| Defesa mineral | Pedra, Ferro e Obsidiana oferecem proteções distintas contra impactos. |
-| Cristais e eletricidade | Cristal dispara fragmentos; Elétrico pode conduzir descargas entre alvos molhados; Ametista destaca ameaças. |
-| Formas dimensionais | End recua por teletransporte; Vazio atrai uma ameaça; Ancestral protege o cuidador ferido. |
+| Mobility and knockback | Common attacks with jumps; Water pushes and extinguishes; Wind creates gusts and cushions falls |
+| Fire and cold | Fire ignites; Ice chills and extinguishes burning targets; Magma recovers in lava |
+| Recovery | Moss and Floral regenerate under favorable conditions; Fungal benefits from nearby mushrooms |
+| Control | Mud slows; Sand blinds; Fungal weakens; Venom leaves a toxic cloud |
+| Mineral defense | Stone, Iron, and Obsidian offer different impact defenses |
+| Crystals and electricity | Crystal fires shards; Electric can chain discharges through wet targets; Amethyst reveals threats |
+| Dimensional forms | End teleports away; Void pulls threats; Ancestral protects an injured caretaker |
 
-A [galeria](SLIMES.md) descreve as 47 espécies. [Híbridos e metamorfoses](EVOLUTION.md)
-têm combinações próprias de habilidade, custo e recarga.
+Browse all 47 species in the [gallery](SLIMES.md). [Hybrids and metamorphoses](EVOLUTION.md) have their own ability, cost, and cooldown combinations.
 
-## Reações elementais
+## Elemental reactions
 
-- Água, chuva ou bolhas dificultam o uso de ignição por Fogo, que sofre dano quando molhado.
-- Gelo aplicado a um alvo em chamas apaga o fogo; alvos já resfriados interagem com ignição.
-- Gelo resiste ao congelamento e é vulnerável ao fogo.
-- Descargas elétricas ficam mais fortes em alvos molhados e têm propagação limitada.
-- Terrenos adequados ajudam habilidades como regeneração, ressonância e recuperação magmática.
+Water, rain, and bubbles hinder Fire's ignition, and Fire takes damage when wet. Ice extinguishes burning targets, resists freezing, and is vulnerable to fire. Electrical discharges are stronger against wet targets and have limited propagation. Suitable terrain supports regeneration, resonance, and magmatic recovery.
 
-Visão livre, aliados, cuidador e condições do alvo participam das verificações.
-Cancelamentos de dano, cura, efeito ou empurrão mantêm as proteções correspondentes.
-As habilidades dos slimes não alteram o terreno.
+Line of sight, allies, caretaker relationships, and target conditions are checked. Damage, healing, status, and knockback cancellations preserve their respective protections. Slime abilities do not alter terrain.
 
-## Energia, recarga e configurações
+## Energy and configuration
 
-Uma ativação válida usa a energia e a recarga da espécie. Efeitos passivos,
-como certas defesas, seguem suas próprias condições. Fome e conforto interferem
-na recuperação de energia; cuide do [habitat](CARE.md).
+Valid activations use the species' energy cost and cooldown. Passive defenses follow their own conditions. Hunger and comfort influence energy recovery: maintain a suitable [habitat](CARE.md).
 
-O servidor pode ajustar habilidades, custos, dano, duração, sons e partículas
-nas [configurações](../CONFIGURATION.md). Os [bosses](BOSSES.md) têm padrões,
-efeitos de contato e invocações próprios; seus números estão em
-[balanceamento](../BALANCE.md).
+[Server settings](../CONFIGURATION.md) control abilities, costs, damage, duration, sounds, and particles. [Bosses](BOSSES.md) have separate patterns, contact effects, and summons; see [balance values](../BALANCE.md).

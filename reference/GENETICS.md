@@ -1,119 +1,67 @@
-# Genética e herança
+# Genetics and Inheritance
 
-O genoma imutável contém os 15 genes da especificação, cada um com dois alelos
-finitos no intervalo `[0, 1]`. `GenePair` calcula a expressão por média nos
-genes aditivos, máximo nos dominantes e mínimo nos recessivos. Essa é uma
-regra fictícia de gameplay; a expressão não substitui os alelos armazenados.
+<a id="estabilizador-de-mutação"></a>
+<a id="fundadores-e-descendentes"></a>
+<a id="genes-com-efeito-nesta-versão"></a>
+<a id="genética-e-herança"></a>
+<a id="genética-na-evolução"></a>
+<a id="linhagem-crescimento-e-consulta"></a>
 
-## Fundadores e descendentes
+Each immutable genome contains **15 genes**, each with two finite alleles in `[0, 1]`. Additive expression uses the average, dominant expression the maximum, and recessive expression the minimum. These are fictional gameplay rules; expression does not replace stored alleles.
 
-Slimes que passam pela finalização de spawn natural ou de ovos recebem
-30 alelos aleatórios em `[0.25, 0.75)`, usando o RNG do servidor. Instâncias
-criadas diretamente, sem finalizar o spawn, mantêm o genoma basal de
-`0.5/0.5` até receber outro genoma. Carregar um save ou liberar uma cápsula
-preserva o genoma existente, sem sortear novamente.
+## Founders and offspring
 
-Na reprodução, `GeneticsService.inherit` seleciona com igual probabilidade
-um dos dois alelos de cada progenitor para cada gene. Cada alelo herdado
-pode sofrer uma mutação independente. A probabilidade efetiva é
-`min(0.25, mutationChance × (1.5 - estabilidade média dos pais) × (1 + 0.5 × pais instáveis))`.
-O valor padrão de `mutationChance` é 0.02; portanto, a estabilidade ajusta
-a chance por alelo entre 1% e 3% sem pais instáveis. Um pai com habilidade
-`unstable_touch` multiplica por 1,5; dois multiplicam por 2 (2%–6% no padrão).
-Isso altera somente a probabilidade no nascimento: a amplitude continua
-limitada por `mutationStep`, os alelos ficam em 0–1, e os pais não mudam.
-`mutationChance=0` desativa mutações também para Corrompidos. Não há
-mutação espontânea durante a vida nem contágio genético por ataques.
+Natural and spawn-egg founders receive 30 random alleles in `[0.25, 0.75)`. Directly created entities without spawn finalization retain baseline `0.5/0.5` until assigned a genome. Loading or releasing a capsule preserves existing genes.
 
-Uma mutação soma uma mudança aleatória entre `-mutationStep` e
-`+mutationStep`, com resultado limitado a `[0, 1]`. A amplitude padrão é 0.1;
-chance e amplitude configuráveis aceitam no máximo 0.25. Não há categorias
-de mutações raras ou eventos narrativos nesta versão. O serviço recebe uma
-fonte aleatória: sementes fixas nos testes e RNG do servidor nos nascimentos.
+For each gene, offspring inherit one equally likely allele from each parent. Each inherited allele can mutate independently. Effective probability is:
 
-## Genes com efeito nesta versão
+```text
+min(0.25, mutationChance × (1.5 - average parental stability)
+    × (1 + 0.5 × unstable parents))
+```
 
-`e` representa a expressão do gene, sempre entre 0 e 1. Valores-base vêm da
-espécie. O fator de tamanho usado em vida e dano é `tamanho atual / 2`.
+Default `mutationChance` is 0.02: stability gives 1%–3% per allele without unstable parents. One parent with `unstable_touch` adds a 1.5 factor; two give a factor of 2. Setting chance to zero disables mutations even for Corrupted parents. There are no spontaneous lifetime mutations or genetic infection from attacks.
 
-| Gene | Expressão | Efeito |
-| --- | --- | --- |
-| Tamanho | Aditiva | Tamanho adulto: `min(máximo, mínimo + floor(e × (máximo - mínimo + 1)))` |
-| Elasticidade | Aditiva | Multiplica o salto pela elasticidade da espécie e por `0.75 + 0.5e`; empurrão ofensivo do comum usa `0.35 × (0.5 + e)` |
-| Vitalidade | Aditiva | Multiplica a vida-base por tamanho e por `0.75 + 0.5e` |
-| Velocidade | Aditiva | Multiplica a velocidade-base por `0.8 + 0.4e` |
-| Metabolismo | Aditiva | Aumenta fome em `0.1 × (0.5 + e)` por segundo carregado |
-| Resistência | Dominante | Armadura: `base + (e - 0.5) × 4`, limitada a 0–20; proteção mineral contra impactos: `min(0.75, configuração × (0.5 + e))` |
-| Fertilidade | Aditiva | Multiplica a recuperação reprodutiva por `1.25 - 0.5e` |
-| Estabilidade | Aditiva | Ajusta a chance de mutação conforme a média parental |
-| Regeneração | Recessiva | Cura do musgo: `(0.5 + e) × configuração`, de 0 a 6 pontos por ativação |
-| Potência elemental | Aditiva | Duração de fogo/lama/frio multiplicada por `0.5 + e` e pela configuração, limitada a 200 ticks |
-| Agressividade | Dominante | Retaliação `100 + 200e` ticks (100–300); dóceis fogem abaixo de `0.4 - 0.2e` da vida (40–20%) |
-| Sociabilidade | Aditiva | Nas espécies sociais: raio de busca `4 + 8e` (4–12 blocos), distância de parada `4 - 2e` (4–2 blocos) |
-| Transparência | Aditiva | Alfa-base do gel `round(255 - 102e)` (255–153), combinado com o material visual da espécie |
-| Luminosidade | Recessiva | No Luminoso, luz visual do corpo `round(8 + 7e)` (8–15); demais espécies ficam sem emissão própria |
-| Pigmentação | Dominante | Multiplica canais RGB da espécie por `0.85 + 0.3e`, limitando cada canal a 255 |
+Mutation adds a random delta between `-mutationStep` and `+mutationStep`, clamped to `[0, 1]`. Default step is 0.1; configurable chance and step cap at 0.25. Parents are unchanged.
 
-Todos os 15 genes têm expressão implementada. Transparência, luminosidade e
-pigmentação têm efeitos de apresentação; a aparência é sincronizada com os clientes
-sob Xvfb/Mesa; shaders e outros equipamentos ainda exigem validação. Transparência não concede invisibilidade e luminosidade
-não ilumina blocos nem muda spawn. O basal dá ao gel alfa-base 204, antes do
-material da espécie. No Luminoso, a emissão basal é 12, com máximo 15.
-Potência elemental continua ajustando a duração da Visão Noturna; luminosidade
-altera somente o brilho do corpo. Detalhes em [ECOSYSTEM.md](../guides/ECOSYSTEM.md).
-O temperamento e a escolha da habilidade continuam definidos pela espécie;
-o genoma ajusta os efeitos descritos. Regras detalhadas: [COMBAT.md](../guides/COMBAT.md).
+## Gene effects
 
-## Linhagem, crescimento e consulta
+`e` is expressed value, between zero and one. Species baselines apply at size 2; health and damage use current size divided by two.
 
-`Lineage` guarda geração e UUIDs dos dois pais. Fundadores são geração zero;
-filhotes recebem a maior geração parental mais um, limitada a um milhão.
-O sistema rejeita cruzamento consigo mesmo, entre pai e filho e entre irmãos
-ou meios-irmãos. Não mantém uma árvore ancestral ilimitada nem detecta todos
-os graus de parentesco.
+| Gene | Expression | Effect |
+|---|---|---|
+| Size | Additive | Adult size: `min(max, min + floor(e × (max - min + 1)))` |
+| Elasticity | Additive | Jump factor `0.75 + 0.5e`; Common offensive knockback `0.35 × (0.5 + e)` |
+| Vitality | Additive | Base health × size factor × `0.75 + 0.5e` |
+| Speed | Additive | Base speed × `0.8 + 0.4e` |
+| Metabolism | Additive | Hunger +`0.1 × (0.5 + e)` each loaded second |
+| Resistance | Dominant | Armor `base + (e - 0.5) × 4`, clamped 0–20; mineral reduction `min(0.75, setting × (0.5 + e))` |
+| Fertility | Additive | Breeding recovery × `1.25 - 0.5e` |
+| Stability | Additive | Adjusts mutation probability using parental average |
+| Regeneration | Recessive | Moss healing `(0.5 + e) × setting`, capped at six health |
+| Elemental potency | Additive | Fire, mud, and chill duration × `0.5 + e` and setting, capped at 200 ticks |
+| Aggression | Dominant | Retaliation `100 + 200e` ticks; docile flee threshold `0.4 - 0.2e` health fraction |
+| Sociability | Additive | Social search radius `4 + 8e`; stopping distance `4 - 2e` blocks |
+| Transparency | Additive | Base gel alpha `round(255 - 102e)` combined with species material |
+| Luminosity | Recessive | Luminous body visual light `round(8 + 7e)`; other species do not gain this emission |
+| Pigmentation | Dominant | Species RGB channels × `0.85 + 0.3e`, capped at 255 |
 
-`GrowthState` guarda duração, tempo restante e tamanho adulto. Filhotes
-começam no tamanho 1 e crescem em degraus dentro do tamanho determinado
-pelo genoma. Alimentação, conforto, energia e espaço condicionam o progresso.
-As regras de nascimento e recuperação estão em [BREEDING.md](../guides/BREEDING.md).
+All 15 genes have expression implemented. Transparency is not invisibility. Genetic luminosity is visual emission, not block lighting or a spawn-rule change. At baseline, gel alpha is 204 and Luminous visual emission is 12. Species still determines temperament and ability selection.
 
-NBT atual versão 7 preserva genoma, linhagem, crescimento, contadores reprodutivos,
-histórico/exposição de metamorfose e lar ecológico, acrescentando os genes com
-alteração verificada no nascimento. Histórico ausente em saves antigos permanece
-indisponível. Regras: [GENETIC_RESEARCH.md](../guides/GENETIC_RESEARCH.md).
-Saves anteriores sem lar continuam válidos. Grupos exigem ecologia social da
-espécie; sociabilidade ajusta busca e espaçamento, com comportamento basal preservado.
-Indivíduos antigos sem os campos adicionais carregam como adultos fundadores, sem
-perder UUID, alelos, cuidador ou necessidades. A cápsula também preserva
-esses dados e confere seu snapshot com o registro persistente do mundo.
+## Lineage, growth, and inspection
 
-O analisador recebe um snapshot de identificação, pais e alelos, além de
-dados de necessidades e contadores sincronizados pelo menu. Ele é somente
-leitura, mostra os 15 genes ativos e detalha o histórico de nascimento nos
-tooltips. A aba Evolução mostra
-origem e condições de metamorfose.
+Lineage stores both parent UUIDs and generation. Founders start at zero; children use the higher parental generation plus one, capped at one million. Self-pairing, parent–child, siblings, and half-siblings are rejected; there is no unlimited ancestral tree.
 
-## Genética na evolução
+Juveniles begin at size 1 and grow toward their genome-determined adult size, subject to food, comfort, energy, and space. See [breeding](../guides/BREEDING.md).
 
-Os híbridos iniciais recebem a espécie definida pela receita e os alelos dos
-dois pais pelo mesmo serviço de herança. Metamorfoses mantêm todos os alelos e
-a linhagem; o ambiente habilita uma troca de espécie sem reescrever o genoma.
-As receitas consultam a expressão atual: Resistência ≥ 0,60 para Cristal,
-Regeneração ≥ 0,50 para Floral, Potência elemental ≥ 0,60 para Magmático e
-Estabilidade ≥ 0,80 para Ancestral.
-A regeneração é recessiva, portanto os dois alelos precisam atingir o limiar.
-Detalhes de ambiente, custos e identidade: [EVOLUTION.md](../guides/EVOLUTION.md).
+Individual NBT version 7 preserves genes, lineage, growth, breeding counters, transformation history and exposure, ecological home, and birth mutation evidence. Old saves retain identities and alleles; unavailable mutation history remains unavailable rather than being inferred. Capsules preserve this state and validate it against the world's capture ledger.
 
-**Planejado:** epistasia, expressão genética condicionada ao ambiente
-e categorias raras de mutação. Os dois
-cruzamentos e as quatro metamorfoses atuais são o primeiro incremento desses
-sistemas; não completam toda a diversidade prevista na especificação.
+The analyzer is read-only and shows identification, ancestry, alleles, needs, counters, birth evidence, and evolution requirements.
 
-## Estabilizador de mutação
+## Evolution and stabilization
 
-Uma aplicação em um pai apto, antes da geleia, zera novas mutações do próximo
-nascimento do par. A escolha de alelos e a expressão continuam as mesmas; valores
-incomuns herdados não são apagados. O histórico do filhote é conhecido sem nova
-alteração. A proteção só é removida após inserção aceita do filhote, não em
-cancelamento, falta de espaço ou fim de prontidão. NBT atual 7 mantém a evidência
-de mutações introduzida na versão 6. Regras: [MATERIALS.md](../guides/MATERIALS.md).
+Hybrids inherit alleles using the normal service and receive the recipe's species. Metamorphoses preserve every allele and the lineage: environmental conditions allow a species change without rewriting the genome. Recessive thresholds require both alleles to qualify.
+
+A Mutation Stabilizer applied to an eligible parent before gel prevents **new mutations in the next accepted birth**. Allele selection and inherited unusual values remain unchanged. Protection persists through failed or canceled births and expires only on accepted offspring insertion. See [materials](../guides/MATERIALS.md) and [verified genetic research](../guides/GENETIC_RESEARCH.md).
+
+Epistasis, environmentally conditioned gene expression, and rare mutation categories are planned rather than current features.

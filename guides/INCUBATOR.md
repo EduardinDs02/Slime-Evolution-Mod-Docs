@@ -1,57 +1,43 @@
-# Incubadora
+# Incubator
 
-Promova o crescimento de um filhote capturado, preservando sua identidade,
-genes e linhagem. Cada ciclo é iniciado pelo cuidador.
+<a id="incubadora"></a>
+<a id="receita-e-operação"></a>
+<a id="retirar-o-indivíduo"></a>
 
-![Incubadora SolarPunk no jogo](../assets/blocks/incubator.png)
+Accelerate a captured juvenile's growth while preserving its identity, genes, and lineage. Each cycle is started manually by the caretaker.
 
-A câmara fica voltada para você na colocação. O console anima enquanto o ciclo
-avança e fica parado ao pausar ou concluir. O berço é parte do equipamento;
-o indivíduo permanece guardado na cápsula.
+![SolarPunk Incubator](../assets/blocks/incubator.png)
 
-## Receita e operação
+## Recipe
 
 ```text
-F V F
-V G V
-F R F
+I G I
+G B G
+I R I
 ```
 
-F = ferro; V = vidro; G = geleia reprodutiva; R = redstone.
-ID: `slimeevolution:incubator`, também na aba Ferramentas e Utilidades.
-Texturas originais da carcaça e superfície acompanham o bloco.
+I = iron ingot; G = glass; B = Breeding Gel; R = redstone. Item ID: `slimeevolution:incubator`.
 
-1. Capture um filhote seguindo as regras normais de confiança, vida e energia.
-2. Abra a incubadora, insira a cápsula, um alimento da dieta e geleia reprodutiva, catalisador genético ou geleia real.
-3. Como cuidador, pressione **Incubar**. O indivíduo precisa ter fome abaixo
-   de 80, conforto de pelo menos 40 e energia de pelo menos 20.
-4. Após 200 ticks carregados (dez segundos a 20 ticks/s), o ciclo conclui.
-5. Use **Ver indivíduo**, retire a cápsula ou inicie outro ciclo se ainda houver
-   crescimento pendente e materiais suficientes.
+## Start a cycle
 
-![Interface do equipamento no jogo](../assets/interfaces/incubator.png)
+1. Capture a juvenile using the normal trust, health, and energy rules.
+2. Insert its capsule, compatible food, and Breeding Gel, Genetic Catalyst, or Royal Gel.
+3. As its caretaker, press **Incubate**. Hunger must be below 80, comfort at least 40, and energy at least 20.
+4. Wait **200 loaded ticks**: ten seconds at 20 ticks per second.
+5. Inspect the individual, remove the capsule, or start another cycle if growth remains.
 
-Cada ciclo consome **um alimento compatível e um suplemento**, somente na
-conclusão. A geleia reduz o crescimento restante em até **1.200 ticks**; o
-catalisador, em até **2.400 ticks**; a Geleia Real, em até **3.600 ticks**,
-equivalentes a um/dois/três minutos normais.
-Os três suplementos acrescentam **200 ticks de idade cronológica**. Crescimento assistido e idade são contabilizados separadamente.
-O tamanho final continua sendo o tamanho adulto determinado anteriormente.
+| Supplement | Maximum reduction in remaining growth |
+|---|---:|
+| Breeding Gel | 1,200 ticks |
+| Genetic Catalyst | 2,400 ticks |
+| Royal Gel | 3,600 ticks |
 
-O alimento reduz a fome em até 20 e recupera até dez de energia, com limites
-0/100. Conforto e confiança permanecem iguais. A recarga alimentar passa a
-100 ticks após concluir. Genoma, linhagem, metamorfose e demais recargas são
-preservados; a proporção de vida acompanha a mudança de tamanho. A incubadora
-não concede metamorfoses, mutações, reprodução ou confiança.
+A completed cycle consumes one compatible food and one supplement. Each supplement adds **200 ticks of chronological age**; assisted growth and chronological age are separate. The previously determined adult size is preserved.
 
-Sem alimento correto ou suplemento válido, o trabalho pausa. Trocar/remover o espécime
-cancela sem cobrar. A conclusão não inicia outro ciclo automaticamente.
-Adultos são recusados. O indicador de conclusão permite ler o resultado mesmo
-quando o filhote amadureceu; o servidor revalida toda nova solicitação.
+Food reduces hunger by up to 20 and restores up to 10 energy, within the 0–100 limits. Comfort and trust remain unchanged. The meal cooldown becomes 100 ticks. Genome, lineage, metamorphosis, and other cooldowns are preserved; health ratio follows size changes. Incubation does not grant mutations, breeding, trust, or metamorphoses.
 
-## Retirar o indivíduo
+Missing valid food or supplement pauses work. Changing the specimen cancels without charging. Completing a cycle does not automatically start another. Adults cannot start a cycle, but a completed result remains readable if the juvenile matured.
 
-Ao concluir, retire a cápsula atualizada. Ela conserva o indivíduo e pode ser
-liberada normalmente; cópias anteriores deixam de representar a captura válida.
+Remove the updated capsule and release it normally. Previous copies no longer represent the valid capture.
 
-[Cuidado e captura](CARE.md) · [Suplementos](MATERIALS.md)
+[Care and capture](CARE.md) · [Materials and supplements](MATERIALS.md)

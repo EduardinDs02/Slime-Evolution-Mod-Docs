@@ -1,96 +1,66 @@
-# Bosses e lacaios
+# Bosses and Minions
 
-[Guia do mod](../README.md) · [Estruturas](SPECIAL_STRUCTURES.md) · [Balanceamento](../BALANCE.md)
+<a id="bosses-e-lacaios"></a>
+<a id="colosso-cristalino"></a>
+<a id="coração-magmático"></a>
+<a id="preparação-e-recompensas"></a>
+<a id="rei-gelatinoso"></a>
+<a id="slime-primordial"></a>
 
-Encontre uma das quatro [arenas naturais](SPECIAL_STRUCTURES.md) e use seu
-item de ritual no altar central correspondente. A estrutura nasce sem boss,
-com piso de 17×17 e seis blocos livres. O item é consumido somente quando a
-invocação é aceita; o altar fica ocupado até a morte do boss e pode ser
-reutilizado. As arenas são protegidas contra alterações dos jogadores.
+Find one of the four [natural arenas](SPECIAL_STRUCTURES.md) and use its ritual item on the central altar. Accepted rituals consume the item and reserve the altar until the boss dies. The arena needs 17×17 floor space and six clear blocks above.
 
-A dificuldade precisa estar acima de Pacífica. O local deve ter espaço livre,
-sem líquidos ou outro boss vivo carregado em 96 blocos. Os sinais no chão,
-a pulsação do corpo e os sons indicam a preparação dos golpes.
+Difficulty must be above Peaceful, with no liquids, sufficient space, and no other loaded living boss within 96 blocks. Ground warnings, body pulses, and sounds signal attacks.
 
-## Rei Gelatinoso
+## Gelatinous King
 
-![Rei Gelatinoso com sua coroa](../assets/gallery/bosses/gelatinous_king.png)
+![Gelatinous King](../assets/gallery/bosses/gelatinous_king.png)
 
-**Vida:** 290 · **Armadura:** 7 · **Fases:** duas · **Recompensa:** duas Geleias Reais.
+**Health: 290 · Armor: 7 · Phases: 2 · Reward: 2 Royal Gel**
 
-Fabrique uma **Coroa Gelatinosa** com Núcleo de Slime, geleia reprodutiva e
-quatro barras de ouro. Use-a no altar da Corte Real, no Overworld.
+Craft a Gelatinous Crown with a Slime Core, Breeding Gel, and four gold ingots. Use it at the Royal Court altar in the Overworld.
 
-O Rei alterna impacto após salto, invocação de lacaios, cruz e anel.
-Seus golpes aplicam Lentidão I e arremessam o alvo para cima. A segunda fase
-começa na metade da vida e permanece mesmo que ele seja curado.
+The King alternates jump impacts, summons, crosses, and rings. Hits apply Slowness I and launch targets. Phase two begins at half health and remains active even if healed.
 
-| Lacaio | Aparência | Função |
-|---|---|---|
-| Guarda | <img src="../assets/gallery/minions/royal_minion.png" width="150" alt="Guarda real"> | Aproxima-se e luta corpo a corpo; aplica Fraqueza II. |
-| Curandeiro | <img src="../assets/gallery/minions/royal_healer.png" width="150" alt="Curandeiro real"> | Recupera nove pontos de vida do Rei por pulso, com alcance e visão livre. |
-| Cuspidor | <img src="../assets/gallery/minions/royal_spitter.png" width="150" alt="Cuspidor real"> | Ataca de longe e aplica Lentidão I e Veneno I. |
+| Minion | Role |
+|---|---|
+| Guard | Melee attacker; applies Weakness II |
+| Healer | Restores nine King health per pulse, requiring range and line of sight |
+| Spitter | Ranged attacker; applies Slowness I and Poison I |
 
-O Rei mantém até seis lacaios. Priorize os curandeiros para reduzir sua recuperação.
+The King maintains up to six minions. Prioritize healers to limit recovery.
 
-## Coração Magmático
+## Magmatic Heart
 
-![Coração Magmático, com rochas e lava](../assets/gallery/bosses/magmatic_heart.png)
+![Magmatic Heart](../assets/gallery/bosses/magmatic_heart.png)
 
-**Vida:** 320 · **Armadura:** 6 · **Fases:** duas · **Recompensa:** dois Fragmentos Ígneos.
+**Health: 320 · Armor: 6 · Phases: 2 · Reward: 2 Igneous Fragments**
 
-Fabrique um **Braseiro Magmático** com Núcleo de Slime, Essência Elemental,
-dois cremes de magma e dois pós de blaze. Use-o no altar do Santuário Elemental.
+Craft a Magma Brazier with a Slime Core, Elemental Essence, two magma creams, and two blaze powders. Use the Elemental Sanctuary altar.
 
-Alterna anel, erupção, cruz e erupções gêmeas. Seus golpes incendeiam e aplicam
-Fome II. A segunda fase começa na metade da vida; água reduz seu dano.
+Attacks include rings, eruptions, crosses, and twin eruptions. Hits ignite and apply Hunger II. Phase two begins at half health; water reduces damage. Up to four fire or magma servants provide ranged embers and pursuing bombs. Bomb explosions apply Blindness I and Hunger II without destroying terrain.
 
-| Lacaio | Aparência | Função |
-|---|---|---|
-| Cuspidor de Fogo | <img src="../assets/gallery/minions/servant_fire.png" width="150" alt="Cuspidor de Fogo"> | Mantém distância e lança brasas. |
-| Slime Bomba de Magma | <img src="../assets/gallery/minions/servant_magma.png" width="150" alt="Slime Bomba de Magma"> | Persegue, acende um pavio e explode, causando Cegueira I e Fome II. |
+## Crystalline Colossus
 
-O Coração mantém até quatro lacaios. Afaste-se da bomba quando ela começar
-a pulsar. A explosão atinge alvos próximos sem destruir o terreno.
+![Crystalline Colossus](../assets/gallery/bosses/crystalline_colossus.png)
 
-## Colosso Cristalino
+**Health: 400 · Armor: 10 · Phases: 2 · Reward: 2 Prismatic Shards**
 
-![Colosso Cristalino com cristais no corpo e na nuca](../assets/gallery/bosses/crystalline_colossus.png)
+Craft a Crystal Sigil with a Slime Core, two Crystal Fragments, two amethyst shards, and a diamond. Use the Crystal Cavern altar.
 
-**Vida:** 400 · **Armadura:** 10 · **Fases:** duas · **Recompensa:** dois Estilhaços Prismáticos.
+Shard barrages, waves, crosses, and rings apply Slowness III and Mining Fatigue II. Phase two starts at half health. Defense increases while preparing an attack; exploit recovery windows.
 
-Fabrique um **Sigilo Cristalino** com Núcleo de Slime, dois Fragmentos Cristalinos,
-dois fragmentos de ametista e um diamante. Use-o no altar da Caverna Cristalina.
+## Primordial Slime
 
-Alterna barragens de estilhaços, onda, cruz e anel. Aplica Lentidão III e
-Fadiga de Mineração II. A segunda fase começa na metade da vida. Durante a
-preparação ele reforça a defesa; aproveite a recuperação para atacar.
+![Primordial Slime](../assets/gallery/bosses/primordial_slime.png)
 
-## Slime Primordial
+**Health: 540 · Armor: 8 · Phases: 3 · Reward: 2 Primordial Essences**
 
-![Slime Primordial com asas e auréola](../assets/gallery/bosses/primordial_slime.png)
+Craft a Primordial Seal with Royal Gel, Igneous Fragment, Prismatic Shard, Nether Star, and Ancient Tablet. Use the Ancestral Chamber altar in the End; the chamber supplies the tablet.
 
-**Vida:** 540 · **Armadura:** 8 · **Fases:** três · **Recompensa:** duas Essências Primordiais.
+Attacks include waves, fire rings, shards, crosses, and orbital rupture. Hits apply Weakness I and Wither I; shards and orbital attacks also apply Levitation I. Phases change at two-thirds and one-third health. Up to three flying Ancestral Echoes attack at close range.
 
-Fabrique um **Selo Primordial** com Geleia Real, Fragmento Ígneo, Estilhaço
-Prismático, Estrela do Nether e Tabuleta Antiga. Use-o no altar da
-Câmara Ancestral no End. Essa câmara também fornece a tabuleta.
+## Preparation and rewards
 
-Alterna onda, anel de fogo, estilhaços, cruz e ruptura orbital. Seus golpes
-aplicam Fraqueza I e Wither I; estilhaços e orbital também aplicam Levitação I.
-As fases mudam em dois terços e um terço da vida.
+The interiors of rings, crosses, and orbital attacks also deal damage. Use distance beyond the outline, elevation, or cover as appropriate. Later phases increase damage, while an attack already being prepared retains its initial parameters.
 
-![Eco Ancestral, a invocação voadora do Primordial](../assets/gallery/minions/servant_seraph.png)
-
-Invoca até três **Ecos Ancestrais**, versões menores que voam e atacam de perto.
-
-## Preparação e recompensas
-
-Os interiores dos anéis, cruzes e rupturas orbitais também causam dano.
-Use distância além do contorno, altura ou cobertura conforme o ataque.
-Fases aumentam o dano, e a preparação de um golpe conserva seus parâmetros
-até terminar. Os valores exatos estão em [balanceamento](../BALANCE.md).
-
-As recompensas exigem vitória com crédito de jogador. Lacaios não deixam
-recompensas. Troféus permitem fabricar equipamentos, melhorar a incubação e
-alcançar as [metamorfoses avançadas](ADVANCED_LINEAGES.md).
+Rewards require a player-credited victory. Minions provide no rewards. Boss trophies support equipment, incubation, and [rare metamorphoses](ADVANCED_LINEAGES.md). See [balance values](../BALANCE.md).

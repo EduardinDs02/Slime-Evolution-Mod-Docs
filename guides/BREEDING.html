@@ -1,158 +1,101 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Reprodução, crescimento e inspeção · Slime Evolution</title><meta name="description" content="Guia do Slime Evolution: espécies, genética, criação, metamorfoses, trabalho e aventura."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/guides/BREEDING.html"><link rel="stylesheet" href="../site.css"></head>
-<body data-root="../"><a class="skip" href="#conteudo">Ir para o conteúdo</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Abrir navegação">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>GUIA DE CAMPO</small></span></a><div class="search"><label class="sr-only" for="search">Buscar na documentação</label><input id="search" type="search" placeholder="Buscar espécies, receitas, funções…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Resultados da busca" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
-<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSÃO 0.14.2</span><section><h2>Começar</h2><a href="../index.html">Guia do mod</a><a href="../INSTALLATION.html">Instalação</a><a href="../guides/GETTING_STARTED.html">Primeiros passos</a></section><section><h2>Slimes e evolução</h2><a href="../guides/SLIMES.html">Galeria das 47 espécies</a><a href="../reference/GENETICS.html">Genética</a><a href="../guides/BREEDING.html" aria-current="page">Reprodução</a><a href="../guides/EVOLUTION.html">Evolução</a><a href="../guides/ADVANCED_LINEAGES.html">Linhagens avançadas</a><a href="../guides/ASCENSION.html">Conquistas e rituais</a></section><section><h2>Cuidado e trabalho</h2><a href="../guides/CARE.html">Cuidado e captura</a><a href="../guides/COMPANIONS.html">Vínculo e simbiose</a><a href="../guides/SPECIALIZATIONS.html">Funções individuais</a><a href="../guides/WORK_JOBS.html">Novos trabalhos</a><a href="../guides/SIGNAL_JOBS.html">Circuitos, sonar e vitrine</a></section><section><h2>Pesquisa e aventura</h2><a href="../guides/PROGRESSION.html">Slimepedia e progressão</a><a href="../guides/GENETIC_RESEARCH.html">Pesquisa genética</a><a href="../guides/GENETIC_STATION.html">Estação genética</a><a href="../guides/INCUBATOR.html">Incubadora</a><a href="../guides/MATERIALS.html">Materiais e receitas</a><a href="../guides/COMBAT.html">Combate</a><a href="../guides/SPECIAL_STRUCTURES.html">Estruturas e altares</a><a href="../guides/BOSSES.html">Bosses e lacaios</a><a href="../guides/ECOSYSTEM.html">Ecossistema</a></section><section><h2>Aparência</h2><a href="../guides/SLIME_IDENTITIES.html">Materiais das espécies</a><a href="../guides/ELEMENTAL_DETAILS.html">Detalhes elementais</a><a href="../guides/CELESTIAL_VISUALS.html">Fases lunares e astros</a><a href="../PRESENTATION.html">Capas e divulgação</a></section><section><h2>Referências</h2><a href="../CONFIGURATION.html">Configuração</a><a href="../BALANCE.html">Balanceamento</a><a href="../reference/SPECIES_DATA.html">Espécies e datapacks</a></section><section><h2>Atualizações</h2><a href="../updates/index.html">Histórico de versões</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="reprodução-crescimento-e-inspeção">Reprodução, crescimento e inspeção</h1>
-<p>Combine adultos compatíveis para obter filhotes com herança genética própria.
-As 47 espécies usam 61 pares de reprodução, incluindo 14 cruzamentos entre espécies.</p>
-<h2 id="preparar-os-pais">Preparar os pais</h2>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Breeding, Growth, and Inspection · Slime Evolution</title><meta name="description" content="The Slime Evolution guide: species, genetics, breeding, metamorphoses, jobs, and adventure."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/guides/BREEDING.html"><link rel="stylesheet" href="../site.css"></head>
+<body data-root="../"><a class="skip" href="#conteudo">Skip to content</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>FIELD GUIDE</small></span></a><div class="search"><label class="sr-only" for="search">Search the guide</label><input id="search" type="search" placeholder="Search species, recipes, jobs…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Search results" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSION 0.15.0</span><section><h2>Get started</h2><a href="../index.html">Player guide</a><a href="../INSTALLATION.html">Installation</a><a href="../guides/GETTING_STARTED.html">First steps</a></section><section><h2>Slimes and evolution</h2><a href="../guides/SLIMES.html">47-species gallery</a><a href="../reference/GENETICS.html">Genetics</a><a href="../guides/BREEDING.html" aria-current="page">Breeding</a><a href="../guides/EVOLUTION.html">Evolution</a><a href="../guides/ADVANCED_LINEAGES.html">Advanced lineages</a><a href="../guides/ASCENSION.html">Ascension rituals</a></section><section><h2>Care and work</h2><a href="../guides/CARE.html">Care and capture</a><a href="../guides/COMPANIONS.html">Companions and symbiosis</a><a href="../guides/SPECIALIZATIONS.html">Individual jobs</a><a href="../guides/WORK_JOBS.html">Production and transport</a><a href="../guides/SIGNAL_JOBS.html">Circuits, sonar, and displays</a></section><section><h2>Research and adventure</h2><a href="../guides/PROGRESSION.html">Slimepedia and progression</a><a href="../guides/GENETIC_RESEARCH.html">Genetic research</a><a href="../guides/GENETIC_STATION.html">Genetic Station</a><a href="../guides/INCUBATOR.html">Incubator</a><a href="../guides/MATERIALS.html">Materials and recipes</a><a href="../guides/COMBAT.html">Combat</a><a href="../guides/SPECIAL_STRUCTURES.html">Structures and altars</a><a href="../guides/BOSSES.html">Bosses and minions</a><a href="../guides/ECOSYSTEM.html">Ecosystem</a></section><section><h2>Appearance</h2><a href="../guides/SLIME_IDENTITIES.html">Slime materials and identity</a><a href="../guides/ELEMENTAL_DETAILS.html">Elemental details</a><a href="../guides/CELESTIAL_VISUALS.html">Celestial and lunar visuals</a><a href="../PRESENTATION.html">Images and description</a></section><section><h2>Reference</h2><a href="../CONFIGURATION.html">Configuration</a><a href="../BALANCE.html">Balance</a><a href="../reference/SPECIES_DATA.html">Species and datapacks</a></section><section><h2>Updates</h2><a href="../updates/index.html">Version history</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="breeding-growth-and-inspection">Breeding, Growth, and Inspection</h1>
+<p><a id="analisador-genético"></a>
+<a id="configuração-do-servidor"></a>
+<a id="crescimento-e-persistência"></a>
+<a id="nascimento-e-recuperação"></a>
+<a id="preparar-os-pais"></a>
+<a id="preparação-com-estabilizador"></a>
+<a id="receitas"></a>
+<a id="reprodução-crescimento-e-inspeção"></a></p>
+<p>Breed compatible adults to produce offspring with inherited genetics. The 47 species use <strong>61 breeding pairs</strong>, including 14 cross-species combinations.</p>
+<h2 id="prepare-the-parents">Prepare the parents</h2>
 <ol>
-<li>Alimente manualmente dois adultos compatíveis, vinculando ambos ao
-   mesmo cuidador. A confiança mínima é 20 em dóceis, 40 em neutros e 70 em
-   hostis. Alimentadores ajudam com a fome, mas não aumentam confiança.</li>
-<li>Cada adulto precisa de fome até 40, conforto de pelo menos 60, energia de
-   pelo menos 60 e metade da vida ou mais. Não pode estar em combate,
-   recuperação reprodutiva, sob efeito da recarga de dano recente, preso por
-   laço, montado ou transportando passageiros.</li>
-<li>O cuidador usa uma <code>slimeevolution:breeding_gel</code> em cada pai. Uma preparação
-   válida consome uma geleia em sobrevivência e dura 1.200 ticks, normalmente
-   60 segundos. Cliques repetidos enquanto pronto não consomem outra geleia
-   nem renovam a duração. Uma tentativa inválida não consome o item.</li>
-<li>Mantenha os dois a até quatro blocos, com visão livre. O servidor procura
-   piso sólido, seco e desocupado perto do centro do casal. Não há deslocamento
-   automático dos pais para procurar parceiros nesta versão.</li>
+<li>Manually feed two compatible adults, binding both to the same caretaker. Required trust is 20 for docile, 40 for neutral, and 70 for hostile species. Feeders maintain hunger but do not increase trust.</li>
+<li>Each adult needs hunger at most 40, comfort and energy at least 60, and at least half health. Combat, recent damage, breeding recovery, leashes, mounts, or passengers prevent breeding.</li>
+<li>The caretaker uses <strong>Breeding Gel</strong> on each parent. A successful preparation consumes one gel in Survival and lasts <strong>1,200 ticks</strong>, normally 60 seconds. Repeated clicks while ready neither consume more gel nor extend readiness. Invalid attempts do not consume it.</li>
+<li>Keep the parents within four blocks and clear line of sight. The server checks for solid, dry, unoccupied ground near their midpoint. Parents do not automatically seek partners.</li>
 </ol>
-<p>Há 47 receitas de mesma espécie e 14 pares entre espécies. As combinações completas estão no
-<a href="EVOLUTION.html">guia de evolução</a>. A ordem dos pais não altera o resultado.
-Pais e filhos, irmãos e meios-irmãos não podem cruzar. O registro guarda UUIDs
-dos dois pais e geração; ele não detecta parentesco ancestral mais distante.
-As receitas JSON e suas validações estão em <a href="../reference/SPECIES_DATA.html">referência de datapacks</a>.</p>
-<p>O limite padrão é 12 slimes vivos carregados na região de 32 blocos ao redor
-do nascimento, contando os pais e outras espécies. A consulta usa uma caixa
-espacial. Se o limite foi atingido, não nasce outro slime.</p>
-<h2 id="nascimento-e-recuperação">Nascimento e recuperação</h2>
-<p>Cada nascimento bem-sucedido produz um único indivíduo com UUID novo, genoma
-herdado, identificação dos pais e geração seguinte à maior geração parental.
-O filhote herda o cuidador e começa com tamanho 1, fome 60, conforto 60,
-confiança 20 e energia 70. Ele não causa dano de contato enquanto jovem.
-Sua espécie de nascimento é o resultado da receita. Histórico e exposição
-de metamorfose dos pais não são herdados; os alelos continuam herdados normalmente.</p>
-<p>Somente após o servidor aceitar o filhote no mundo, cada pai gasta 30 de
-energia, recebe 30 de fome e entra em recuperação. A recuperação-base é
-6.000 ticks, cinco minutos a 20 ticks por segundo, multiplicada por
-<code>1.25 - 0.5 × fertilidade</code>: entre 3min45s e 6min15s.</p>
-<p>Falta de espaço, incompatibilidade, limite populacional ou cancelamento da
-inserção por outro mod não aplicam esses custos nem a recuperação. Os pais
-continuam prontos até o prazo expirar; a geleia usada na preparação não é
-devolvida. Expirar a prontidão não produz um filhote.</p>
-<h2 id="crescimento-e-persistência">Crescimento e persistência</h2>
-<p>O crescimento-base leva 12.000 ticks, dez minutos com o indivíduo carregado e
-em boas condições. Avança a cada segundo enquanto fome for menor que 80,
-conforto pelo menos 40 e energia pelo menos 20. Aumentos de tamanho exigem
-espaço livre; paredes ou teto podem pausar o crescimento. Idade cronológica
-e progresso de crescimento são contadores distintos.</p>
-<p>O gene de tamanho determina o tamanho adulto dentro dos limites da espécie.
-Um adulto de tamanho 1 continua sendo adulto: o estágio não depende apenas
-do tamanho. Mudanças de tamanho preservam a proporção de vida.</p>
-<p>Genoma, pais, geração, estágio, progresso e recuperação são salvos no NBT e
-preservados pela cápsula. Crescimento e contadores ficam pausados enquanto
-o indivíduo estiver na cápsula ou sem receber ticks no mundo. O token de
-captura mantém as mesmas proteções descritas em <a href="CARE.html">CARE.md</a>.
-Indivíduos antigos sem campos de crescimento são carregados como adultos de
-geração zero, preservando seu genoma, UUID, cuidador e necessidades.</p>
-<h2 id="analisador-genético">Analisador genético</h2>
-<p>Use <code>slimeevolution:genetic_analyzer</code> em um slime para abrir a inspeção.
-Qualquer jogador que alcance e veja o indivíduo pode consultá-lo. A tela
-apresenta espécie, geração, UUID, pais, habilidade, vida, tamanho, estágio,
-idade, necessidades, crescimento restante, recuperação e prontidão.</p>
-<p>Os 15 genes mostram os dois alelos e sua expressão. A roda do mouse ou as
-setas percorrem a lista; tooltips explicam o tipo de expressão e quais genes
-ainda não têm efeito no jogo. A inspeção não edita o indivíduo, não consome
-o analisador e não possui espaços para itens. O servidor invalida o menu
-quando o slime desaparece, fica fora de visão ou se afasta mais de oito blocos.
-A aba Evolução mostra origem, quantidade de metamorfoses e exigências da
-receita ambiental. Trocar espécie, genoma ou receita também invalida a tela.</p>
-<h2 id="receitas">Receitas</h2>
-<p>Ambos os itens ficam na aba de ferramentas/utilidades. Obter uma bola de
-slime desbloqueia suas receitas no livro; cada receita produz um item.</p>
-<p>Geleia reprodutiva: dois trigos (<code>T</code>), duas bagas brilhantes (<code>B</code>) e uma bola
-de slime (<code>S</code>). Espaços vazios estão representados por pontos.</p>
-<pre><code class="language-text">.T.
+<p>Parent order does not matter. Parent–offspring, sibling, and half-sibling pairings are rejected. The record stores both parent UUIDs and generation; more distant ancestry is not detected. See <a href="EVOLUTION.html">all breeding combinations</a>.</p>
+<p>The default population cap is <strong>12 loaded living slimes</strong> in a 32-block region around the birth, including parents and other species. This uses a spatial box.</p>
+<h2 id="birth-and-recovery">Birth and recovery</h2>
+<p>A successful birth creates one individual with a new UUID, inherited genome, parent IDs, and one generation above the higher parental generation. It inherits the caretaker and starts at size 1, hunger 60, comfort 60, trust 20, and energy 70. Juveniles do not deal contact damage. Parental metamorphosis history and exposure are not inherited.</p>
+<p>Only after the server accepts the child do both parents spend <strong>30 energy</strong>, gain <strong>30 hunger</strong>, and begin recovery. Base recovery is <strong>6,000 ticks</strong>, multiplied by <code>1.25 - 0.5 × fertility</code>: normally 3 minutes 45 seconds to 6 minutes 15 seconds.</p>
+<p>Blocked space, incompatibility, population limits, or another mod canceling entity insertion do not apply birth costs or recovery. Parents remain ready until their timer expires. Preparation gel is not refunded; expiration does not create offspring.</p>
+<h2 id="growth-and-persistence">Growth and persistence</h2>
+<p>Base growth takes <strong>12,000 loaded ticks</strong>, ten minutes under suitable conditions. It advances once per second while hunger is below 80, comfort at least 40, and energy at least 20. Growth that increases size also requires space. Chronological age and growth progress are separate counters.</p>
+<p>The size gene determines adult size within species limits. A size-1 adult is still an adult. Size changes preserve health ratio. Genome, parents, generation, life stage, progress, and recovery persist through saves and capsules. Captured or unloaded individuals do not advance their growth or timers. Older individuals without growth fields load as generation-zero adults, preserving identity and genetics.</p>
+<h2 id="genetic-analyzer">Genetic Analyzer</h2>
+<p>Use <code>slimeevolution:genetic_analyzer</code> on a reachable, visible slime to inspect species, generation, UUID, parents, ability, health, size, stage, age, needs, growth, recovery, and readiness.</p>
+<p>The 15 genes show both alleles and their expression. Scroll or use arrows; tooltips explain expression and genes without active gameplay effects. Inspection neither edits the slime nor consumes the analyzer. Losing the slime, line of sight, or eight-block access closes the menu. The <strong>Evolution</strong> tab shows transformation history and environmental requirements.</p>
+<h2 id="recipes">Recipes</h2>
+<p>Breeding Gel: wheat (W), glow berries (B), slimeball (S).</p>
+<pre><code class="language-text">.W.
 BSB
-.T.
+.W.
 </code></pre>
-<p>Analisador: quatro barras de ferro (<code>F</code>), um bloco de vidro (<code>V</code>) e uma bola
-de slime (<code>S</code>).</p>
-<pre><code class="language-text">.FV
-FSF
-.F.
+<p>Genetic Analyzer: iron ingots (I), glass (G), slimeball (S).</p>
+<pre><code class="language-text">.IG
+ISI
+.I.
 </code></pre>
-<h2 id="configuração-do-servidor">Configuração do servidor</h2>
-<p>Seção <code>[breeding]</code> da configuração do mod:</p>
+<p>Both recipes unlock after obtaining a slimeball and produce one item.</p>
+<h2 id="server-settings">Server settings</h2>
 <table>
 <thead>
 <tr>
-<th>Opção</th>
-<th>Padrão</th>
-<th>Intervalo / efeito</th>
+<th>Setting in <code>[breeding]</code></th>
+<th>Default</th>
+<th>Range / purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>enabled</code></td>
 <td><code>true</code></td>
-<td>Habilita reprodução iniciada pelo jogador</td>
+<td>Player-initiated breeding</td>
 </tr>
 <tr>
 <td><code>localPopulationLimit</code></td>
 <td><code>12</code></td>
-<td>2–64 slimes carregados na região</td>
+<td>2–64 loaded slimes</td>
 </tr>
 <tr>
 <td><code>recoveryTicks</code></td>
 <td><code>6000</code></td>
-<td>200–240000; fertilidade ajusta a duração aplicada</td>
+<td>200–240000; adjusted by fertility</td>
 </tr>
 <tr>
 <td><code>growthTicks</code></td>
 <td><code>12000</code></td>
-<td>200–240000; afeta novos filhotes</td>
+<td>200–240000; new juveniles</td>
 </tr>
 <tr>
 <td><code>mutationChance</code></td>
 <td><code>0.02</code></td>
-<td>0–0.25 por alelo; estabilidade e pais instáveis ajustam a chance</td>
+<td>0–0.25 per allele; affected by stability</td>
 </tr>
 <tr>
 <td><code>mutationStep</code></td>
 <td><code>0.1</code></td>
-<td>0–0.25 de mudança máxima em um alelo</td>
+<td>0–0.25 maximum allele change</td>
 </tr>
 </tbody>
 </table>
-<p>Filhotes existentes conservam sua duração de crescimento. Recuperações já
-iniciadas conservam seus contadores. Os tempos em segundos pressupõem
-20 ticks por segundo; não são relógios que avançam com o mundo parado.</p>
-<p>Herança, expressão e limites estão em <a href="../reference/GENETICS.html">GENETICS.md</a>. Cruzamentos
-e metamorfoses estão no <a href="EVOLUTION.html">guia de evolução</a>.</p>
-<h2 id="preparação-com-estabilizador">Preparação com estabilizador</h2>
-<p>Aplique antes da geleia em um pai apto e de seu cuidado. Uma unidade protege
-o próximo nascimento do par contra novas mutações, sem alterar os alelos
-herdados. Não prepara o pai para reproduzir nem dispensa os requisitos normais.
-A proteção aparece no analisador e persiste em saves/cápsulas. Falhas, nascimento
-cancelado e prontidão expirada a mantêm; nascimento aceito a consome nos pais
-tratados. O filhote não a herda. Receitas e custos: <a href="MATERIALS.html">MATERIALS.md</a>.</p>
-<p>Consulte também <a href="ADVANCED_LINEAGES.html">linhagens avançadas</a>:
-quatro híbridos novos, rota Musgo + Água e reprodução das duas formas raras.</p>
-<p>O nascimento de Eclipse exige o <a href="ASCENSION.html">ritual solar e lunar</a>:
-carga solar, Lunar de Lua Nova, entardecer e catalisador com o cuidador.</p></article><aside class="outline" aria-label="Nesta página"><span>NESTA PÁGINA</span><div class="toc">
+<p>Existing juveniles and active recovery retain their stored durations. Timings assume 20 ticks per second and do not advance while unloaded.</p>
+<h2 id="mutation-stabilizer">Mutation Stabilizer</h2>
+<p>Apply a stabilizer to an eligible parent in your care before Breeding Gel. One unit protects the pair's next accepted birth against new mutations without changing inherited alleles or bypassing breeding conditions. Protection persists through saves, capsules, failed births, and readiness expiration. An accepted birth consumes protection from treated parents; offspring do not inherit it.</p>
+<p>Eclipse requires its additional <a href="ASCENSION.html">solar and lunar ritual</a>. See <a href="../reference/GENETICS.html">genetics</a>, <a href="MATERIALS.html">materials</a>, and <a href="ADVANCED_LINEAGES.html">advanced lineages</a>.</p></article><aside class="outline" aria-label="On this page"><span>ON THIS PAGE</span><div class="toc">
 <ul>
-<li><a href="#preparar-os-pais">Preparar os pais</a></li>
-<li><a href="#nascimento-e-recuperação">Nascimento e recuperação</a></li>
-<li><a href="#crescimento-e-persistência">Crescimento e persistência</a></li>
-<li><a href="#analisador-genético">Analisador genético</a></li>
-<li><a href="#receitas">Receitas</a></li>
-<li><a href="#configuração-do-servidor">Configuração do servidor</a></li>
-<li><a href="#preparação-com-estabilizador">Preparação com estabilizador</a></li>
+<li><a href="#prepare-the-parents">Prepare the parents</a></li>
+<li><a href="#birth-and-recovery">Birth and recovery</a></li>
+<li><a href="#growth-and-persistence">Growth and persistence</a></li>
+<li><a href="#genetic-analyzer">Genetic Analyzer</a></li>
+<li><a href="#recipes">Recipes</a></li>
+<li><a href="#server-settings">Server settings</a></li>
+<li><a href="#mutation-stabilizer">Mutation Stabilizer</a></li>
 </ul>
 </div>
-</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/guides/BREEDING.md">Ver esta página no GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/guides/BREEDING.md">View this page on GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>

@@ -1,91 +1,44 @@
-# Circuitos, sonar e vitrine
+# Circuits, Sonar, and Displays
 
-[Guia do mod](../README.md) · [Funções individuais](SPECIALIZATIONS.md) · [Treino](COMPANIONS.md)
+<a id="circuitos-sonar-e-vitrine"></a>
+<a id="cristal-encontrar-concentrações-minerais"></a>
+<a id="cristal-energizado-transmitir-um-sinal"></a>
+<a id="elétrico-pulsos-ajustáveis"></a>
+<a id="vidro-expor-um-objeto-real"></a>
 
-Elétrico, Cristal, Cristal Energizado e Vidro têm funções próprias no painel
-**Função**, acessado ao agachar e usar o analisador no seu slime.
+Electric, Crystal, Energized Crystal, and Glass have dedicated jobs. Crouch and use the analyzer on your slime, then open **Job**.
 
-![As quatro funções no jogo](../assets/signals/overview.png)
-
-| Slime | Função | Treino necessário | Custo |
+| Species | Job | Training | Cost |
 |---|---|---:|---|
-| Elétrico | Circuito vivo | 20 pontos | 2 de energia e +1 de fome por pulso aceito |
-| Cristal | Sonar mineral | 20 pontos | 4 de energia e +2 de fome ao encontrar um eco |
-| Cristal Energizado | Relé cristalino | 40 pontos | 1 de energia ao iniciar e a cada segundo de sinal ativo |
-| Vidro | Vitrine viva | 0 | Exposição e ampliação sem custo de energia |
+| Electric | Living circuit | 20 | 2 energy, +1 hunger per accepted pulse |
+| Crystal | Mineral sonar | 20 | 4 energy, +2 hunger when an echo is found |
+| Energized Crystal | Crystal relay | 40 | 1 energy on activation and each second of active signal |
+| Glass | Living display | 0 | No energy cost |
 
-Os três trabalhos ativos exigem adulto calmo, confiança 40, energia mínima 30,
-fome até 60 e conforto 40. Começam pausados. O cuidador precisa ter permissão
-de construção e permanecer conectado na mesma dimensão para os circuitos.
+Active jobs need a calm adult, trust 40, energy 30, hunger ≤60, and comfort 40. They start paused. Circuits require building permission and an online caretaker in the same dimension.
 
-## Elétrico: pulsos ajustáveis
+## Electric: adjustable pulses
 
-1. No painel, pressione **Saída**.
-2. Use o analisador no piso escolhido, deixando livre o espaço acima.
-3. Mantenha o slime a até seis blocos da saída, com visão livre.
-4. Ajuste os dois botões ao lado e pressione **Ativar função**.
+Select **Output**, use the analyzer on a floor with empty space above, and keep the slime within six blocks and clear line of sight. Set the interval and duration, then enable the job.
 
-O intervalo alterna entre **1, 2, 4 e 8 segundos**. A duração alterna entre
-**2, 4, 8 e 10 ticks**: de 0,1 a 0,5 segundo, a 20 ticks por segundo.
-O padrão é intervalo de dois segundos e duração de quatro ticks.
-Cada ajuste pausa o trabalho para permitir concluir a configuração.
+Intervals are **1, 2, 4, or 8 seconds**; durations are **2, 4, 8, or 10 ticks**. Defaults are two seconds and four ticks. Adjustments pause work. Output strength is **15**, supporting redstone, droppers, pistons, and nearby mechanisms. Occupied output space is not replaced and does not charge for rejected pulses. Clearing the link pauses the job.
 
-A saída emite intensidade **15** e pode alimentar redstone, um dropper,
-pistões e outros mecanismos próximos. O pequeno ponto de saída aparece durante
-o pulso. Se o espaço estiver ocupado, o slime aguarda sem substituir o bloco
-ou cobrar pelo pulso recusado. O botão **×** limpa o vínculo e pausa a função.
+## Crystal: mineral sonar
 
-## Cristal: encontrar concentrações minerais
+Enable the job and press **Search**. The panel closes to reveal a pulse and a direction with weak, medium, or strong intensity. Scans reach **12 blocks**, including through stone, seeking clusters of at least four mineral blocks in one directional sector. Ores and amethyst blocks are recognized; an isolated vein may not produce a useful echo.
 
-Ative a função e pressione **Procurar**. O painel fecha para mostrar a pulsação
-e a mensagem com **direção e intensidade**: fraca, média ou forte.
-O levantamento alcança até **12 blocos**, inclusive através de pedra, e procura
-concentrações de pelo menos quatro blocos minerais no mesmo setor direcional.
+Scans preserve terrain, respect protected regions, and use loaded chunks only. Recovery is **ten seconds**, even without an echo; unsuccessful scans preserve energy and hunger. The last echo indicator is temporary, while recovery persists through saves and capsules.
 
-São reconhecidos minérios e blocos de ametista. Um veio isolado pode não gerar
-um eco significativo; a indicação ajuda a escolher uma direção de exploração.
-O trabalho preserva os blocos encontrados e respeita as regiões protegidas.
-Opera somente nos chunks já carregados.
+## Energized Crystal: relay a signal
 
-Cada levantamento tem **dez segundos de recuperação**. Um levantamento sem
-eco mantém essa recuperação e conserva energia e alimentação. O painel mostra
-a intensidade do último eco; essa indicação é temporária, enquanto a recuperação
-é preservada no save e na cápsula.
+Link a **Source** block such as a lever, pressure plate, or redstone wire, then a **Destination** floor with free output space. Keep the slime within six blocks of output and enable the job.
 
-![Indicação direcional do sonar](../assets/signals/sonar.png)
+Input and output must be loaded, in the same dimension, and **4–32 blocks apart**. The relay preserves analog strength **0–15**. No input signal means no energy charge. Output turns off when paused, captured, removed, or when its caretaker becomes unavailable. Temporary output points do not retain power without a valid source after reloading. Circuits respect permissions, arena protection, and `mobGriefing`.
 
-## Cristal Energizado: transmitir um sinal
+## Glass: display an item
 
-1. Pressione **Origem** e use o analisador no bloco de entrada, como uma
-   alavanca, placa de pressão ou trecho de redstone.
-2. Pressione **Destino** e escolha o piso de uma saída livre.
-3. Deixe o slime a até seis blocos da saída e ative a função.
+Place **one item** in its display compartment. It rotates inside the transparent body. **Enlarge** increases visual scale; **Normal size** restores it. The core is hidden while an item is displayed.
 
-Entrada e saída precisam estar na mesma dimensão, separadas por **4 a 32 blocos**,
-e ambas devem estar carregadas. O relé preserva a intensidade analógica de
-**0 a 15**. Desligar a entrada desliga a saída; entrada sem sinal não cobra energia.
-É possível conectar circuitos que usam comparadores e sensores de intensidade.
+Display storage needs 40 trust and no energy. Count, durability, name, and enchantments stay intact. Capsules and embedded inventories are rejected. Capture preserves the item and scale; death drops belongings. Existing cargo remains withdrawable.
 
-A saída se apaga automaticamente ao pausar, capturar ou remover o slime,
-ou quando o cuidador fica indisponível. Os pontos de saída são temporários;
-um sinal salvo sem a sua fonte válida não alimenta mecanismos ao recarregar.
-Os circuitos respeitam `mobGriefing`, permissões e a proteção das arenas.
-
-## Vidro: expor um objeto real
-
-Coloque **um objeto** no compartimento da vitrine. Ele aparece girando dentro
-do corpo transparente do slime. **Ampliar** aumenta a exibição, e **Tamanho normal**
-restaura a escala. O núcleo fica oculto enquanto o objeto ocupa a vitrine.
-
-![Objeto ampliado dentro do Vidro](../assets/signals/glass_zoom.png)
-
-A vitrine é passiva: basta confiança 40 para guardar o objeto pelo painel.
-A ampliação é visual e conserva quantidade, durabilidade, nome e encantamentos.
-O mesmo objeto pode ser retirado normalmente. Cápsulas e recipientes com
-inventários internos são recusados.
-
-Capturar e soltar conserva o objeto e o tamanho escolhido. Ao morrer, o slime
-solta seus pertences. Cargas antigas continuam disponíveis para retirada,
-mesmo que tenham sido guardadas antes de o indivíduo adquirir essa função.
-
-[Outros trabalhos](WORK_JOBS.md) · [Captura e cuidado](CARE.md)
+[Other jobs](WORK_JOBS.md) · [Care and capture](CARE.md)

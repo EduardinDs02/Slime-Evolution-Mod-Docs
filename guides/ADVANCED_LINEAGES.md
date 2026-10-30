@@ -1,126 +1,79 @@
-# Híbridos avançados e metamorfoses raras
+# Advanced Hybrids and Rare Metamorphoses
 
-O mod tem **47 espécies, 61 receitas de reprodução e 14 metamorfoses**.
-As 26 espécies derivadas ficam fora do spawn natural e não recebem ovos.
-Herdam os quinze genes, pais e geração pelo fluxo normal de reprodução; filhotes
-crescem com comida, conforto e espaço. Cápsulas, estação, incubadora e diário
-continuam usando NBT 7 e diário 3, sem apagar saves antigos.
+<a id="breeding"></a>
+<a id="cruzamentos-avançados"></a>
+<a id="evoluções-avançadas"></a>
+<a id="híbridos-avançados-e-metamorfoses-raras"></a>
+<a id="marcos-adicionais-de-conquista"></a>
+<a id="metamorfoses"></a>
+<a id="novas-linhagens-adquiridas"></a>
+<a id="rotas-raras"></a>
 
-## Cruzamentos avançados
+Slime Evolution includes **47 species, 61 breeding recipes, and 14 metamorphoses**. The 26 derived species do not spawn naturally or receive spawn eggs. Their offspring inherit the same 15 genes, parent IDs, and generation as other breeding results.
 
-| Pais, em qualquer ordem | Filhote | Características |
+## Advanced crosses
+
+| Parents | Offspring | Features |
 |---|---|---|
-| Fogo + Água | Vapor (`steam`) | Véu de cegueira limitado a cinco segundos; dieta de alga e pó de blaze |
-| Água + Gelo | Aquático Glacial (`glacial_aquatic`) | Jato que empurra/apaga e resfria, respiração aquática, imunidade a congelamento, fraqueza a fogo |
-| Cristal + Elétrico | Cristal Energizado (`energized_crystal`) | Estilhaços/refração, guarda mineral e descarga ao contato com condução limitada |
-| Vento + Fogo | Chama Volátil (`volatile_flame`) | Rajada e ignição, queda reduzida, imunidade ao fogo e dano por água |
-| Musgo + Água | Pantanoso (`bog`) | Caminho alternativo; Musgo + Lama continua válido |
+| Fire + Water | Steam | Blinding veil capped at five seconds; kelp and blaze powder diet |
+| Water + Ice | Glacial Aquatic | Pushing, extinguishing, chilling jet; water breathing; freeze immunity; fire weakness |
+| Crystal + Electric | Energized Crystal | Shards, refraction, mineral defense, and limited electrical conduction |
+| Wind + Fire | Volatile Flame | Gusts and ignition, reduced falls, fire immunity, water damage |
+| Moss + Water | Bog | Alternative route; Moss + Mud remains valid |
 
-Efeitos compostos compartilham **um custo de energia e uma recarga** do
-indivíduo. Aliados/cuidadores ficam protegidos. Custo só ocorre se alguma
-parte do efeito for aceita. Todos os novos resultados podem reproduzir com
-sua própria espécie, inclusive as formas raras depois da primeira aquisição.
-Não há cruzamento genérico que transforme qualquer par em uma espécie rara.
+Compound effects share one energy cost and cooldown. Caretakers and allies are protected. Costs apply only when part of the effect is accepted. Results can breed with their own species; there is no generic rare result for arbitrary pairs.
 
-## Rotas raras
+## Rare routes
 
-| Rota | Substrato / bioma | Requisitos mínimos | Catalisador / custo |
+| Route | Substrate and biome | Requirements | Catalyst and cost |
 |---|---|---|---|
-| Cristal → Prismático (`prismatic`) | Ametista / Picos Rochosos ou Cavernas de Espeleotemas | Adulto; 48.000 ticks de idade; luminosidade expressa ≥0,85; 12.000 ticks de exposição válida | 1 Estilhaço Prismático; 40 energia; +30 fome |
-| Ancestral → Celestial (`celestial`) | Púrpura / Terras Altas do End | Adulto; 96.000 ticks de idade; estabilidade expressa ≥0,90; 18.000 ticks de exposição válida | 1 Essência Primordial; 50 energia; +35 fome |
+| Crystal → Prismatic | Amethyst; Stony Peaks or Dripstone Caves | Adult; age 48,000; luminosity ≥0.85; exposure 12,000 | Prismatic Shard; 40 energy, +30 hunger |
+| Ancestral → Celestial | Purpur; End Highlands | Adult; age 96,000; stability ≥0.90; exposure 18,000 | Primordial Essence; 50 energy, +35 hunger |
 
-Ambas exigem cuidador, confiança suficiente, calma, fome até 40, conforto a
-partir de 60 e energia a partir de 60, além do custo. Exposição conta somente
-em ticks carregados nas condições certas e pausa fora delas; não cresce dentro
-da cápsula ou em chunks descarregados. Use o catalisador agachado. O analisador
-mostra a rota e o progresso, sem editar dados. Gene expressa é o fenótipo:
-luminosidade é recessiva e exige os dois alelos elevados.
+Both need a caretaker, sufficient trust, calm, hunger ≤40, comfort ≥60, and energy ≥60. Exposure advances only while loaded under correct conditions. Crouch and use the catalyst. Luminosity is recessive, requiring both alleles to meet its threshold.
 
-Prismático mantém projéteis/refração e defesa mineral, com vida/mobilidade
-moderadamente maiores; Celestial mantém a proteção ancestral ao cuidador,
-com recarga menor e custo maior. São metamorfoses de uma criatura existente,
-sem criar outra entidade, curar por completo ou mudar alelos. Preservam UUID,
-linhagem, cuidador, confiança, idade, proporção de vida, recargas, proteção
-reprodutiva e proveniência de mutação; o histórico registra a transformação.
-A Slimepedia registra apenas o nascimento ou transformação realmente observado
-pelo cuidador, sem conceder a descoberta por obter um troféu.
+Prismatic retains projectiles, refraction, and mineral defense with moderately higher health and mobility. Celestial retains ancestral caretaker protection with a shorter cooldown and higher cost. Transformations preserve UUID, lineage, alleles, caretaker, age, health ratio, cooldowns, breeding protection, and mutation evidence rather than creating a clone or fully healing the slime.
 
-Requisitos, custos e habitats são JSON/tags recarregáveis. Falha na validação
-mantém o snapshot anterior; mudar requisitos invalida exposição incompatível.
-Os dados dos indivíduos são preservados.
+## Additional acquired lineages
 
-Regras gerais: [BREEDING.md](BREEDING.md), [EVOLUTION.md](EVOLUTION.md).
-Recompensas dos catalisadores: [bosses e recompensas](BOSSES.md).
-
-## Novas linhagens adquiridas
-
-A 0.7.0 acrescenta 15 espécies em três grupos. Elas usam o mesmo cuidado,
-parentesco, crescimento, captura e herança genética das demais.
-
-### Breeding
-
-| Pais | Filhote | Característica |
+| Parents | Result | Features |
 |---|---|---|
-| Elétrico + Vento | Tempestade | Nuvem com chuva, tornado escuro e descargas/rajadas com energia compartilhada |
-| Água + Floral | Coral | Aglomerado de dezoito árvores ramificadas; recupera aliados na água, enquanto molhado |
-| Areia + Fogo | Vidro | Gel transparente com bordas, sem cristais, refração de flechas e camuflagem breve quando ameaçado |
-| Ferro + Água | Ferrofluido | Atrai até oito itens metálicos lançados pelo cuidador, com visão livre e alcance de seis blocos |
-| Fúngico + Musgo | Micélio | Esporos recuperam aliados próximos |
-| Venenoso + Magma | Cáustico | Poças de três segundos aplicam veneno e fraqueza |
+| Electric + Wind | Storm | Rain cloud, dark tornado, shared-energy gusts and discharges |
+| Water + Floral | Coral | Branching coral structures; heals allies in water while wet |
+| Sand + Fire | Glass | Transparent gel, arrow refraction, brief threatened camouflage |
+| Iron + Water | Ferrofluid | Attracts up to eight caretaker-thrown metal items within six visible blocks |
+| Fungal + Moss | Mycelium | Spores heal nearby allies |
+| Venom + Magma | Caustic | Three-second pools apply Poison and Weakness |
 
-### Metamorfoses
+## Environmental metamorphoses
 
-Estas cinco rotas exigem 24.000 ticks de idade, 6.000 ticks de exposição válida,
-30 de energia e +25 de fome na conclusão, além do cuidado geral.
+These routes require **24,000 age ticks**, **6,000 exposure ticks**, **30 energy**, and **+25 hunger**, in addition to general care requirements.
 
-| Origem → destino | Ambiente e piso | Catalisador / gene |
+| Route | Environment | Catalyst / minimum expressed gene |
 |---|---|---|
-| Musgo → Âmbar | Floresta Florida ou Planície de Girassóis; bloco de musgo | Favo de mel; regeneração ≥0,65 |
-| Aquático Glacial → Abissal | Oceano Frio Profundo ou Oceano Congelado Profundo; prismarinho; totalmente submerso em Y ≤40 | Bolsa de tinta brilhante; luminosidade ≥0,65 |
-| Corrompido → Sculk | Profundezas Sombrias; sculk | Fragmento de eco; potência elemental ≥0,70 |
-| Fogo → Solar | Planície, Planície de Girassóis ou Deserto; bloco de ouro; dia, tempo limpo e céu aberto | Catalisador Solar; potência elemental ≥0,65 |
-| Luminoso → Lunar | Planície, Prado ou Planície Nevada; calcita; noite de lua cheia e céu aberto | Fragmento de ametista; luminosidade ≥0,65 |
+| Moss → Amber | Flower Forest or Sunflower Plains; moss block | Honeycomb; regeneration ≥0.65 |
+| Glacial Aquatic → Abyssal | Deep Cold or Deep Frozen Ocean; prismarine; fully submerged at Y ≤40 | Glow ink sac; luminosity ≥0.65 |
+| Corrupted → Sculk | Deep Dark; sculk | Echo shard; elemental potency ≥0.70 |
+| Fire → Solar | Plains, Sunflower Plains, or Desert; gold block; clear day and open sky | Solar Catalyst; elemental potency ≥0.65 |
+| Luminous → Lunar | Plains, Meadow, or Snowy Plains; calcite; full-moon night and open sky | Amethyst shard; luminosity ≥0.65 |
 
-Âmbar aplica lentidão; Abissal combina escuridão e lentidão. Sculk responde ao
-movimento de inimigos com pulsos de eco. Solar recupera vida sob o sol e aplica
-ignição; Lunar concede visão noturna ao cuidador próximo durante a noite.
+Amber slows; Abyssal combines Darkness and Slowness; Sculk responds to enemy movement with echo pulses. Solar heals in sunlight and ignites; Lunar gives a nearby caretaker Night Vision at night.
 
-O Catalisador Solar é fabricado com um lingote de ouro, dois girassóis,
-um fragmento de ametista e um pó de blaze: ouro acima, `girassol / ametista /
-girassol` no meio e pó de blaze abaixo.
+Craft Solar Catalyst with a gold ingot above, `sunflower / amethyst shard / sunflower` across the middle, and blaze powder below.
 
-### Evoluções avançadas
+## Advanced evolutions
 
-As três metamorfoses abaixo exigem 96.000 ticks de idade, 12.000 ticks de
-exposição, 40 de energia e +25 de fome. Eclipse nasce por cruzamento.
+The following three metamorphoses require **96,000 age ticks**, **12,000 exposure ticks**, **40 energy**, and **+25 hunger**. Eclipse is a breeding result.
 
-| Linha | Condições finais | Característica |
-|---|---|---|
-| Elétrico + Vento → Tempestade → Supercélula | Picos Ventosos ou Picos Pedregosos Ventosos; para-raios; tempestade e céu aberto; carga de vento; potência elemental ≥0,90 | Rajadas e descargas encadeadas em até dois alvos adicionais |
-| Musgo → Âmbar → Colmeia | Floresta Florida ou Planície de Girassóis; bloco de favo de mel; favo de mel; regeneração ≥0,85 | Dois pequenos polinizadores temporários e coleta de mel |
-| Pedra → Cristal → Prismático → Aurora | Picos Congelados ou Espigões de Gelo; gelo azul; noite de céu aberto; Estilhaço Prismático; estabilidade ≥0,90 | Faixas luminosas e resistência para aliados próximos |
-| Solar + Lunar → Eclipse | Solar carregado + Lunar de Lua Nova; ritual ao entardecer com Estilhaço Prismático | Alterna ignição e lentidão a cada ativação aceita; conserva o ciclo ao salvar |
+| Lineage | Final requirements |
+|---|---|
+| Storm → Supercell | Windswept Hills or Windswept Gravelly Hills; lightning rod; thunder, open sky; wind charge; potency ≥0.90 |
+| Amber → Hive | Flower Forest or Sunflower Plains; honeycomb block; honeycomb; regeneration ≥0.85 |
+| Prismatic → Aurora | Frozen Peaks or Ice Spikes; blue ice; clear night, open sky; Prismatic Shard; stability ≥0.90 |
+| Solar + Lunar → Eclipse | Charged Solar and New Moon Lunar; sunset ritual with Prismatic Shard |
 
-A Colmeia produz um frasco de mel ao usar uma garrafa de vidro, com os
-[requisitos de coleta](PROGRESSION.md): 20 de energia, +10 de fome e 6.000 ticks
-de recuperação. Os polinizadores vivem até 200 ticks, recuperam slimes aliados
-e desaparecem ao perder a Colmeia. O limite é dois por Colmeia.
+Hive can produce bottled honey from a glass bottle under normal harvesting conditions: 20 energy, +10 hunger, and 6,000 recovery ticks. Up to two temporary pollinators live for 200 ticks, heal allied slimes, and disappear when their Hive is lost.
 
-Efeitos ofensivos preservam as proteções de cuidador, colônia e aliados.
-As poças e os polinizadores têm duração limitada; energia, recargas e as opções
-de habilidades, dano, cura, partículas e sons continuam valendo.
+Supercell, Aurora, Ancestral, Celestial, and Eclipse also require their [ascension milestones](ASCENSION.md). Read those before consuming catalysts.
 
-As aparências raras acompanham seus temas: Ferrofluido tem uma cobertura de
-36 espinhos; Cáustico borbulha e solta fumaça; Abissal tem cauda, nadadeiras
-e uma grande isca luminosa; Sculk tem chifres inspirados no Warden. Solar
-exibe raios e Lunar, lua cheia e crateras. O Âmbar conserva objetos decorativos
-na resina — graveto, pedregulho e uma picareta com seis materiais possíveis,
-fixada para cada indivíduo. A Colmeia apresenta favos, mel e abelhas; Aurora
-tem gradiente no corpo e faixas animadas; Eclipse tem silhueta escura e corona.
-
-## Marcos adicionais de conquista
-
-Os requisitos da tabela se somam aos [cinco rituais de conquista](ASCENSION.md):
-três cargas conduzidas para Supercélula, três biomas para Aurora, Selo
-Primordial para Ancestral e vínculo, pesquisa e três observações para Celestial.
-Aurora também exige tempo limpo. Consulte esse guia antes de consumir catalisadores.
+[Breeding](BREEDING.md) · [Evolution](EVOLUTION.md) · [Boss rewards](BOSSES.md)
