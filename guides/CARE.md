@@ -42,6 +42,10 @@ Avoid overcrowding: more than eight evolution slimes in the local four-block che
 
 The Feeder has **nine slots** and supports hoppers. Every two seconds it tries to feed a hungry slime within four blocks and clear line of sight, using compatible food and respecting the individual's meal cooldown. It neither assigns a caretaker nor increases trust. Its reservoir and tray face you when placed.
 
+## Portable feeding
+
+Use a [feed bag](FEED_BAGS.md) to carry food for your own slimes in Follow within sixteen blocks. The Royal version has five slots; upgrade it with an Igneous Fragment for fifteen. Bags use each species' diet and the normal five-second meal cooldown, without granting automatic trust.
+
 ## Capsules
 
 Use an empty capsule on a **size-1 or size-2** slime with sufficient caretaker trust, at least half health and 10 energy, no combat or damage in the last five seconds, and no leash, mount, or passengers.

@@ -6,7 +6,7 @@ In 0.17.0, all 47 species receive a companion combat profile based on acquisitio
 
 ## Prepare your team
 
-Use adults bonded to the same caretaker, with at least 40 trust and 20 energy to fight. Feed and care for the group before a ritual. **Defensive** responds to attacks received or made by the caretaker; **Aggressive** also seeks visible hostiles within 16 blocks. **Passive** retains support and protection while cancelling attacks, including projectiles already in flight. Follow requires training 40 and remains limited to five slimes per caretaker.
+Use adults bonded to the same caretaker, with at least 40 trust. Special skills require their listed energy cost; following and basic attacks still work at zero energy. Feed and care for the group before a ritual. **Defensive** responds to attacks received or made by the caretaker; **Aggressive** also seeks visible hostiles within 16 blocks. **Passive** retains support and protection while cancelling attacks, including projectiles already in flight. Follow requires training 40 and remains limited to five slimes per caretaker.
 
 Tanks close in and attract more attention from nearby minions. Ranged attackers try to maintain distance; supports position around the caretaker or an injured ally. Companions try to move away from boss warning centers when safe ground is available. This does not guarantee a dodge: respect each attack's geometry and avoid trapping your slimes against walls.
 

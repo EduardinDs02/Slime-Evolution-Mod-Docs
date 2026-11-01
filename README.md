@@ -20,6 +20,7 @@ For **Minecraft Java 1.21.1**, **NeoForge 21.1.264**, and **Java 21**. **GeckoLi
 
 | What would you like to do? | Guide |
 |---|---|
+| Carry food and automatically feed followers | [Feed bags](guides/FEED_BAGS.md) |
 | Choose comfort floor blocks and biomes for every slime | [Habitats and comfort](guides/HABITATS.md) |
 | Choose battle companions and elemental combos | [Companion combat](guides/COMPANION_COMBAT.md) |
 | Feed, house, capture, and transport slimes | [Care and capture](guides/CARE.md) |

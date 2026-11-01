@@ -31,9 +31,9 @@ Learned commands require 40 trust; Free remains available below that threshold. 
 
 Follow uses faster hops and more frequent path updates outside combat, helping slower species keep up. Ancestral and Celestial fly in a small formation while following; they use collision-aware air navigation and return to ground movement when the order ends or combat interrupts it. Their wings protect bonded individuals from landing damage.
 
-A loaded follower **more than 32 blocks away** can teleport to a safe, dry, supported point near its caretaker in the **same dimension**. Attempts run at most once per loaded second, with a five-second cooldown after success. It checks space for the whole slime, hazards, and the world border. No teleport occurs during combat, recent attacks, defeat, immobilization, exhaustion, riding, or leashing. If there is no safe point, it continues trying to follow normally. No chunks are forced to load, and other dimensions or an unavailable caretaker do not trigger a teleport.
+A loaded follower **more than 32 blocks away** can teleport to a safe, dry, supported point near its caretaker in the **same dimension**. Attempts run at most once per loaded second, with a five-second cooldown after success. It checks space for the whole slime, hazards, and the world border. No teleport occurs during combat, recent attacks, defeat, immobilization, riding, or leashing. If there is no safe point, it continues trying to follow normally. No chunks are forced to load, and other dimensions or an unavailable caretaker do not trigger a teleport.
 
-Energy below 20 pauses travel. Keep feeding and caring for followers; the five-follower limit remains shared across dimensions.
+Energy limits special skills rather than learned movement or basic attacks. Even at zero energy, companions can follow, fly, and reacquire hostiles in Aggressive. Ranged attackers that cannot afford their next skill approach for a basic melee attack. Feed and care for the team so its special skills recover; the five-follower limit remains shared across dimensions.
 
 ## Defeated companions
 
@@ -55,7 +55,7 @@ Choose a combat posture independently of Free, Wait, Follow, and Return home:
 
 ![Combat posture controls in English](../assets/companions/combat-postures.png)
 
-Automatic combat requires adulthood, at least 40 trust, and 20 energy. Passive remains selectable at low trust. It also prevents offensive ability effects; supportive abilities and ordinary care remain available.
+Automatic basic combat requires adulthood and at least 40 trust. Special skills require their listed energy cost. Passive remains selectable at low trust. It also prevents offensive ability effects; supportive abilities and ordinary care remain available.
 
 The caretaker, bonded slimes, tame animals, allies, spectators, Creative players, and PvP-protected players are not valid targets. Priority goes to the caretaker's recent attacker, then the slime's attacker, then the caretaker's recent victim. Combat records expire after 200 ticks, normally ten seconds. Targets are rechecked for range, sight, and eligibility; movement orders resume after combat.
 
@@ -106,3 +106,7 @@ Server options `companions.training` and `companions.symbiosis` can pause these 
 ## Skills and team roles
 
 All 47 companion species now have tiered attacks or support skills. See the [complete combat catalog](COMPANION_COMBAT.md) for roles, costs, cooldowns, combos, and boss team suggestions.
+
+## Carry food for your team
+
+The [Royal and Magmatic Feed Bags](FEED_BAGS.md) store five or fifteen food stacks. Carry one to automatically feed only your own following slimes within sixteen blocks.
