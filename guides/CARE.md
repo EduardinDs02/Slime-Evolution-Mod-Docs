@@ -26,7 +26,7 @@ The first player to feed a slime manually becomes its caretaker. Other players m
 | Neutral | 15 | 40 |
 | Hostile | 10 | 70 |
 
-Hostile slimes stop selecting their caretaker as a target at 20 trust. Hurting your own slime removes 20 trust and can provoke retaliation. A bond supports care and capture; [training](COMPANIONS.md) unlocks commands and cooperation.
+Hostile slimes stop selecting their caretaker as a target at 20 trust. Bonded slimes reject damage attributed to their own caretaker or another slime with the same caretaker, including melee, projectiles, explosions, thorns, and indirect magic, without losing trust, absorption, or energy, retaliating, or starting a capture cooldown. Harmful caretaker and allied slime effects are rejected before poison or wither can deal delayed damage; healing and beneficial effects still work. This protection applies at any trust level and in every order. Other players, monsters, and unattributed environmental hazards such as lava and block fire can still hurt them. All mod slime species, wild or bonded, are immune to fall damage. A bond supports care and capture; [training](COMPANIONS.md) unlocks commands and cooperation.
 
 ## Enclosures
 

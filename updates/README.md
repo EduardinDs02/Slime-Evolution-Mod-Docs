@@ -6,6 +6,7 @@ These entries summarize the player-facing changes in each release. Historical ve
 
 | Version | Highlights |
 |---|---|
+| [0.20.0](0.20.0.md) | Levels 1–10, XP from food and kills, animated wings, elemental effects, and ally protection. |
 | [0.19.0](0.19.0.md) | Five- and fifteen-slot feed bags; fixes followers freezing at low energy. |
 | [0.18.0](0.18.0.md) | Faster Follow, winged flight, safe catch-up, defeated companion recovery, and all habitat floors. |
 | [0.17.0](0.17.0.md) | 47 companion combat profiles, elemental combos, support limits, and stronger bosses. |

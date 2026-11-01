@@ -14,21 +14,21 @@
 <a id="void-recolher-itens"></a>
 <a id="água-irrigar-e-encher-frascos"></a>
 
-Crouch and use the analyzer on your slime, then open **Job**. Work starts paused. Workers need calm adulthood, trust 40, energy 30, hunger at most 60, and comfort 40. Training requirements below refer to lesson experience points.
+Crouch and use the analyzer on your slime, then open **Job**. Work starts paused. Workers need calm adulthood, trust 40, energy 30, hunger at most 60, and comfort 40. Requirements below refer to [individual slime levels](LEVELS.md).
 
-| Species | Job | Training | Cost per useful action |
+| Species | Job | Level | Cost per useful action |
 |---|---|---:|---|
-| Iron | Smith | 0 | Repair material; 6 energy, +3 hunger |
-| Common | Courier | 20 | Linked containers; 2 energy, +1 hunger per pickup or delivery |
-| Water | Irrigator | 0 | Stored water; 2 energy, +1 hunger |
-| Luminous | Light guide | 0 | Glowstone dust; 1 energy per pulse |
-| Soul | Memory keeper | 20 | Recorded last death; 1 energy every two seconds |
-| End | Passage keeper | 60 | One pearl; 12 energy, +4 hunger per trip |
-| Void | Spatial collector | 40 | Linked container or Amber; 2 energy, +1 hunger |
-| Caustic | Recycler | 20 | Equipment and slimeball; 6 energy, +3 hunger |
-| Lunar | Lunar tides | 20 | A useful phase effect; 3 energy, +1 hunger |
-| Hive | Beekeeper | 0 | Flower and optional bottle; 6 energy, +3 hunger |
-| Aurora | Peacekeeper | 20 | Nearby companions; 3 energy, +1 hunger |
+| Iron | Smith | 1 | Repair material; 6 energy, +3 hunger |
+| Common | Courier | 2 | Linked containers; 2 energy, +1 hunger per pickup or delivery |
+| Water | Irrigator | 1 | Stored water; 2 energy, +1 hunger |
+| Luminous | Light guide | 1 | Glowstone dust; 1 energy per pulse |
+| Soul | Memory keeper | 2 | Recorded last death; 1 energy every two seconds |
+| End | Passage keeper | 4 | One pearl; 12 energy, +4 hunger per trip |
+| Void | Spatial collector | 3 | Linked container or Amber; 2 energy, +1 hunger |
+| Caustic | Recycler | 2 | Equipment and slimeball; 6 energy, +3 hunger |
+| Lunar | Lunar tides | 2 | A useful phase effect; 3 energy, +1 hunger |
+| Hive | Beekeeper | 1 | Flower and optional bottle; 6 energy, +3 hunger |
+| Aurora | Peacekeeper | 2 | Nearby companions; 3 energy, +1 hunger |
 
 ## Iron: repair equipment
 

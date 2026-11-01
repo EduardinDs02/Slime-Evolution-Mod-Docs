@@ -1,4 +1,4 @@
-# Companions, Training, and Symbiosis
+# Companions, Levels, and Symbiosis
 
 <a id="abrir-o-painel"></a>
 <a id="ativar-uma-simbiose"></a>
@@ -14,22 +14,22 @@
 
 Manually feed a slime to become its caretaker. Then **crouch and use the Genetic Analyzer on your slime**. Normal analyzer use still opens genetic inspection. Control requires a nearby caretaker, clear line of sight, and building permission.
 
-## Teach commands
+<a id="teach-commands"></a>
 
-Training requires trust ≥40, energy ≥40, hunger ≤60, comfort ≥40, a calm slime with at least half health, and no recent damage, breeding, leash, mount, or passengers.
+## Levels and commands
 
-Each lesson costs **5 energy and +3 hunger**, adds up to one trust, and grants **4–10 training points**, depending on sociability and stability. Both genes at 0.50 grant seven points. Lessons require **200 loaded ticks** of recovery. Training caps at 100 and does not change alleles.
+[Levels 1–10](LEVELS.md) replace practice lessons. Eating a suitable food grants 2 XP; kills grant 8 XP for passive mobs, 20 for hostiles, and 160 for bosses. Each level improves health, armor, and damage without changing genes.
 
-| Command | Training points | Behavior |
+| Command | Minimum level | Behavior |
 |---|---:|---|
-| Free | 0 | Resume natural movement and feeding |
-| Wait | 20 | Guard the chosen point and return if displaced |
-| Follow | 40 | Follow the available caretaker in the same dimension, with faster travel |
-| Return home | 60 | Navigate to the marked home, then wait |
+| Free | 1 | Resume natural movement and feeding |
+| Wait | 1 | Hold the current position |
+| Follow | 1 | Follow the caretaker in the same dimension |
+| Return home | 1 | Return to the marked home and wait |
 
-Learned commands require 40 trust; Free remains available below that threshold. Self-defense takes priority. Commands suspend loose-food seeking, so maintain manual feeding or a nearby Feeder.
+Commands require 40 trust; Free remains available below that value. Mark a home before returning. Feed bags can feed slimes in Follow.
 
-Follow uses faster hops and more frequent path updates outside combat, helping slower species keep up. Ancestral and Celestial fly in a small formation while following; they use collision-aware air navigation and return to ground movement when the order ends or combat interrupts it. Their wings protect bonded individuals from landing damage.
+Follow uses faster hops and more frequent path updates outside combat, helping slower species keep up. Ancestral and Celestial fly in a small formation while following; they use collision-aware air navigation and return to ground movement when the order ends or combat interrupts it. All mod slime species are immune to fall damage, including wild individuals and those without wings. Bonded slimes also reject damage and harmful effects attributed to their own caretaker; see [care and capture](CARE.md).
 
 A loaded follower **more than 32 blocks away** can teleport to a safe, dry, supported point near its caretaker in the **same dimension**. Attempts run at most once per loaded second, with a five-second cooldown after success. It checks space for the whole slime, hazards, and the world border. No teleport occurs during combat, recent attacks, defeat, immobilization, riding, or leashing. If there is no safe point, it continues trying to follow normally. No chunks are forced to load, and other dimensions or an unavailable caretaker do not trigger a teleport.
 
@@ -39,7 +39,7 @@ Energy limits special skills rather than learned movement or basic attacks. Even
 
 A bonded slime that takes lethal ordinary damage enters a **defeated state for 10 loaded seconds**, with three stars orbiting above its head. It remains in place, stops attacking, casting, flying, and working, and cannot be captured during recovery. Enemies cannot damage it further during this period, and boss minions switch to other targets.
 
-It then gets up with **50% health**, at least 20 energy, and **two seconds of protection** against immediate defeat. Its identity, genes, trust, training, commands, follower reservation, and stored belongings remain intact. No loot, experience, or duplicate slime is created. Existing skill recoveries continue normally.
+It then gets up with **50% health**, at least 20 energy, and **two seconds of protection** against immediate defeat. Its identity, genes, trust, level, XP, commands, follower reservation, and stored belongings remain intact. No loot, experience, or duplicate slime is created. Existing skill recoveries continue normally.
 
 The timer is saved and pauses while unloaded. Wild slimes retain normal death. Administrative removal and damage that bypasses invulnerability, including the void, keep their normal behavior.
 
@@ -67,7 +67,7 @@ Postures persist through saves, capsules, and metamorphoses. Offspring start Def
 
 At most **five slimes may be in Follow for one caretaker across the whole world**, including all dimensions. A sixth request is rejected without changing the previous order. Hover over Follow for the reserved follower count.
 
-Unloaded slimes keep their reserved slot. Free, Wait, Return home, capture, or removal releases it. Releasing a captured follower restores Follow if there is room; with five occupied slots, the released slime switches to Wait at its release location, keeping its posture and training.
+Unloaded slimes keep their reserved slot. Free, Wait, Return home, capture, or removal releases it. Releasing a captured follower restores Follow if there is room; with five occupied slots, the released slime switches to Wait at its release location, keeping its posture, level, and XP.
 
 Old worlds with more than five followers move excess individuals to Wait as they load. Reservations are stored in `data/slimeevolution_followers.dat`; include it in complete world backups.
 
@@ -98,7 +98,7 @@ Keep partners within four blocks of the machine, with clear line of sight. The c
 
 ## Persistence and settings
 
-Training, commands, home, cooperation preferences, and recovery persist through saves, capsules, and metamorphoses. Recovery pauses while captured or unloaded. Offspring start untrained and do not inherit commands or homes.
+Level, XP, commands, home, cooperation preferences, and recovery persist through saves, capsules, and metamorphoses. Recovery pauses while captured or unloaded. Offspring start at level 1 with no XP and do not inherit commands or homes.
 
 Server options `companions.training` and `companions.symbiosis` can pause these features without deleting progress. Canceling commands and disabling cooperation remain available. See [individual jobs](SPECIALIZATIONS.md).
 

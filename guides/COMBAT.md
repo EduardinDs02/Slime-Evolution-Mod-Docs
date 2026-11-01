@@ -20,7 +20,7 @@ Genes affect strength, duration, regeneration, and defense. Species values are b
 
 | Group | Examples |
 |---|---|
-| Mobility and knockback | Common attacks with jumps; Water pushes and extinguishes; Wind creates gusts and cushions falls |
+| Mobility and knockback | Common attacks with jumps; Water pushes and extinguishes; Wind creates gusts. All mod slime species are immune to fall damage |
 | Fire and cold | Fire ignites; Ice chills and extinguishes burning targets; Magma recovers in lava |
 | Recovery | Moss and Floral regenerate under favorable conditions; Fungal benefits from nearby mushrooms |
 | Control | Mud slows; Sand blinds; Fungal weakens; Venom leaves a toxic cloud |

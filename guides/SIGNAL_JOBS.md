@@ -8,12 +8,12 @@
 
 Electric, Crystal, Energized Crystal, and Glass have dedicated jobs. Crouch and use the analyzer on your slime, then open **Job**.
 
-| Species | Job | Training | Cost |
+| Species | Job | Level | Cost |
 |---|---|---:|---|
-| Electric | Living circuit | 20 | 2 energy, +1 hunger per accepted pulse |
-| Crystal | Mineral sonar | 20 | 4 energy, +2 hunger when an echo is found |
-| Energized Crystal | Crystal relay | 40 | 1 energy on activation and each second of active signal |
-| Glass | Living display | 0 | No energy cost |
+| Electric | Living circuit | 2 | 2 energy, +1 hunger per accepted pulse |
+| Crystal | Mineral sonar | 2 | 4 energy, +2 hunger when an echo is found |
+| Energized Crystal | Crystal relay | 3 | 1 energy on activation and each second of active signal |
+| Glass | Living display | 1 | No energy cost |
 
 Active jobs need a calm adult, trust 40, energy 30, hunger ≤60, and comfort 40. They start paused. Circuits require building permission and an online caretaker in the same dimension.
 

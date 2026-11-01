@@ -1,5 +1,9 @@
 # Companion Combat
 
+[Individual levels](LEVELS.md) scale both basic attack and offensive skill damage: level 1 uses this page's base values; level 10 deals 2.62× damage and also has 2.8× health and +9 armor. Caretakers and slimes with the same caretaker cannot harm their own bonded slimes.
+
+Attacks use animated fire, water, frost, storm, venom, solar, earth, and arcane textures. Projectiles have luminous cores and tapered trails; impacts use expanding rings, with richer high-rarity sigils. Reduced motion and visual quality options limit animations.
+
 [Player guide](../README.md) · [Bond and commands](COMPANIONS.md) · [Bosses](BOSSES.md)
 
 In 0.17.0, all 47 species receive a companion combat profile based on acquisition difficulty. Starter species use affordable attacks; hybrids and advanced lineages add combos, control, and range. Prismatic, Supercell, Aurora, Eclipse, and Ancestral provide rare tools. Celestial occupies the final tier with powerful offense and protection, a long windup, and a high energy cost.

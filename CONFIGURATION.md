@@ -53,11 +53,11 @@ Twenty ticks normally equal one loaded second. Unloaded chunks do not advance gr
 | `structures.rarity` | `1; 1; 1000` | Additional deterministic one-in-N generation filter |
 | `bosses.enabled` | `true` | Start rituals; disabling does not remove existing encounters |
 | `bosses.damageMultiplier` | `1; 0; 2` | Boss and servant damage; zero disables their damage |
-| `companions.training` | `true` | Lessons and learned commands |
+| `companions.training` | `true` | Companion commands available from level 1; existing key retained for compatibility |
 | `companions.symbiosis` | `true` | Water + Moss and Electric + Iron cooperation |
 | `companions.specializations` | `true` | The 19 individual jobs and new storage deposits |
 
-Disabling companion features preserves training, home, preferences, and belongings. Free, disabling cooperation, and item withdrawal remain accessible. Terrain work respects caretaker permissions and `mobGriefing`. Arena protection persists even when generation is disabled. Rarity filters do not replace datapack spacing and biome rules.
+Disabling companion features preserves levels, XP, home, preferences, and belongings. Free, disabling cooperation, and item withdrawal remain accessible. Terrain work respects caretaker permissions and `mobGriefing`. Arena protection persists even when generation is disabled. Rarity filters do not replace datapack spacing and biome rules.
 
 ## Client visuals
 
