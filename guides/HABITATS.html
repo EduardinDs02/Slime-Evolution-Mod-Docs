@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Habitats and Comfort · Slime Evolution</title><meta name="description" content="The Slime Evolution guide: species, genetics, breeding, metamorphoses, jobs, and adventure."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/guides/HABITATS.html"><link rel="stylesheet" href="../site.css"></head>
+<body data-root="../"><a class="skip" href="#conteudo">Skip to content</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>FIELD GUIDE</small></span></a><div class="search"><label class="sr-only" for="search">Search the guide</label><input id="search" type="search" placeholder="Search species, recipes, jobs…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Search results" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSION 0.18.0</span><section><h2>Get started</h2><a href="../index.html">Player guide</a><a href="../INSTALLATION.html">Installation</a><a href="../guides/GETTING_STARTED.html">First steps</a></section><section><h2>Slimes and evolution</h2><a href="../guides/SLIMES.html">47-species gallery</a><a href="../reference/GENETICS.html">Genetics</a><a href="../guides/BREEDING.html">Breeding</a><a href="../guides/EVOLUTION.html">Evolution</a><a href="../guides/ADVANCED_LINEAGES.html">Advanced lineages</a><a href="../guides/ASCENSION.html">Ascension rituals</a></section><section><h2>Care and work</h2><a href="../guides/CARE.html">Care and capture</a><a href="../guides/COMPANIONS.html">Companions and symbiosis</a><a href="../guides/SPECIALIZATIONS.html">Individual jobs</a><a href="../guides/WORK_JOBS.html">Production and transport</a><a href="../guides/SIGNAL_JOBS.html">Circuits, sonar, and displays</a><a href="../guides/HABITATS.html" aria-current="page">Habitats and comfort</a></section><section><h2>Research and adventure</h2><a href="../guides/PROGRESSION.html">Slimepedia and progression</a><a href="../guides/GENETIC_RESEARCH.html">Genetic research</a><a href="../guides/GENETIC_STATION.html">Genetic Station</a><a href="../guides/INCUBATOR.html">Incubator</a><a href="../guides/MATERIALS.html">Materials and recipes</a><a href="../guides/COMBAT.html">Combat</a><a href="../guides/SPECIAL_STRUCTURES.html">Structures and altars</a><a href="../guides/BOSSES.html">Bosses and minions</a><a href="../guides/ECOSYSTEM.html">Ecosystem</a><a href="../guides/COMPANION_COMBAT.html">Companion combat</a></section><section><h2>Appearance</h2><a href="../guides/SLIME_IDENTITIES.html">Slime materials and identity</a><a href="../guides/ELEMENTAL_DETAILS.html">Elemental details</a><a href="../guides/CELESTIAL_VISUALS.html">Celestial and lunar visuals</a><a href="../PRESENTATION.html">Images and description</a></section><section><h2>Reference</h2><a href="../CONFIGURATION.html">Configuration</a><a href="../BALANCE.html">Balance</a><a href="../reference/SPECIES_DATA.html">Species and datapacks</a></section><section><h2>Updates</h2><a href="../updates/index.html">Version history</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="habitats-and-comfort">Habitats and Comfort</h1>
+<p><a href="../index.html">Player guide</a> · <a href="CARE.html#enclosures">Care and capture</a> · <a href="SLIMES.html">Species gallery</a></p>
+<p>Use this list to choose a floor for each of the <strong>47 slime species</strong>. These are the default comfort preferences, including inherited habitat blocks for hybrids. The gallery also shows the floor and biomes on each species card. Preferred biomes improve comfort; they do not imply that an acquired species spawns there naturally.</p>
+<h2 id="how-comfort-works">How comfort works</h2>
+<p>The slime must <strong>stand on a listed block</strong>. Placing that block nearby or in a wall does not grant the floor bonus. Any one accepted block gives the same bonus; combining several types does not stack it. Other block variants count only if listed. Water, food, decorations, and light do not provide a general comfort bonus.</p>
+<table>
+<thead>
+<tr>
+<th>Environment</th>
+<th style="text-align: right;">Comfort target before penalties</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Neither preferred floor nor preferred biome</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td>Preferred biome only</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr>
+<td>Preferred floor only</td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr>
+<td>Preferred floor and preferred biome</td>
+<td style="text-align: right;">95</td>
+</tr>
+</tbody>
+</table>
+<p>Comfort moves toward this target by up to <strong>two points per loaded second</strong>. Keep the slime in its enclosure while it adjusts. Crouch and interact with an empty hand to check its current needs.</p>
+<p>More than eight evolution slimes in the local four-block check subtracts <strong>20</strong> from the target; the slime itself counts. A fire-immune slime in water, rain, or bubbles, or a freezing-immune slime on fire, receives a <strong>50-point</strong> penalty. The final environmental target is clamped to 0–100.</p>
+<p>For example, Ancestral standing on <strong>Purpur Block</strong>, <strong>End Stone Bricks</strong>, or <strong>Block of Gold</strong> tends toward 65 comfort. In <strong>End Highlands</strong>, that becomes 95 before penalties. Mixing those three floors provides no additional bonus.</p>
+<h2 id="floors-and-biomes-for-all-species">Floors and biomes for all species</h2>
+<p>Names follow Minecraft 1.21.1 in English. Server datapacks can change both the block tags and species biome preferences; this table lists the mod defaults.</p>
+<table>
+<thead>
+<tr>
+<th>Species</th>
+<th>Accepted comfort floor blocks</th>
+<th>Preferred comfort biomes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a id="abyssal"></a><a href="SLIMES.html#abyssal">Abyssal Slime</a></td>
+<td>Prismarine, Dark Prismarine, Blue Ice</td>
+<td>Deep Cold Ocean, Deep Frozen Ocean</td>
+</tr>
+<tr>
+<td><a id="amber"></a><a href="SLIMES.html#amber">Amber Slime</a></td>
+<td>Moss Block, Honeycomb Block</td>
+<td>Flower Forest, Sunflower Plains</td>
+</tr>
+<tr>
+<td><a id="amethyst"></a><a href="SLIMES.html#amethyst">Amethyst Slime</a></td>
+<td>Block of Amethyst, Calcite, Smooth Basalt</td>
+<td>Lush Caves, Deep Dark</td>
+</tr>
+<tr>
+<td><a id="ancestral"></a><a href="SLIMES.html#ancestral">Ancestral Slime</a></td>
+<td>Purpur Block, End Stone Bricks, Block of Gold</td>
+<td>End Highlands</td>
+</tr>
+<tr>
+<td><a id="aurora"></a><a href="SLIMES.html#aurora">Aurora Slime</a></td>
+<td>Blue Ice, Packed Ice, Block of Amethyst</td>
+<td>Frozen Peaks, Ice Spikes</td>
+</tr>
+<tr>
+<td><a id="bog"></a><a href="SLIMES.html#bog">Bog Slime</a></td>
+<td>Mud, Moss Block, Clay</td>
+<td>Swamp, Mangrove Swamp</td>
+</tr>
+<tr>
+<td><a id="caustic"></a><a href="SLIMES.html#caustic">Caustic Slime</a></td>
+<td>Mud, Mycelium, Podzol, Magma Block, Basalt, Blackstone</td>
+<td>Swamp</td>
+</tr>
+<tr>
+<td><a id="celestial"></a><a href="SLIMES.html#celestial">Celestial Slime</a></td>
+<td>Purpur Block, End Stone Bricks, Block of Gold</td>
+<td>End Highlands</td>
+</tr>
+<tr>
+<td><a id="common"></a><a href="SLIMES.html#common">Common Slime</a></td>
+<td>Grass Block, Moss Block, Slime Block</td>
+<td>Plains, Sunflower Plains</td>
+</tr>
+<tr>
+<td><a id="coral"></a><a href="SLIMES.html#coral">Coral Slime</a></td>
+<td>Prismarine, Brain Coral Block, Tube Coral Block, Bubble Coral Block</td>
+<td>Warm Ocean</td>
+</tr>
+<tr>
+<td><a id="corrupted"></a><a href="SLIMES.html#corrupted">Corrupted Slime</a></td>
+<td>Sculk, Deepslate, Mossy Cobblestone</td>
+<td>Deep Dark</td>
+</tr>
+<tr>
+<td><a id="crystal"></a><a href="SLIMES.html#crystal">Crystal Slime</a></td>
+<td>Block of Amethyst, Calcite, Stone</td>
+<td>Stony Peaks, Dripstone Caves</td>
+</tr>
+<tr>
+<td><a id="eclipse"></a><a href="SLIMES.html#eclipse">Eclipse Slime</a></td>
+<td>End Stone, Purpur Block, Obsidian</td>
+<td>End Highlands</td>
+</tr>
+<tr>
+<td><a id="electric"></a><a href="SLIMES.html#electric">Electric Slime</a></td>
+<td>Stone, Block of Copper, Sand</td>
+<td>Stony Shore, Savanna</td>
+</tr>
+<tr>
+<td><a id="end"></a><a href="SLIMES.html#end">End Slime</a></td>
+<td>End Stone, End Stone Bricks, Purpur Block</td>
+<td>End Highlands, End Midlands</td>
+</tr>
+<tr>
+<td><a id="energized_crystal"></a><a href="SLIMES.html#energized_crystal">Energized Crystal Slime</a></td>
+<td>Block of Amethyst, Calcite, Stone</td>
+<td>Stony Peaks, Dripstone Caves</td>
+</tr>
+<tr>
+<td><a id="ferrofluid"></a><a href="SLIMES.html#ferrofluid">Ferrofluid Slime</a></td>
+<td>Block of Iron, Block of Copper, Block of Raw Iron</td>
+<td>Stony Shore</td>
+</tr>
+<tr>
+<td><a id="fire"></a><a href="SLIMES.html#fire">Fire Slime</a></td>
+<td>Magma Block, Netherrack, Basalt</td>
+<td>Nether Wastes, Basalt Deltas, Badlands</td>
+</tr>
+<tr>
+<td><a id="floral"></a><a href="SLIMES.html#floral">Floral Slime</a></td>
+<td>Moss Block, Grass Block, Flowering Azalea</td>
+<td>Forest, Lush Caves</td>
+</tr>
+<tr>
+<td><a id="fungal"></a><a href="SLIMES.html#fungal">Fungal Slime</a></td>
+<td>Mycelium, Podzol, Brown Mushroom Block</td>
+<td>Mushroom Fields</td>
+</tr>
+<tr>
+<td><a id="glacial_aquatic"></a><a href="SLIMES.html#glacial_aquatic">Glacial Aquatic Slime</a></td>
+<td>Ice, Packed Ice, Snow Block</td>
+<td>Frozen River, Frozen Ocean</td>
+</tr>
+<tr>
+<td><a id="glass"></a><a href="SLIMES.html#glass">Glass Slime</a></td>
+<td>Sand, Glass, Tinted Glass</td>
+<td>Desert</td>
+</tr>
+<tr>
+<td><a id="hive"></a><a href="SLIMES.html#hive">Hive Slime</a></td>
+<td>Honeycomb Block, Beehive, Bee Nest</td>
+<td>Flower Forest, Sunflower Plains</td>
+</tr>
+<tr>
+<td><a id="ice"></a><a href="SLIMES.html#ice">Ice Slime</a></td>
+<td>Ice, Packed Ice, Snow Block</td>
+<td>Snowy Plains, Ice Spikes, Frozen Peaks</td>
+</tr>
+<tr>
+<td><a id="iron"></a><a href="SLIMES.html#iron">Iron Slime</a></td>
+<td>Stone, Deepslate, Block of Iron</td>
+<td>Dripstone Caves, Windswept Gravelly Hills</td>
+</tr>
+<tr>
+<td><a id="luminous"></a><a href="SLIMES.html#luminous">Luminous Slime</a></td>
+<td>Moss Block, Calcite, Glowstone</td>
+<td>Lush Caves</td>
+</tr>
+<tr>
+<td><a id="lunar"></a><a href="SLIMES.html#lunar">Lunar Slime</a></td>
+<td>Calcite, Block of Amethyst, Blue Ice</td>
+<td>Plains, Meadow, Snowy Plains</td>
+</tr>
+<tr>
+<td><a id="magma"></a><a href="SLIMES.html#magma">Magma Slime</a></td>
+<td>Magma Block, Basalt, Blackstone</td>
+<td>Basalt Deltas</td>
+</tr>
+<tr>
+<td><a id="magmatic"></a><a href="SLIMES.html#magmatic">Magmatic Slime</a></td>
+<td>Magma Block, Basalt, Netherrack</td>
+<td>Nether Wastes, Basalt Deltas, Badlands</td>
+</tr>
+<tr>
+<td><a id="moss"></a><a href="SLIMES.html#moss">Moss Slime</a></td>
+<td>Moss Block, Mossy Cobblestone, Grass Block</td>
+<td>Forest, Lush Caves</td>
+</tr>
+<tr>
+<td><a id="mud"></a><a href="SLIMES.html#mud">Mud Slime</a></td>
+<td>Mud, Packed Mud, Clay</td>
+<td>Swamp, Mangrove Swamp</td>
+</tr>
+<tr>
+<td><a id="mycelium"></a><a href="SLIMES.html#mycelium">Mycelium Slime</a></td>
+<td>Mycelium, Moss Block, Podzol</td>
+<td>Mushroom Fields, Lush Caves</td>
+</tr>
+<tr>
+<td><a id="obsidian"></a><a href="SLIMES.html#obsidian">Obsidian Slime</a></td>
+<td>Obsidian, Crying Obsidian, Deepslate</td>
+<td>Dripstone Caves, Eroded Badlands</td>
+</tr>
+<tr>
+<td><a id="prismatic"></a><a href="SLIMES.html#prismatic">Prismatic Slime</a></td>
+<td>Block of Amethyst, Calcite, Stone</td>
+<td>Stony Peaks, Dripstone Caves</td>
+</tr>
+<tr>
+<td><a id="sand"></a><a href="SLIMES.html#sand">Sand Slime</a></td>
+<td>Sand, Red Sand, Sandstone</td>
+<td>Desert</td>
+</tr>
+<tr>
+<td><a id="sculk"></a><a href="SLIMES.html#sculk">Sculk Slime</a></td>
+<td>Sculk, Sculk Catalyst</td>
+<td>Deep Dark</td>
+</tr>
+<tr>
+<td><a id="solar"></a><a href="SLIMES.html#solar">Solar Slime</a></td>
+<td>Block of Gold, Sand, Grass Block</td>
+<td>Plains, Sunflower Plains, Desert</td>
+</tr>
+<tr>
+<td><a id="souls"></a><a href="SLIMES.html#souls">Soul Slime</a></td>
+<td>Soul Sand, Soul Soil, Bone Block</td>
+<td>Soul Sand Valley</td>
+</tr>
+<tr>
+<td><a id="steam"></a><a href="SLIMES.html#steam">Steam Slime</a></td>
+<td>Sand, Gravel, Clay</td>
+<td>River, Beach</td>
+</tr>
+<tr>
+<td><a id="stone"></a><a href="SLIMES.html#stone">Stone Slime</a></td>
+<td>Stone, Cobblestone, Deepslate</td>
+<td>Stony Peaks, Dripstone Caves</td>
+</tr>
+<tr>
+<td><a id="storm"></a><a href="SLIMES.html#storm">Storm Slime</a></td>
+<td>Grass Block, Stone, Moss Block, Block of Copper, Sand</td>
+<td>Windswept Hills</td>
+</tr>
+<tr>
+<td><a id="supercell"></a><a href="SLIMES.html#supercell">Supercell Slime</a></td>
+<td>Lightning Rod, Grass Block, Stone, Moss Block</td>
+<td>Windswept Hills</td>
+</tr>
+<tr>
+<td><a id="venom"></a><a href="SLIMES.html#venom">Venom Slime</a></td>
+<td>Mud, Mycelium, Podzol</td>
+<td>Mangrove Swamp, Dark Forest</td>
+</tr>
+<tr>
+<td><a id="void"></a><a href="SLIMES.html#void">Void Slime</a></td>
+<td>End Stone, Obsidian, Purpur Block</td>
+<td>End Barrens</td>
+</tr>
+<tr>
+<td><a id="volatile_flame"></a><a href="SLIMES.html#volatile_flame">Volatile Flame Slime</a></td>
+<td>Magma Block, Netherrack, Basalt</td>
+<td>Savanna, Windswept Hills</td>
+</tr>
+<tr>
+<td><a id="water"></a><a href="SLIMES.html#water">Water Slime</a></td>
+<td>Sand, Gravel, Clay</td>
+<td>River, Beach</td>
+</tr>
+<tr>
+<td><a id="wind"></a><a href="SLIMES.html#wind">Wind Slime</a></td>
+<td>Grass Block, Stone, Moss Block</td>
+<td>Windswept Hills, Windswept Forest</td>
+</tr>
+</tbody>
+</table></article><aside class="outline" aria-label="On this page"><span>ON THIS PAGE</span><div class="toc">
+<ul>
+<li><a href="#how-comfort-works">How comfort works</a></li>
+<li><a href="#floors-and-biomes-for-all-species">Floors and biomes for all species</a></li>
+</ul>
+</div>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/guides/HABITATS.md">View this page on GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>

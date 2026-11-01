@@ -30,7 +30,11 @@ Hostile slimes stop selecting their caretaker as a target at 20 trust. Hurting y
 
 ## Enclosures
 
-Preferred biomes, suitable flooring, moisture, and nearby population influence comfort. Avoid overcrowding. Fire suffers in water; Ice is vulnerable to fire. Build barriers and roofs appropriate to the species. Habitat tags can be changed with [datapacks](../reference/SPECIES_DATA.md).
+Choose from the [floor blocks and preferred biomes for all 47 species](HABITATS.md). Each species card in the [gallery](SLIMES.md) also lists its preferences.
+
+The slime must stand on an accepted block: nearby blocks and walls do not count. Any accepted floor grants +35 comfort, while a preferred biome grants +30, added to a base target of 30. This gives 65 with the floor alone or 95 with both, before penalties. Different accepted blocks do not stack. Comfort adjusts by up to two points per loaded second.
+
+Avoid overcrowding: more than eight evolution slimes in the local four-block check, including the slime itself, reduces the target by 20. Fire-immune species suffer a comfort penalty in water, rain, or bubbles; freezing-immune species suffer one while burning. Build barriers and roofs appropriate to the species. Habitat tags can be changed with [datapacks](../reference/SPECIES_DATA.md).
 
 ## Feeder
 

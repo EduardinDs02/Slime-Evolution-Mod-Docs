@@ -22,7 +22,8 @@
       "Companions and symbiosis": "guides/COMPANIONS.md",
       "Individual jobs": "guides/SPECIALIZATIONS.md",
       "Production and transport": "guides/WORK_JOBS.md",
-      "Circuits, sonar, and displays": "guides/SIGNAL_JOBS.md"
+      "Circuits, sonar, and displays": "guides/SIGNAL_JOBS.md",
+      "Habitats and comfort": "guides/HABITATS.md"
     },
     "Research and adventure": {
       "Slimepedia and progression": "guides/PROGRESSION.md",
@@ -52,6 +53,6 @@
     }
   },
   "content_root": ".",
-  "mod_version": "0.17.0",
+  "mod_version": "0.18.0",
   "language": "en"
 }

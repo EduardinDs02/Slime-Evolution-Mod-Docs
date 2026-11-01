@@ -4,6 +4,7 @@
 
 See the [version history](updates/README.md) for the changes in each release.
 
+- [0.18.0 — Faster followers, flight, recovery, and habitat reference](updates/0.18.0.md)
 - [0.17.0 — Companion skills and stronger boss encounters](updates/0.17.0.md)
 - [0.16.0 — Companion combat postures and five followers](updates/0.16.0.md)
 - [0.15.0 — A Slimepedia for every new player](updates/0.15.0.md)

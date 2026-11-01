@@ -24,12 +24,24 @@ Each lesson costs **5 energy and +3 hunger**, adds up to one trust, and grants *
 |---|---:|---|
 | Free | 0 | Resume natural movement and feeding |
 | Wait | 20 | Guard the chosen point and return if displaced |
-| Follow | 40 | Follow the available caretaker in the same dimension, within 32 blocks |
+| Follow | 40 | Follow the available caretaker in the same dimension, with faster travel |
 | Return home | 60 | Navigate to the marked home, then wait |
 
 Learned commands require 40 trust; Free remains available below that threshold. Self-defense takes priority. Commands suspend loose-food seeking, so maintain manual feeding or a nearby Feeder.
 
-Movement uses normal navigation and jumping: it does not teleport, pass through walls, or load chunks. Follow waits when its caretaker is unavailable, too far away, or in another dimension. Movement pauses below 20 energy for rest.
+Follow uses faster hops and more frequent path updates outside combat, helping slower species keep up. Ancestral and Celestial fly in a small formation while following; they use collision-aware air navigation and return to ground movement when the order ends or combat interrupts it. Their wings protect bonded individuals from landing damage.
+
+A loaded follower **more than 32 blocks away** can teleport to a safe, dry, supported point near its caretaker in the **same dimension**. Attempts run at most once per loaded second, with a five-second cooldown after success. It checks space for the whole slime, hazards, and the world border. No teleport occurs during combat, recent attacks, defeat, immobilization, exhaustion, riding, or leashing. If there is no safe point, it continues trying to follow normally. No chunks are forced to load, and other dimensions or an unavailable caretaker do not trigger a teleport.
+
+Energy below 20 pauses travel. Keep feeding and caring for followers; the five-follower limit remains shared across dimensions.
+
+## Defeated companions
+
+A bonded slime that takes lethal ordinary damage enters a **defeated state for 10 loaded seconds**, with three stars orbiting above its head. It remains in place, stops attacking, casting, flying, and working, and cannot be captured during recovery. Enemies cannot damage it further during this period, and boss minions switch to other targets.
+
+It then gets up with **50% health**, at least 20 energy, and **two seconds of protection** against immediate defeat. Its identity, genes, trust, training, commands, follower reservation, and stored belongings remain intact. No loot, experience, or duplicate slime is created. Existing skill recoveries continue normally.
+
+The timer is saved and pauses while unloaded. Wild slimes retain normal death. Administrative removal and damage that bypasses invulnerability, including the void, keep their normal behavior.
 
 ## Combat postures
 

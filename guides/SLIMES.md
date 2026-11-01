@@ -17,6 +17,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/amethyst.png" width="300" height="217" alt="Amethyst slime in Minecraft">
 <p>Resonance highlights threats; amethyst blocks prolong the effect.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Amethyst Shard, Glow Berries<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Block of Amethyst, Calcite, Smooth Basalt<br><strong>Preferred biomes:</strong> Lush Caves, Deep Dark<br><a href="HABITATS.md#amethyst">Habitat details</a></p>
 <p><code>slimeevolution:amethyst</code></p>
 </td>
 <td valign="top" width="50%">
@@ -24,6 +25,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/common.png" width="300" height="217" alt="Common slime in Minecraft">
 <p>Adaptable, with an unusually elastic jump.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Slimeball, Apple, Wheat<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Grass Block, Moss Block, Slime Block<br><strong>Preferred biomes:</strong> Plains, Sunflower Plains<br><a href="HABITATS.md#common">Habitat details</a></p>
 <p><code>slimeevolution:common</code></p>
 </td>
 </tr>
@@ -33,6 +35,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/corrupted.png" width="300" height="217" alt="Corrupted slime in Minecraft">
 <p>Aggressive; deteriorates targets and increases mutation chance in offspring.</p>
 <p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Rotten Flesh, Spider Eye<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Sculk, Deepslate, Mossy Cobblestone<br><strong>Preferred biomes:</strong> Deep Dark<br><a href="HABITATS.md#corrupted">Habitat details</a></p>
 <p><code>slimeevolution:corrupted</code></p>
 </td>
 <td valign="top" width="50%">
@@ -40,6 +43,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/electric.png" width="300" height="217" alt="Electric slime in Minecraft">
 <p>Defends its territory; discharges spread between wet targets.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Redstone, Glowstone Dust<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Stone, Block of Copper, Sand<br><strong>Preferred biomes:</strong> Stony Shore, Savanna<br><a href="HABITATS.md#electric">Habitat details</a></p>
 <p><code>slimeevolution:electric</code></p>
 </td>
 </tr>
@@ -49,6 +53,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/end.png" width="300" height="217" alt="End slime in Minecraft">
 <p>Retreats with a short, safe blink when wounded and threatened.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Chorus Fruit, Ender Pearl<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> End Stone, End Stone Bricks, Purpur Block<br><strong>Preferred biomes:</strong> End Highlands, End Midlands<br><a href="HABITATS.md#end">Habitat details</a></p>
 <p><code>slimeevolution:end</code></p>
 </td>
 <td valign="top" width="50%">
@@ -56,6 +61,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/fire.png" width="300" height="217" alt="Fire slime in Minecraft">
 <p>Immune to fire; ignites enemies but is hurt by water.</p>
 <p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Coal, Blaze Powder<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Magma Block, Netherrack, Basalt<br><strong>Preferred biomes:</strong> Nether Wastes, Basalt Deltas, Badlands<br><a href="HABITATS.md#fire">Habitat details</a></p>
 <p><code>slimeevolution:fire</code></p>
 </td>
 </tr>
@@ -65,6 +71,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/fungal.png" width="300" height="217" alt="Fungal slime in Minecraft">
 <p>Spores weaken threats; nearby mushrooms aid recovery.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Brown Mushroom, Red Mushroom<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Mycelium, Podzol, Brown Mushroom Block<br><strong>Preferred biomes:</strong> Mushroom Fields<br><a href="HABITATS.md#fungal">Habitat details</a></p>
 <p><code>slimeevolution:fungal</code></p>
 </td>
 <td valign="top" width="50%">
@@ -72,6 +79,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/ice.png" width="300" height="217" alt="Ice slime in Minecraft">
 <p>Chills enemies, resists freezing and is vulnerable to fire.</p>
 <p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Snowball, Ice<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Ice, Packed Ice, Snow Block<br><strong>Preferred biomes:</strong> Snowy Plains, Ice Spikes, Frozen Peaks<br><a href="HABITATS.md#ice">Habitat details</a></p>
 <p><code>slimeevolution:ice</code></p>
 </td>
 </tr>
@@ -81,6 +89,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/iron.png" width="300" height="217" alt="Iron slime in Minecraft">
 <p>A heavy body that resists melee blows and knockback.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Iron Nugget, Raw Iron<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Stone, Deepslate, Block of Iron<br><strong>Preferred biomes:</strong> Dripstone Caves, Windswept Gravelly Hills<br><a href="HABITATS.md#iron">Habitat details</a></p>
 <p><code>slimeevolution:iron</code></p>
 </td>
 <td valign="top" width="50%">
@@ -88,6 +97,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/luminous.png" width="300" height="217" alt="Luminous slime in Minecraft">
 <p>An emissive body; helps its caregiver see in dark caves.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Glow Berries, Glow Ink Sac<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Moss Block, Calcite, Glowstone<br><strong>Preferred biomes:</strong> Lush Caves<br><a href="HABITATS.md#luminous">Habitat details</a></p>
 <p><code>slimeevolution:luminous</code></p>
 </td>
 </tr>
@@ -97,6 +107,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/magma.png" width="300" height="217" alt="Magma slime in Minecraft">
 <p>Recovers in lava and ignites enemies while heated.</p>
 <p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Magma Cream, Blaze Powder<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Magma Block, Basalt, Blackstone<br><strong>Preferred biomes:</strong> Basalt Deltas<br><a href="HABITATS.md#magma">Habitat details</a></p>
 <p><code>slimeevolution:magma</code></p>
 </td>
 <td valign="top" width="50%">
@@ -104,6 +115,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/moss.png" width="300" height="217" alt="Moss slime in Minecraft">
 <p>Regenerates while wet or resting on moss.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Moss Block, Glow Berries<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Moss Block, Mossy Cobblestone, Grass Block<br><strong>Preferred biomes:</strong> Forest, Lush Caves<br><a href="HABITATS.md#moss">Habitat details</a></p>
 <p><code>slimeevolution:moss</code></p>
 </td>
 </tr>
@@ -113,6 +125,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/mud.png" width="300" height="217" alt="Mud slime in Minecraft">
 <p>Defends itself by slowing attackers.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Mud, Clay Ball<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Mud, Packed Mud, Clay<br><strong>Preferred biomes:</strong> Swamp, Mangrove Swamp<br><a href="HABITATS.md#mud">Habitat details</a></p>
 <p><code>slimeevolution:mud</code></p>
 </td>
 <td valign="top" width="50%">
@@ -120,6 +133,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/obsidian.png" width="300" height="217" alt="Obsidian slime in Minecraft">
 <p>A slow, heavy body protected against explosions.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Obsidian, Crying Obsidian<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Obsidian, Crying Obsidian, Deepslate<br><strong>Preferred biomes:</strong> Dripstone Caves, Eroded Badlands<br><a href="HABITATS.md#obsidian">Habitat details</a></p>
 <p><code>slimeevolution:obsidian</code></p>
 </td>
 </tr>
@@ -129,6 +143,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/sand.png" width="300" height="217" alt="Sand slime in Minecraft">
 <p>Blends into sand while still and blinds enemies with dust.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Sand, Cactus<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Sand, Red Sand, Sandstone<br><strong>Preferred biomes:</strong> Desert<br><a href="HABITATS.md#sand">Habitat details</a></p>
 <p><code>slimeevolution:sand</code></p>
 </td>
 <td valign="top" width="50%">
@@ -136,6 +151,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/souls.png" width="300" height="217" alt="Soul slime in Minecraft">
 <p>Moves freely on soul sand; siphons vitality over soul terrain.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Soul Sand, Soul Soil<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Soul Sand, Soul Soil, Bone Block<br><strong>Preferred biomes:</strong> Soul Sand Valley<br><a href="HABITATS.md#souls">Habitat details</a></p>
 <p><code>slimeevolution:souls</code></p>
 </td>
 </tr>
@@ -145,6 +161,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/stone.png" width="300" height="217" alt="Stone slime in Minecraft">
 <p>Heavy armor and knockback resistance, at the cost of speed.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Cobblestone, Flint<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Stone, Cobblestone, Deepslate<br><strong>Preferred biomes:</strong> Stony Peaks, Dripstone Caves<br><a href="HABITATS.md#stone">Habitat details</a></p>
 <p><code>slimeevolution:stone</code></p>
 </td>
 <td valign="top" width="50%">
@@ -152,6 +169,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/venom.png" width="300" height="217" alt="Venom slime in Minecraft">
 <p>Defends its territory with a short-lived toxic cloud.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Spider Eye, Brown Mushroom<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Mud, Mycelium, Podzol<br><strong>Preferred biomes:</strong> Mangrove Swamp, Dark Forest<br><a href="HABITATS.md#venom">Habitat details</a></p>
 <p><code>slimeevolution:venom</code></p>
 </td>
 </tr>
@@ -161,6 +179,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/void.png" width="300" height="217" alt="Void slime in Minecraft">
 <p>Pulls a visible nearby threat with a brief spatial impulse.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Popped Chorus Fruit, Ender Pearl<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> End Stone, Obsidian, Purpur Block<br><strong>Preferred biomes:</strong> End Barrens<br><a href="HABITATS.md#void">Habitat details</a></p>
 <p><code>slimeevolution:void</code></p>
 </td>
 <td valign="top" width="50%">
@@ -168,6 +187,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/water.png" width="300" height="217" alt="Water slime in Minecraft">
 <p>Swims efficiently, breathes underwater and pushes enemies with water jets.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Kelp, Seagrass<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Sand, Gravel, Clay<br><strong>Preferred biomes:</strong> River, Beach<br><a href="HABITATS.md#water">Habitat details</a></p>
 <p><code>slimeevolution:water</code></p>
 </td>
 </tr>
@@ -177,6 +197,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/wind.png" width="300" height="217" alt="Wind slime in Minecraft">
 <p>Jumps higher, cushions falls and pushes enemies with gusts.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Feather, Sugar<br><strong>Acquisition:</strong> Natural encounter</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Grass Block, Stone, Moss Block<br><strong>Preferred biomes:</strong> Windswept Hills, Windswept Forest<br><a href="HABITATS.md#wind">Habitat details</a></p>
 <p><code>slimeevolution:wind</code></p>
 </td>
 </tr>
@@ -191,6 +212,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/abyssal.png" width="300" height="217" alt="Abyssal slime in Minecraft">
 <p>A luminous lure guides its dark body and deep-water fins.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Glow Ink Sac, Kelp<br><strong>Acquisition:</strong> Metamorphosis from Glacial Aquatic</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Prismarine, Dark Prismarine, Blue Ice<br><strong>Preferred biomes:</strong> Deep Cold Ocean, Deep Frozen Ocean<br><a href="HABITATS.md#abyssal">Habitat details</a></p>
 <p><code>slimeevolution:abyssal</code></p>
 </td>
 <td valign="top" width="50%">
@@ -198,6 +220,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/amber.png" width="300" height="217" alt="Amber slime in Minecraft">
 <p>Golden resin surrounds a stick, cobblestone and a decorative pickaxe; its touch is sticky.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Honeycomb, Wheat<br><strong>Acquisition:</strong> Metamorphosis from Moss</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Moss Block, Honeycomb Block<br><strong>Preferred biomes:</strong> Flower Forest, Sunflower Plains<br><a href="HABITATS.md#amber">Habitat details</a></p>
 <p><code>slimeevolution:amber</code></p>
 </td>
 </tr>
@@ -207,6 +230,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/ancestral.png" width="300" height="217" alt="Ancestral slime in Minecraft">
 <p>An advanced metamorphosis that briefly protects a wounded keeper.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Golden Carrot, Glistering Melon Slice<br><strong>Acquisition:</strong> Metamorphosis from Void</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Purpur Block, End Stone Bricks, Block of Gold<br><strong>Preferred biomes:</strong> End Highlands<br><a href="HABITATS.md#ancestral">Habitat details</a></p>
 <p><code>slimeevolution:ancestral</code></p>
 </td>
 <td valign="top" width="50%">
@@ -214,6 +238,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/aurora.png" width="300" height="217" alt="Aurora slime in Minecraft">
 <p>A gradient of colors and an animated aurora protect nearby allies.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Amethyst Shard, Glowstone Dust<br><strong>Acquisition:</strong> Metamorphosis from Prismatic</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Blue Ice, Packed Ice, Block of Amethyst<br><strong>Preferred biomes:</strong> Frozen Peaks, Ice Spikes<br><a href="HABITATS.md#aurora">Habitat details</a></p>
 <p><code>slimeevolution:aurora</code></p>
 </td>
 </tr>
@@ -223,6 +248,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/bog.png" width="300" height="217" alt="Bog slime in Minecraft">
 <p>A docile moss-and-mud hybrid that slows attackers.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Clay Ball, Glow Berries<br><strong>Acquisition:</strong> Moss + Mud; Moss + Water</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Mud, Moss Block, Clay<br><strong>Preferred biomes:</strong> Swamp, Mangrove Swamp<br><a href="HABITATS.md#bog">Habitat details</a></p>
 <p><code>slimeevolution:bog</code></p>
 </td>
 <td valign="top" width="50%">
@@ -230,6 +256,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/caustic.png" width="300" height="217" alt="Caustic slime in Minecraft">
 <p>Its bubbles leave temporary acid pools that weaken enemies.</p>
 <p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Spider Eye, Magma Cream<br><strong>Acquisition:</strong> Venom + Magma</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Mud, Mycelium, Podzol, Magma Block, Basalt, Blackstone<br><strong>Preferred biomes:</strong> Swamp<br><a href="HABITATS.md#caustic">Habitat details</a></p>
 <p><code>slimeevolution:caustic</code></p>
 </td>
 </tr>
@@ -239,6 +266,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/celestial.png" width="300" height="217" alt="Celestial slime in Minecraft">
 <p>A rare Ancestral metamorphosis using Primordial essence and high stability.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Golden Carrot, Glistering Melon Slice<br><strong>Acquisition:</strong> Metamorphosis from Ancestral</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Purpur Block, End Stone Bricks, Block of Gold<br><strong>Preferred biomes:</strong> End Highlands<br><a href="HABITATS.md#celestial">Habitat details</a></p>
 <p><code>slimeevolution:celestial</code></p>
 </td>
 <td valign="top" width="50%">
@@ -246,6 +274,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/coral.png" width="300" height="217" alt="Coral slime in Minecraft">
 <p>A cluster of branching corals helps allies recover in water.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Seagrass, Kelp<br><strong>Acquisition:</strong> Water + Floral</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Prismarine, Brain Coral Block, Tube Coral Block, Bubble Coral Block<br><strong>Preferred biomes:</strong> Warm Ocean<br><a href="HABITATS.md#coral">Habitat details</a></p>
 <p><code>slimeevolution:coral</code></p>
 </td>
 </tr>
@@ -255,6 +284,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/crystal.png" width="300" height="217" alt="Crystal slime in Minecraft">
 <p>Fires crystal shards while retaining mineral protection.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Amethyst Shard, Quartz<br><strong>Acquisition:</strong> Metamorphosis from Stone</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Block of Amethyst, Calcite, Stone<br><strong>Preferred biomes:</strong> Stony Peaks, Dripstone Caves<br><a href="HABITATS.md#crystal">Habitat details</a></p>
 <p><code>slimeevolution:crystal</code></p>
 </td>
 <td valign="top" width="50%">
@@ -262,6 +292,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/eclipse.png" width="300" height="217" alt="Eclipse slime in Minecraft">
 <p>A dark silhouette surrounded by a golden corona alternates solar and lunar attacks.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Blaze Powder, Amethyst Shard<br><strong>Acquisition:</strong> Solar + Lunar</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> End Stone, Purpur Block, Obsidian<br><strong>Preferred biomes:</strong> End Highlands<br><a href="HABITATS.md#eclipse">Habitat details</a></p>
 <p><code>slimeevolution:eclipse</code></p>
 </td>
 </tr>
@@ -271,6 +302,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/energized_crystal.png" width="300" height="217" alt="Energized Crystal slime in Minecraft">
 <p>Crystal and Electric share one cooldown for shards and discharge.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Amethyst Shard, Redstone<br><strong>Acquisition:</strong> Crystal + Electric</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Block of Amethyst, Calcite, Stone<br><strong>Preferred biomes:</strong> Stony Peaks, Dripstone Caves<br><a href="HABITATS.md#energized_crystal">Habitat details</a></p>
 <p><code>slimeevolution:energized_crystal</code></p>
 </td>
 <td valign="top" width="50%">
@@ -278,6 +310,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/ferrofluid.png" width="300" height="217" alt="Ferrofluid slime in Minecraft">
 <p>Moving metallic spikes attract metal items dropped by its keeper.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Iron Nugget, Raw Iron<br><strong>Acquisition:</strong> Iron + Water</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Block of Iron, Block of Copper, Block of Raw Iron<br><strong>Preferred biomes:</strong> Stony Shore<br><a href="HABITATS.md#ferrofluid">Habitat details</a></p>
 <p><code>slimeevolution:ferrofluid</code></p>
 </td>
 </tr>
@@ -287,6 +320,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/floral.png" width="300" height="217" alt="Floral slime in Minecraft">
 <p>A flowering moss form that regenerates more frequently.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Glow Berries, Dandelion<br><strong>Acquisition:</strong> Metamorphosis from Moss</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Moss Block, Grass Block, Flowering Azalea<br><strong>Preferred biomes:</strong> Forest, Lush Caves<br><a href="HABITATS.md#floral">Habitat details</a></p>
 <p><code>slimeevolution:floral</code></p>
 </td>
 <td valign="top" width="50%">
@@ -294,6 +328,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/glacial_aquatic.png" width="300" height="217" alt="Glacial Aquatic slime in Minecraft">
 <p>Water and Ice combine a chilling jet with aquatic movement.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Kelp, Snowball<br><strong>Acquisition:</strong> Water + Ice</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Ice, Packed Ice, Snow Block<br><strong>Preferred biomes:</strong> Frozen River, Frozen Ocean<br><a href="HABITATS.md#glacial_aquatic">Habitat details</a></p>
 <p><code>slimeevolution:glacial_aquatic</code></p>
 </td>
 </tr>
@@ -303,6 +338,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/glass.png" width="300" height="217" alt="Glass slime in Minecraft">
 <p>Transparent gel with vitrified edges that refract light and projectiles.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Sand, Quartz<br><strong>Acquisition:</strong> Sand + Fire</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Sand, Glass, Tinted Glass<br><strong>Preferred biomes:</strong> Desert<br><a href="HABITATS.md#glass">Habitat details</a></p>
 <p><code>slimeevolution:glass</code></p>
 </td>
 <td valign="top" width="50%">
@@ -310,6 +346,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/hive.png" width="300" height="217" alt="Hive slime in Minecraft">
 <p>Dripping honeycombs shelter bees and small temporary pollinators.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Honeycomb, Dandelion<br><strong>Acquisition:</strong> Metamorphosis from Amber</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Honeycomb Block, Beehive, Bee Nest<br><strong>Preferred biomes:</strong> Flower Forest, Sunflower Plains<br><a href="HABITATS.md#hive">Habitat details</a></p>
 <p><code>slimeevolution:hive</code></p>
 </td>
 </tr>
@@ -319,6 +356,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/lunar.png" width="300" height="217" alt="Lunar slime in Minecraft">
 <p>Silvery gel with craters and a full moon; its light helps allies at night.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Amethyst Shard, Glow Berries<br><strong>Acquisition:</strong> Metamorphosis from Luminous</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Calcite, Block of Amethyst, Blue Ice<br><strong>Preferred biomes:</strong> Plains, Meadow, Snowy Plains<br><a href="HABITATS.md#lunar">Habitat details</a></p>
 <p><code>slimeevolution:lunar</code></p>
 </td>
 <td valign="top" width="50%">
@@ -326,6 +364,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/magmatic.png" width="300" height="217" alt="Magmatic slime in Minecraft">
 <p>Heat inherited from fire, with a mineral-reinforced body.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Magma Cream, Blaze Powder<br><strong>Acquisition:</strong> Stone + Fire; Metamorphosis from Fire</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Magma Block, Basalt, Netherrack<br><strong>Preferred biomes:</strong> Nether Wastes, Basalt Deltas, Badlands<br><a href="HABITATS.md#magmatic">Habitat details</a></p>
 <p><code>slimeevolution:magmatic</code></p>
 </td>
 </tr>
@@ -335,6 +374,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/mycelium.png" width="300" height="217" alt="Mycelium slime in Minecraft">
 <p>Filaments and mushrooms spread regenerative spores among allies.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Brown Mushroom, Moss Block<br><strong>Acquisition:</strong> Fungal + Moss</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Mycelium, Moss Block, Podzol<br><strong>Preferred biomes:</strong> Mushroom Fields, Lush Caves<br><a href="HABITATS.md#mycelium">Habitat details</a></p>
 <p><code>slimeevolution:mycelium</code></p>
 </td>
 <td valign="top" width="50%">
@@ -342,6 +382,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/prismatic.png" width="300" height="217" alt="Prismatic slime in Minecraft">
 <p>A rare Crystal metamorphosis with a Colossus trophy and high luminosity.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Amethyst Shard, Quartz<br><strong>Acquisition:</strong> Metamorphosis from Crystal</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Block of Amethyst, Calcite, Stone<br><strong>Preferred biomes:</strong> Stony Peaks, Dripstone Caves<br><a href="HABITATS.md#prismatic">Habitat details</a></p>
 <p><code>slimeevolution:prismatic</code></p>
 </td>
 </tr>
@@ -351,6 +392,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/sculk.png" width="300" height="217" alt="Sculk slime in Minecraft">
 <p>Warden-like horns detect movement and answer with echo pulses.</p>
 <p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Echo Shard, Glow Ink Sac<br><strong>Acquisition:</strong> Metamorphosis from Corrupted</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Sculk, Sculk Catalyst<br><strong>Preferred biomes:</strong> Deep Dark<br><a href="HABITATS.md#sculk">Habitat details</a></p>
 <p><code>slimeevolution:sculk</code></p>
 </td>
 <td valign="top" width="50%">
@@ -358,6 +400,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/solar.png" width="300" height="217" alt="Solar slime in Minecraft">
 <p>A white-gold core sustains fiery rays and recovery in sunlight.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Blaze Powder, Golden Carrot<br><strong>Acquisition:</strong> Metamorphosis from Fire</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Block of Gold, Sand, Grass Block<br><strong>Preferred biomes:</strong> Plains, Sunflower Plains, Desert<br><a href="HABITATS.md#solar">Habitat details</a></p>
 <p><code>slimeevolution:solar</code></p>
 </td>
 </tr>
@@ -367,6 +410,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/steam.png" width="300" height="217" alt="Steam slime in Minecraft">
 <p>A hybrid of Fire and Water that clouds an opponent’s sight.</p>
 <p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Kelp, Blaze Powder<br><strong>Acquisition:</strong> Fire + Water</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Sand, Gravel, Clay<br><strong>Preferred biomes:</strong> River, Beach<br><a href="HABITATS.md#steam">Habitat details</a></p>
 <p><code>slimeevolution:steam</code></p>
 </td>
 <td valign="top" width="50%">
@@ -374,6 +418,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/storm.png" width="300" height="217" alt="Storm slime in Minecraft">
 <p>Combines air currents with electrical discharges.</p>
 <p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Redstone, Feather<br><strong>Acquisition:</strong> Electric + Wind</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Grass Block, Stone, Moss Block, Block of Copper, Sand<br><strong>Preferred biomes:</strong> Windswept Hills<br><a href="HABITATS.md#storm">Habitat details</a></p>
 <p><code>slimeevolution:storm</code></p>
 </td>
 </tr>
@@ -383,6 +428,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/supercell.png" width="300" height="217" alt="Supercell slime in Minecraft">
 <p>A mature storm cloud with wind rings and chained discharges.</p>
 <p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Redstone, Feather<br><strong>Acquisition:</strong> Metamorphosis from Storm</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Lightning Rod, Grass Block, Stone, Moss Block<br><strong>Preferred biomes:</strong> Windswept Hills<br><a href="HABITATS.md#supercell">Habitat details</a></p>
 <p><code>slimeevolution:supercell</code></p>
 </td>
 <td valign="top" width="50%">
@@ -390,6 +436,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/volatile_flame.png" width="300" height="217" alt="Volatile Flame slime in Minecraft">
 <p>Wind and Fire combine a fiery gust, fire immunity and a water weakness.</p>
 <p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Blaze Powder, Feather<br><strong>Acquisition:</strong> Wind + Fire</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Magma Block, Netherrack, Basalt<br><strong>Preferred biomes:</strong> Savanna, Windswept Hills<br><a href="HABITATS.md#volatile_flame">Habitat details</a></p>
 <p><code>slimeevolution:volatile_flame</code></p>
 </td>
 </tr>
