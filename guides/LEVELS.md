@@ -43,3 +43,13 @@ The analyzer panel shows level, XP progress, and attributes. Jobs that previousl
 XP and level stay with the individual through saves, capture, release, and metamorphoses. Offspring start at level 1 without inherited XP. Wild slimes start at level 1 and gain XP after bonding.
 
 Old training is converted once: each complete twenty points grants one level above the first. For example, 60 points become level 4 and 100 points become level 6. Home, posture, commands, and symbiosis consent are retained. The practice button has been removed.
+
+## Creative Slime Wand
+
+Find the **Creative Slime Wand** in Slime Evolution's creative tab. Right-click a mod slime to set **100 trust and level 10**. The wand is reusable, has no recipe or loot source, and only works in Creative mode, even if obtained by command in another mode.
+
+Wild slimes bond to you; already bonded individuals keep their existing caretaker. Genes, identity, orders, inventory, hunger, comfort, and energy remain intact. Promotion preserves the current health percentage and does not wake a defeated companion. Bosses and vanilla mobs are unaffected.
+
+```mcfunction
+/give @s slimeevolution:creative_slime_wand
+```
