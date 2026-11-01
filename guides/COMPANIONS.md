@@ -47,7 +47,7 @@ Automatic combat requires adulthood, at least 40 trust, and 20 energy. Passive r
 
 The caretaker, bonded slimes, tame animals, allies, spectators, Creative players, and PvP-protected players are not valid targets. Priority goes to the caretaker's recent attacker, then the slime's attacker, then the caretaker's recent victim. Combat records expire after 200 ticks, normally ten seconds. Targets are rechecked for range, sight, and eligibility; movement orders resume after combat.
 
-Waiting guards stay within eight blocks of their anchor. Followers do not pursue targets farther than 32 blocks from their caretaker, in addition to their local 16-block combat range. Return home prioritizes returning without starting a pursuit.
+Waiting guards stay within eight blocks of their anchor. Followers do not pursue targets farther than 32 blocks from their caretaker, in addition to their local 16-block combat range. Return home can pause for local combat, bounded to 16 blocks from its starting point; the return resumes afterward.
 
 Postures persist through saves, capsules, and metamorphoses. Offspring start Defensive rather than inheriting their parents' selected posture.
 
