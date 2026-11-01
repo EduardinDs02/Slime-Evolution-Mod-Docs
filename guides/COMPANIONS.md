@@ -89,3 +89,8 @@ Keep partners within four blocks of the machine, with clear line of sight. The c
 Training, commands, home, cooperation preferences, and recovery persist through saves, capsules, and metamorphoses. Recovery pauses while captured or unloaded. Offspring start untrained and do not inherit commands or homes.
 
 Server options `companions.training` and `companions.symbiosis` can pause these features without deleting progress. Canceling commands and disabling cooperation remain available. See [individual jobs](SPECIALIZATIONS.md).
+
+
+## Skills and team roles
+
+All 47 companion species now have tiered attacks or support skills. See the [complete combat catalog](COMPANION_COMBAT.md) for roles, costs, cooldowns, combos, and boss team suggestions.

@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Companion Combat · Slime Evolution</title><meta name="description" content="The Slime Evolution guide: species, genetics, breeding, metamorphoses, jobs, and adventure."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/guides/COMPANION_COMBAT.html"><link rel="stylesheet" href="../site.css"></head>
+<body data-root="../"><a class="skip" href="#conteudo">Skip to content</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>FIELD GUIDE</small></span></a><div class="search"><label class="sr-only" for="search">Search the guide</label><input id="search" type="search" placeholder="Search species, recipes, jobs…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Search results" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSION 0.17.0</span><section><h2>Get started</h2><a href="../index.html">Player guide</a><a href="../INSTALLATION.html">Installation</a><a href="../guides/GETTING_STARTED.html">First steps</a></section><section><h2>Slimes and evolution</h2><a href="../guides/SLIMES.html">47-species gallery</a><a href="../reference/GENETICS.html">Genetics</a><a href="../guides/BREEDING.html">Breeding</a><a href="../guides/EVOLUTION.html">Evolution</a><a href="../guides/ADVANCED_LINEAGES.html">Advanced lineages</a><a href="../guides/ASCENSION.html">Ascension rituals</a></section><section><h2>Care and work</h2><a href="../guides/CARE.html">Care and capture</a><a href="../guides/COMPANIONS.html">Companions and symbiosis</a><a href="../guides/SPECIALIZATIONS.html">Individual jobs</a><a href="../guides/WORK_JOBS.html">Production and transport</a><a href="../guides/SIGNAL_JOBS.html">Circuits, sonar, and displays</a></section><section><h2>Research and adventure</h2><a href="../guides/PROGRESSION.html">Slimepedia and progression</a><a href="../guides/GENETIC_RESEARCH.html">Genetic research</a><a href="../guides/GENETIC_STATION.html">Genetic Station</a><a href="../guides/INCUBATOR.html">Incubator</a><a href="../guides/MATERIALS.html">Materials and recipes</a><a href="../guides/COMBAT.html">Combat</a><a href="../guides/SPECIAL_STRUCTURES.html">Structures and altars</a><a href="../guides/BOSSES.html">Bosses and minions</a><a href="../guides/ECOSYSTEM.html">Ecosystem</a><a href="../guides/COMPANION_COMBAT.html" aria-current="page">Companion combat</a></section><section><h2>Appearance</h2><a href="../guides/SLIME_IDENTITIES.html">Slime materials and identity</a><a href="../guides/ELEMENTAL_DETAILS.html">Elemental details</a><a href="../guides/CELESTIAL_VISUALS.html">Celestial and lunar visuals</a><a href="../PRESENTATION.html">Images and description</a></section><section><h2>Reference</h2><a href="../CONFIGURATION.html">Configuration</a><a href="../BALANCE.html">Balance</a><a href="../reference/SPECIES_DATA.html">Species and datapacks</a></section><section><h2>Updates</h2><a href="../updates/index.html">Version history</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="companion-combat">Companion Combat</h1>
+<p><a href="../index.html">Player guide</a> · <a href="COMPANIONS.html">Bond and commands</a> · <a href="BOSSES.html">Bosses</a></p>
+<p>In 0.17.0, all 47 species receive a companion combat profile based on acquisition difficulty. Starter species use affordable attacks; hybrids and advanced lineages add combos, control, and range. Prismatic, Supercell, Aurora, Eclipse, and Ancestral provide rare tools. Celestial occupies the final tier with powerful offense and protection, a long windup, and a high energy cost.</p>
+<h2 id="prepare-your-team">Prepare your team</h2>
+<p>Use adults bonded to the same caretaker, with at least 40 trust and 20 energy to fight. Feed and care for the group before a ritual. <strong>Defensive</strong> responds to attacks received or made by the caretaker; <strong>Aggressive</strong> also seeks visible hostiles within 16 blocks. <strong>Passive</strong> retains support and protection while cancelling attacks, including projectiles already in flight. Follow requires training 40 and remains limited to five slimes per caretaker.</p>
+<p>Tanks close in and attract more attention from nearby minions. Ranged attackers try to maintain distance; supports position around the caretaker or an injured ally. Companions try to move away from boss warning centers when safe ground is available. This does not guarantee a dodge: respect each attack's geometry and avoid trapping your slimes against walls.</p>
+<p>For three to five companions, start with <strong>one tank, one support, and one to three attackers</strong>, including an elemental combo. Stone, Floral, Water, and Electric make an accessible team; replace roles with advanced lineages as you progress.</p>
+<h2 id="combos-and-limits">Combos and limits</h2>
+<ul>
+<li><strong>Water + electricity:</strong> Soaked lasts about five seconds. Electric, Storm, and Energized Crystal deal 50% more primary damage to wet targets. Chains have bounded target counts, range, and line-of-sight checks.</li>
+<li><strong>Ice:</strong> three Chilled applications briefly root a target, followed by six seconds of shared freeze protection. Natural immunities still apply.</li>
+<li><strong>Caustic:</strong> creates a short corrosion field that removes four armor points. Multiple casters cannot stack the armor reduction indefinitely.</li>
+<li><strong>Eclipse:</strong> alternates solar and lunar phases. Landing the lunar phase on the same target before its solar mark expires triggers an area convergence.</li>
+<li><strong>Healing:</strong> each ally accepts only one companion heal every two seconds, capped at six health per activation even with increased server settings.</li>
+<li><strong>Shields:</strong> Ancestral grants four absorption health; Celestial grants eight. Shields last five seconds, with a shared ten-second renewal lock. Multiple slimes cannot stack them.</li>
+<li><strong>Control:</strong> pulls and pushes respect knockback resistance; resistant bosses cannot be held in an endless tornado.</li>
+</ul>
+<p>Attacks check range, sight, and allies. Projectiles can miss and walls block them. Interrupted windups cost no energy; launched shots cost energy even if they miss. Capture and world reload preserve recovery without replaying pending casts. These attacks do not destroy blocks.</p>
+<h2 id="all-47-species">All 47 species</h2>
+<p>Base values assume 20 ticks per second, before genes, armor, effects, and server settings. Damage is the primary special hit; areas, ongoing effects, fire, and contact are additional where described. Zero denotes support. Support range describes its assistance radius; species conditions still apply. Hover over the companion portrait to inspect its profile. Wild slimes retain their separate ecological abilities.</p>
+<table>
+<thead>
+<tr>
+<th>Species</th>
+<th>Tier / role</th>
+<th>Ability</th>
+<th style="text-align: right;">Damage</th>
+<th style="text-align: right;">Energy</th>
+<th style="text-align: right;">Cooldown (s)</th>
+<th style="text-align: right;">Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Common Slime</td>
+<td>1 / Brawler</td>
+<td>Impact Jump</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2.5</td>
+</tr>
+<tr>
+<td>Water Slime</td>
+<td>1 / Ranged</td>
+<td>Soaking Jet</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Stone Slime</td>
+<td>1 / Tank</td>
+<td>Stone Charge</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Mud Slime</td>
+<td>1 / Brawler</td>
+<td>Muddy Impact</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3.5</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td>Sand Slime</td>
+<td>1 / Skirmisher</td>
+<td>Sand Burst</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Fungal Slime</td>
+<td>1 / Support</td>
+<td>Weakening Spores</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Moss Slime</td>
+<td>1 / Support</td>
+<td>Moss Recovery</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Wind Slime</td>
+<td>1 / Skirmisher</td>
+<td>Wind Gust</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Fire Slime</td>
+<td>2 / Ranged</td>
+<td>Ember Spit</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>Ice Slime</td>
+<td>2 / Ranged</td>
+<td>Frost Shard</td>
+<td style="text-align: right;">2.5</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4.5</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>Crystal Slime</td>
+<td>2 / Ranged</td>
+<td>Crystal Shot</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td>Amethyst Slime</td>
+<td>2 / Ranged</td>
+<td>Resonance</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>Corrupted Slime</td>
+<td>2 / Ranged</td>
+<td>Deterioration</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Soul Slime</td>
+<td>2 / Brawler</td>
+<td>Soul Siphon</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Void Slime</td>
+<td>2 / Skirmisher</td>
+<td>Spatial Pull</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>Magma Slime</td>
+<td>2 / Tank</td>
+<td>Lava Touch</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Floral Slime</td>
+<td>2 / Support</td>
+<td>Vital Bloom</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>Luminous Slime</td>
+<td>2 / Support</td>
+<td>Cave Guide</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>End Slime</td>
+<td>2 / Skirmisher</td>
+<td>Dimensional Step</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Iron Slime</td>
+<td>2 / Tank</td>
+<td>Iron Guard</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Obsidian Slime</td>
+<td>2 / Tank</td>
+<td>Obsidian Bastion</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Electric Slime</td>
+<td>2 / Ranged</td>
+<td>Directed Discharge</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Venom Slime</td>
+<td>2 / Ranged</td>
+<td>Toxic Cloud</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Energized Crystal Slime</td>
+<td>3 / Ranged</td>
+<td>Conductive Shard</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>Ferrofluid Slime</td>
+<td>3 / Ranged</td>
+<td>Magnetic Needles</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>Caustic Slime</td>
+<td>3 / Ranged</td>
+<td>Corrosive Pool</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Sculk Slime</td>
+<td>3 / Ranged</td>
+<td>Echo Pulse</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td>Bog Slime</td>
+<td>3 / Tank</td>
+<td>Mire</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr>
+<td>Steam Slime</td>
+<td>3 / Skirmisher</td>
+<td>Steam Veil</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Glacial Aquatic Slime</td>
+<td>3 / Ranged</td>
+<td>Glacial Jet</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5.5</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td>Volatile Flame Slime</td>
+<td>3 / Skirmisher</td>
+<td>Flame Gust</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5.5</td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td>Amber Slime</td>
+<td>3 / Tank</td>
+<td>Adhesive Resin</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">5.5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Abyssal Slime</td>
+<td>3 / Ranged</td>
+<td>Abyssal Lure</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">6.5</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>Solar Slime</td>
+<td>3 / Ranged</td>
+<td>Solar Flare</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td>Lunar Slime</td>
+<td>3 / Ranged</td>
+<td>Lunar Tide</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td>Magmatic Slime</td>
+<td>3 / Tank</td>
+<td>Magmatic Rupture</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5.5</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Coral Slime</td>
+<td>3 / Support</td>
+<td>Restoring Reef</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Mycelium Slime</td>
+<td>3 / Support</td>
+<td>Spore Network</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Glass Slime</td>
+<td>3 / Skirmisher</td>
+<td>Refractive Camouflage</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>Storm Slime</td>
+<td>3 / Ranged</td>
+<td>Storm Front</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">7.5</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr>
+<td>Prismatic Slime</td>
+<td>4 / Ranged</td>
+<td>Prismatic Refraction</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr>
+<td>Supercell Slime</td>
+<td>4 / Ranged</td>
+<td>Storm Core</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>Aurora Slime</td>
+<td>4 / Support</td>
+<td>Aurora Veil</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr>
+<td>Eclipse Slime</td>
+<td>4 / Ranged</td>
+<td>Convergence</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr>
+<td>Ancestral Slime</td>
+<td>4 / Tank</td>
+<td>Ancestral Guardian</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>Hive Slime</td>
+<td>4 / Support</td>
+<td>Battle Pollinators</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td>Celestial Slime</td>
+<td>5 / Ranged</td>
+<td>Astral Judgment</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">12</td>
+</tr>
+</tbody>
+</table>
+<h2 id="what-each-skill-does">What each skill does</h2>
+<p><strong>Common Slime — Impact Jump:</strong> Leaps into its target and delivers a knockback impact.</p>
+<p><strong>Water Slime — Soaking Jet:</strong> Fires water, pushes and soaks its target to prepare elemental combos.</p>
+<p><strong>Stone Slime — Stone Charge:</strong> Prepares a short charge and delivers a heavy knockback impact.</p>
+<p><strong>Mud Slime — Muddy Impact:</strong> A close-range strike that slows its target.</p>
+<p><strong>Sand Slime — Sand Burst:</strong> Raises sand, dealing close damage and brief Blindness.</p>
+<p><strong>Fungal Slime — Weakening Spores:</strong> Nearby spores deal damage and weaken a small enemy group.</p>
+<p><strong>Moss Slime — Moss Recovery:</strong> Efficiently regenerates itself while wet or standing on moss.</p>
+<p><strong>Wind Slime — Wind Gust:</strong> Pushes a small group with a quick gust.</p>
+<p><strong>Fire Slime — Ember Spit:</strong> Fires an aimed ember that ignites its enemy.</p>
+<p><strong>Ice Slime — Frost Shard:</strong> Three chill applications briefly root the target, followed by temporary freeze immunity.</p>
+<p><strong>Crystal Slime — Crystal Shot:</strong> Fires an accurate shard while keeping distance. Can refract arrows.</p>
+<p><strong>Amethyst Slime — Resonance:</strong> A pulse that deals damage and reveals nearby enemies with Glowing.</p>
+<p><strong>Corrupted Slime — Deterioration:</strong> Fires a corrupted fragment that applies Wither.</p>
+<p><strong>Soul Slime — Soul Siphon:</strong> Drains and slows its target while recovering some of its own health.</p>
+<p><strong>Void Slime — Spatial Pull:</strong> Deals damage and pulls its enemy closer.</p>
+<p><strong>Magma Slime — Lava Touch:</strong> A close incendiary strike; recovers health in lava.</p>
+<p><strong>Floral Slime — Vital Bloom:</strong> Directly heals its injured caretaker within six blocks.</p>
+<p><strong>Luminous Slime — Cave Guide:</strong> Grants its caretaker Night Vision in dark caves outside combat.</p>
+<p><strong>End Slime — Dimensional Step:</strong> Fights up close and uses a defensive blink when injured.</p>
+<p><strong>Iron Slime — Iron Guard:</strong> Combines high armor, melee protection and a guarding impact.</p>
+<p><strong>Obsidian Slime — Obsidian Bastion:</strong> A slow, blast-resistant tank with a heavy close impact.</p>
+<p><strong>Electric Slime — Directed Discharge:</strong> A short-range discharge that conducts through nearby soaked enemies.</p>
+<p><strong>Venom Slime — Toxic Cloud:</strong> Leaves a temporary poisonous area at its target.</p>
+<p><strong>Energized Crystal Slime — Conductive Shard:</strong> Its shot conducts a discharge to another target; soaked enemies take more damage.</p>
+<p><strong>Ferrofluid Slime — Magnetic Needles:</strong> Fires metal needles and can intercept one arrow every five seconds.</p>
+<p><strong>Caustic Slime — Corrosive Pool:</strong> Creates a three-second pool that deals periodic damage and reduces armor by up to four points.</p>
+<p><strong>Sculk Slime — Echo Pulse:</strong> Prepares a medium-range sonic pulse against moving targets, dealing damage and Darkness.</p>
+<p><strong>Bog Slime — Mire:</strong> A stronger impact that spreads slowing to nearby enemies.</p>
+<p><strong>Steam Slime — Steam Veil:</strong> A short-range steam attack that applies Blindness.</p>
+<p><strong>Glacial Aquatic Slime — Glacial Jet:</strong> A shot that soaks, pushes and builds chill.</p>
+<p><strong>Volatile Flame Slime — Flame Gust:</strong> Combines area knockback with fire on the primary target.</p>
+<p><strong>Amber Slime — Adhesive Resin:</strong> A resin impact that applies strong Slowness.</p>
+<p><strong>Abyssal Slime — Abyssal Lure:</strong> A medium-range attack combining damage, Darkness and Slowness.</p>
+<p><strong>Solar Slime — Solar Flare:</strong> Fires solar flame and recovers its own health in sunlight.</p>
+<p><strong>Lunar Slime — Lunar Tide:</strong> Fires a slowing lunar shard and supports its caretaker’s vision at night.</p>
+<p><strong>Magmatic Slime — Magmatic Rupture:</strong> An advanced form with stronger incendiary impact and greater reach.</p>
+<p><strong>Coral Slime — Restoring Reef:</strong> Stronger area healing that requires both the slime and allies to be wet.</p>
+<p><strong>Mycelium Slime — Spore Network:</strong> Shares healing among nearby allies, prioritizing the most injured.</p>
+<p><strong>Glass Slime — Refractive Camouflage:</strong> A close strike with brief camouflage and periodic arrow refraction.</p>
+<p><strong>Storm Slime — Storm Front:</strong> Combines discharge, knockback and secondary damage to nearby enemies.</p>
+<p><strong>Prismatic Slime — Prismatic Refraction:</strong> Its shot refracts into up to two nearby enemies for reduced damage.</p>
+<p><strong>Supercell Slime — Storm Core:</strong> After a long windup, releases area lightning and leaves a tornado that groups enemies.</p>
+<p><strong>Aurora Slime — Aurora Veil:</strong> Creates a temporary zone that protects allies and slows enemies.</p>
+<p><strong>Eclipse Slime — Convergence:</strong> Alternates fire and slowing; completing both phases on one target releases an area convergence.</p>
+<p><strong>Ancestral Slime — Ancestral Guardian:</strong> Grants its caretaker a finite shield during combat and repels their attacker.</p>
+<p><strong>Hive Slime — Battle Pollinators:</strong> Two temporary pollinators alternate ally healing and weakening the marked target.</p>
+<p><strong>Celestial Slime — Astral Judgment:</strong> Charges a powerful beam with secondary area impact. Protects the team and grants a stronger caretaker shield.</p></article><aside class="outline" aria-label="On this page"><span>ON THIS PAGE</span><div class="toc">
+<ul>
+<li><a href="#prepare-your-team">Prepare your team</a></li>
+<li><a href="#combos-and-limits">Combos and limits</a></li>
+<li><a href="#all-47-species">All 47 species</a></li>
+<li><a href="#what-each-skill-does">What each skill does</a></li>
+</ul>
+</div>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/guides/COMPANION_COMBAT.md">View this page on GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>

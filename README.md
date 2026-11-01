@@ -20,6 +20,7 @@ For **Minecraft Java 1.21.1**, **NeoForge 21.1.264**, and **Java 21**. **GeckoLi
 
 | What would you like to do? | Guide |
 |---|---|
+| Choose battle companions and elemental combos | [Companion combat](guides/COMPANION_COMBAT.md) |
 | Feed, house, capture, and transport slimes | [Care and capture](guides/CARE.md) |
 | Breed new generations and inspect traits | [Breeding](guides/BREEDING.md) · [Genetics](reference/GENETICS.md) |
 | Discover hybrids and transformations | [Evolution](guides/EVOLUTION.md) · [Advanced lineages](guides/ADVANCED_LINEAGES.md) |

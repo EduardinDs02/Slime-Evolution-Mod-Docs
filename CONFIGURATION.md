@@ -27,7 +27,7 @@ Twenty ticks normally equal one loaded second. Unloaded chunks do not advance gr
 | `combat.obsidianBlastReduction` | `0.5; 0; 0.5` | Genetically adjusted explosion reduction; capped at 75% |
 | `combat.iceFireMultiplier` | `1.5; 1; 4` | Fire damage received by Ice slimes |
 | `combat.wetFireDamage` | `1; 0; 4` | Fire slime damage per loaded second while wet |
-| `combat.dischargeDamage` | `2; 0; 4` | Electrical base damage; doubled against wet targets, capped at six health |
+| `combat.dischargeDamage` | `2; 0; 4` | Wild discharge base, doubled when wet and capped at six. Companion electrical attacks scale relative to default 2, with a 50% wet-target bonus |
 | `combat.waterConduction` | `true` | Wet-target discharges may chain to two nearby visible wet targets |
 | `breeding.enabled` | `true` | Caretaker-initiated breeding |
 | `breeding.localPopulationLimit` | `12; 2; 64` | Loaded living slimes within 32 blocks of a birth |

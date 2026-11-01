@@ -6,6 +6,10 @@
 <a id="quando-uma-habilidade-funciona"></a>
 <a id="reações-elementais"></a>
 
+## Bonded companions in 0.17.0
+
+Bonded slimes use the new [47-species companion combat system](COMPANION_COMBAT.md). It defines their roles, attacks, support, energy, and recovery. The ecological examples below describe wild species and general elemental traits. Companion-specific rules take precedence for bonded slimes.
+
 ## Activation requirements
 
 Offensive slime abilities require an adult, a valid target, sufficient energy, and an available cooldown. Physical contact must be accepted before contact effects apply. Juveniles do not deal contact damage.

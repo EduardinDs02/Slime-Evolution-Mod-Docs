@@ -6,6 +6,7 @@ These entries summarize the player-facing changes in each release. Historical ve
 
 | Version | Highlights |
 |---|---|
+| [0.17.0](0.17.0.md) | 47 companion combat profiles, elemental combos, support limits, and stronger bosses. |
 | [0.16.0](0.16.0.md) | Companion combat postures and five followers per caretaker |
 | [0.15.0](0.15.0.md) | A Slimepedia for every new player |
 | [0.14.2](0.14.2.md) | A dedicated public guide |

@@ -15,7 +15,7 @@ Difficulty must be above Peaceful, with no liquids, sufficient space, and no oth
 
 ![Gelatinous King](../assets/gallery/bosses/gelatinous_king.png)
 
-**Health: 290 · Armor: 7 · Phases: 2 · Reward: 2 Royal Gel**
+**Health: 600 · Armor: 10 · Phases: 2 · Reward: 2 Royal Gel**
 
 Craft a Gelatinous Crown with a Slime Core, Breeding Gel, and four gold ingots. Use it at the Royal Court altar in the Overworld.
 
@@ -24,7 +24,7 @@ The King alternates jump impacts, summons, crosses, and rings. Hits apply Slowne
 | Minion | Role |
 |---|---|
 | Guard | Melee attacker; applies Weakness II |
-| Healer | Restores nine King health per pulse, requiring range and line of sight |
+| Healer | Restores 14 King health per pulse, requiring range and line of sight |
 | Spitter | Ranged attacker; applies Slowness I and Poison I |
 
 The King maintains up to six minions. Prioritize healers to limit recovery.
@@ -33,7 +33,7 @@ The King maintains up to six minions. Prioritize healers to limit recovery.
 
 ![Magmatic Heart](../assets/gallery/bosses/magmatic_heart.png)
 
-**Health: 320 · Armor: 6 · Phases: 2 · Reward: 2 Igneous Fragments**
+**Health: 750 · Armor: 12 · Phases: 2 · Reward: 2 Igneous Fragments**
 
 Craft a Magma Brazier with a Slime Core, Elemental Essence, two magma creams, and two blaze powders. Use the Elemental Sanctuary altar.
 
@@ -43,7 +43,7 @@ Attacks include rings, eruptions, crosses, and twin eruptions. Hits ignite and a
 
 ![Crystalline Colossus](../assets/gallery/bosses/crystalline_colossus.png)
 
-**Health: 400 · Armor: 10 · Phases: 2 · Reward: 2 Prismatic Shards**
+**Health: 900 · Armor: 16 · Phases: 2 · Reward: 2 Prismatic Shards**
 
 Craft a Crystal Sigil with a Slime Core, two Crystal Fragments, two amethyst shards, and a diamond. Use the Crystal Cavern altar.
 
@@ -53,11 +53,17 @@ Shard barrages, waves, crosses, and rings apply Slowness III and Mining Fatigue 
 
 ![Primordial Slime](../assets/gallery/bosses/primordial_slime.png)
 
-**Health: 540 · Armor: 8 · Phases: 3 · Reward: 2 Primordial Essences**
+**Health: 1,024 · Armor: 14 · Phases: 3 · Reward: 2 Primordial Essences**
 
 Craft a Primordial Seal with Royal Gel, Igneous Fragment, Prismatic Shard, Nether Star, and Ancient Tablet. Use the Ancestral Chamber altar in the End; the chamber supplies the tablet.
 
 Attacks include waves, fire rings, shards, crosses, and orbital rupture. Hits apply Weakness I and Wither I; shards and orbital attacks also apply Levitation I. Phases change at two-thirds and one-third health. Up to three flying Ancestral Echoes attack at close range.
+
+## Bring a companion team
+
+Version 0.17.0 increases health, armor, and damage to give teams of three to five slimes a meaningful role. Bring a tank, a support, and attackers with elemental combos. Minions can now select companions as targets, with nearby tanks attracting more attention. Boss warnings and recovery windows remain opportunities to move and attack.
+
+Caustic helps against armor, Water sets up electrical attacks, and Ancestral/Celestial protect the caretaker. Healing and shields share limits per ally. Team composition and care matter alongside follower count. See [skills, costs, and combos](COMPANION_COMBAT.md).
 
 ## Preparation and rewards
 

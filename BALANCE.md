@@ -28,14 +28,14 @@ Health is measured in points; two points equal one heart. All encounters announc
 
 | Boss | Health | Armor | Attack families | Raw damage by phase |
 |---|---:|---:|---:|---|
-| Gelatinous King | 290 | 7 | 4 | 9 / 12.6 |
-| Magmatic Heart | 320 | 6 | 4 | 9 / 12.6; eruptions 7.5 / 10.5 |
-| Crystalline Colossus | 400 | 10 | 4 | 7.5 / 10.5 |
-| Primordial Slime | 540 | 8 | 5 | 7.5 / 10.5 / 14.7 |
+| Gelatinous King | 600 | 10 | 4 | 12 / 16.8 |
+| Magmatic Heart | 750 | 12 | 4 | 12 / 16.8; eruptions 10 / 14 |
+| Crystalline Colossus | 900 | 16 | 4 | 10 / 14 |
+| Primordial Slime | 1,024 | 14 | 5 | 10 / 14 / 19.6 |
 
-Damage uses `base × 1.5 × 1.4^phase × setting`. At multiplier 2, the largest hit reaches 29.4 before defenses. Water halves Magmatic Heart damage after this calculation. Prepared attacks keep their starting phase parameters.
+Damage uses `base × 2 × 1.4^phase × setting`. At multiplier 2, the largest hit reaches 39.2 before defenses. Water halves Magmatic Heart damage after this calculation. Prepared attacks keep their starting phase parameters.
 
-The King maintains up to six minions: guards have 24 health and four base damage with Weakness II; healers have 18 health and restore nine health per 80 ticks; spitters have 20 health and three base damage with Slowness I and Poison I. The Heart supports up to four fire/magma servants; Primordial supports up to three flying echoes.
+The King maintains up to six minions: guards have 36 health and four base damage with Weakness II; healers have 26 health and restore 14 health per 80 ticks; spitters have 28 health and three base damage with Slowness I and Poison I. The Heart supports up to four fire/magma servants; Primordial supports up to three flying echoes.
 
 A player-credited victory yields two boss materials: Royal Gel, Igneous Fragment, Prismatic Shard, or Primordial Essence. Minions do not drop loot or XP or split. See [boss encounters](guides/BOSSES.md).
 
@@ -56,3 +56,7 @@ Fire adds up to 20 furnace ticks per 20-tick helper cooldown for 2 energy and +1
 Electric pulses need training 20 and cost 2 energy and +1 hunger, with strength 15, intervals 20/40/80/160 ticks, and durations 2/4/8/10. Crystal sonar needs training 20, reaches 12 blocks, and costs 4 energy and +2 hunger only on an echo, with 200-tick recovery even without one. Energized Crystal needs training 40 and one energy initially and per active second, relaying analog 0–15 across 4–32 blocks. Glass displays one item with free 1.5× visual enlargement.
 
 [Job details](guides/SPECIALIZATIONS.md) · [Additional jobs](guides/WORK_JOBS.md) · [Signal jobs](guides/SIGNAL_JOBS.md) · [Configuration](CONFIGURATION.md)
+
+## Companion combat
+
+[All 47 skills](guides/COMPANION_COMBAT.md) have tiered costs and recoveries. Healing: one per ally per 40 ticks, at most six health per activation. Shields: four/eight health for 100 ticks with a shared 200-tick renewal lock. Freeze: 20 ticks after three applications, followed by 120 ticks of protection. Non-royal servants have 32 health. Existing bosses with canonical attributes migrate while preserving their health ratio; customized administrative attributes remain intact.

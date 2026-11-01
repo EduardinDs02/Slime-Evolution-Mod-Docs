@@ -33,7 +33,8 @@
       "Combat": "guides/COMBAT.md",
       "Structures and altars": "guides/SPECIAL_STRUCTURES.md",
       "Bosses and minions": "guides/BOSSES.md",
-      "Ecosystem": "guides/ECOSYSTEM.md"
+      "Ecosystem": "guides/ECOSYSTEM.md",
+      "Companion combat": "guides/COMPANION_COMBAT.md"
     },
     "Appearance": {
       "Slime materials and identity": "guides/SLIME_IDENTITIES.md",
@@ -51,6 +52,6 @@
     }
   },
   "content_root": ".",
-  "mod_version": "0.16.0",
+  "mod_version": "0.17.0",
   "language": "en"
 }
