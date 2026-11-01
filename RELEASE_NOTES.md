@@ -4,6 +4,7 @@
 
 See the [version history](updates/README.md) for the changes in each release.
 
+- [0.16.0 — Companion combat postures and five followers](updates/0.16.0.md)
 - [0.15.0 — A Slimepedia for every new player](updates/0.15.0.md)
 - [0.14.2 — A dedicated public guide](updates/0.14.2.md)
 - [0.14.1 — Online guide and panoramic banner](updates/0.14.1.md)

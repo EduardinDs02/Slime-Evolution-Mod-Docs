@@ -31,6 +31,34 @@ Learned commands require 40 trust; Free remains available below that threshold. 
 
 Movement uses normal navigation and jumping: it does not teleport, pass through walls, or load chunks. Follow waits when its caretaker is unavailable, too far away, or in another dimension. Movement pauses below 20 energy for rest.
 
+## Combat postures
+
+Choose a combat posture independently of Free, Wait, Follow, and Return home:
+
+| Posture | Behavior |
+|---|---|
+| Passive | Does not automatically attack or retaliate, even if the caretaker or slime is hit. |
+| Defensive | Default for new and existing individuals. Defends itself and its caretaker and assists against the caretaker's recent attack target. |
+| Aggressive | Includes Defensive behavior and seeks visible hostile mobs within a spherical 16-block radius. |
+
+![Combat posture controls in English](../assets/companions/combat-postures.png)
+
+Automatic combat requires adulthood, at least 40 trust, and 20 energy. Passive remains selectable at low trust. It also prevents offensive ability effects; supportive abilities and ordinary care remain available.
+
+The caretaker, bonded slimes, tame animals, allies, spectators, Creative players, and PvP-protected players are not valid targets. Priority goes to the caretaker's recent attacker, then the slime's attacker, then the caretaker's recent victim. Combat records expire after 200 ticks, normally ten seconds. Targets are rechecked for range, sight, and eligibility; movement orders resume after combat.
+
+Waiting guards stay within eight blocks of their anchor. Followers do not pursue targets farther than 32 blocks from their caretaker, in addition to their local 16-block combat range. Return home prioritizes returning without starting a pursuit.
+
+Postures persist through saves, capsules, and metamorphoses. Offspring start Defensive rather than inheriting their parents' selected posture.
+
+## Five followers per caretaker
+
+At most **five slimes may be in Follow for one caretaker across the whole world**, including all dimensions. A sixth request is rejected without changing the previous order. Hover over Follow for the reserved follower count.
+
+Unloaded slimes keep their reserved slot. Free, Wait, Return home, capture, or removal releases it. Releasing a captured follower restores Follow if there is room; with five occupied slots, the released slime switches to Wait at its release location, keeping its posture and training.
+
+Old worlds with more than five followers move excess individuals to Wait as they load. Reservations are stored in `data/slimeevolution_followers.dat`; include it in complete world backups.
+
 ## Mark a home
 
 **Mark home here** uses the caretaker's current position. Choose solid, dry ground inside the world border with room for the entire slime. A home can be marked before learning Return home. Return requires the same dimension and a loaded, unblocked location.
