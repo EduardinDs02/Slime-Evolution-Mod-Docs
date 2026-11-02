@@ -72,3 +72,9 @@ Caustic helps against armor, Water sets up electrical attacks, and Ancestral/Cel
 The interiors of rings, crosses, and orbital attacks also deal damage. Use distance beyond the outline, elevation, or cover as appropriate. Later phases increase damage, while an attack already being prepared retains its initial parameters.
 
 Rewards require a player-credited victory. Minions provide no rewards. Boss trophies support equipment, incubation, and [rare metamorphoses](ADVANCED_LINEAGES.md). See [balance values](../BALANCE.md).
+
+## Combat continuity in 0.22.0
+
+All four bosses retain their target through obstructions lasting up to 40 loaded ticks, preventing brief visibility changes from repeatedly resetting attack preparation. Hits retain their normal visibility and geometry checks. Visible bonded companions can also become targets while their caretaker is alive, in Survival, and within 16 blocks of the arena centre.
+
+A boss displaced beyond the inner boundary attempts to return to the arena. After 100 loaded ticks without returning, it searches for a loaded, unoccupied position in the central area without overlapping entities, restoring health, or editing terrain. Creative players, explicit NoAI, and finite minion reservations retain their normal behaviour.

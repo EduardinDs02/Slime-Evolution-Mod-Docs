@@ -1,5 +1,7 @@
 # Release Notes
 
+Current version: **0.22.0**. [Release details](updates/0.22.0.md).
+
 <a id="notas-de-versão"></a>
 
 See the [version history](updates/README.md) for the changes in each release.
