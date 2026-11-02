@@ -177,3 +177,9 @@ Base values assume 20 ticks per second, before genes, armor, effects, and server
 **Hive Slime — Battle Pollinators:** Two temporary pollinators alternate ally healing and weakening the marked target.
 
 **Celestial Slime — Astral Judgment:** Charges a powerful beam with secondary area impact. Protects the team and grants a stronger caretaker shield.
+
+## Continuous combat
+
+Basic attacks continue while special skills recover. Melee keeps a one-second interval. Ranged and support slimes can fire weaker basic shots every 1.5 seconds, within eight blocks or their shorter profile range. Basic shots cost no energy and apply no special-skill effects: they use 55% of the species' basic damage, or 35% for support, with normal gene and level multipliers.
+
+Defensive companions finish an engaged fight rather than abandoning it solely because the caretaker's initial hit aged out. Aggressive companions retain a valid target instead of switching to slightly closer enemies; direct caretaker threats still take priority. Brief obstructions allow up to two seconds of pursuit, but attacks still require visibility and cannot pass through walls. Wounded bonded slimes use companion positioning instead of the automatic flight response of docile wild slimes. Territory limits, ally protection, Passive stance, and skill costs remain enforced.

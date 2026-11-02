@@ -11,6 +11,8 @@ Find one of the four [natural arenas](SPECIAL_STRUCTURES.md) and use its ritual 
 
 Difficulty must be above Peaceful, with no liquids, sufficient space, and no other loaded living boss within 96 blocks. Ground warnings, body pulses, and sounds signal attacks.
 
+Top and side pedestal clicks are accepted. If the player or their companions occupy the center, summoning looks for a free nearby arena position and never consumes the item on failure.
+
 ## Gelatinous King
 
 ![Gelatinous King](../assets/gallery/bosses/gelatinous_king.png)

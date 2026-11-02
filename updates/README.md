@@ -6,6 +6,7 @@ These entries summarize the player-facing changes in each release. Historical ve
 
 | Version | Highlights |
 |---|---|
+| [0.21.0](0.21.0.md) | Working pedestal interactions, continuous combat, and six rebuilt structures. |
 | [0.20.1](0.20.1.md) | Creative-only wand granting 100 trust and level 10. |
 | [0.20.0](0.20.0.md) | Levels 1–10, XP from food and kills, animated wings, elemental effects, and ally protection. |
 | [0.19.0](0.19.0.md) | Five- and fifteen-slot feed bags; fixes followers freezing at low energy. |

@@ -4,6 +4,7 @@
 
 See the [version history](updates/README.md) for the changes in each release.
 
+- [0.21.0 — Pedestal fixes, combat continuity, and rebuilt structures](updates/0.21.0.md)
 - [0.20.1 — Creative Slime Wand](updates/0.20.1.md)
 - [0.20.0 — Slime levels, elemental effects, and ally protection](updates/0.20.0.md)
 - [0.19.0 — Feed bags and responsive companion combat](updates/0.19.0.md)
