@@ -46,15 +46,19 @@ Each structure contains one finite loot chest; opening, emptying, or reloading i
 
 Crystal caverns are underground without an excavated entrance tunnel. Surface sites reject unsuitable oceans, steep terrain, and low islands. There is no retroactive generation: explore new terrain for updated structures and altars.
 
-Structure sets use `random_spread`, spacing 32 and separation 12 chunks; the chamber uses 24 and 8. Biome, height, slope, and rarity filter candidates, so spacing does not guarantee a structure at every interval. Server settings control overall and individual generation plus rarity.
+The five Overworld sites share one `random_spread` placement set with spacing 16 and separation 6 chunks. Each candidate selects only one site, with enough space between neighboring candidates for the largest template plus a buffer. The Ancestral Chamber keeps its separate End set with spacing 24 and separation 8. Biome, height, slope, and rarity filter candidates, so spacing does not guarantee a structure at every interval. Server settings control overall and individual generation plus rarity.
 
 With commands enabled, use `/locate structure slimeevolution:royal_court` in the Overworld or `/locate structure slimeevolution:ancestral_chamber` in the End. Substitute other IDs as needed. Datapack `has_<id>` tags can extend allowed biomes.
 
 [Bosses](BOSSES.md) · [Configuration](../CONFIGURATION.md)
 
-## 0.22.0 architecture gallery
+<a id="0220-architecture-gallery"></a>
+
+## 0.22.1 architecture gallery
 
 All six builds are original. Visual research examined facade depth, repeated bays, material hierarchy, circulation, and integrated vegetation in Repurposed Structures: [Jungle Fortress](https://github.com/TelepathicGrunt/RepurposedStructures/blob/26.3/images/FortressJungle2.png), [Oak Mansion](https://github.com/TelepathicGrunt/RepurposedStructures/blob/26.3/images/MansionWitchHutOak.png), [End Ancient City](https://github.com/TelepathicGrunt/RepurposedStructures/blob/26.3/images/AncientCityEnd.png), and [Flower Forest Pyramid](https://github.com/TelepathicGrunt/RepurposedStructures/blob/26.3/images/PyramidFlowerForest.png). No external templates were copied.
+
+Version 0.22.1 clears internal room and tower junctions, connects roofs to their foundations, fixes roof stair direction and slope, and repairs the stairways. Existing structures remain in place; corrected templates appear in new chunks.
 
 The images below are in-game captures in a flat review meadow. Natural placement follows the biome and slope rules above. Foundations are eight blocks deep, and each build retains one finite reward chest with an accessible interior route. Arenas retain their clear ritual floors.
 
@@ -88,12 +92,12 @@ The images below are in-game captures in a flat review meadow. Natural placement
 
 ## Building workflow and comparison
 
-Version 0.22.0 uses the [Minecraft Builder skill](https://github.com/wzhaoMS/minecraft-builder-skill/blob/b389252c0cc07a673677f818622b50dda578228b/SKILL.md) and its [building guide](https://github.com/wzhaoMS/minecraft-builder-skill/blob/b389252c0cc07a673677f818622b50dda578228b/docs/building-guide.md): distinct volumes and roofs, recessed facades, consistent materials, circulation between floors, and review in isometric previews and in the game. This is an authoring tool, not a mod dependency.
+The architecture revision uses the [Minecraft Builder skill](https://github.com/wzhaoMS/minecraft-builder-skill/blob/b389252c0cc07a673677f818622b50dda578228b/SKILL.md) and its [building guide](https://github.com/wzhaoMS/minecraft-builder-skill/blob/b389252c0cc07a673677f818622b50dda578228b/docs/building-guide.md): distinct volumes and roofs, recessed facades, consistent materials, circulation between floors, and review in isometric previews and in the game. This is an authoring tool, not a mod dependency.
 
 Royal Court in 0.21.0:
 
 ![Royal Court in 0.21.0](../assets/sites/before-021/royal_court.png)
 
-Royal Court in 0.22.0:
+Royal Court in 0.22.1:
 
-![Royal Court in 0.22.0](../assets/sites/royal_court.png)
+![Royal Court in 0.22.1](../assets/sites/royal_court.png)
