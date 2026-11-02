@@ -1,15 +1,15 @@
 {
-  "version": "0.22.1",
+  "version": "0.23.0",
   "url": "https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/",
   "language": "en",
-  "pages": 67,
+  "pages": 68,
   "sources": {
     "BALANCE.md": "deaeb6d38762b989000724ece2711ccf8d4febaaab0090df9e09c454fe52d14f",
     "CONFIGURATION.md": "3128adb6150b9d20412e372c79ad5224a7b7d4409a58f1a7ed4825aa0e019110",
     "INSTALLATION.md": "4c1453eaba04c39c0a1543d7e046540f2e9bcdd27b016c8f42e2fd8b5d379bc5",
     "PRESENTATION.md": "b61bbeb19d07a3cc9824547ac9aabc26c8c5d6f92445e3bff78ba2b9d2c8cfdf",
     "README.md": "ac69aa298cd06fbc64a4ad418f1f059f79d9bdb16278c917ca58644f68751e33",
-    "RELEASE_NOTES.md": "274dd8674875128750010447275d09317748ed5232a4549ec0c898caeb0bc041",
+    "RELEASE_NOTES.md": "44f6f78883d91ecc697c703311116a2076baf0cae9a12ae48b64aecf5ae4669f",
     "guides/ADVANCED_LINEAGES.md": "b9c4ccbb2c0d03c2060aa70cb3204fcb13c82ca4cc5c996188a0ca3f2e5bd2e8",
     "guides/ASCENSION.md": "314bdefe00b7bddd6c8852f9a78f3bbc2ad80762f4956200cf8c0d10670cc28a",
     "guides/BOSSES.md": "58e59e7604d93c5182a7e286825424bbb4616e7ecf982ec8423110ff7eb9f6b3",
@@ -35,7 +35,7 @@
     "guides/SLIMES.md": "11d44881d2764c0569afa6f5437da7ef7316031e5046a08b1aea4b519010b0ee",
     "guides/SLIME_IDENTITIES.md": "d683455d303893c8a53b18cf75e5dd00fcbcde50de6888aa3c8013a65ddcc792",
     "guides/SPECIALIZATIONS.md": "f1aff8dd20410e8844f21481bb622e570890211055ca0b51a462767e3782f8ce",
-    "guides/SPECIAL_STRUCTURES.md": "84a07f1213059ea8b34252932500d1585679accdd297b5c5fcc52dce788cb196",
+    "guides/SPECIAL_STRUCTURES.md": "ef90d55852c686900548417dd95eb7204d88f067d406a9eb812602a72d242139",
     "guides/WORK_JOBS.md": "5b2a2c7109c353a98ea9e5b73d0bc6476aa65f82e08478f4be37bdd8fc7bee91",
     "reference/GENETICS.md": "507b27536d7d9cc3f90793fb65a3d2e47f8cf54e62702fcfc648990646277405",
     "reference/SPECIES_DATA.md": "b35c06a821c66d72c54739fe8b556768c4dcdbb0dfbd5cc9a386626778e2d0f3",
@@ -60,6 +60,7 @@
     "updates/0.21.0.md": "31b5ba0e7324d28334b183101c145d696c70c7a89a9b20a309f8142930bf83be",
     "updates/0.22.0.md": "3245cc66e36b53a0b339719e417821d5177abf2d491120d7a652b2e651046de9",
     "updates/0.22.1.md": "6213f70eb68fb1447009c8940006bce6f11e7797953a56c02c8b6cb400c09af1",
+    "updates/0.23.0.md": "c345d2dcf560677f3f2b95331809fc4ced63f1c310ce2650aba393341c0a3f67",
     "updates/0.3.0.md": "3610e7799b48cb34f07e76fad66e0370e62aeef70dcd21b26cbf8493175b68c8",
     "updates/0.4.0.md": "93dccb89c0d60842574b5e9ce0fd88666bb6fcccac600b5af3a6aa75326b1311",
     "updates/0.5.0.md": "7f11112ca670bf5f99d9e6bca2caeb8cc9a80282a6ff7a52d7218e1486cdaa4b",
@@ -70,6 +71,6 @@
     "updates/0.7.3.md": "a8c27debd6b76fce39460f41a49c9a85ba864f8ef3658089e28d428c931b7736",
     "updates/0.8.0.md": "4ed6a3de95b68dd81173b2e8613406511cdefa66db6d1a290a3cb7c810331c7f",
     "updates/0.9.0.md": "f2a53b4d9a083ca75fe7bc1f7715549c8d8ae723dad6d221152313ee539f9682",
-    "updates/README.md": "3a763f151f59255dbb44e089dbf51af471ac15cc99c0aa9b5696be8f1eb179fd"
+    "updates/README.md": "97f049027c732f320e734975db46ed5c791c856caaa3b543abdd375849448e57"
   }
 }

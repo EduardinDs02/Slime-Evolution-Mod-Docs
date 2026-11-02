@@ -1,14 +1,15 @@
 {
-  "version": "0.22.1",
+  "version": "0.23.0",
   "source": "Unmodified 1280x720 Minecraft captures of original templates in a flat, controlled review meadow. Natural generation follows the documented biome/slope rules; the cavern generates underground.",
-  "run": "run/phase8-jobs-20261102-154937",
+  "run": "run/phase8-jobs-20261102-201857",
   "images": {
     "royal_court_front": {
       "image": "docs/assets/sites/royal_court.png",
-      "sha256": "945fed15c25b0b674c1808d32330a0389e958c9eae1db19f7b64c39ca36a5cf5",
+      "sha256": "65675a5a8bef2005905a5a9bb3cddc58a2702820873c622de626172fd5dd06d4",
       "source": "run/phase7-client-a/screenshots/jobs_site_royal_court_front-A.png",
-      "source_sha256": "945fed15c25b0b674c1808d32330a0389e958c9eae1db19f7b64c39ca36a5cf5",
-      "source_version": "0.22.1",
+      "source_sha256": "65675a5a8bef2005905a5a9bb3cddc58a2702820873c622de626172fd5dd06d4",
+      "source_version": "0.23.0",
+      "template_sha256": "95013f7e36926074116685c548350aec429c60d36bd7b7b7fff16003a9ac52d5",
       "pixels": [
         1280,
         720
@@ -17,10 +18,11 @@
     },
     "royal_court_rear": {
       "image": "docs/assets/sites/royal_court_rear.png",
-      "sha256": "863812e1d01ab7fa2999958f8178d8803ee1843de10cd199a298addd63448304",
+      "sha256": "42d8a201f67ee536497f07498b975308d3dfd4b5f7d5f841fe3828ec9453903d",
       "source": "run/phase7-client-a/screenshots/jobs_site_royal_court_rear-A.png",
-      "source_sha256": "863812e1d01ab7fa2999958f8178d8803ee1843de10cd199a298addd63448304",
-      "source_version": "0.22.1",
+      "source_sha256": "42d8a201f67ee536497f07498b975308d3dfd4b5f7d5f841fe3828ec9453903d",
+      "source_version": "0.23.0",
+      "template_sha256": "95013f7e36926074116685c548350aec429c60d36bd7b7b7fff16003a9ac52d5",
       "pixels": [
         1280,
         720
@@ -29,10 +31,24 @@
     },
     "royal_court_interior": {
       "image": "docs/assets/sites/royal_court_interior.png",
-      "sha256": "f05a2290d9083ecba1f804d9ec6d12fab0ec36a567c4d8e32aae019ab146afc6",
+      "sha256": "a6d195cfb38ac84d8530daa7bd5ff00afbd21de62e0b6e36f7fb73bc007fa1e9",
       "source": "run/phase7-client-a/screenshots/jobs_site_royal_court_interior-A.png",
-      "source_sha256": "f05a2290d9083ecba1f804d9ec6d12fab0ec36a567c4d8e32aae019ab146afc6",
-      "source_version": "0.22.1",
+      "source_sha256": "a6d195cfb38ac84d8530daa7bd5ff00afbd21de62e0b6e36f7fb73bc007fa1e9",
+      "source_version": "0.23.0",
+      "template_sha256": "95013f7e36926074116685c548350aec429c60d36bd7b7b7fff16003a9ac52d5",
+      "pixels": [
+        1280,
+        720
+      ],
+      "modified": false
+    },
+    "royal_court_detail": {
+      "image": "docs/assets/sites/royal_court_detail.png",
+      "sha256": "91921fa0837972fff0fa17197994b5b876159b03a616a53a089b1b26b9d9ab71",
+      "source": "run/phase7-client-a/screenshots/jobs_site_royal_court_detail-A.png",
+      "source_sha256": "91921fa0837972fff0fa17197994b5b876159b03a616a53a089b1b26b9d9ab71",
+      "source_version": "0.23.0",
+      "template_sha256": "95013f7e36926074116685c548350aec429c60d36bd7b7b7fff16003a9ac52d5",
       "pixels": [
         1280,
         720
@@ -41,10 +57,11 @@
     },
     "elemental_sanctuary_front": {
       "image": "docs/assets/sites/elemental_sanctuary.png",
-      "sha256": "dc05844269b5030f97576713a4b238699f6c495d55f518d12d38a4411f330861",
+      "sha256": "e06d68f00b162a6fbe7b33b10bf51e7b944f68d98c627dd4f2fb5a4c7f344b80",
       "source": "run/phase7-client-a/screenshots/jobs_site_elemental_sanctuary_front-A.png",
-      "source_sha256": "dc05844269b5030f97576713a4b238699f6c495d55f518d12d38a4411f330861",
-      "source_version": "0.22.1",
+      "source_sha256": "e06d68f00b162a6fbe7b33b10bf51e7b944f68d98c627dd4f2fb5a4c7f344b80",
+      "source_version": "0.23.0",
+      "template_sha256": "d581576849097df1b21a92fcb3394055d1d1511baf6a622e64e65b22631f6a0e",
       "pixels": [
         1280,
         720
@@ -53,10 +70,11 @@
     },
     "elemental_sanctuary_rear": {
       "image": "docs/assets/sites/elemental_sanctuary_rear.png",
-      "sha256": "8d89054e7f5f760113932bdc0e404f503283572e4e86102fe44d5f4383e476d6",
+      "sha256": "f14c7657f20285ba0316f645b1810848ebfa92a07ae2ee88fa6715469972683c",
       "source": "run/phase7-client-a/screenshots/jobs_site_elemental_sanctuary_rear-A.png",
-      "source_sha256": "8d89054e7f5f760113932bdc0e404f503283572e4e86102fe44d5f4383e476d6",
-      "source_version": "0.22.1",
+      "source_sha256": "f14c7657f20285ba0316f645b1810848ebfa92a07ae2ee88fa6715469972683c",
+      "source_version": "0.23.0",
+      "template_sha256": "d581576849097df1b21a92fcb3394055d1d1511baf6a622e64e65b22631f6a0e",
       "pixels": [
         1280,
         720
@@ -65,10 +83,24 @@
     },
     "elemental_sanctuary_interior": {
       "image": "docs/assets/sites/elemental_sanctuary_interior.png",
-      "sha256": "0b27ff8ef87ee361962eadaf86be0565b7468ecece704f29cd444444a164cd7c",
+      "sha256": "b911799f28326c79344b7b1d003f04268b29885fce1b9a41b1d1317fce7bb7f8",
       "source": "run/phase7-client-a/screenshots/jobs_site_elemental_sanctuary_interior-A.png",
-      "source_sha256": "0b27ff8ef87ee361962eadaf86be0565b7468ecece704f29cd444444a164cd7c",
-      "source_version": "0.22.1",
+      "source_sha256": "b911799f28326c79344b7b1d003f04268b29885fce1b9a41b1d1317fce7bb7f8",
+      "source_version": "0.23.0",
+      "template_sha256": "d581576849097df1b21a92fcb3394055d1d1511baf6a622e64e65b22631f6a0e",
+      "pixels": [
+        1280,
+        720
+      ],
+      "modified": false
+    },
+    "elemental_sanctuary_detail": {
+      "image": "docs/assets/sites/elemental_sanctuary_detail.png",
+      "sha256": "0e6c11db25e46ea1f39171bbac39bd2bbf6bec9ddf152143b658f8646bfb4c6a",
+      "source": "run/phase7-client-a/screenshots/jobs_site_elemental_sanctuary_detail-A.png",
+      "source_sha256": "0e6c11db25e46ea1f39171bbac39bd2bbf6bec9ddf152143b658f8646bfb4c6a",
+      "source_version": "0.23.0",
+      "template_sha256": "d581576849097df1b21a92fcb3394055d1d1511baf6a622e64e65b22631f6a0e",
       "pixels": [
         1280,
         720
@@ -77,10 +109,11 @@
     },
     "crystal_cavern_front": {
       "image": "docs/assets/sites/crystal_cavern.png",
-      "sha256": "ae08d17bd339e63674ad48569071708129dbc6df069b1f5911bfa757caa74163",
+      "sha256": "840b2f3b87df71abc4169294354e2ad692b152d6b1d04bc869680555c7de3281",
       "source": "run/phase7-client-a/screenshots/jobs_site_crystal_cavern_front-A.png",
-      "source_sha256": "ae08d17bd339e63674ad48569071708129dbc6df069b1f5911bfa757caa74163",
-      "source_version": "0.22.1",
+      "source_sha256": "840b2f3b87df71abc4169294354e2ad692b152d6b1d04bc869680555c7de3281",
+      "source_version": "0.23.0",
+      "template_sha256": "5b3ba0b7d41dd036b2eb02b5d7bf6e563d011f77afe4922d26e9949e3a72c314",
       "pixels": [
         1280,
         720
@@ -89,10 +122,11 @@
     },
     "crystal_cavern_rear": {
       "image": "docs/assets/sites/crystal_cavern_rear.png",
-      "sha256": "2cf847387ab4e4c56ea838cfde3e6cbe53c28da385b26114cf00086a7ead44af",
+      "sha256": "571ad4899a974ac07ca8b34ed0d6aa359b5b481e6fb67e18f15abff225e83135",
       "source": "run/phase7-client-a/screenshots/jobs_site_crystal_cavern_rear-A.png",
-      "source_sha256": "2cf847387ab4e4c56ea838cfde3e6cbe53c28da385b26114cf00086a7ead44af",
-      "source_version": "0.22.1",
+      "source_sha256": "571ad4899a974ac07ca8b34ed0d6aa359b5b481e6fb67e18f15abff225e83135",
+      "source_version": "0.23.0",
+      "template_sha256": "5b3ba0b7d41dd036b2eb02b5d7bf6e563d011f77afe4922d26e9949e3a72c314",
       "pixels": [
         1280,
         720
@@ -101,10 +135,24 @@
     },
     "crystal_cavern_interior": {
       "image": "docs/assets/sites/crystal_cavern_interior.png",
-      "sha256": "45a922aa79c0e466bda72c6b2787b7f9f967770a8f3e483e4e4bfc2faa305849",
+      "sha256": "2895b1ad2fd5023876f1235d5e8a5a86f2ca2ff2ab791a943279480c132f977b",
       "source": "run/phase7-client-a/screenshots/jobs_site_crystal_cavern_interior-A.png",
-      "source_sha256": "45a922aa79c0e466bda72c6b2787b7f9f967770a8f3e483e4e4bfc2faa305849",
-      "source_version": "0.22.1",
+      "source_sha256": "2895b1ad2fd5023876f1235d5e8a5a86f2ca2ff2ab791a943279480c132f977b",
+      "source_version": "0.23.0",
+      "template_sha256": "5b3ba0b7d41dd036b2eb02b5d7bf6e563d011f77afe4922d26e9949e3a72c314",
+      "pixels": [
+        1280,
+        720
+      ],
+      "modified": false
+    },
+    "crystal_cavern_detail": {
+      "image": "docs/assets/sites/crystal_cavern_detail.png",
+      "sha256": "affcac758d09e36966e974ecb32e134e25ebc48bbf04c294e5f3ca6c620b0fb0",
+      "source": "run/phase7-client-a/screenshots/jobs_site_crystal_cavern_detail-A.png",
+      "source_sha256": "affcac758d09e36966e974ecb32e134e25ebc48bbf04c294e5f3ca6c620b0fb0",
+      "source_version": "0.23.0",
+      "template_sha256": "5b3ba0b7d41dd036b2eb02b5d7bf6e563d011f77afe4922d26e9949e3a72c314",
       "pixels": [
         1280,
         720
@@ -113,10 +161,11 @@
     },
     "ancestral_chamber_front": {
       "image": "docs/assets/sites/ancestral_chamber.png",
-      "sha256": "35155716f6a6ead8125d98e909902d504dc34a81a986064a3b79803c3585fd8f",
+      "sha256": "28ccf61001ff0f3e3942ca82c0f0430e78717cbd70cb40ac437e4071838cc260",
       "source": "run/phase7-client-a/screenshots/jobs_site_ancestral_chamber_front-A.png",
-      "source_sha256": "35155716f6a6ead8125d98e909902d504dc34a81a986064a3b79803c3585fd8f",
-      "source_version": "0.22.1",
+      "source_sha256": "28ccf61001ff0f3e3942ca82c0f0430e78717cbd70cb40ac437e4071838cc260",
+      "source_version": "0.23.0",
+      "template_sha256": "a9470b3ee1aaffc53875db775dd9c0d6109eb72b92121013dc02b2ad80eb441b",
       "pixels": [
         1280,
         720
@@ -125,10 +174,11 @@
     },
     "ancestral_chamber_rear": {
       "image": "docs/assets/sites/ancestral_chamber_rear.png",
-      "sha256": "4d572b66662ad908aa41bc07cdae8e6e8740da70863f24d62397e7f55614e05a",
+      "sha256": "57c9ddb5a2de2e0465129fc4b8304a9f93f323ea3dfdc94e3fb4c8cf200dcda8",
       "source": "run/phase7-client-a/screenshots/jobs_site_ancestral_chamber_rear-A.png",
-      "source_sha256": "4d572b66662ad908aa41bc07cdae8e6e8740da70863f24d62397e7f55614e05a",
-      "source_version": "0.22.1",
+      "source_sha256": "57c9ddb5a2de2e0465129fc4b8304a9f93f323ea3dfdc94e3fb4c8cf200dcda8",
+      "source_version": "0.23.0",
+      "template_sha256": "a9470b3ee1aaffc53875db775dd9c0d6109eb72b92121013dc02b2ad80eb441b",
       "pixels": [
         1280,
         720
@@ -137,10 +187,24 @@
     },
     "ancestral_chamber_interior": {
       "image": "docs/assets/sites/ancestral_chamber_interior.png",
-      "sha256": "b80b0b9aeddff27f7ee7f266b0bb181dd134bcf848eb564893bd3dcf9e704cf9",
+      "sha256": "af658cb778040f8dcc7b15a915ef3fd492db3b889b20e31fe7d2508053de1c50",
       "source": "run/phase7-client-a/screenshots/jobs_site_ancestral_chamber_interior-A.png",
-      "source_sha256": "b80b0b9aeddff27f7ee7f266b0bb181dd134bcf848eb564893bd3dcf9e704cf9",
-      "source_version": "0.22.1",
+      "source_sha256": "af658cb778040f8dcc7b15a915ef3fd492db3b889b20e31fe7d2508053de1c50",
+      "source_version": "0.23.0",
+      "template_sha256": "a9470b3ee1aaffc53875db775dd9c0d6109eb72b92121013dc02b2ad80eb441b",
+      "pixels": [
+        1280,
+        720
+      ],
+      "modified": false
+    },
+    "ancestral_chamber_detail": {
+      "image": "docs/assets/sites/ancestral_chamber_detail.png",
+      "sha256": "9a505d59b238a56d2a9c4d2a631ddeae3d9c52cee04eea70405016cdc0596859",
+      "source": "run/phase7-client-a/screenshots/jobs_site_ancestral_chamber_detail-A.png",
+      "source_sha256": "9a505d59b238a56d2a9c4d2a631ddeae3d9c52cee04eea70405016cdc0596859",
+      "source_version": "0.23.0",
+      "template_sha256": "a9470b3ee1aaffc53875db775dd9c0d6109eb72b92121013dc02b2ad80eb441b",
       "pixels": [
         1280,
         720
@@ -149,10 +213,11 @@
     },
     "gelatinous_lake_front": {
       "image": "docs/assets/sites/gelatinous_lake.png",
-      "sha256": "695dac95646933f1710abbb619ae656228b98847dc7728446b4c24edf74b6746",
+      "sha256": "069b4f6715914ac8c0f33dbf586c40de83766008c375f39979fd710cf16340d8",
       "source": "run/phase7-client-a/screenshots/jobs_site_gelatinous_lake_front-A.png",
-      "source_sha256": "695dac95646933f1710abbb619ae656228b98847dc7728446b4c24edf74b6746",
-      "source_version": "0.22.1",
+      "source_sha256": "069b4f6715914ac8c0f33dbf586c40de83766008c375f39979fd710cf16340d8",
+      "source_version": "0.23.0",
+      "template_sha256": "a7db5189971567823d7c4c5e0b70bde76cd0c9707de5eef6994d534a508d3be8",
       "pixels": [
         1280,
         720
@@ -161,10 +226,11 @@
     },
     "gelatinous_lake_rear": {
       "image": "docs/assets/sites/gelatinous_lake_rear.png",
-      "sha256": "5a60e005170bb683e4a9f703876cc5299ad0a5e70172e665b7f46c5e156decca",
+      "sha256": "f13a5538f6a1ab8e52d1c4fccc00768d4a959a9492d2d76348a469e9fd2ffc3a",
       "source": "run/phase7-client-a/screenshots/jobs_site_gelatinous_lake_rear-A.png",
-      "source_sha256": "5a60e005170bb683e4a9f703876cc5299ad0a5e70172e665b7f46c5e156decca",
-      "source_version": "0.22.1",
+      "source_sha256": "f13a5538f6a1ab8e52d1c4fccc00768d4a959a9492d2d76348a469e9fd2ffc3a",
+      "source_version": "0.23.0",
+      "template_sha256": "a7db5189971567823d7c4c5e0b70bde76cd0c9707de5eef6994d534a508d3be8",
       "pixels": [
         1280,
         720
@@ -173,10 +239,24 @@
     },
     "gelatinous_lake_interior": {
       "image": "docs/assets/sites/gelatinous_lake_interior.png",
-      "sha256": "4fa23eda087d132abea4c226f8a32b530131cd0229fe5d1a7a8d522cdf8f2ce5",
+      "sha256": "e7f1dc176dd4c5e6ddfdf54bf90809c0ab4973d9472e6cbc949eea2ae130f5ad",
       "source": "run/phase7-client-a/screenshots/jobs_site_gelatinous_lake_interior-A.png",
-      "source_sha256": "4fa23eda087d132abea4c226f8a32b530131cd0229fe5d1a7a8d522cdf8f2ce5",
-      "source_version": "0.22.1",
+      "source_sha256": "e7f1dc176dd4c5e6ddfdf54bf90809c0ab4973d9472e6cbc949eea2ae130f5ad",
+      "source_version": "0.23.0",
+      "template_sha256": "a7db5189971567823d7c4c5e0b70bde76cd0c9707de5eef6994d534a508d3be8",
+      "pixels": [
+        1280,
+        720
+      ],
+      "modified": false
+    },
+    "gelatinous_lake_detail": {
+      "image": "docs/assets/sites/gelatinous_lake_detail.png",
+      "sha256": "b644f95847fe27acb92955d7f2309fac51fc455c54f341bf9f9c1ea0f26683b2",
+      "source": "run/phase7-client-a/screenshots/jobs_site_gelatinous_lake_detail-A.png",
+      "source_sha256": "b644f95847fe27acb92955d7f2309fac51fc455c54f341bf9f9c1ea0f26683b2",
+      "source_version": "0.23.0",
+      "template_sha256": "a7db5189971567823d7c4c5e0b70bde76cd0c9707de5eef6994d534a508d3be8",
       "pixels": [
         1280,
         720
@@ -185,10 +265,11 @@
     },
     "researcher_ruins_front": {
       "image": "docs/assets/sites/researcher_ruins.png",
-      "sha256": "74f3b1eb10ce63b57feb3eece4d504d83b327d540af85c5fa5122615c17889d7",
+      "sha256": "183af194550d66dc1a19fd70750e66587982704e15e2c8bbe7ac00869db54736",
       "source": "run/phase7-client-a/screenshots/jobs_site_researcher_ruins_front-A.png",
-      "source_sha256": "74f3b1eb10ce63b57feb3eece4d504d83b327d540af85c5fa5122615c17889d7",
-      "source_version": "0.22.1",
+      "source_sha256": "183af194550d66dc1a19fd70750e66587982704e15e2c8bbe7ac00869db54736",
+      "source_version": "0.23.0",
+      "template_sha256": "0a83a20509bd69a2df5cd535e5c1a6a708367835932e1a5a7eb6683568613889",
       "pixels": [
         1280,
         720
@@ -197,10 +278,11 @@
     },
     "researcher_ruins_rear": {
       "image": "docs/assets/sites/researcher_ruins_rear.png",
-      "sha256": "c707ae28cf0425bdda7c837a9da1f9b7b3618a0ad8d81497d57eae8dfec221c5",
+      "sha256": "5f7c6d6deceb60cbd95c77d7c985f87fdd3380a2d2c7c05ac68d06a6703ae7e3",
       "source": "run/phase7-client-a/screenshots/jobs_site_researcher_ruins_rear-A.png",
-      "source_sha256": "c707ae28cf0425bdda7c837a9da1f9b7b3618a0ad8d81497d57eae8dfec221c5",
-      "source_version": "0.22.1",
+      "source_sha256": "5f7c6d6deceb60cbd95c77d7c985f87fdd3380a2d2c7c05ac68d06a6703ae7e3",
+      "source_version": "0.23.0",
+      "template_sha256": "0a83a20509bd69a2df5cd535e5c1a6a708367835932e1a5a7eb6683568613889",
       "pixels": [
         1280,
         720
@@ -209,10 +291,24 @@
     },
     "researcher_ruins_interior": {
       "image": "docs/assets/sites/researcher_ruins_interior.png",
-      "sha256": "66c2bf0adfd5588b5e4bfcc438dcfe647e3f6788448170160fe8d171ced8f7c0",
+      "sha256": "ec3c60542d6736f42cf77b95dfc8c71a7fb3cea893b035933ea7a04deda03714",
       "source": "run/phase7-client-a/screenshots/jobs_site_researcher_ruins_interior-A.png",
-      "source_sha256": "66c2bf0adfd5588b5e4bfcc438dcfe647e3f6788448170160fe8d171ced8f7c0",
-      "source_version": "0.22.1",
+      "source_sha256": "ec3c60542d6736f42cf77b95dfc8c71a7fb3cea893b035933ea7a04deda03714",
+      "source_version": "0.23.0",
+      "template_sha256": "0a83a20509bd69a2df5cd535e5c1a6a708367835932e1a5a7eb6683568613889",
+      "pixels": [
+        1280,
+        720
+      ],
+      "modified": false
+    },
+    "researcher_ruins_detail": {
+      "image": "docs/assets/sites/researcher_ruins_detail.png",
+      "sha256": "f9b74ad11fe7816ea5f4c9e418050d49216068faf19953f4360d3c808d94b563",
+      "source": "run/phase7-client-a/screenshots/jobs_site_researcher_ruins_detail-A.png",
+      "source_sha256": "f9b74ad11fe7816ea5f4c9e418050d49216068faf19953f4360d3c808d94b563",
+      "source_version": "0.23.0",
+      "template_sha256": "0a83a20509bd69a2df5cd535e5c1a6a708367835932e1a5a7eb6683568613889",
       "pixels": [
         1280,
         720
@@ -223,5 +319,13 @@
   "before_021": {
     "royal_court": "7ec2bbecd0672f01ddbb6b37a92c3cd0cb27157245fea76f68b8a0389744ff5b",
     "ancestral_chamber": "b3fb19204b77b40f98bb3c5c5606b1a43e6c55aeab7521879573ebc6116585f3"
+  },
+  "before_0221": {
+    "royal_court": "945fed15c25b0b674c1808d32330a0389e958c9eae1db19f7b64c39ca36a5cf5",
+    "ancestral_chamber": "35155716f6a6ead8125d98e909902d504dc34a81a986064a3b79803c3585fd8f",
+    "gelatinous_lake": "695dac95646933f1710abbb619ae656228b98847dc7728446b4c24edf74b6746",
+    "crystal_cavern": "ae08d17bd339e63674ad48569071708129dbc6df069b1f5911bfa757caa74163",
+    "elemental_sanctuary": "dc05844269b5030f97576713a4b238699f6c495d55f518d12d38a4411f330861",
+    "researcher_ruins": "74f3b1eb10ce63b57feb3eece4d504d83b327d540af85c5fa5122615c17889d7"
   }
 }

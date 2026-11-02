@@ -6,6 +6,7 @@ These entries summarize the player-facing changes in each release. Historical ve
 
 | Version | Highlights |
 |---|---|
+| [0.23.0](0.23.0.md) | Detailed facades, framed gables, porticoes, gardens, and a rounded geode shell. |
 | [0.22.1](0.22.1.md) | Clear room junctions, supported roofs and stairs, and shared structure spacing. |
 | [0.22.0](0.22.0.md) | Boss combat continuity and architecture rebuilt with Minecraft Builder |
 | [0.21.0](0.21.0.md) | Working pedestal interactions, continuous combat, and six rebuilt structures. |

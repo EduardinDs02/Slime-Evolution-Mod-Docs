@@ -54,27 +54,41 @@ With commands enabled, use `/locate structure slimeevolution:royal_court` in the
 
 <a id="0220-architecture-gallery"></a>
 
-## 0.22.1 architecture gallery
+<a id="0221-architecture-gallery"></a>
+
+## 0.23.0 architecture gallery
 
 All six builds are original. Visual research examined facade depth, repeated bays, material hierarchy, circulation, and integrated vegetation in Repurposed Structures: [Jungle Fortress](https://github.com/TelepathicGrunt/RepurposedStructures/blob/26.3/images/FortressJungle2.png), [Oak Mansion](https://github.com/TelepathicGrunt/RepurposedStructures/blob/26.3/images/MansionWitchHutOak.png), [End Ancient City](https://github.com/TelepathicGrunt/RepurposedStructures/blob/26.3/images/AncientCityEnd.png), and [Flower Forest Pyramid](https://github.com/TelepathicGrunt/RepurposedStructures/blob/26.3/images/PyramidFlowerForest.png). No external templates were copied.
 
-Version 0.22.1 clears internal room and tower junctions, connects roofs to their foundations, fixes roof stair direction and slope, and repairs the stairways. Existing structures remain in place; corrected templates appear in new chunks.
+Version 0.23.0 adds framed elevations, timbered gables, cornices, a deeper portal, covered porticoes, a porch, seating, lighting, and planted borders. The rounded geode preserves surrounding terrain, and a glazed drum joins the observatory wall to its dome. Existing structures remain in place; corrected templates appear in new chunks.
+
+Interiors include reading, dining, research, and expedition areas. Stairs and mezzanine edges have guardrails, and circulation between wings and floors remains clear.
 
 The images below are in-game captures in a flat review meadow. Natural placement follows the biome and slope rules above. Foundations are eight blocks deep, and each build retains one finite reward chest with an accessible interior route. Arenas retain their clear ritual floors.
 
 ### Royal Court
 
+The occupied wings contain reading and dining rooms on both floors, with stairs and guardrails.
+
 ![Royal Court](../assets/sites/royal_court.png)
 
 ![Royal Court courtyard and throne](../assets/sites/royal_court_interior.png)
+
+![Royal wing library](../assets/sites/royal_court_detail.png)
 
 ### Elemental Sanctuary
 
 ![Elemental Sanctuary](../assets/sites/elemental_sanctuary.png)
 
+![Sanctuary relic chapel and seating](../assets/sites/elemental_sanctuary_detail.png)
+
 ### Crystal Cavern
 
+![Rounded geode shell](../assets/sites/crystal_cavern.png)
+
 ![Crystal Cavern](../assets/sites/crystal_cavern_interior.png)
+
+![Expedition gallery workbenches and guardrails](../assets/sites/crystal_cavern_detail.png)
 
 ### Ancestral Chamber
 
@@ -82,22 +96,36 @@ The images below are in-game captures in a flat review meadow. Natural placement
 
 ![Ancestral Chamber galleries and orrery](../assets/sites/ancestral_chamber_interior.png)
 
+![Ancestral upper gallery](../assets/sites/ancestral_chamber_detail.png)
+
 ### Gelatinous Lake
 
 ![Gelatinous Lake](../assets/sites/gelatinous_lake.png)
+
+![Cabin interior](../assets/sites/gelatinous_lake_interior.png)
+
+![Covered pavilion](../assets/sites/gelatinous_lake_detail.png)
 
 ### Researcher Ruins
 
 ![Researcher Ruins](../assets/sites/researcher_ruins.png)
 
+![Rear elevation and observatory](../assets/sites/researcher_ruins_rear.png)
+
+![Library reading hall](../assets/sites/researcher_ruins_interior.png)
+
+![Conservatory and workstations](../assets/sites/researcher_ruins_detail.png)
+
 ## Building workflow and comparison
+
+The public Build It guides consulted for this revision were [Ironcrest Medieval Castle](https://builditapp.com/king-philippe-castle/), [Ravenwick Tall Gable House](https://builditapp.com/ravenwick-tall-gable-house/), [Stonebeam Cottage](https://builditapp.com/stonebeam-cottage/), and the [Outdoor collection](https://builditapp.com/outdoor-collection/). The revision applies recessed entrances, a stone/wood material hierarchy, layered roofs, and paths with seating, plants, and lighting. The mod's structures remain original.
 
 The architecture revision uses the [Minecraft Builder skill](https://github.com/wzhaoMS/minecraft-builder-skill/blob/b389252c0cc07a673677f818622b50dda578228b/SKILL.md) and its [building guide](https://github.com/wzhaoMS/minecraft-builder-skill/blob/b389252c0cc07a673677f818622b50dda578228b/docs/building-guide.md): distinct volumes and roofs, recessed facades, consistent materials, circulation between floors, and review in isometric previews and in the game. This is an authoring tool, not a mod dependency.
 
-Royal Court in 0.21.0:
-
-![Royal Court in 0.21.0](../assets/sites/before-021/royal_court.png)
-
 Royal Court in 0.22.1:
 
-![Royal Court in 0.22.1](../assets/sites/royal_court.png)
+![Royal Court in 0.22.1](../assets/sites/before-0221/royal_court.png)
+
+Royal Court in 0.23.0:
+
+![Royal Court in 0.23.0](../assets/sites/royal_court.png)
