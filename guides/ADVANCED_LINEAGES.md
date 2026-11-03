@@ -9,7 +9,7 @@
 <a id="novas-linhagens-adquiridas"></a>
 <a id="rotas-raras"></a>
 
-Slime Evolution includes **47 species, 61 breeding recipes, and 14 metamorphoses**. The 26 derived species do not spawn naturally or receive spawn eggs. Their offspring inherit the same 15 genes, parent IDs, and generation as other breeding results.
+Slime Evolution includes **63 species, 82 breeding recipes, and 24 metamorphoses**. The 42 derived species do not spawn naturally or receive spawn eggs. Their offspring inherit the same 15 genes, parent IDs, and generation as other breeding results.
 
 ## Advanced crosses
 
@@ -77,3 +77,6 @@ Hive can produce bottled honey from a glass bottle under normal harvesting condi
 Supercell, Aurora, Ancestral, Celestial, and Eclipse also require their [ascension milestones](ASCENSION.md). Read those before consuming catalysts.
 
 [Breeding](BREEDING.md) · [Evolution](EVOLUTION.md) · [Boss rewards](BOSSES.md)
+
+
+Phoenix requires an individual ritual and cannot breed. See [expanded lineages](EXPANDED_LINEAGES.md).

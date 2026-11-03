@@ -38,3 +38,5 @@ These entries summarize the player-facing changes in each release. Historical ve
 | [0.2.0-visual.3](0.2.0-visual.3.md) | Command-summoned boss fix |
 | [0.2.0-visual.2](0.2.0-visual.2.md) | Distinct creature anatomy |
 | [0.2.0-visual.1](0.2.0-visual.1.md) | The first visual rework |
+
+- [0.24.0 — Expanded lineages](../guides/EXPANDED_LINEAGES.md).

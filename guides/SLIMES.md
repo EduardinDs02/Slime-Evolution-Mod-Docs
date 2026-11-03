@@ -4,7 +4,7 @@
 <a id="galeria-de-slimes"></a>
 <a id="híbridos-e-metamorfoses"></a>
 
-Discover **47 species**: **21 natural species** and **26 forms acquired through breeding or metamorphosis**. Images are real Minecraft captures, cropped and resized. Genes can change color and size. Diets follow the default species data and can be changed by datapacks.
+Discover **63 species**: **21 natural species** and **42 forms acquired through breeding or metamorphosis**. Images are real Minecraft captures, cropped and resized. Genes can change color and size. Diets follow the default species data and can be changed by datapacks.
 
 [Care and capture](CARE.md) · [Breeding](BREEDING.md) · [Evolution](EVOLUTION.md) · [Bosses](BOSSES.md)
 
@@ -89,7 +89,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/iron.png" width="300" height="217" alt="Iron slime in Minecraft">
 <p>A heavy body that resists melee blows and knockback.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Iron Nugget, Raw Iron<br><strong>Acquisition:</strong> Natural encounter</p>
-<p class="slime-habitat"><strong>Comfort floor:</strong> Stone, Deepslate, Block of Iron<br><strong>Preferred biomes:</strong> Dripstone Caves, Windswept Gravelly Hills<br><a href="HABITATS.md#iron">Habitat details</a></p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Stone, Deepslate, Block of Iron, Blast Furnace<br><strong>Preferred biomes:</strong> Dripstone Caves, Windswept Gravelly Hills<br><a href="HABITATS.md#iron">Habitat details</a></p>
 <p><code>slimeevolution:iron</code></p>
 </td>
 <td valign="top" width="50%">
@@ -133,7 +133,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/obsidian.png" width="300" height="217" alt="Obsidian slime in Minecraft">
 <p>A slow, heavy body protected against explosions.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Obsidian, Crying Obsidian<br><strong>Acquisition:</strong> Natural encounter</p>
-<p class="slime-habitat"><strong>Comfort floor:</strong> Obsidian, Crying Obsidian, Deepslate<br><strong>Preferred biomes:</strong> Dripstone Caves, Eroded Badlands<br><a href="HABITATS.md#obsidian">Habitat details</a></p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Obsidian, Crying Obsidian, Deepslate, Magma Block<br><strong>Preferred biomes:</strong> Dripstone Caves, Eroded Badlands<br><a href="HABITATS.md#obsidian">Habitat details</a></p>
 <p><code>slimeevolution:obsidian</code></p>
 </td>
 </tr>
@@ -143,7 +143,7 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <img src="../assets/gallery/slimes/sand.png" width="300" height="217" alt="Sand slime in Minecraft">
 <p>Blends into sand while still and blinds enemies with dust.</p>
 <p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Sand, Cactus<br><strong>Acquisition:</strong> Natural encounter</p>
-<p class="slime-habitat"><strong>Comfort floor:</strong> Sand, Red Sand, Sandstone<br><strong>Preferred biomes:</strong> Desert<br><a href="HABITATS.md#sand">Habitat details</a></p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Sand, Red Sand, Sandstone, Glass<br><strong>Preferred biomes:</strong> Desert<br><a href="HABITATS.md#sand">Habitat details</a></p>
 <p><code>slimeevolution:sand</code></p>
 </td>
 <td valign="top" width="50%">
@@ -438,6 +438,157 @@ Discover **47 species**: **21 natural species** and **26 forms acquired through 
 <p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Blaze Powder, Feather<br><strong>Acquisition:</strong> Wind + Fire</p>
 <p class="slime-habitat"><strong>Comfort floor:</strong> Magma Block, Netherrack, Basalt<br><strong>Preferred biomes:</strong> Savanna, Windswept Hills<br><a href="HABITATS.md#volatile_flame">Habitat details</a></p>
 <p><code>slimeevolution:volatile_flame</code></p>
+</td>
+</tr>
+</table>
+
+## Expanded lineages in 0.24.0
+
+[Rituals, levels and environmental requirements](EXPANDED_LINEAGES.md)
+
+<table>
+<tr>
+<td valign="top" width="50%">
+<h3><a name="geode"></a>Geode Slime</h3>
+<img src="../assets/gallery/slimes/geode.png" width="300" height="217" alt="Geode Slime in Minecraft">
+<p>Stores received impacts and releases a fragment shockwave.</p>
+<p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Amethyst Shard, Quartz<br><strong>Acquisition:</strong> Cross Iron Slime + Crystal Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Block of Amethyst, Calcite, Stone, Block of Diamond<br><strong>Preferred biomes:</strong> Stony Peaks, Dripstone Caves<br><a href="HABITATS.md#geode">Habitat details</a></p>
+<p><code>slimeevolution:geode</code></p>
+</td>
+<td valign="top" width="50%">
+<h3><a name="pollinator"></a>Pollinator Slime</h3>
+<img src="../assets/gallery/slimes/pollinator.png" width="300" height="217" alt="Pollinator Slime in Minecraft">
+<p>Healing pollen restores nearby allies and weakens its marked target.</p>
+<p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Glow Berries, Dandelion<br><strong>Acquisition:</strong> Cross Floral Slime + Hive Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Moss Block, Grass Block, Flowering Azalea<br><strong>Preferred biomes:</strong> Forest, Lush Caves<br><a href="HABITATS.md#pollinator">Habitat details</a></p>
+<p><code>slimeevolution:pollinator</code></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+<h3><a name="blizzard"></a>Blizzard Slime</h3>
+<img src="../assets/gallery/slimes/blizzard.png" width="300" height="217" alt="Blizzard Slime in Minecraft">
+<p>Frost bolts build chill; three hits briefly root ordinary enemies.</p>
+<p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Kelp, Snowball<br><strong>Acquisition:</strong> Cross Ice Slime + Wind Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Ice, Packed Ice, Snow Block, Blue Ice<br><strong>Preferred biomes:</strong> Frozen River, Frozen Ocean<br><a href="HABITATS.md#blizzard">Habitat details</a></p>
+<p><code>slimeevolution:blizzard</code></p>
+</td>
+<td valign="top" width="50%">
+<h3><a name="fulgurite"></a>Fulgurite Slime</h3>
+<img src="../assets/gallery/slimes/fulgurite.png" width="300" height="217" alt="Fulgurite Slime in Minecraft">
+<p>A focused glass lance exposes armour without chaining to other enemies.</p>
+<p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Amethyst Shard, Redstone<br><strong>Acquisition:</strong> Cross Sand Slime + Electric Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Block of Amethyst, Calcite, Stone<br><strong>Preferred biomes:</strong> Stony Peaks, Dripstone Caves<br><a href="HABITATS.md#fulgurite">Habitat details</a></p>
+<p><code>slimeevolution:fulgurite</code></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+<h3><a name="bioluminescent"></a>Bioluminescent Slime</h3>
+<img src="../assets/gallery/slimes/bioluminescent.png" width="300" height="217" alt="Bioluminescent Slime in Minecraft">
+<p>Living light marks a target, increasing damage from companions of the same keeper.</p>
+<p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Seagrass, Kelp<br><strong>Acquisition:</strong> Cross Coral Slime + Luminous Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Prismarine, Brain Coral Block, Tube Coral Block, Bubble Coral Block, Sea Lantern<br><strong>Preferred biomes:</strong> Warm Ocean<br><a href="HABITATS.md#bioluminescent">Habitat details</a></p>
+<p><code>slimeevolution:bioluminescent</code></p>
+</td>
+<td valign="top" width="50%">
+<h3><a name="ash_guardian"></a>Ash Guardian Slime</h3>
+<img src="../assets/gallery/slimes/ash_guardian.png" width="300" height="217" alt="Ash Guardian Slime in Minecraft">
+<p>An ash shield retaliates against its attacker when its absorption breaks.</p>
+<p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Obsidian, Crying Obsidian<br><strong>Acquisition:</strong> Cross Obsidian Slime + Soul Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Obsidian, Crying Obsidian, Deepslate, Block of Gold<br><strong>Preferred biomes:</strong> Dripstone Caves, Eroded Badlands<br><a href="HABITATS.md#ash_guardian">Habitat details</a></p>
+<p><code>slimeevolution:ash_guardian</code></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+<h3><a name="mirage"></a>Mirage Slime</h3>
+<img src="../assets/gallery/slimes/mirage.png" width="300" height="217" alt="Mirage Slime in Minecraft">
+<p>Creates a short-lived decoy that distracts ordinary attackers; bosses resist it.</p>
+<p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Sand, Quartz<br><strong>Acquisition:</strong> Metamorphosis from Sand Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Sand, Glass, Tinted Glass<br><strong>Preferred biomes:</strong> Desert<br><a href="HABITATS.md#mirage">Habitat details</a></p>
+<p><code>slimeevolution:mirage</code></p>
+</td>
+<td valign="top" width="50%">
+<h3><a name="steel"></a>Steel Slime</h3>
+<img src="../assets/gallery/slimes/steel.png" width="300" height="217" alt="Steel Slime in Minecraft">
+<p>Reduces physical damage and fractures the armour of its target.</p>
+<p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Iron Nugget, Raw Iron<br><strong>Acquisition:</strong> Metamorphosis from Iron Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Stone, Deepslate, Block of Iron<br><strong>Preferred biomes:</strong> Dripstone Caves, Windswept Gravelly Hills<br><a href="HABITATS.md#steel">Habitat details</a></p>
+<p><code>slimeevolution:steel</code></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+<h3><a name="reef"></a>Reef Slime</h3>
+<img src="../assets/gallery/slimes/reef.png" width="300" height="217" alt="Reef Slime in Minecraft">
+<p>A living barrier protects nearby allies and improves underwater survival.</p>
+<p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Seagrass, Kelp<br><strong>Acquisition:</strong> Metamorphosis from Coral Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Prismarine, Brain Coral Block, Tube Coral Block, Bubble Coral Block<br><strong>Preferred biomes:</strong> Warm Ocean<br><a href="HABITATS.md#reef">Habitat details</a></p>
+<p><code>slimeevolution:reef</code></p>
+</td>
+<td valign="top" width="50%">
+<h3><a name="cordyceps"></a>Cordyceps Slime</h3>
+<img src="../assets/gallery/slimes/cordyceps.png" width="300" height="217" alt="Cordyceps Slime in Minecraft">
+<p>Implants spores that burst after three further allied companion hits.</p>
+<p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Brown Mushroom, Moss Block<br><strong>Acquisition:</strong> Metamorphosis from Mycelium Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Mycelium, Moss Block, Podzol<br><strong>Preferred biomes:</strong> Mushroom Fields, Lush Caves<br><a href="HABITATS.md#cordyceps">Habitat details</a></p>
+<p><code>slimeevolution:cordyceps</code></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+<h3><a name="resonant"></a>Resonant Slime</h3>
+<img src="../assets/gallery/slimes/resonant.png" width="300" height="217" alt="Resonant Slime in Minecraft">
+<p>A vibration pulse interrupts ordinary enemies and exposes a weak point.</p>
+<p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Echo Shard, Glow Ink Sac<br><strong>Acquisition:</strong> Metamorphosis from Sculk Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Sculk, Sculk Catalyst<br><strong>Preferred biomes:</strong> Deep Dark<br><a href="HABITATS.md#resonant">Habitat details</a></p>
+<p><code>slimeevolution:resonant</code></p>
+</td>
+<td valign="top" width="50%">
+<h3><a name="volcanic"></a>Volcanic Slime</h3>
+<img src="../assets/gallery/slimes/volcanic.png" width="300" height="217" alt="Volcanic Slime in Minecraft">
+<p>Received impacts build pressure for a concentrated eruption.</p>
+<p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Magma Cream, Blaze Powder<br><strong>Acquisition:</strong> Metamorphosis from Obsidian Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Magma Block, Basalt, Netherrack<br><strong>Preferred biomes:</strong> Nether Wastes, Basalt Deltas, Badlands<br><a href="HABITATS.md#volcanic">Habitat details</a></p>
+<p><code>slimeevolution:volcanic</code></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+<h3><a name="boreal"></a>Boreal Slime</h3>
+<img src="../assets/gallery/slimes/boreal.png" width="300" height="217" alt="Boreal Slime in Minecraft">
+<p>An ice storm slows groups while an aurora ward protects allies from projectiles.</p>
+<p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Amethyst Shard, Glowstone Dust<br><strong>Acquisition:</strong> Metamorphosis from Blizzard Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Blue Ice, Packed Ice, Block of Amethyst<br><strong>Preferred biomes:</strong> Frozen Peaks, Ice Spikes<br><a href="HABITATS.md#boreal">Habitat details</a></p>
+<p><code>slimeevolution:boreal</code></p>
+</td>
+<td valign="top" width="50%">
+<h3><a name="adamantine"></a>Adamantine Slime</h3>
+<img src="../assets/gallery/slimes/adamantine.png" width="300" height="217" alt="Adamantine Slime in Minecraft">
+<p>A slow fortress with reinforced armour and an impact-powered shockwave.</p>
+<p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Amethyst Shard, Quartz<br><strong>Acquisition:</strong> Metamorphosis from Geode Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Block of Amethyst, Calcite, Stone<br><strong>Preferred biomes:</strong> Stony Peaks, Dripstone Caves<br><a href="HABITATS.md#adamantine">Habitat details</a></p>
+<p><code>slimeevolution:adamantine</code></p>
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+<h3><a name="abyssal_beacon"></a>Abyssal Beacon Slime</h3>
+<img src="../assets/gallery/slimes/abyssal_beacon.png" width="300" height="217" alt="Abyssal Beacon Slime in Minecraft">
+<p>Reveals threats and strengthens coordinated attacks against its marked target.</p>
+<p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Glow Ink Sac, Kelp<br><strong>Acquisition:</strong> Metamorphosis from Bioluminescent Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Prismarine, Dark Prismarine, Blue Ice<br><strong>Preferred biomes:</strong> Deep Cold Ocean, Deep Frozen Ocean<br><a href="HABITATS.md#abyssal_beacon">Habitat details</a></p>
+<p><code>slimeevolution:abyssal_beacon</code></p>
+</td>
+<td valign="top" width="50%">
+<h3><a name="phoenix"></a>Phoenix Slime</h3>
+<img src="../assets/gallery/slimes/phoenix.png" width="300" height="217" alt="Phoenix Slime in Minecraft">
+<p>Prevents one nearby ally’s defeat per boss encounter, with a five-minute cooldown shared by the keeper.</p>
+<p><strong>Temperament:</strong> Hostile<br><strong>Diet:</strong> Blaze Powder, Feather<br><strong>Acquisition:</strong> Metamorphosis from Ash Guardian Slime</p>
+<p class="slime-habitat"><strong>Comfort floor:</strong> Magma Block, Netherrack, Basalt<br><strong>Preferred biomes:</strong> Savanna, Windswept Hills<br><a href="HABITATS.md#phoenix">Habitat details</a></p>
+<p><code>slimeevolution:phoenix</code></p>
 </td>
 </tr>
 </table>

@@ -9,7 +9,7 @@
 <a id="receitas"></a>
 <a id="reprodução-crescimento-e-inspeção"></a>
 
-Breed compatible adults to produce offspring with inherited genetics. The 47 species use **61 breeding pairs**, including 14 cross-species combinations.
+Breed compatible adults to produce offspring with inherited genetics. The 63 species use **82 breeding pairs**, including 20 cross-species combinations.
 
 ## Prepare the parents
 
@@ -80,3 +80,6 @@ Existing juveniles and active recovery retain their stored durations. Timings as
 Apply a stabilizer to an eligible parent in your care before Breeding Gel. One unit protects the pair's next accepted birth against new mutations without changing inherited alleles or bypassing breeding conditions. Protection persists through saves, capsules, failed births, and readiness expiration. An accepted birth consumes protection from treated parents; offspring do not inherit it.
 
 Eclipse requires its additional [solar and lunar ritual](ASCENSION.md). See [genetics](../reference/GENETICS.md), [materials](MATERIALS.md), and [advanced lineages](ADVANCED_LINEAGES.md).
+
+
+Phoenix requires an individual ritual and cannot breed. See [expanded lineages](EXPANDED_LINEAGES.md).

@@ -10,12 +10,13 @@
       "First steps": "guides/GETTING_STARTED.md"
     },
     "Slimes and evolution": {
-      "47-species gallery": "guides/SLIMES.md",
+      "63-species gallery": "guides/SLIMES.md",
       "Genetics": "reference/GENETICS.md",
       "Breeding": "guides/BREEDING.md",
       "Evolution": "guides/EVOLUTION.md",
       "Advanced lineages": "guides/ADVANCED_LINEAGES.md",
-      "Ascension rituals": "guides/ASCENSION.md"
+      "Ascension rituals": "guides/ASCENSION.md",
+      "Expanded lineages": "guides/EXPANDED_LINEAGES.md"
     },
     "Care and work": {
       "Care and capture": "guides/CARE.md",
@@ -55,6 +56,6 @@
     }
   },
   "content_root": ".",
-  "mod_version": "0.23.0",
+  "mod_version": "0.24.0",
   "language": "en"
 }

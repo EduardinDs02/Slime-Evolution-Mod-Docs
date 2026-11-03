@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>Expanded lineages · Slime Evolution</title><meta name="description" content="The Slime Evolution guide: species, genetics, breeding, metamorphoses, jobs, and adventure."><link rel="canonical" href="https://eduardinds02.github.io/Slime-Evolution-Mod-Docs/guides/EXPANDED_LINEAGES.html"><link rel="stylesheet" href="../site.css"></head>
+<body data-root="../"><a class="skip" href="#conteudo">Skip to content</a><header class="topbar"><button id="menu-toggle" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation">☰</button><a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">✦</span><span>Slime Evolution<small>FIELD GUIDE</small></span></a><div class="search"><label class="sr-only" for="search">Search the guide</label><input id="search" type="search" placeholder="Search species, recipes, jobs…" autocomplete="off" aria-controls="search-results" aria-expanded="false"><div id="search-results" role="region" aria-label="Search results" hidden></div></div><a class="repository" href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs">GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></header>
+<div class="layout"><aside id="navigation" class="navigation"><span class="version">VERSION 0.24.0</span><section><h2>Get started</h2><a href="../index.html">Player guide</a><a href="../INSTALLATION.html">Installation</a><a href="../guides/GETTING_STARTED.html">First steps</a></section><section><h2>Slimes and evolution</h2><a href="../guides/SLIMES.html">63-species gallery</a><a href="../reference/GENETICS.html">Genetics</a><a href="../guides/BREEDING.html">Breeding</a><a href="../guides/EVOLUTION.html">Evolution</a><a href="../guides/ADVANCED_LINEAGES.html">Advanced lineages</a><a href="../guides/ASCENSION.html">Ascension rituals</a><a href="../guides/EXPANDED_LINEAGES.html" aria-current="page">Expanded lineages</a></section><section><h2>Care and work</h2><a href="../guides/CARE.html">Care and capture</a><a href="../guides/COMPANIONS.html">Companions and symbiosis</a><a href="../guides/SPECIALIZATIONS.html">Individual jobs</a><a href="../guides/WORK_JOBS.html">Production and transport</a><a href="../guides/SIGNAL_JOBS.html">Circuits, sonar, and displays</a><a href="../guides/HABITATS.html">Habitats and comfort</a><a href="../guides/FEED_BAGS.html">Feed bags</a><a href="../guides/LEVELS.html">Levels and experience</a></section><section><h2>Research and adventure</h2><a href="../guides/PROGRESSION.html">Slimepedia and progression</a><a href="../guides/GENETIC_RESEARCH.html">Genetic research</a><a href="../guides/GENETIC_STATION.html">Genetic Station</a><a href="../guides/INCUBATOR.html">Incubator</a><a href="../guides/MATERIALS.html">Materials and recipes</a><a href="../guides/COMBAT.html">Combat</a><a href="../guides/SPECIAL_STRUCTURES.html">Structures and altars</a><a href="../guides/BOSSES.html">Bosses and minions</a><a href="../guides/ECOSYSTEM.html">Ecosystem</a><a href="../guides/COMPANION_COMBAT.html">Companion combat</a></section><section><h2>Appearance</h2><a href="../guides/SLIME_IDENTITIES.html">Slime materials and identity</a><a href="../guides/ELEMENTAL_DETAILS.html">Elemental details</a><a href="../guides/CELESTIAL_VISUALS.html">Celestial and lunar visuals</a><a href="../PRESENTATION.html">Images and description</a></section><section><h2>Reference</h2><a href="../CONFIGURATION.html">Configuration</a><a href="../BALANCE.html">Balance</a><a href="../reference/SPECIES_DATA.html">Species and datapacks</a></section><section><h2>Updates</h2><a href="../updates/index.html">Version history</a></section></aside><main id="conteudo" tabindex="-1"><div class="reading"><article class="article-body"><h1 id="expanded-lineages">Expanded lineages</h1>
+<p><a href="../index.html">Player guide</a> · <a href="EVOLUTION.html">Evolution</a> · <a href="COMPANION_COMBAT.html">Companion combat</a></p>
+<p>Version <strong>0.24.0</strong> adds <strong>16 acquired species</strong>, for a total of <strong>63</strong>. None of these sixteen spawns naturally. Breeding creates a new child at level 1; metamorphosis preserves the individual, UUID, genes, keeper, level, orders and inventory.</p>
+<h2 id="six-new-crosses">Six new crosses</h2>
+<table>
+<thead>
+<tr>
+<th>Parents, in either order</th>
+<th>Child</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Coral Slime + Luminous Slime</td>
+<td>Bioluminescent Slime</td>
+</tr>
+<tr>
+<td>Floral Slime + Hive Slime</td>
+<td>Pollinator Slime</td>
+</tr>
+<tr>
+<td>Ice Slime + Wind Slime</td>
+<td>Blizzard Slime</td>
+</tr>
+<tr>
+<td>Iron Slime + Crystal Slime</td>
+<td>Geode Slime</td>
+</tr>
+<tr>
+<td>Obsidian Slime + Soul Slime</td>
+<td>Ash Guardian Slime</td>
+</tr>
+<tr>
+<td>Sand Slime + Electric Slime</td>
+<td>Fulgurite Slime</td>
+</tr>
+</tbody>
+</table>
+<p>The complete registry has <strong>82 breeding pairs</strong>: 62 same-species pairs and 20 crosses. Phoenix cannot breed; each specimen must complete its own ritual. Existing care, ancestry, population, food and cooldown checks apply.</p>
+<h2 id="ten-metamorphoses">Ten metamorphoses</h2>
+<table>
+<thead>
+<tr>
+<th>Route</th>
+<th>Catalyst</th>
+<th>Floor</th>
+<th>Level / trust</th>
+<th>Exposure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ash Guardian Slime → Phoenix Slime</td>
+<td><code>slimeevolution:primordial_essence</code></td>
+<td><code>minecraft:gold_block</code></td>
+<td>10 / 90</td>
+<td>300 s</td>
+</tr>
+<tr>
+<td>Bioluminescent Slime → Abyssal Beacon Slime</td>
+<td><code>minecraft:heart_of_the_sea</code></td>
+<td><code>minecraft:sea_lantern</code></td>
+<td>8 / 80</td>
+<td>300 s</td>
+</tr>
+<tr>
+<td>Blizzard Slime → Boreal Slime</td>
+<td><code>minecraft:blue_ice</code></td>
+<td><code>minecraft:blue_ice</code></td>
+<td>8 / 80</td>
+<td>300 s</td>
+</tr>
+<tr>
+<td>Coral Slime → Reef Slime</td>
+<td><code>minecraft:nautilus_shell</code></td>
+<td><code>minecraft:prismarine</code></td>
+<td>4 / 40</td>
+<td>120 s</td>
+</tr>
+<tr>
+<td>Geode Slime → Adamantine Slime</td>
+<td><code>slimeevolution:prismatic_shard</code></td>
+<td><code>minecraft:diamond_block</code></td>
+<td>8 / 80</td>
+<td>300 s</td>
+</tr>
+<tr>
+<td>Iron Slime → Steel Slime</td>
+<td><code>minecraft:iron_block</code></td>
+<td><code>minecraft:blast_furnace</code></td>
+<td>4 / 40</td>
+<td>120 s</td>
+</tr>
+<tr>
+<td>Mycelium Slime → Cordyceps Slime</td>
+<td><code>minecraft:spore_blossom</code></td>
+<td><code>minecraft:moss_block</code></td>
+<td>4 / 40</td>
+<td>120 s</td>
+</tr>
+<tr>
+<td>Obsidian Slime → Volcanic Slime</td>
+<td><code>slimeevolution:igneous_fragment</code></td>
+<td><code>minecraft:magma_block</code></td>
+<td>5 / 40</td>
+<td>120 s</td>
+</tr>
+<tr>
+<td>Sand Slime → Mirage Slime</td>
+<td><code>minecraft:phantom_membrane</code></td>
+<td><code>minecraft:glass</code></td>
+<td>4 / 40</td>
+<td>120 s</td>
+</tr>
+<tr>
+<td>Sculk Slime → Resonant Slime</td>
+<td><code>minecraft:echo_shard</code></td>
+<td><code>minecraft:sculk</code></td>
+<td>5 / 40</td>
+<td>120 s</td>
+</tr>
+</tbody>
+</table>
+<p>All ordinary routes require age 48,000 ticks and the listed gene at 0.65 or higher; advanced routes require age 96,000 ticks and gene 0.85 or higher. Minimum needs: comfort 60, energy 60, hunger at most 40, an adult with a keeper and no combat. Catalyst use rechecks all conditions before spending one item. Exposure advances only while valid and pauses otherwise.</p>
+<ul>
+<li><strong>Phoenix Slime</strong>: <code>minecraft:basalt_deltas</code>, <code>minecraft:nether_wastes</code>; <code>regeneration</code>.</li>
+<li><strong>Abyssal Beacon Slime</strong>: <code>minecraft:deep_ocean</code>, <code>minecraft:deep_cold_ocean</code>, <code>minecraft:deep_lukewarm_ocean</code>; <code>elemental_power</code>; submerged, Y ≤ 20.</li>
+<li><strong>Boreal Slime</strong>: <code>minecraft:snowy_plains</code>, <code>minecraft:ice_spikes</code>, <code>minecraft:frozen_peaks</code>; <code>elemental_power</code>; snowfall during rainy weather and open sky.</li>
+<li><strong>Reef Slime</strong>: <code>minecraft:warm_ocean</code>, <code>minecraft:lukewarm_ocean</code>; <code>regeneration</code>; submerged, at least three living coral blocks within 3 blocks.</li>
+<li><strong>Adamantine Slime</strong>: <code>minecraft:dripstone_caves</code>, <code>minecraft:stony_peaks</code>; <code>resistance</code>.</li>
+<li><strong>Steel Slime</strong>: <code>minecraft:stony_peaks</code>, <code>minecraft:jagged_peaks</code>, <code>minecraft:windswept_hills</code>; <code>resistance</code>; lit blast furnace.</li>
+<li><strong>Cordyceps Slime</strong>: <code>minecraft:lush_caves</code>; <code>regeneration</code>; light 7 or less.</li>
+<li><strong>Volcanic Slime</strong>: <code>minecraft:basalt_deltas</code>, <code>minecraft:nether_wastes</code>; <code>resistance</code>.</li>
+<li><strong>Mirage Slime</strong>: <code>minecraft:desert</code>; <code>elasticity</code>; daytime, clear weather and open sky.</li>
+<li><strong>Resonant Slime</strong>: <code>minecraft:deep_dark</code>; <code>elemental_power</code>; light 7 or less and an active sculk sensor within 4 blocks; generate vibrations while the slime remains calm.</li>
+</ul>
+<h2 id="abilities-and-limits">Abilities and limits</h2>
+<ul>
+<li><strong>Geode Slime</strong>: Stores received impacts and releases a fragment shockwave.</li>
+<li><strong>Pollinator Slime</strong>: Healing pollen restores nearby allies and weakens its marked target.</li>
+<li><strong>Blizzard Slime</strong>: Frost bolts build chill; three hits briefly root ordinary enemies.</li>
+<li><strong>Fulgurite Slime</strong>: A focused glass lance exposes armour without chaining to other enemies.</li>
+<li><strong>Bioluminescent Slime</strong>: Living light marks a target, increasing damage from companions of the same keeper.</li>
+<li><strong>Ash Guardian Slime</strong>: An ash shield retaliates against its attacker when its absorption breaks.</li>
+<li><strong>Mirage Slime</strong>: Creates a short-lived decoy that distracts ordinary attackers; bosses resist it.</li>
+<li><strong>Steel Slime</strong>: Reduces physical damage and fractures the armour of its target.</li>
+<li><strong>Reef Slime</strong>: A living barrier protects nearby allies and improves underwater survival.</li>
+<li><strong>Cordyceps Slime</strong>: Implants spores that burst after three further allied companion hits.</li>
+<li><strong>Resonant Slime</strong>: A vibration pulse interrupts ordinary enemies and exposes a weak point.</li>
+<li><strong>Volcanic Slime</strong>: Received impacts build pressure for a concentrated eruption.</li>
+<li><strong>Boreal Slime</strong>: An ice storm slows groups while an aurora ward protects allies from projectiles.</li>
+<li><strong>Adamantine Slime</strong>: A slow fortress with reinforced armour and an impact-powered shockwave.</li>
+<li><strong>Abyssal Beacon Slime</strong>: Reveals threats and strengthens coordinated attacks against its marked target.</li>
+<li><strong>Phoenix Slime</strong>: Prevents one nearby ally’s defeat per boss encounter, with a five-minute cooldown shared by the keeper.</li>
+</ul>
+<p>Light marks add 5%, 10% or 15% damage according to their source and apply only to companions with the same keeper. Cordyceps requires three further accepted companion hits; rejected hits and other keepers do not advance the implant. Frost control has shared immunity; the new freeze and interrupt abilities do not hard-stun bosses. Mirage decoys last three seconds and cannot be saved, captured, bred or looted. Boreal reduces incoming projectile damage by 25% while its ward lasts.</p>
+<p><strong>Phoenix:</strong> an adult following its keeper can prevent a nearby player or bonded slime from dying, within eight blocks and line of sight, with 24 energy. The victim returns at 30% health with two seconds of resistance. The five-minute cooldown belongs to the keeper, is shared by all Phoenix copies, survives saving and player respawn, and does not reset when a guardian is captured. A living boss that already triggered this protection cannot trigger it again, even after the timer. Administrative damage bypasses this protection.</p></article><aside class="outline" aria-label="On this page"><span>ON THIS PAGE</span><div class="toc">
+<ul>
+<li><a href="#six-new-crosses">Six new crosses</a></li>
+<li><a href="#ten-metamorphoses">Ten metamorphoses</a></li>
+<li><a href="#abilities-and-limits">Abilities and limits</a></li>
+</ul>
+</div>
+</aside></div><footer>Slime Evolution · Minecraft 1.21.1 / NeoForge / GeckoLib<a href="https://github.com/EduardinDs02/Slime-Evolution-Mod-Docs/blob/main/guides/EXPANDED_LINEAGES.md">View this page on GitHub <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></svg></a></footer></main></div><script src="../search-index.js" defer></script><script src="../site.js" defer></script></body></html>

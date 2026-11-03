@@ -26,7 +26,7 @@ Acquire derived species by breeding compatible adults or transforming an existin
 | Water + Ice | Glacial Aquatic |
 | Wind + Fire | Volatile Flame |
 
-All 47 species can also breed with their own species, for **61 total pairs**. Parents must satisfy [care, relatedness, energy, and space requirements](BREEDING.md). Offspring inherit alleles; their species follows the defined recipe rather than arbitrary ability mixing.
+Of 63 species, 62 can also breed with their own species; Phoenix requires an individual ritual, for **82 total pairs**. Parents must satisfy [care, relatedness, energy, and space requirements](BREEDING.md). Offspring inherit alleles; their species follows the defined recipe rather than arbitrary ability mixing.
 
 ## Metamorphoses
 
@@ -62,3 +62,8 @@ As the caretaker, **crouch and use the catalyst** after meeting every requiremen
 The slime preserves identity, alleles, caretaker, ancestry, age, and history. A metamorphosis changes that individual; breeding creates a new child. Completed caretaker actions are recorded in the Slimepedia.
 
 Eclipse, Supercell, Aurora, Ancestral, and Celestial also require [ascension milestones](ASCENSION.md). Recipes and validation are documented under [datapacks](../reference/SPECIES_DATA.md).
+
+
+## Expanded routes in 0.24.0
+
+See [all six new crosses and ten new metamorphoses](EXPANDED_LINEAGES.md), including the Phoenix ritual. The complete registry now has 24 metamorphoses.

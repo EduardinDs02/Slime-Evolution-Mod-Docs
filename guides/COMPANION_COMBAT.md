@@ -6,7 +6,7 @@ Attacks use animated fire, water, frost, storm, venom, solar, earth, and arcane 
 
 [Player guide](../README.md) · [Bond and commands](COMPANIONS.md) · [Bosses](BOSSES.md)
 
-In 0.17.0, all 47 species receive a companion combat profile based on acquisition difficulty. Starter species use affordable attacks; hybrids and advanced lineages add combos, control, and range. Prismatic, Supercell, Aurora, Eclipse, and Ancestral provide rare tools. Celestial occupies the final tier with powerful offense and protection, a long windup, and a high energy cost.
+In 0.17.0, all 63 species receive a companion combat profile based on acquisition difficulty. Starter species use affordable attacks; hybrids and advanced lineages add combos, control, and range. Prismatic, Supercell, Aurora, Eclipse, and Ancestral provide rare tools. Celestial occupies the final tier with powerful offense and protection, a long windup, and a high energy cost.
 
 ## Prepare your team
 
@@ -28,7 +28,7 @@ For three to five companions, start with **one tank, one support, and one to thr
 
 Attacks check range, sight, and allies. Projectiles can miss and walls block them. Interrupted windups cost no energy; launched shots cost energy even if they miss. Capture and world reload preserve recovery without replaying pending casts. These attacks do not destroy blocks.
 
-## All 47 species
+## All 63 species
 
 Base values assume 20 ticks per second, before genes, armor, effects, and server settings. Damage is the primary special hit; areas, ongoing effects, fire, and contact are additional where described. Zero denotes support. Support range describes its assistance radius; species conditions still apply. Hover over the companion portrait to inspect its profile. Wild slimes retain their separate ecological abilities.
 
@@ -81,6 +81,22 @@ Base values assume 20 ticks per second, before genes, armor, effects, and server
 | Ancestral Slime | 4 / Tank | Ancestral Guardian | 5 | 18 | 11 | 6 |
 | Hive Slime | 4 / Support | Battle Pollinators | 0 | 12 | 10 | 6 |
 | Celestial Slime | 5 / Ranged | Astral Judgment | 18 | 28 | 20 | 12 |
+| Geode Slime | 3 / Tank | Geode | 6 | 10 | 7 | 5 |
+| Pollinator Slime | 3 / Support | Pollinator | 3 | 10 | 7 | 8 |
+| Blizzard Slime | 3 / Ranged | Blizzard | 6 | 10 | 6 | 10 |
+| Fulgurite Slime | 3 / Ranged | Fulgurite | 8 | 12 | 7.5 | 12 |
+| Bioluminescent Slime | 3 / Support | Bioluminescent | 4 | 10 | 7 | 10 |
+| Ash Guardian Slime | 4 / Tank | Ash Guardian | 6 | 16 | 11 | 6 |
+| Mirage Slime | 3 / Skirmisher | Mirage | 5 | 12 | 9 | 7 |
+| Steel Slime | 3 / Tank | Steel | 7 | 12 | 7.5 | 5 |
+| Reef Slime | 3 / Support | Reef | 3 | 12 | 9 | 7 |
+| Cordyceps Slime | 3 / Ranged | Cordyceps | 4 | 12 | 8 | 9 |
+| Resonant Slime | 3 / Ranged | Resonant | 7 | 14 | 9 | 10 |
+| Volcanic Slime | 4 / Tank | Volcanic | 9 | 18 | 11 | 7 |
+| Boreal Slime | 4 / Ranged | Boreal | 9 | 18 | 11 | 11 |
+| Adamantine Slime | 4 / Tank | Adamantine | 10 | 18 | 12 | 6 |
+| Abyssal Beacon Slime | 4 / Support | Abyssal Beacon | 7 | 16 | 10 | 12 |
+| Phoenix Slime | 5 / Support | Phoenix | 7 | 24 | 15 | 10 |
 
 ## What each skill does
 
@@ -183,3 +199,6 @@ Base values assume 20 ticks per second, before genes, armor, effects, and server
 Basic attacks continue while special skills recover. Melee keeps a one-second interval. Ranged and support slimes can fire weaker basic shots every 1.5 seconds, within eight blocks or their shorter profile range. Basic shots cost no energy and apply no special-skill effects: they use 55% of the species' basic damage, or 35% for support, with normal gene and level multipliers.
 
 Defensive companions finish an engaged fight rather than abandoning it solely because the caretaker's initial hit aged out. Aggressive companions retain a valid target instead of switching to slightly closer enemies; direct caretaker threats still take priority. Brief obstructions allow up to two seconds of pursuit, but attacks still require visibility and cannot pass through walls. Wounded bonded slimes use companion positioning instead of the automatic flight response of docile wild slimes. Territory limits, ally protection, Passive stance, and skill costs remain enforced.
+
+
+[Expanded lineages: acquisition and special ability rules](EXPANDED_LINEAGES.md).
