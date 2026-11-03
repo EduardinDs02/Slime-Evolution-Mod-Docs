@@ -40,3 +40,5 @@ These entries summarize the player-facing changes in each release. Historical ve
 | [0.2.0-visual.1](0.2.0-visual.1.md) | The first visual rework |
 
 - [0.24.0 — Expanded lineages](../guides/EXPANDED_LINEAGES.md).
+
+- [0.25.0](0.25.0.md)

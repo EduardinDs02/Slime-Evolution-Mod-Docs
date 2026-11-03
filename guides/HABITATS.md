@@ -2,7 +2,7 @@
 
 [Player guide](../README.md) · [Care and capture](CARE.md#enclosures) · [Species gallery](SLIMES.md)
 
-Use this list to choose a floor for each of the **63 slime species**. These are the default comfort preferences, including inherited habitat blocks for hybrids. The gallery also shows the floor and biomes on each species card. Preferred biomes improve comfort; they do not imply that an acquired species spawns there naturally.
+Use this list to choose a floor for each of the **60 slime species**. These are the default comfort preferences, including inherited habitat blocks for hybrids. The gallery also shows the floor and biomes on each species card. Preferred biomes improve comfort; they do not imply that an acquired species spawns there naturally.
 
 ## How comfort works
 
@@ -27,7 +27,6 @@ Names follow Minecraft 1.21.1 in English. Server datapacks can change both the b
 
 | Species | Accepted comfort floor blocks | Preferred comfort biomes |
 |---|---|---|
-| <a id="abyssal_beacon"></a>[Abyssal Beacon Slime](SLIMES.md#abyssal_beacon) | Prismarine, Dark Prismarine, Blue Ice | Deep Cold Ocean, Deep Frozen Ocean |
 | <a id="abyssal"></a>[Abyssal Slime](SLIMES.md#abyssal) | Prismarine, Dark Prismarine, Blue Ice | Deep Cold Ocean, Deep Frozen Ocean |
 | <a id="adamantine"></a>[Adamantine Slime](SLIMES.md#adamantine) | Block of Amethyst, Calcite, Stone | Stony Peaks, Dripstone Caves |
 | <a id="amber"></a>[Amber Slime](SLIMES.md#amber) | Moss Block, Honeycomb Block | Flower Forest, Sunflower Plains |
@@ -38,7 +37,6 @@ Names follow Minecraft 1.21.1 in English. Server datapacks can change both the b
 | <a id="bioluminescent"></a>[Bioluminescent Slime](SLIMES.md#bioluminescent) | Prismarine, Brain Coral Block, Tube Coral Block, Bubble Coral Block, Sea Lantern | Warm Ocean |
 | <a id="blizzard"></a>[Blizzard Slime](SLIMES.md#blizzard) | Ice, Packed Ice, Snow Block, Blue Ice | Frozen River, Frozen Ocean |
 | <a id="bog"></a>[Bog Slime](SLIMES.md#bog) | Mud, Moss Block, Clay | Swamp, Mangrove Swamp |
-| <a id="boreal"></a>[Boreal Slime](SLIMES.md#boreal) | Blue Ice, Packed Ice, Block of Amethyst | Frozen Peaks, Ice Spikes |
 | <a id="caustic"></a>[Caustic Slime](SLIMES.md#caustic) | Mud, Mycelium, Podzol, Magma Block, Basalt, Blackstone | Swamp |
 | <a id="celestial"></a>[Celestial Slime](SLIMES.md#celestial) | Purpur Block, End Stone Bricks, Block of Gold | End Highlands |
 | <a id="common"></a>[Common Slime](SLIMES.md#common) | Grass Block, Moss Block, Slime Block | Plains, Sunflower Plains |
@@ -73,7 +71,6 @@ Names follow Minecraft 1.21.1 in English. Server datapacks can change both the b
 | <a id="phoenix"></a>[Phoenix Slime](SLIMES.md#phoenix) | Magma Block, Netherrack, Basalt | Savanna, Windswept Hills |
 | <a id="pollinator"></a>[Pollinator Slime](SLIMES.md#pollinator) | Moss Block, Grass Block, Flowering Azalea | Forest, Lush Caves |
 | <a id="prismatic"></a>[Prismatic Slime](SLIMES.md#prismatic) | Block of Amethyst, Calcite, Stone | Stony Peaks, Dripstone Caves |
-| <a id="reef"></a>[Reef Slime](SLIMES.md#reef) | Prismarine, Brain Coral Block, Tube Coral Block, Bubble Coral Block | Warm Ocean |
 | <a id="resonant"></a>[Resonant Slime](SLIMES.md#resonant) | Sculk, Sculk Catalyst | Deep Dark |
 | <a id="sand"></a>[Sand Slime](SLIMES.md#sand) | Sand, Red Sand, Sandstone, Glass | Desert |
 | <a id="sculk"></a>[Sculk Slime](SLIMES.md#sculk) | Sculk, Sculk Catalyst | Deep Dark |

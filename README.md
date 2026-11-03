@@ -6,7 +6,7 @@
 <a id="documentação-do-slime-evolution"></a>
 <a id="referências"></a>
 
-Discover, care for, breed, and evolve **63 slime species**. Build genetic lineages, train companions, organize helpful workers, and face four bosses in a SolarPunk-inspired world.
+Discover, care for, breed, and evolve **60 slime species**. Build genetic lineages, train companions, organize helpful workers, and face four bosses in a SolarPunk-inspired world.
 
 For **Minecraft Java 1.21.1**, **NeoForge 21.1.264**, and **Java 21**. **GeckoLib 4.9.3 for NeoForge/Minecraft 1.21.1** is required on both the client and server.
 
@@ -14,7 +14,7 @@ For **Minecraft Java 1.21.1**, **NeoForge 21.1.264**, and **Java 21**. **GeckoLi
 
 1. Read [installation and backups](INSTALLATION.md).
 2. Follow [your first steps](guides/GETTING_STARTED.md).
-3. Browse the [63-species gallery](guides/SLIMES.md) for appearances, diets, and acquisition routes.
+3. Browse the [60-species gallery](guides/SLIMES.md) for appearances, diets, and acquisition routes.
 
 ## Care, research, and exploration
 
@@ -41,4 +41,4 @@ For **Minecraft Java 1.21.1**, **NeoForge 21.1.264**, and **Java 21**. **GeckoLi
 [Configuration](CONFIGURATION.md) · [Balance values](BALANCE.md) · [Species and datapacks](reference/SPECIES_DATA.md) · [Images and description](PRESENTATION.md) · [Version history](updates/README.md)
 
 
-[New in 0.24.0: expanded lineages](guides/EXPANDED_LINEAGES.md).
+[New in 0.25.0: expanded lineages](guides/EXPANDED_LINEAGES.md).

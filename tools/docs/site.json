@@ -10,7 +10,7 @@
       "First steps": "guides/GETTING_STARTED.md"
     },
     "Slimes and evolution": {
-      "63-species gallery": "guides/SLIMES.md",
+      "60-species gallery": "guides/SLIMES.md",
       "Genetics": "reference/GENETICS.md",
       "Breeding": "guides/BREEDING.md",
       "Evolution": "guides/EVOLUTION.md",
@@ -56,6 +56,6 @@
     }
   },
   "content_root": ".",
-  "mod_version": "0.24.0",
+  "mod_version": "0.25.0",
   "language": "en"
 }

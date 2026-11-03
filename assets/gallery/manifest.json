@@ -1,12 +1,12 @@
 {
-  "version": "0.24.0",
-  "species": 63,
+  "version": "0.25.0",
+  "species": 60,
   "bosses": 4,
   "minion_roles": 6,
   "source": "real in-game screenshots; framing only",
   "images": {
     "abyssal": {
-      "image": "docs/assets/gallery/slimes/abyssal.png",
+      "image": "assets/gallery/slimes/abyssal.png",
       "source_name": "anatomy_abyssal_front-A.png",
       "source_version": "0.7.0",
       "source_sha256": "cba0f694fc8e98fe921fd83bd8f0e19872e8958a749c20f2d4bed1be91678e69",
@@ -18,34 +18,21 @@
       ],
       "sha256": "5ee20afb720d58ec452afee35fe7382a7ee28db1474e43a79c4e23e28dcca362"
     },
-    "abyssal_beacon": {
-      "image": "docs/assets/gallery/slimes/abyssal_beacon.png",
-      "source_name": "anatomy_abyssal_beacon_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "fb9d32dad0310f1e4adec187440e1a21269d1ac89efd52ee2fec22975e1b8793",
-      "crop": [
-        304,
-        157,
-        549,
-        320
-      ],
-      "sha256": "e2ed7754dac949c202507b5403a0df43a107cf2d705ca0c669f3a917e71fcec7"
-    },
     "adamantine": {
-      "image": "docs/assets/gallery/slimes/adamantine.png",
+      "image": "assets/gallery/slimes/adamantine.png",
       "source_name": "anatomy_adamantine_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "6750f189b9f290b9d9d45c14a4aa7a9d6755fd209148d2637b8d8020a61022bb",
+      "source_version": "0.25.0",
+      "source_sha256": "f8c83d0d8e46f88c401242d4cd9be69db0ae8b7c1c74836bfde3f88f885c05fd",
       "crop": [
-        273,
-        130,
-        581,
-        360
+        346,
+        160,
+        510,
+        318
       ],
-      "sha256": "537636e4ee60e549c9c6a23ed10444539630f705688a8d17c66e0e20477a807d"
+      "sha256": "371a0892c852d9d035946ff6d3d5fc501a7a83603c0d5b0ce56f02fb3f2a0132"
     },
     "amber": {
-      "image": "docs/assets/gallery/slimes/amber.png",
+      "image": "assets/gallery/slimes/amber.png",
       "source_name": "anatomy_amber_front-A.png",
       "source_version": "0.7.0",
       "source_sha256": "2621631a78f23ed184e0edb175ccd4631a1440a6d0e71f25e45737f898833100",
@@ -58,7 +45,7 @@
       "sha256": "3dac2e4844e09274036b5a906bb11eff33cfddd339df5438ed3e158d776ba489"
     },
     "amethyst": {
-      "image": "docs/assets/gallery/slimes/amethyst.png",
+      "image": "assets/gallery/slimes/amethyst.png",
       "source_name": "anatomy_amethyst_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "800f5b4171e936e1860895e46edb0cfe3063c8f504a291f8999df9214dc54d42",
@@ -71,7 +58,7 @@
       "sha256": "0c7d0fb946dc7d4b84b8cd7ad150aaad28b6e01bee22cece49076f7f15bd9748"
     },
     "ancestral": {
-      "image": "docs/assets/gallery/slimes/ancestral.png",
+      "image": "assets/gallery/slimes/ancestral.png",
       "source_name": "anatomy_ancestral_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "b15c8c25779f6e46d97b185076d46c5f92e1d2f6c86bbc6b9ebee806d5c37cda",
@@ -84,20 +71,20 @@
       "sha256": "0ba53af0a281794a774bc257f6a2f212b6d755db8f20463c9330a2e6262a03b7"
     },
     "ash_guardian": {
-      "image": "docs/assets/gallery/slimes/ash_guardian.png",
+      "image": "assets/gallery/slimes/ash_guardian.png",
       "source_name": "anatomy_ash_guardian_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "7297c7ada10ce51099c7d5946bf0c11c6a34b4111c480f15a34520aa0dde0931",
+      "source_version": "0.25.0",
+      "source_sha256": "9a937c1f3e8c6d67a3ab60f2d47485e2b000bb9ff8b89877fed671fbbb568db0",
       "crop": [
         346,
-        149,
+        169,
         512,
         318
       ],
-      "sha256": "69b541d66b04f0e390c1cc0d5ad50f38e6946e6f6aa7b681a5ce0f675789e74f"
+      "sha256": "f073769f0670afb2e3fc4526c0b79b756e1b6c7b174e8480002cedde071fb090"
     },
     "aurora": {
-      "image": "docs/assets/gallery/slimes/aurora.png",
+      "image": "assets/gallery/slimes/aurora.png",
       "source_name": "anatomy_aurora_front-A.png",
       "source_version": "0.7.0",
       "source_sha256": "9afa3c3df03a1bb21f472a075ae349ebc691ea19d732f519728a6bf956a0c171",
@@ -110,33 +97,33 @@
       "sha256": "a29d83bf86d8b8ea23822dc049688c76b77551392472cc1e5f4ec10e56640b9a"
     },
     "bioluminescent": {
-      "image": "docs/assets/gallery/slimes/bioluminescent.png",
+      "image": "assets/gallery/slimes/bioluminescent.png",
       "source_name": "anatomy_bioluminescent_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "310b9e270e2060b3a2fcdc58c799b9cac5159fb97cb608e3a533d61220eb2e0d",
+      "source_version": "0.25.0",
+      "source_sha256": "a09ae157812ca036e8d8d1f0f3a686ac6cb01996d5c4a311b7c622c501bc954a",
       "crop": [
         335,
-        156,
+        165,
         525,
         318
       ],
-      "sha256": "dbffa15884f60ff70e7074c71f495414a968541b85b582e0058792acc9bcc802"
+      "sha256": "bdd45ddb48f3f78169625bac4a2a7ebe11ef5aa222def946ebaacea1c9de5183"
     },
     "blizzard": {
-      "image": "docs/assets/gallery/slimes/blizzard.png",
+      "image": "assets/gallery/slimes/blizzard.png",
       "source_name": "anatomy_blizzard_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "4a1a36c90aebaaa9daf03abf4c40539872fd7fa22b93502c6f2f4ab6617aad2c",
+      "source_version": "0.25.0",
+      "source_sha256": "5de32b9162d17bae735ed03be86fe0bb06882a98c3c174d79f57d7497b5c0356",
       "crop": [
-        338,
-        194,
-        522,
+        337,
+        197,
+        523,
         317
       ],
-      "sha256": "dc4c651c8cdea17007977bf77c73aabd377c964a4b21777801b16a1f2a56c866"
+      "sha256": "9617fa9d961350ef6d62bfe4c93eaae9d431bf6bac31abe39b3c50c9d976a988"
     },
     "bog": {
-      "image": "docs/assets/gallery/slimes/bog.png",
+      "image": "assets/gallery/slimes/bog.png",
       "source_name": "anatomy_bog_front-A.png",
       "source_version": "0.14.0",
       "source_sha256": "0d50b12dcdd37c3ed3dc384f39440a1a12e41750574ac0a2988b37dd7f66f80e",
@@ -148,21 +135,8 @@
       ],
       "sha256": "0be9e5170ffa4cc8ae02c8c066223b0467dea7bb088508702d67e71bb81b2a8e"
     },
-    "boreal": {
-      "image": "docs/assets/gallery/slimes/boreal.png",
-      "source_name": "anatomy_boreal_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "19cc1672ccf5eb06f91f6817679796c261f90d1aabdd215ae1590dcf6b8a6aa3",
-      "crop": [
-        343,
-        151,
-        512,
-        320
-      ],
-      "sha256": "15c69790d016fbeb151dc4e99fe165417456cacd6887da03c31e2a9aefd7bcfa"
-    },
     "caustic": {
-      "image": "docs/assets/gallery/slimes/caustic.png",
+      "image": "assets/gallery/slimes/caustic.png",
       "source_name": "anatomy_caustic_front-A.png",
       "source_version": "0.7.0",
       "source_sha256": "268921c5d93b2352c4704bcfcd68cbbcbca360cef3e2cf66bc0655aa7f907861",
@@ -175,7 +149,7 @@
       "sha256": "7643e3ea459e6b21e9d34046a2b5a644f52581455008fc24bac7b636709b90dd"
     },
     "celestial": {
-      "image": "docs/assets/gallery/slimes/celestial.png",
+      "image": "assets/gallery/slimes/celestial.png",
       "source_name": "anatomy_celestial_front-A.png",
       "source_version": "0.14.0",
       "source_sha256": "2cfd44cc30aae3292e0493d2c70cd7ab78fa4c756a54a81d881d2187f32419a4",
@@ -206,7 +180,7 @@
       ]
     },
     "common": {
-      "image": "docs/assets/gallery/slimes/common.png",
+      "image": "assets/gallery/slimes/common.png",
       "source_name": "anatomy_common_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "081583c9d391e8faa4c6b24a76fcc5427ca65be8e952a0e2698ffe811a0e5d45",
@@ -219,7 +193,7 @@
       "sha256": "baa82c254dab20f629cdeb460d6431ac268ec04ad88c221dd1ec4f42073d38bd"
     },
     "coral": {
-      "image": "docs/assets/gallery/slimes/coral.png",
+      "image": "assets/gallery/slimes/coral.png",
       "source_name": "anatomy_coral_front-A.png",
       "source_version": "0.7.0",
       "source_sha256": "fb70361fec752010b76b8ae126a9c7a8696ad5df09c257ab01f8365789c6b2a1",
@@ -232,20 +206,20 @@
       "sha256": "5006294a11ac3e6efdc46725e6a50f956cfcc32cf18109fb329eb6ebb4448a57"
     },
     "cordyceps": {
-      "image": "docs/assets/gallery/slimes/cordyceps.png",
+      "image": "assets/gallery/slimes/cordyceps.png",
       "source_name": "anatomy_cordyceps_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "e05018742af51ac2cf1d6cd5c528e1a2e5c4101463af809da022240b351069f4",
+      "source_version": "0.25.0",
+      "source_sha256": "c93a31a8e3c7cf82a445e539e42d4bb86ee9c905bb0d773912aa7e0060e98e63",
       "crop": [
-        336,
-        162,
-        522,
-        321
+        273,
+        130,
+        581,
+        360
       ],
-      "sha256": "b2813af89b2ba3ac7f4ede5803ede8cb82df5a68263e45ba6536fab43833f7ff"
+      "sha256": "7e81d7d33b10b7108d73a8e28e559ccc481124a6e81ee96859eba5111761dfd6"
     },
     "corrupted": {
-      "image": "docs/assets/gallery/slimes/corrupted.png",
+      "image": "assets/gallery/slimes/corrupted.png",
       "source_name": "anatomy_corrupted_front-A.png",
       "source_version": "0.11.0",
       "source_sha256": "f90a10041d6cdac4cbc475e44e35d62b1ab5fd42b6b181ea650f211deaa23d34",
@@ -258,7 +232,7 @@
       "sha256": "21ab54baa830f6a7ebc2be16addc2e71345fbb781613bcab3c59cf0b63d45077"
     },
     "crystal": {
-      "image": "docs/assets/gallery/slimes/crystal.png",
+      "image": "assets/gallery/slimes/crystal.png",
       "source_name": "anatomy_crystal_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "34d7f4e3ef047461c88c007941be49d96ecd1e20c5bc56c5c84468dc03ca8648",
@@ -271,7 +245,7 @@
       "sha256": "7e6013910b570f317cbcf492207c9541c88427289a5db6270f904a84dd2b6e21"
     },
     "eclipse": {
-      "image": "docs/assets/gallery/slimes/eclipse.png",
+      "image": "assets/gallery/slimes/eclipse.png",
       "source_name": "anatomy_eclipse_front-A.png",
       "source_version": "0.10.0",
       "source_sha256": "f068651c3f491030bbaf2611ad0a605a2036afe568561e68b1040ac6a068363e",
@@ -284,7 +258,7 @@
       "sha256": "370de3bd46a5adc2e287387141124092f3e6defd087c944a2a26f7c643d39949"
     },
     "electric": {
-      "image": "docs/assets/gallery/slimes/electric.png",
+      "image": "assets/gallery/slimes/electric.png",
       "source_name": "anatomy_electric_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "3afeabb0299ae1a716b21cee12ac41cb9456266915c46c2a5db0087adcb6394c",
@@ -297,7 +271,7 @@
       "sha256": "a62e9d09e97165b7b9bfdae3a355f9e773caedf4a4b30cd89107a639bc8319ea"
     },
     "end": {
-      "image": "docs/assets/gallery/slimes/end.png",
+      "image": "assets/gallery/slimes/end.png",
       "source_name": "anatomy_end_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "9a7c30fbf4ac6b85c02c473fd4986b284cbb5324680e147e8f56e0525728ae2d",
@@ -310,7 +284,7 @@
       "sha256": "c34668b9b7c48730444261c5eab61a14e2987efe9bdd3706dcd9ef0d021943fb"
     },
     "energized_crystal": {
-      "image": "docs/assets/gallery/slimes/energized_crystal.png",
+      "image": "assets/gallery/slimes/energized_crystal.png",
       "source_name": "anatomy_energized_crystal_front-A.png",
       "source_version": "0.14.0",
       "source_sha256": "1fd7437766fba15bab44ccf00b189a690468fe8d5ddf21e7b8080f513b4d9726",
@@ -341,7 +315,7 @@
       ]
     },
     "ferrofluid": {
-      "image": "docs/assets/gallery/slimes/ferrofluid.png",
+      "image": "assets/gallery/slimes/ferrofluid.png",
       "source_name": "anatomy_ferrofluid_front-A.png",
       "source_version": "0.10.0",
       "source_sha256": "d1f2a1c5748a93da8bf6a06c307a915d6288098f666ee89aac9a63b46ab8ae08",
@@ -354,7 +328,7 @@
       "sha256": "b91df172bb10d66877be311309af07a2b838594b9ae47babb3caba191a26643a"
     },
     "fire": {
-      "image": "docs/assets/gallery/slimes/fire.png",
+      "image": "assets/gallery/slimes/fire.png",
       "source_name": "anatomy_fire_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "2b4704da189a2bcbabf6a7253d39a918390886b39059cdca7cf45bce632c20df",
@@ -367,7 +341,7 @@
       "sha256": "2995b9cbd5d0684a77017ec0e3f37cc01feeb1cef12698eadbe5d5a7231b3eea"
     },
     "floral": {
-      "image": "docs/assets/gallery/slimes/floral.png",
+      "image": "assets/gallery/slimes/floral.png",
       "source_name": "anatomy_floral_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "81bd08bffd84108b5f7282fd99204bab5399ae3fb04e8818e24ac91efeab7051",
@@ -380,7 +354,7 @@
       "sha256": "4f8efc40d6c176dd03fbd4c8e192d7aeab7472e5aa1a85663d1d5e26286b07cf"
     },
     "fulgurite": {
-      "image": "docs/assets/gallery/slimes/fulgurite.png",
+      "image": "assets/gallery/slimes/fulgurite.png",
       "source_name": "anatomy_fulgurite_front-A.png",
       "source_version": "0.24.0",
       "source_sha256": "1cb5ad471052f563637648d2187042db589fbd2c9d763dc90350927e63ac0a14",
@@ -393,7 +367,7 @@
       "sha256": "17ee503fea7f1d12a5728581633ab94173155b89f03ec5c23c43cf1a7b054eca"
     },
     "fungal": {
-      "image": "docs/assets/gallery/slimes/fungal.png",
+      "image": "assets/gallery/slimes/fungal.png",
       "source_name": "anatomy_fungal_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "7f37a9dc71ba05af2ba189615216a9dd9c443c01ce97c0b416b71da8dd89e533",
@@ -406,20 +380,20 @@
       "sha256": "710da655f10a9f48c32fad2048eea09d3826f356f1f80de3513590565e9ee1aa"
     },
     "geode": {
-      "image": "docs/assets/gallery/slimes/geode.png",
+      "image": "assets/gallery/slimes/geode.png",
       "source_name": "anatomy_geode_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "91e70164988b292913e885d8f0856e867fd8fdc4459399a74b14e17217747158",
+      "source_version": "0.25.0",
+      "source_sha256": "185f4427d35f2ed927c32430bc10323e90680da81a8340ee4a1b17f5c3ad4b90",
       "crop": [
-        273,
-        130,
-        581,
-        360
+        351,
+        171,
+        504,
+        317
       ],
-      "sha256": "dd71d32678aa24159375364586173007883f8ef88778b85c9d05104338b0caaf"
+      "sha256": "54b68dbbc8f384c3f0962b49ba1b91239dd478ed9855b6b8dd1efb59e9e5c43c"
     },
     "glacial_aquatic": {
-      "image": "docs/assets/gallery/slimes/glacial_aquatic.png",
+      "image": "assets/gallery/slimes/glacial_aquatic.png",
       "source_name": "anatomy_glacial_aquatic_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "322d66fbcdfb92efbbe8986a66d049dda56ef5f49cb00d53ff830479f1dfa197",
@@ -432,7 +406,7 @@
       "sha256": "e2c8de99e8d2f59a14845353866b48f6776fe4c8894476ebb315b9d543cfab88"
     },
     "glass": {
-      "image": "docs/assets/gallery/slimes/glass.png",
+      "image": "assets/gallery/slimes/glass.png",
       "source_name": "anatomy_glass_front-A.png",
       "source_version": "0.7.0",
       "source_sha256": "a931bf525ece8fc946000e645af7b9554e75fabd3435480a8f70bb31790213ed",
@@ -445,7 +419,7 @@
       "sha256": "240a1591b584884ad7d60991fa3f60972b971acef93a9978c1004e683fef44ac"
     },
     "hive": {
-      "image": "docs/assets/gallery/slimes/hive.png",
+      "image": "assets/gallery/slimes/hive.png",
       "source_name": "anatomy_hive_front-A.png",
       "source_version": "0.7.0",
       "source_sha256": "c59e329844471130ef847c04e4b1cef16c89ee33476f55a6321df1c23fcbb1ca",
@@ -458,7 +432,7 @@
       "sha256": "f1d960b40dcfd071edc7e9d4c04618c8b31be2c959b0e2fdbae606488f66f980"
     },
     "ice": {
-      "image": "docs/assets/gallery/slimes/ice.png",
+      "image": "assets/gallery/slimes/ice.png",
       "source_name": "anatomy_ice_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "fe7da8f36b3b9f76c6078c35a644b3b9f1a7776049894d4a30f8facab59b6f6a",
@@ -471,7 +445,7 @@
       "sha256": "fa98373f598345fa2f2c86d2726aed49a7658d6f4b3d63e0e0c78375e0f236e8"
     },
     "iron": {
-      "image": "docs/assets/gallery/slimes/iron.png",
+      "image": "assets/gallery/slimes/iron.png",
       "source_name": "anatomy_iron_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "ad6c49c96a62bcc4bb6dadc989525bf85860c73bbece4264ab338ef7de50feec",
@@ -484,7 +458,7 @@
       "sha256": "3f64964ca89dc6280fd852b8f2c0e66220c282e744cbf1d09556053e5685a8cd"
     },
     "luminous": {
-      "image": "docs/assets/gallery/slimes/luminous.png",
+      "image": "assets/gallery/slimes/luminous.png",
       "source_name": "anatomy_luminous_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "16215cd950045108c4cbadae02feb4987940224c48b191666ee337491ee011f2",
@@ -497,7 +471,7 @@
       "sha256": "151e031ac1f26973d176cce0bbc958b11a1e0dc798fd730bb712ad13e9047b03"
     },
     "lunar": {
-      "image": "docs/assets/gallery/slimes/lunar.png",
+      "image": "assets/gallery/slimes/lunar.png",
       "source_name": "anatomy_lunar_front-A.png",
       "source_version": "0.11.0",
       "source_sha256": "efd683b7a30a93ede91a66ed2ae78431b90419208ae207c819c70654cad54b52",
@@ -510,7 +484,7 @@
       "sha256": "5a7e076508f3167d60919a2105bb56612d9afda02a76f6b3328bcd65e6ff1762"
     },
     "magma": {
-      "image": "docs/assets/gallery/slimes/magma.png",
+      "image": "assets/gallery/slimes/magma.png",
       "source_name": "anatomy_magma_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "6e43c75cca4b00fcb1e39958b5a856721cf2d0c779cbf603a35f7a9dd592e8bd",
@@ -523,7 +497,7 @@
       "sha256": "931fae65e1fffeee2c274445a6bf667e681416403f023f628ba7d42b17e2e752"
     },
     "magmatic": {
-      "image": "docs/assets/gallery/slimes/magmatic.png",
+      "image": "assets/gallery/slimes/magmatic.png",
       "source_name": "anatomy_magmatic_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "cdeb46351f5252c356b4470818f1b7ce7e9938b1d76ed0d73608030a4f0df43a",
@@ -536,20 +510,20 @@
       "sha256": "417aab535ba5b14ebddb9caf99ac2fec19564b093b539ad8a72a2932b8e2b9c3"
     },
     "mirage": {
-      "image": "docs/assets/gallery/slimes/mirage.png",
+      "image": "assets/gallery/slimes/mirage.png",
       "source_name": "anatomy_mirage_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "b4cb25a496e39c811dcdbca86d1c65b7bdd2fb5cddb854708b265a8aa6778dca",
+      "source_version": "0.25.0",
+      "source_sha256": "21369c1feba811f2e6a9f5068ea33d6e49975a791d8915e7f79cb7b25cdb7512",
       "crop": [
-        347,
+        349,
         158,
-        507,
+        506,
         317
       ],
-      "sha256": "a0b73d835b32273be05411e9d2c9a8bfeb0a263c4f245dbc773ea1c46922a7ee"
+      "sha256": "b8b22e6a5ffdc0d28dcb51aad3329c4ee657e2b528addca16213ce6bf5a4af55"
     },
     "moss": {
-      "image": "docs/assets/gallery/slimes/moss.png",
+      "image": "assets/gallery/slimes/moss.png",
       "source_name": "anatomy_moss_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "e76efbfc6c9f6da5c8267cf81d7ecf8d2299c7f054cee6d8ef0c53df68b5a38a",
@@ -562,7 +536,7 @@
       "sha256": "4dd16921281b0879f9f8076dfe101e4d40f30ddf6bd839fc86211782164360ed"
     },
     "mud": {
-      "image": "docs/assets/gallery/slimes/mud.png",
+      "image": "assets/gallery/slimes/mud.png",
       "source_name": "anatomy_mud_front-A.png",
       "source_version": "0.14.0",
       "source_sha256": "8186023d553a4e87c48bcca91e72655ae6c7e66a99318cfe8910f4eab8cb9a64",
@@ -575,7 +549,7 @@
       "sha256": "57f74c11a9403745ac79414a074346dc8635c1a8a5ba8eebb3b517cdfe9c56e5"
     },
     "mycelium": {
-      "image": "docs/assets/gallery/slimes/mycelium.png",
+      "image": "assets/gallery/slimes/mycelium.png",
       "source_name": "anatomy_mycelium_front-A.png",
       "source_version": "0.14.0",
       "source_sha256": "b373d752ede836d2eb2316f1c49df4d133551d5ad003a645969070155288ca65",
@@ -588,7 +562,7 @@
       "sha256": "fdc76845e7a703b45f1f08e5037239c7541b5f12c2f9f298e452aecce4280807"
     },
     "obsidian": {
-      "image": "docs/assets/gallery/slimes/obsidian.png",
+      "image": "assets/gallery/slimes/obsidian.png",
       "source_name": "anatomy_obsidian_front-A.png",
       "source_version": "0.14.0",
       "source_sha256": "c0b1414b4af3c1a0ef2e315f204227aba3c10a045089ee9968b18c23072d160f",
@@ -601,33 +575,33 @@
       "sha256": "4e5b4128d8a14750fd043ee148d6e8a3f560e51bdb996c5262693f489d4e0364"
     },
     "phoenix": {
-      "image": "docs/assets/gallery/slimes/phoenix.png",
+      "image": "assets/gallery/slimes/phoenix.png",
       "source_name": "anatomy_phoenix_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "a19d8ee214b238be141cbc7dbb976d35bddf5306a8eca64d55a6c9db70e07981",
+      "source_version": "0.25.0",
+      "source_sha256": "bbad5d9051a025dee12dda8f43d2ffcebfde27a1e3d6c8629ff1424163639c94",
       "crop": [
-        339,
-        141,
-        520,
-        321
+        318,
+        142,
+        535,
+        319
       ],
-      "sha256": "a3a995e40ed7f85fcbb25f85736a6d461d92784a7eac75b38d080541aa0b4f87"
+      "sha256": "97c7c4ee6eff586a70906c33a0cc8238982eac804ab53140e1e818c98e2333b7"
     },
     "pollinator": {
-      "image": "docs/assets/gallery/slimes/pollinator.png",
+      "image": "assets/gallery/slimes/pollinator.png",
       "source_name": "anatomy_pollinator_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "d46600ff3a97c1c9100469ea6adeb8dbf2a043e755cc6664c7e13e97a74d79fd",
+      "source_version": "0.25.0",
+      "source_sha256": "62a9cffa049911400c80a0b2e42fa4c9f1e5dfbede09dedee3c9ae38b6ba3566",
       "crop": [
         347,
-        161,
+        166,
         511,
         318
       ],
-      "sha256": "e64a246e92f4497d4d30bf7cf0ae5c82de689b93ddec00e6522a47d476623b4f"
+      "sha256": "aaad66d00df7ac40b2fe43c07de8cf056b78558c588e32860b93a44180b23de7"
     },
     "prismatic": {
-      "image": "docs/assets/gallery/slimes/prismatic.png",
+      "image": "assets/gallery/slimes/prismatic.png",
       "source_name": "anatomy_prismatic_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "a7275a4a4257cdca685335c5ff1fa08871abfa4983e00938fc96e8a7482b404c",
@@ -639,34 +613,21 @@
       ],
       "sha256": "753f9da332cea9c9b5e63adae27cf19681608f5180f76b1fae1b03eb113525f9"
     },
-    "reef": {
-      "image": "docs/assets/gallery/slimes/reef.png",
-      "source_name": "anatomy_reef_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "1ddc1cf49eed4ca44e74092e76078fa089f219bee3298911c041191c3f469e58",
-      "crop": [
-        338,
-        154,
-        521,
-        319
-      ],
-      "sha256": "c6faaf9173b25885b1d673f3fdcec5f72383867a1a90803e9acaffb33a681c67"
-    },
     "resonant": {
-      "image": "docs/assets/gallery/slimes/resonant.png",
+      "image": "assets/gallery/slimes/resonant.png",
       "source_name": "anatomy_resonant_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "a1059f3368a5514a2b5f1ae20268a99c49820ae78b1c7cb72000803bd6665386",
+      "source_version": "0.25.0",
+      "source_sha256": "9cc998d38039300143497bdc9079dd5b79a33cf53e0c4b7662c1191df1705756",
       "crop": [
-        346,
-        157,
-        509,
-        322
+        350,
+        159,
+        508,
+        321
       ],
-      "sha256": "b90c55628614433cc4720e898b41430e473dcda65f20d3f0adc5ff58a616344e"
+      "sha256": "a6e05d48e1d2b35e3d49d22d833af7771abcfa225796a493f392908afa3f9556"
     },
     "sand": {
-      "image": "docs/assets/gallery/slimes/sand.png",
+      "image": "assets/gallery/slimes/sand.png",
       "source_name": "anatomy_sand_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "b106502863c239ecf1c2c20af207af61c8ddd71434e06e08a2f9d95906c5ab17",
@@ -679,7 +640,7 @@
       "sha256": "557f00746d81f4c642d85b6ed4d28ce17e27dd13c90e441a4689ba525cad6da1"
     },
     "sculk": {
-      "image": "docs/assets/gallery/slimes/sculk.png",
+      "image": "assets/gallery/slimes/sculk.png",
       "source_name": "anatomy_sculk_front-A.png",
       "source_version": "0.7.0",
       "source_sha256": "41a315be7a5eef579fb005c4df32908d26e5ae2ac8c9aa8c5ce176bdd4d2ae91",
@@ -692,7 +653,7 @@
       "sha256": "e9146d4ac6ac145bc6e13e66177425e1fab12bbfc1d1c065898cec1d23296940"
     },
     "solar": {
-      "image": "docs/assets/gallery/slimes/solar.png",
+      "image": "assets/gallery/slimes/solar.png",
       "source_name": "anatomy_solar_front-A.png",
       "source_version": "0.11.0",
       "source_sha256": "137aa81352324841bd3d8bb40c30df1e1e00c0787fe9d059a9eb119d079ed2f9",
@@ -705,7 +666,7 @@
       "sha256": "8864f18c75a59dc26448fe131c33569358782f5935f8ea9ea7d4bceebf1d90e3"
     },
     "souls": {
-      "image": "docs/assets/gallery/slimes/souls.png",
+      "image": "assets/gallery/slimes/souls.png",
       "source_name": "anatomy_souls_front-A.png",
       "source_version": "0.14.0",
       "source_sha256": "1fa5cd1ae385befa05abe9d2f16b096e13da031a09e4e5553e3eec8a633cc629",
@@ -718,7 +679,7 @@
       "sha256": "2adf929e8c417717e0f709a98b5ff18fb72b1665e66a20c5ad1691350596ddba"
     },
     "steam": {
-      "image": "docs/assets/gallery/slimes/steam.png",
+      "image": "assets/gallery/slimes/steam.png",
       "source_name": "anatomy_steam_front-A.png",
       "source_version": "0.10.0",
       "source_sha256": "8033142a7c03403396386efb61ecc0bfb71fba31a648abf444b3402efdae2a71",
@@ -731,7 +692,7 @@
       "sha256": "984c7e13fe47f548bf3cbdc91f5c7493b570c28687fd3e99c7674e2ee9f483de"
     },
     "steel": {
-      "image": "docs/assets/gallery/slimes/steel.png",
+      "image": "assets/gallery/slimes/steel.png",
       "source_name": "anatomy_steel_front-A.png",
       "source_version": "0.24.0",
       "source_sha256": "5d1d93a51072a1081ddf3d7e1decbe7a0edd38d54cc85de9e470d1d4c76acd69",
@@ -744,7 +705,7 @@
       "sha256": "0d32063182099b14ce36d9f99f7843ca800316b7c1eb58128502dbdc74edff68"
     },
     "stone": {
-      "image": "docs/assets/gallery/slimes/stone.png",
+      "image": "assets/gallery/slimes/stone.png",
       "source_name": "anatomy_stone_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "e1b0895c3681c7bc5e47c34d8cffa4e2389d6d5035d2f21d8d32d2e08bae653f",
@@ -757,7 +718,7 @@
       "sha256": "38e51f857e01bcf82fdb11be6a5715c8e64e9d017c59a1b792509143d9ed3fd8"
     },
     "storm": {
-      "image": "docs/assets/gallery/slimes/storm.png",
+      "image": "assets/gallery/slimes/storm.png",
       "source_name": "anatomy_storm_front-A.png",
       "source_version": "0.7.0",
       "source_sha256": "d05fd1a577481eee9c6cd0ac4c4d86d2dae45b85050a3cc8ddba21e6927c5f7b",
@@ -770,7 +731,7 @@
       "sha256": "225c90204b96fd9123bcc95baea935f4da14e9104ba7667561eb23ee8a62f26c"
     },
     "supercell": {
-      "image": "docs/assets/gallery/slimes/supercell.png",
+      "image": "assets/gallery/slimes/supercell.png",
       "source_name": "anatomy_supercell_front-A.png",
       "source_version": "0.14.0",
       "source_sha256": "4a48b6e3c7877facdc20c23d498a4867f77d60e05b9417bc8e7b69e8360e3ee3",
@@ -801,7 +762,7 @@
       ]
     },
     "venom": {
-      "image": "docs/assets/gallery/slimes/venom.png",
+      "image": "assets/gallery/slimes/venom.png",
       "source_name": "anatomy_venom_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "29b3bef81001196667a4124f71c43b5da8c6434d2845485551fc21b3650248b9",
@@ -814,7 +775,7 @@
       "sha256": "918b1098f156ba746d0f1cab09f0e38356aa3bcbf2c4965af14c43dae6552a2e"
     },
     "void": {
-      "image": "docs/assets/gallery/slimes/void.png",
+      "image": "assets/gallery/slimes/void.png",
       "source_name": "anatomy_void_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "d2adcc90dafc39954434a02ae75d8a65506f96d526f391a91a26e32f0702dd54",
@@ -827,7 +788,7 @@
       "sha256": "3c41afc5100eaa828c9fed9c36b944178c690f55a7823a3f83b29cc1257651c2"
     },
     "volatile_flame": {
-      "image": "docs/assets/gallery/slimes/volatile_flame.png",
+      "image": "assets/gallery/slimes/volatile_flame.png",
       "source_name": "anatomy_volatile_flame_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "b49fc9048a8e7993d5a5fccc98b30af2b35c079eac82cda0e4934586685cd3f0",
@@ -840,20 +801,20 @@
       "sha256": "bf1bb5a342a4759e7095dd9d39cd48c016be15509fb9df1107d4ed9b668352aa"
     },
     "volcanic": {
-      "image": "docs/assets/gallery/slimes/volcanic.png",
+      "image": "assets/gallery/slimes/volcanic.png",
       "source_name": "anatomy_volcanic_front-A.png",
-      "source_version": "0.24.0",
-      "source_sha256": "0746b2aa968168691b953bdc49492aa0c22bb53ecfcbfd161388122df1a42f4e",
+      "source_version": "0.25.0",
+      "source_sha256": "7811ca77b67baab19a4d0c9e9ef778331987ab3cd02ed68f3aa7ec63394829b5",
       "crop": [
-        342,
-        163,
-        515,
+        343,
+        164,
+        514,
         319
       ],
-      "sha256": "51187b724098c8e5c846927577fc43152fe749db14a5d85dfd6914124edbfbd4"
+      "sha256": "ffc60ab1079cf0d8b0a2a25df4b0a2e7732bcadd24aee2d66c06734403162edc"
     },
     "water": {
-      "image": "docs/assets/gallery/slimes/water.png",
+      "image": "assets/gallery/slimes/water.png",
       "source_name": "anatomy_water_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "8956a843537b68a587448aa5c8f81dbfdbab3cb6284e1f25f1cc1ac98ee684e9",
@@ -866,7 +827,7 @@
       "sha256": "9b7c6c621b8db3736776e984c409c63e458cece93e0617c745c85057a13d7400"
     },
     "wind": {
-      "image": "docs/assets/gallery/slimes/wind.png",
+      "image": "assets/gallery/slimes/wind.png",
       "source_name": "anatomy_wind_front-A.png",
       "source_version": "0.6.0",
       "source_sha256": "a42d9c86a7f51a8b849184ddfb4a57dfae7c0a6b3f67c5a5ca6104c655b572e7",
@@ -879,7 +840,7 @@
       "sha256": "3e8e4c22f0cda5baee8696340a33e54f2141885cb2e2758a96148ec1efd67185"
     },
     "gelatinous_king": {
-      "image": "docs/assets/gallery/bosses/gelatinous_king.png",
+      "image": "assets/gallery/bosses/gelatinous_king.png",
       "source_name": "anatomy_gelatinous_king_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "cfc78f384d20afcc7b9536307ba5f297ded272e3ad3168517b0415fbc656cdb8",
@@ -892,7 +853,7 @@
       "sha256": "49704c0660df16de7c8a86ff2a217f3738d067216f99acf31b3213e6a5375289"
     },
     "magmatic_heart": {
-      "image": "docs/assets/gallery/bosses/magmatic_heart.png",
+      "image": "assets/gallery/bosses/magmatic_heart.png",
       "source_name": "anatomy_magmatic_heart_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "d8a61b3f0a910a0c0c6b8fd75cdb6ef87c16fd458f207e1235f9ba383706624f",
@@ -905,7 +866,7 @@
       "sha256": "ee0b4f0e4a84bbda2540ccee00c970a61dd8e367d89d6eb066761a3ec9f9fd9e"
     },
     "crystalline_colossus": {
-      "image": "docs/assets/gallery/bosses/crystalline_colossus.png",
+      "image": "assets/gallery/bosses/crystalline_colossus.png",
       "source_name": "anatomy_crystalline_colossus_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "82be34527523cf68a8091e470acc2381b1d9a6b42a795125be34297d06d0f456",
@@ -918,7 +879,7 @@
       "sha256": "f89ddec8b155c713a7c8245741127abc60339999fbe9f7581b1d5cc839db0e76"
     },
     "primordial_slime": {
-      "image": "docs/assets/gallery/bosses/primordial_slime.png",
+      "image": "assets/gallery/bosses/primordial_slime.png",
       "source_name": "anatomy_primordial_slime_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "f36aa030dc581047e86d475fa8d11a5ed23cb3abc6791761f0cce1856c0b1e18",
@@ -931,7 +892,7 @@
       "sha256": "257603b56b7322eda49064333b2bf08c12a39b7229a05af23a1dd974f1bd8ef9"
     },
     "royal_minion": {
-      "image": "docs/assets/gallery/minions/royal_minion.png",
+      "image": "assets/gallery/minions/royal_minion.png",
       "source_name": "anatomy_royal_minion_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "14d657a1aed70dc14a0567600904c4d3a61e39f759470fdb0b6acba45a79ad56",
@@ -944,7 +905,7 @@
       "sha256": "4d06fa2864e8892afeb79eb6b7beb22940e00f35a3f215ba33b20001a3a6759e"
     },
     "royal_healer": {
-      "image": "docs/assets/gallery/minions/royal_healer.png",
+      "image": "assets/gallery/minions/royal_healer.png",
       "source_name": "anatomy_royal_healer_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "1acc841a9c6525c23dbbc2a340709b3d437b0a5db4c3fd1d9a15740ac93470dc",
@@ -957,7 +918,7 @@
       "sha256": "4dcd810f6d332511e6408e07a1c7f7a3e4a2da5924f4647cb27f80c9a97beccf"
     },
     "royal_spitter": {
-      "image": "docs/assets/gallery/minions/royal_spitter.png",
+      "image": "assets/gallery/minions/royal_spitter.png",
       "source_name": "anatomy_royal_spitter_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "8258212dec3ac2ccad7546ce6bc612e32152fca26f595ca95072a198da515acd",
@@ -970,7 +931,7 @@
       "sha256": "2d12ea83c4f8e351300145ba93566f80b0e4f4db2bf64be59e74d1ad5722f72c"
     },
     "servant_seraph": {
-      "image": "docs/assets/gallery/minions/servant_seraph.png",
+      "image": "assets/gallery/minions/servant_seraph.png",
       "source_name": "anatomy_servant_seraph_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "eece94f9a9ab13a6024fd0f2896864639397ae33ee26ed120a21093b2cb0b1aa",
@@ -983,7 +944,7 @@
       "sha256": "607c24ae5d452afdbca138a1d42b66f33424d8f9326bc905ca0a027beed62d13"
     },
     "servant_fire": {
-      "image": "docs/assets/gallery/minions/servant_fire.png",
+      "image": "assets/gallery/minions/servant_fire.png",
       "source_name": "anatomy_servant_fire_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "172d24222ce6c5af0edd336fd7171e8308cd98b7ce55425d3a626c800e4ee8bd",
@@ -996,7 +957,7 @@
       "sha256": "cabff48725a842b0ac0115182d5eb418f18c0e61d18e193246a004ba93b5c002"
     },
     "servant_magma": {
-      "image": "docs/assets/gallery/minions/servant_magma.png",
+      "image": "assets/gallery/minions/servant_magma.png",
       "source_name": "anatomy_servant_magma_front-A.png",
       "source_version": "0.5.0",
       "source_sha256": "ef1de12176681103ab050461d47acdb5d130bf9d471fd3152a650b0f0c795d7f",

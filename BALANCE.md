@@ -59,4 +59,4 @@ Electric pulses need training 20 and cost 2 energy and +1 hunger, with strength 
 
 ## Companion combat
 
-[All 63 skills](guides/COMPANION_COMBAT.md) have tiered costs and recoveries. Healing: one per ally per 40 ticks, at most six health per activation. Shields: four/eight health for 100 ticks with a shared 200-tick renewal lock. Freeze: 20 ticks after three applications, followed by 120 ticks of protection. Non-royal servants have 32 health. Existing bosses with canonical attributes migrate while preserving their health ratio; customized administrative attributes remain intact.
+[All 60 skills](guides/COMPANION_COMBAT.md) have tiered costs and recoveries. Healing: one per ally per 40 ticks, at most six health per activation. Shields: four/eight health for 100 ticks with a shared 200-tick renewal lock. Freeze: 20 ticks after three applications, followed by 120 ticks of protection. Non-royal servants have 32 health. Existing bosses with canonical attributes migrate while preserving their health ratio; customized administrative attributes remain intact.

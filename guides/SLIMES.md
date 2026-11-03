@@ -4,7 +4,7 @@
 <a id="galeria-de-slimes"></a>
 <a id="híbridos-e-metamorfoses"></a>
 
-Discover **63 species**: **21 natural species** and **42 forms acquired through breeding or metamorphosis**. Images are real Minecraft captures, cropped and resized. Genes can change color and size. Diets follow the default species data and can be changed by datapacks.
+Discover **60 species**: **21 natural species** and **39 forms acquired through breeding or metamorphosis**. Images are real Minecraft captures, cropped and resized. Genes can change color and size. Diets follow the default species data and can be changed by datapacks.
 
 [Care and capture](CARE.md) · [Breeding](BREEDING.md) · [Evolution](EVOLUTION.md) · [Bosses](BOSSES.md)
 
@@ -520,14 +520,7 @@ Discover **63 species**: **21 natural species** and **42 forms acquired through 
 </td>
 </tr>
 <tr>
-<td valign="top" width="50%">
-<h3><a name="reef"></a>Reef Slime</h3>
-<img src="../assets/gallery/slimes/reef.png" width="300" height="217" alt="Reef Slime in Minecraft">
-<p>A living barrier protects nearby allies and improves underwater survival.</p>
-<p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Seagrass, Kelp<br><strong>Acquisition:</strong> Metamorphosis from Coral Slime</p>
-<p class="slime-habitat"><strong>Comfort floor:</strong> Prismarine, Brain Coral Block, Tube Coral Block, Bubble Coral Block<br><strong>Preferred biomes:</strong> Warm Ocean<br><a href="HABITATS.md#reef">Habitat details</a></p>
-<p><code>slimeevolution:reef</code></p>
-</td>
+
 <td valign="top" width="50%">
 <h3><a name="cordyceps"></a>Cordyceps Slime</h3>
 <img src="../assets/gallery/slimes/cordyceps.png" width="300" height="217" alt="Cordyceps Slime in Minecraft">
@@ -556,14 +549,7 @@ Discover **63 species**: **21 natural species** and **42 forms acquired through 
 </td>
 </tr>
 <tr>
-<td valign="top" width="50%">
-<h3><a name="boreal"></a>Boreal Slime</h3>
-<img src="../assets/gallery/slimes/boreal.png" width="300" height="217" alt="Boreal Slime in Minecraft">
-<p>An ice storm slows groups while an aurora ward protects allies from projectiles.</p>
-<p><strong>Temperament:</strong> Docile<br><strong>Diet:</strong> Amethyst Shard, Glowstone Dust<br><strong>Acquisition:</strong> Metamorphosis from Blizzard Slime</p>
-<p class="slime-habitat"><strong>Comfort floor:</strong> Blue Ice, Packed Ice, Block of Amethyst<br><strong>Preferred biomes:</strong> Frozen Peaks, Ice Spikes<br><a href="HABITATS.md#boreal">Habitat details</a></p>
-<p><code>slimeevolution:boreal</code></p>
-</td>
+
 <td valign="top" width="50%">
 <h3><a name="adamantine"></a>Adamantine Slime</h3>
 <img src="../assets/gallery/slimes/adamantine.png" width="300" height="217" alt="Adamantine Slime in Minecraft">
@@ -574,14 +560,7 @@ Discover **63 species**: **21 natural species** and **42 forms acquired through 
 </td>
 </tr>
 <tr>
-<td valign="top" width="50%">
-<h3><a name="abyssal_beacon"></a>Abyssal Beacon Slime</h3>
-<img src="../assets/gallery/slimes/abyssal_beacon.png" width="300" height="217" alt="Abyssal Beacon Slime in Minecraft">
-<p>Reveals threats and strengthens coordinated attacks against its marked target.</p>
-<p><strong>Temperament:</strong> Neutral<br><strong>Diet:</strong> Glow Ink Sac, Kelp<br><strong>Acquisition:</strong> Metamorphosis from Bioluminescent Slime</p>
-<p class="slime-habitat"><strong>Comfort floor:</strong> Prismarine, Dark Prismarine, Blue Ice<br><strong>Preferred biomes:</strong> Deep Cold Ocean, Deep Frozen Ocean<br><a href="HABITATS.md#abyssal_beacon">Habitat details</a></p>
-<p><code>slimeevolution:abyssal_beacon</code></p>
-</td>
+
 <td valign="top" width="50%">
 <h3><a name="phoenix"></a>Phoenix Slime</h3>
 <img src="../assets/gallery/slimes/phoenix.png" width="300" height="217" alt="Phoenix Slime in Minecraft">

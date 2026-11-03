@@ -26,7 +26,7 @@ Acquire derived species by breeding compatible adults or transforming an existin
 | Water + Ice | Glacial Aquatic |
 | Wind + Fire | Volatile Flame |
 
-Of 63 species, 62 can also breed with their own species; Phoenix requires an individual ritual, for **82 total pairs**. Parents must satisfy [care, relatedness, energy, and space requirements](BREEDING.md). Offspring inherit alleles; their species follows the defined recipe rather than arbitrary ability mixing.
+Of 60 species, 62 can also breed with their own species; Phoenix requires an individual ritual, for **79 total pairs**. Parents must satisfy [care, relatedness, energy, and space requirements](BREEDING.md). Offspring inherit alleles; their species follows the defined recipe rather than arbitrary ability mixing.
 
 ## Metamorphoses
 
@@ -66,4 +66,4 @@ Eclipse, Supercell, Aurora, Ancestral, and Celestial also require [ascension mil
 
 ## Expanded routes in 0.24.0
 
-See [all six new crosses and ten new metamorphoses](EXPANDED_LINEAGES.md), including the Phoenix ritual. The complete registry now has 24 metamorphoses.
+See [all six new crosses and ten new metamorphoses](EXPANDED_LINEAGES.md), including the Phoenix ritual. The complete registry now has 21 metamorphoses.

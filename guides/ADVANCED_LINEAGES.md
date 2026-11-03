@@ -9,7 +9,7 @@
 <a id="novas-linhagens-adquiridas"></a>
 <a id="rotas-raras"></a>
 
-Slime Evolution includes **63 species, 82 breeding recipes, and 24 metamorphoses**. The 42 derived species do not spawn naturally or receive spawn eggs. Their offspring inherit the same 15 genes, parent IDs, and generation as other breeding results.
+Slime Evolution includes **60 species, 79 breeding recipes, and 21 metamorphoses**. The 42 derived species do not spawn naturally or receive spawn eggs. Their offspring inherit the same 15 genes, parent IDs, and generation as other breeding results.
 
 ## Advanced crosses
 

@@ -9,7 +9,7 @@
 <a id="receitas"></a>
 <a id="reprodução-crescimento-e-inspeção"></a>
 
-Breed compatible adults to produce offspring with inherited genetics. The 63 species use **82 breeding pairs**, including 20 cross-species combinations.
+Breed compatible adults to produce offspring with inherited genetics. The 60 species use **79 breeding pairs**, including 20 cross-species combinations.
 
 ## Prepare the parents
 

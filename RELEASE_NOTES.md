@@ -1,6 +1,6 @@
 # Release Notes
 
-Current version: **0.24.0**. [Release details](updates/0.24.0.md).
+Current version: **0.25.0**. [Release details](updates/0.25.0.md).
 
 <a id="notas-de-versão"></a>
 

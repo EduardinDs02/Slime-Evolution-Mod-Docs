@@ -1,8 +1,10 @@
 # Expanded lineages
 
+
+**0.25.0:** Reef, Boreal and Abyssal Beacon were removed; existing specimens migrate to Coral, Blizzard and Bioluminescent. [New concepts](../updates/0.25.0.md).
 [Player guide](../README.md) · [Evolution](EVOLUTION.md) · [Companion combat](COMPANION_COMBAT.md)
 
-Version **0.24.0** adds **16 acquired species**, for a total of **63**. None of these sixteen spawns naturally. Breeding creates a new child at level 1; metamorphosis preserves the individual, UUID, genes, keeper, level, orders and inventory.
+Version **0.24.0** adds **16 acquired species**, for a total of **60**. None of these sixteen spawns naturally. Breeding creates a new child at level 1; metamorphosis preserves the individual, UUID, genes, keeper, level, orders and inventory.
 
 ## Six new crosses
 
@@ -15,16 +17,13 @@ Version **0.24.0** adds **16 acquired species**, for a total of **63**. None of 
 | Obsidian Slime + Soul Slime | Ash Guardian Slime |
 | Sand Slime + Electric Slime | Fulgurite Slime |
 
-The complete registry has **82 breeding pairs**: 62 same-species pairs and 20 crosses. Phoenix cannot breed; each specimen must complete its own ritual. Existing care, ancestry, population, food and cooldown checks apply.
+The complete registry has **79 breeding pairs**: 62 same-species pairs and 20 crosses. Phoenix cannot breed; each specimen must complete its own ritual. Existing care, ancestry, population, food and cooldown checks apply.
 
-## Ten metamorphoses
+## Seven metamorphoses
 
 | Route | Catalyst | Floor | Level / trust | Exposure |
 |---|---|---|---|---|
 | Ash Guardian Slime → Phoenix Slime | `slimeevolution:primordial_essence` | `minecraft:gold_block` | 10 / 90 | 300 s |
-| Bioluminescent Slime → Abyssal Beacon Slime | `minecraft:heart_of_the_sea` | `minecraft:sea_lantern` | 8 / 80 | 300 s |
-| Blizzard Slime → Boreal Slime | `minecraft:blue_ice` | `minecraft:blue_ice` | 8 / 80 | 300 s |
-| Coral Slime → Reef Slime | `minecraft:nautilus_shell` | `minecraft:prismarine` | 4 / 40 | 120 s |
 | Geode Slime → Adamantine Slime | `slimeevolution:prismatic_shard` | `minecraft:diamond_block` | 8 / 80 | 300 s |
 | Iron Slime → Steel Slime | `minecraft:iron_block` | `minecraft:blast_furnace` | 4 / 40 | 120 s |
 | Mycelium Slime → Cordyceps Slime | `minecraft:spore_blossom` | `minecraft:moss_block` | 4 / 40 | 120 s |
@@ -35,9 +34,6 @@ The complete registry has **82 breeding pairs**: 62 same-species pairs and 20 cr
 All ordinary routes require age 48,000 ticks and the listed gene at 0.65 or higher; advanced routes require age 96,000 ticks and gene 0.85 or higher. Minimum needs: comfort 60, energy 60, hunger at most 40, an adult with a keeper and no combat. Catalyst use rechecks all conditions before spending one item. Exposure advances only while valid and pauses otherwise.
 
 - **Phoenix Slime**: `minecraft:basalt_deltas`, `minecraft:nether_wastes`; `regeneration`.
-- **Abyssal Beacon Slime**: `minecraft:deep_ocean`, `minecraft:deep_cold_ocean`, `minecraft:deep_lukewarm_ocean`; `elemental_power`; submerged, Y ≤ 20.
-- **Boreal Slime**: `minecraft:snowy_plains`, `minecraft:ice_spikes`, `minecraft:frozen_peaks`; `elemental_power`; snowfall during rainy weather and open sky.
-- **Reef Slime**: `minecraft:warm_ocean`, `minecraft:lukewarm_ocean`; `regeneration`; submerged, at least three living coral blocks within 3 blocks.
 - **Adamantine Slime**: `minecraft:dripstone_caves`, `minecraft:stony_peaks`; `resistance`.
 - **Steel Slime**: `minecraft:stony_peaks`, `minecraft:jagged_peaks`, `minecraft:windswept_hills`; `resistance`; lit blast furnace.
 - **Cordyceps Slime**: `minecraft:lush_caves`; `regeneration`; light 7 or less.
@@ -55,13 +51,10 @@ All ordinary routes require age 48,000 ticks and the listed gene at 0.65 or high
 - **Ash Guardian Slime**: An ash shield retaliates against its attacker when its absorption breaks.
 - **Mirage Slime**: Creates a short-lived decoy that distracts ordinary attackers; bosses resist it.
 - **Steel Slime**: Reduces physical damage and fractures the armour of its target.
-- **Reef Slime**: A living barrier protects nearby allies and improves underwater survival.
 - **Cordyceps Slime**: Implants spores that burst after three further allied companion hits.
 - **Resonant Slime**: A vibration pulse interrupts ordinary enemies and exposes a weak point.
 - **Volcanic Slime**: Received impacts build pressure for a concentrated eruption.
-- **Boreal Slime**: An ice storm slows groups while an aurora ward protects allies from projectiles.
 - **Adamantine Slime**: A slow fortress with reinforced armour and an impact-powered shockwave.
-- **Abyssal Beacon Slime**: Reveals threats and strengthens coordinated attacks against its marked target.
 - **Phoenix Slime**: Prevents one nearby ally’s defeat per boss encounter, with a five-minute cooldown shared by the keeper.
 
 Light marks add 5%, 10% or 15% damage according to their source and apply only to companions with the same keeper. Cordyceps requires three further accepted companion hits; rejected hits and other keepers do not advance the implant. Frost control has shared immunity; the new freeze and interrupt abilities do not hard-stun bosses. Mirage decoys last three seconds and cannot be saved, captured, bred or looted. Boreal reduces incoming projectile damage by 25% while its ward lasts.
